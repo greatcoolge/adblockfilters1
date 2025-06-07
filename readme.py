@@ -57,14 +57,14 @@ class ReadMe(object):
         if url:
             link += " [原始链接](%s) |"%(url)
         else:
-            link += " [原始链接](https://raw.githubusercontent.com/greatcoolge/adblockfilters/main/rules/%s) |"%(fileName)
+            link += " [原始链接](https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/%s) |"%(fileName)
         
         for i in range(1, len(self.proxyList)):
             proxy = self.proxyList[i]
             if proxy.startswith("https://gcore.jsdelivr.net/"):
-                link += " [加速链接%d](%s/greatcoolge/adblockfilters@main/rules/%s) |"%(i, proxy, fileName)
+                link += " [加速链接%d](%s/greatcoolge/adblockfilters1@main/rules/%s) |"%(i, proxy, fileName)
             else:
-                link += " [加速链接%d](%s/https://raw.githubusercontent.com/greatcoolge/adblockfilters/main/rules/%s) |"%(i, proxy, fileName)
+                link += " [加速链接%d](%s/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/%s) |"%(i, proxy, fileName)
         
         return link
     
