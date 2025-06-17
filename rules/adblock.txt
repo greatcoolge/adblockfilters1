@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2025-06-17 02:20:29(GMT+8)
-! Total count: 236289
+! ! Version: 2025-06-17 14:21:26(GMT+8)
+! Total count: 236309
  
 ###ADtip
 ###AdBlockDialog
@@ -4476,6 +4476,7 @@ $websocket,domain=wap.yushuwu.cloud
 /extendedanalytics.js
 /external-tracking.min.js
 /ezais/analytics?
+/ezoicanalytics.js
 /ezprice_ad.js
 /ezytrack.js
 /f.gif?
@@ -27209,6 +27210,7 @@ cwyuni.tw###banner > h2
 cwyuni.tw###box34614 > [class^="box-"]
 cwyuni.tw###links-row-1 > div[id^="box"]:not(#box32499):not(#box1026387):not(#box34614)
 cxem.net###antiAdBlock
+cyber.sports.ru#%#//scriptlet('set-local-storage-item', '/^sports:/', '$remove$')
 cyberscore.live##.wrapper-partner-rb
 cybersqauremailtracking.mails.cybersquare.org$image
 cyclestyle.net,rbbtoday.com##.cx-top-news
@@ -124942,6 +124944,7 @@ novinky.cz##div[style^="background-Image:"], [style^="bACkgrOund-imAge:"]
 novinky.cz##img[src*="1T4PK70hS2C"]
 novinky.cz##section[role^="complementary"]
 novinky.cz#$#hide-if-matches-xpath './/div[@class][@style]/ancestor-or-self::div[@*="RENDERED" or @*="INITIALIZED" or @*="mol-advert"]'
+novinky.cz#$#hide-if-matches-xpath './/div[contains(@class,"ogm-advert-rectangle-inscreen")]'
 novinky.cz#$#replace-xhr-response /\{[^}]*"adFormat"[^}]*\}/g '{}' 'requestId'; hide-if-matches-xpath '//article[@*[starts-with(name(), "data-")] = "advert-item"]/parent::div[1]'
 novinky.cz,kupi.cz,sport.cz,super.cz###sf0
 novinky.cz,kupi.cz,sport.cz,super.cz##.Aldremas, .plachta-middle
@@ -136088,14 +136091,10 @@ www.service.1897pentagram.com$image
 www.services.1897pentagram.com$image
 www.seznam.cz#$#cookie-remover adform
 www.seznam.cz#$#cookie-remover pubmatic
-www.seznam.cz#$#hide-if-matches-xpath './/a[@href][@target="_blank"][contains(@class,"atm-link--styled")]/ancestor-or-self::div[contains(@class,"mol-json-ssp-advert")]/parent::div[contains(@class,"mol-content-card")][1]'
-www.seznam.cz#$#hide-if-matches-xpath './/a[@href][@target="_blank"][contains(@class,"atm-link--styled")]/following::div[contains(@style,"position:relative;")]/ancestor::div[contains(@style,"flex")]/ancestor::div[@class][2]'
+www.seznam.cz#$#hide-if-matches-xpath './/a[@href][@target="_blank"][contains(@class,"atm-link")][text()]/ancestor-or-self::div[contains(@class,"mol-advert-header--drtg")]/parent::div[contains(@class,"mol-content-card")][1]'
+www.seznam.cz#$#hide-if-matches-xpath './/a[@href][@target="_blank"][contains(@class,"atm-link")][text()]/ancestor-or-self::div[contains(@class,"mol-json-ssp-advert__advert-header")]/parent::div[contains(@class,"mol-content-card")][1]'
 www.seznam.cz#$#hide-if-matches-xpath './/a[contains(@href,"ad-buttonem")]/ancestor::div[contains(@class,"gadget")]/parent::div[1]'
-www.seznam.cz#$#hide-if-matches-xpath './/div[@class="banner-wrapper"]/a[contains(@href,"ad_url")]/div/img/ancestor::div[@id="page"]'
-www.seznam.cz#$#hide-if-matches-xpath './/div[contains(@class,"atm-advert")]/ancestor::div[contains(@class,"atm-closeable-post")]/ancestor::div[2]'
-www.seznam.cz#$#hide-if-matches-xpath './/div[contains(@class,"gadget-container")]/div[@id and @class]/div[@*="animated-height"]//span[text()]/following-sibling::a[contains(text(),"reklamu")]//following::div[@*="gadget__content"]//div[@class and @style]/ancestor::div[7][@class]/ancestor::div[contains(@class,"gadget-container")]'; hide-if-matches-xpath './/div[starts-with(@class,"d-flex")]/div[contains(@class,"flex-column")]/div[@class and @style]//div[2]/div[@class and @style]/parent::div/ancestor-or-self::div[contains(@style,"flex-basis:")]'; hide-if-matches-xpath './/div[@*="mainFeed"]//div[@class="overflow-hidden"]/div[contains(@class,"atm-text-placeholder")]/parent::div[@class][1]/ancestor::div[3]/parent::div[@class and @*]/ancestor::li[@data-analytics-first-item]';
-www.seznam.cz#$#hide-if-matches-xpath './/div[contains(@class,"mol-json-carousel-advert")]/ancestor::div[contains(@class,"atm-feed-card")]/parent::div[@id]'
-www.seznam.cz#$#hide-if-matches-xpath './/iframe[@class][@style][@src]/ancestor::div[contains(@style,"position:relative;")]/preceding::div[@id][contains(@style,"max-width: 100%;")][contains(@id,"reload")]/parent::div[@class][1]'
+www.seznam.cz#$#hide-if-matches-xpath '//div[contains(@id,"zone70468-cache")]/preceding::a[text()][@target="_blank"][@rel="noopener"]/ancestor::div[contains(@style,"flex") and contains (@style,"1800px")][1]'
 www.seznam.cz#$#override-property-read sssp noopFunc
 www.seznam.cz#$#replace-fetch-response '/adType/' {}; hide-if-matches-xpath '//a[@rel][contains(translate(translate(text(), "ĂÂÎȘȚăâîșțR̆", "AAISTaaistR"), "REKLAMA", "reklama"), "reklama")][contains(@class,"color-neutral-2")]/parent::div/parent::div/parent::div/parent::div[@style][1]'
 www.sglobalid3.click.s11.sfmc-osl.com$image
@@ -138524,6 +138523,7 @@ zzzyk.com###Tinfo
 ||7scs.com/Public/img/list-
 ||7tc.fun^
 ||7tv.de/service/log/
+||7u4b8l1zt.com^
 ||7w.ro/js/trk.js
 ||7wrxo2xh.iriscreative.co^
 ||7x4.fr^$third-party
@@ -145018,6 +145018,7 @@ zzzyk.com###Tinfo
 ||afqshw.beach.ly^
 ||afraidlanguage.com^$third-party
 ||afrdtech.com^
+||afrhwdumolf.com^
 ||africa.edm.globalsources.com^
 ||afs.googlesyndication.com^
 ||afsanalytics.com^$third-party
@@ -147675,6 +147676,7 @@ zzzyk.com###Tinfo
 ||apacenews.roche.com^
 ||apaclandingpage.ajo1apac.adls.adobevlab.com^
 ||apaclandingpage.ajoplatformapac.adobevlab.com^
+||apajku.icu^
 ||aparat.com/gogol/
 ||apartments.com/clientvisit/al.gif?
 ||apartmenttherapy.com/*/xhr/api/*/collector
@@ -154218,6 +154220,7 @@ zzzyk.com###Tinfo
 ||ce-global-track-*.amazonaws.com^
 ||ce.wlaoc.cn^$third-party
 ||ce.x-opt.io^
+||ce71jubc2.com^
 ||ceciliavenus.com^$third-party
 ||ced-ns.sascdn.com/diff/js/smart.js
 ||ced-ns.sascdn.com^
@@ -154489,6 +154492,7 @@ zzzyk.com###Tinfo
 ||cheqzone.com^$third-party
 ||cherriescare.com^$third-party
 ||cherry.le.com^
+||cherrya04.top^
 ||cheshi-img.com/js/pv.min.js
 ||chess.com/service/user-activity/chesscom.user_activity
 ||chessbranch.com^$third-party
@@ -157863,6 +157867,7 @@ zzzyk.com###Tinfo
 ||cyber-tracking.att.com^
 ||cyber.aonunited.com^
 ||cyber.boozallen.com^
+||cyber.sports.ru^$cookie=suida
 ||cyberanalytics.nl^
 ||cyberanalytics.nl^$third-party
 ||cyberghostvpn.com^$cookie=cg_campaign
@@ -162855,6 +162860,7 @@ zzzyk.com###Tinfo
 ||dgcollector.evidon.com^
 ||dgd.okiela.com^
 ||dgfgflod.com^
+||dgfhjmd.com^
 ||dggaenaawxe8z.cloudfront.net^
 ||dghehu.com^
 ||dghfko.pauapique.com.br^
@@ -164312,6 +164318,7 @@ zzzyk.com###Tinfo
 ||dumbingofage.com/?feed-stats-post-id=
 ||dumpster.cam4.com/v2/fp1.js
 ||dumpster.cam4.com^
+||dunkhj.top^
 ||duo*.top/Runtime/js/psData.js
 ||duodada.com/Tpl/default/system.js
 ||duohch.agrishop.nl^
@@ -164440,6 +164447,7 @@ zzzyk.com###Tinfo
 ||dycwt.cn^
 ||dydab.com^
 ||dyecloud.com^$third-party
+||dyedmurders.com^
 ||dyeperd.icu^
 ||dygassets.dygdigital.com^
 ||dyghye.fashionesta.com^
@@ -168229,6 +168237,7 @@ zzzyk.com###Tinfo
 ||ferank.fr^$third-party
 ||feretraconcion.com^
 ||ferias.usj.es^
+||fermataintima.com^
 ||fernomius.com/event/
 ||fernomius.com^$third-party
 ||feronyv.com^
@@ -170706,6 +170715,7 @@ zzzyk.com###Tinfo
 ||gjjskhdnm.top^
 ||gjjtey.mystylebags.it^
 ||gjkame6.com^
+||gjkbyt.com^
 ||gjkkdashb4.fun^
 ||gjljde.kathmandu.co.nz^
 ||gjmedashb0.fun^
@@ -170738,6 +170748,7 @@ zzzyk.com###Tinfo
 ||gkopqp.coccodrillo.eu^
 ||gksqdt.reitmans.com^
 ||gktrlv.oryany.co.kr^
+||gkvrdf.com^
 ||gkxaay.tontarellishop.com^
 ||gkxkvp.tumi.co.jp^
 ||gkxqt.cn^
@@ -171946,6 +171957,7 @@ zzzyk.com###Tinfo
 ||google-analytics.com^
 ||google-analytics.com^$domain=avgle.com
 ||google-analytics.com^$domain=promiflash.de,redirect=nooptext,important
+||google-analytics.com^$object,redirect=noopjs
 ||google-analytics.com^$script,third-party,xmlhttprequest
 ||google-analytics.com^*/__utm.gif
 ||google-js-01.xyz^
@@ -172029,6 +172041,7 @@ zzzyk.com###Tinfo
 ||googletagmanager-cn.com^
 ||googletagmanager.com/*=GTM-
 ||googletagmanager.com/gtag/$third-party
+||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
 ||googletagmanager.com/gtag/js$script,other,redirect=googletagmanager-gtm,domain=filmomaniak.pl
 ||googletagmanager.com/gtag/js$script,other,redirect=googletagmanager-gtm,domain=playphrase.me
 ||googletagmanager.com/gtag/js$script,redirect=google-analytics,domain=av01.tv,important
@@ -181425,6 +181438,7 @@ zzzyk.com###Tinfo
 ||l029.recordpatriot.com^
 ||l2.io/ip.js
 ||l2.io^$third-party
+||l235cj20z.com^
 ||l23jhjfasd.xyz^
 ||l2i.qualityinnlevis.com^
 ||l2k30jsa.theochu.com^
@@ -194832,6 +194846,7 @@ zzzyk.com###Tinfo
 ||npftmqv.cn^
 ||npgrzv.rikoland.pl^
 ||nphqw.cn^
+||nplaf.com^
 ||nplden.legionathletics.com^
 ||nplvdodbja.com^
 ||npo-data.nl/tag/v3/npotag.js
@@ -195520,6 +195535,7 @@ zzzyk.com###Tinfo
 ||oilandgas.opentext.com^
 ||oilprice.com^$cookie=_omappvp
 ||oilprice.com^$cookie=_omappvs
+||oilprice.com^$cookie=ga_store_user_id
 ||oimg.login.cnbc.com^
 ||oimg.m.calltheclose.cnbc.com^
 ||oimg.mobile.cnbc.com^
@@ -197848,6 +197864,7 @@ zzzyk.com###Tinfo
 ||pbcs.nypost.com^
 ||pbcs.pagesix.com^
 ||pbecrm.aquanet.ru^
+||pbfefd.icu^
 ||pbgrd.com^$third-party
 ||pbgufjylmzsym.top^
 ||pbhcaq.nursery.co.jp^
@@ -200101,6 +200118,7 @@ zzzyk.com###Tinfo
 ||pwrgcxaj.icu^
 ||pwrlkyotm.com^$third-party
 ||pwtftm.shingaku.mynavi.jp^
+||pwvt.cn^
 ||px*.mediahills.ru^
 ||px-cdn.net/b/
 ||px-cdn.net^*/collector
@@ -203078,6 +203096,7 @@ zzzyk.com###Tinfo
 ||rubolite.ems-dental.com^
 ||rucounter.ru^$third-party
 ||rudderlabs.com^$third-party
+||ruddy-pass.com^
 ||rudhjah.top^
 ||rudr-events.joybird.com^
 ||rugao35.com/Public/config/Couplet/Index
@@ -221471,6 +221490,7 @@ zzzyk.com###Tinfo
 ||tieba.baidu.com/game/markConf?
 ||tiebac.baidu.com/*/log/
 ||tiendeo.*/_statsapi/
+||tiepinshazings.com^
 ||tieszhu.com/e.html
 ||tieszhu.com^
 ||tietuku.com/b975a9f7c494738b.gif
