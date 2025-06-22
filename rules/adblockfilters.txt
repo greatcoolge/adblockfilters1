@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf rule、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、GOODBYEADS、1Hosts (Lite)、AdRules DNS List、OISD Big、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、dns-blocklists、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250622001449
-! Last modified: 2025/06/22 00:14:49
-! Blocked Filters: 224438
+! Version: 20250622090552
+! Last modified: 2025/06/22 09:05:52
+! Blocked Filters: 224444
 !
 ###AC_ad
 ###AD_160
@@ -40081,6 +40081,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||plantswith.com^$generichide
 @@||plantyn.com/optiext/optiextension.dll$~third-party
 @@||platform-eu.cloud.coveo.com^$stealth=3p-auth,domain=fiskars.com
+@@||platform.bombas.com/external/gtm.js$script,~third-party
 @@||platform.cloud.coveo.com^$stealth=3p-auth,domain=intel.*
 @@||plausible.io/js/plausible.js$script,domain=sammobile.com
 @@||play-old-pc-games.com/wp-content/plugins/agreeable-vacation/assets/js/advertisement.min.js
@@ -174573,6 +174574,7 @@ noodlemagazine.com#?#.container > noindex:has(> div[style] div.banner-container)
 noon.com###modules-renderer:has([class*="sponsored"])
 noon.com###noon-modules:has([class*="AdBrandVideo"])
 noon.com##.visibilitySensorWrapper:has(.adBannerModule)
+noon.com##[data-qa="plp-product-box"]:has([class^="SponsoredTag"])
 noon.com#$#hide-if-matches-xpath './/div[@class][contains(text(),"Sponsored") or contains(text(),"إعلان")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'
 noon.com#$#hide-if-matches-xpath './/div[@class][contains(text(),"Sponsored") or contains(text(),"إعلان")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]/ancestor::div[contains(@id,"recommendedProducts")][@style]/ancestor::div[@id]/parent::div[contains(@class,"Recommendations")][1]'
 noon.com#$#hide-if-matches-xpath './/div[@class][contains(text(),"Sponsored") or contains(text(),"إعلان")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductCarouselDesktop_emblaSlide")][1]'
@@ -191272,7 +191274,7 @@ theprodkeys.com###adb
 theprodkeys.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 theprovince.com##.widget_pn_dfpad
 theproxy.lol,unblock-it.com,uproxy2.biz###cookieConsentUR99472
-thepublive.com,wionews.com#%#(()=>{let e,t=!1;const n=function(){},o=function(t,n){if("function"==typeof n)try{window.KalturaPlayer?n([]):e=n}catch(e){console.error(e)}};let r;Object.defineProperty(window,"PWT",{value:{requestBids:o,generateConfForGPT:o,addKeyValuePairsToGPTSlots:n,generateDFPURL:n}}),Object.defineProperty(window,"KalturaPlayer",{get:function(){return r},set:function(n){r=n,t||(t=!0,e([]))}})})();
+thepublive.com,wionews.com#%#(()=>{let e,t=!1;const n=function(){},o=function(t,n){if("function"==typeof n)try{window.KalturaPlayer?n([]):e=n}catch(e){console.error(e)}};let r;Object.defineProperty(window,"PWT",{get:()=>({requestBids:o,generateConfForGPT:o,addKeyValuePairsToGPTSlots:n,generateDFPURL:n}),set(){}}),Object.defineProperty(window,"KalturaPlayer",{get:function(){return r},set:function(n){r=n,!t&&e&&(t=!0,e([]))}})})();
 thepublive.com,wionews.com#%#//scriptlet('json-prune', 'conf.enableHeaderBidding')
 thepublive.com,wionews.com#%#//scriptlet('set-constant', 'vgrAdBlock', 'false')
 theqoo.net##.theqoo-counter
@@ -200616,6 +200618,7 @@ wionews.com##.ad_fixed
 wionews.com##.ads-box-300x300
 wionews.com##.ads-box-d90-m300
 wionews.com##body .posrelativebox
+wionews.com##div[class^="ads_adsBlock_"]
 wionews.com,hiphopza.com,gplinks.co,icutlink.com##p[style="text-align: center;"] > a[target="_blank"] > img
 wired.co.uk,wired.com##.ad-height-hold
 wired.com###veil
@@ -212668,6 +212671,7 @@ zzzyk.com###Tinfo
 ||hybridclient.naiadsystems.com/api/v2/jsonlogger
 ||hydrahd.com/js/scripts.js
 ||hypebeast.com/firebase-messaging-sw.js
+||hypemarketing.pl/cdn/fhmm-tracker.js
 ||hypercomments.com/widget/*/analytics.html
 ||hyperdx.io^$third-party
 ||hypnohub.net/assets/hub.js
@@ -222161,6 +222165,7 @@ zzzyk.com###Tinfo
 ||uooyoo.com/hz/*str.js
 ||up-load.io/ds1/js/nt.js
 ||up-load.io/sw.js$xhr,1p
+||up4stream.com/js/anti.js
 ||upaiyun.com/system/post_tile/new_web_banners/
 ||upaiyun.com/wp-content/uploads/2016/12/wenzhangyouce
 ||upcomics.org/k4.gif
@@ -222200,6 +222205,7 @@ zzzyk.com###Tinfo
 ||uprinting.com/muffins/UPTracker-
 ||ups.com/assets/resources/images/affiliate/
 ||ups.com/img/icp.gif
+||ups2up.fun/js/anti.js
 ||upsieutoc.com/images/2020/08/19/bl.jpg
 ||upstract.com/tokei/
 ||upstream.to/google.js
