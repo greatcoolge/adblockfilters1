@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf rule、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、GOODBYEADS、1Hosts (Lite)、AdRules DNS List、OISD Big、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、dns-blocklists、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250627161802
-! Last modified: 2025/06/27 16:18:02
-! Blocked Filters: 155164
+! Version: 20250628001619
+! Last modified: 2025/06/28 00:16:19
+! Blocked Filters: 155174
 !
 ###AC_ad
 ###AD_160
@@ -30436,6 +30436,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 52solution.com,imydl.com##div[class*="banner"]
 52tian.net,starbaby.cn##.bdad
 52vfx.com#@##head_ad
+52wmb.com###popContent
 52wubi.com##.top960
 5315.connector-qa1.marketingcloudqaapis.com$image
 5320.ftp-qa1.marketingcloudqaops.com$image
@@ -32115,6 +32116,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@|wss://zoom.us^$removeparam
 @@|www.daraz.pk^|
 @@|www3.doubleclick.net^|
+@@||*-cf.xvideos-cdn.com^
+@@||*-open-sign.byteimg.com^
+@@||*-open.byteimg.com^
 @@||*.php?id=$subdocument,stealth=referrer,domain=dubznetwork.com
 @@||*ad*.ksyungslb.com^
 @@||*hubst.guru/uploads/$stealth=referrer
@@ -32406,8 +32410,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||cdn*.porno-film.site/vk_video$stealth=referrer
 @@||cdn*.pw/stream2/cdn-*/index.m3u8$stealth=ip|referrer
 @@||cdn*.vb*rexhammond.pw/stream*/cdn*$stealth=ip
-@@||cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js$domain=store.lining.com
-@@||cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js$domain=yfk20.com
 @@||cdn-msp*.18comic*.*^
 @@||cdn-msp*.18comic.*^
 @@||cdn.*.exponea.com/production*/consent?$subdocument,domain=proffsmagasinet.se|staypro.*
@@ -32627,6 +32629,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||extremereportbot.com^$ghide
 @@||eztv.io^$csp=script-src 'self' 'unsafe-inline'
 @@||f*.baidu.com/it/u=*,*&fm=$domain=baidu.com
+@@||f*.market.mi-img.com^
+@@||f*.market.xiaomi.com^
 @@||f4links.*^$ghide
 @@||fang.com/stats/clickm2011.js
 @@||fangcloud.com^$generichide
@@ -32801,7 +32805,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||google-analytics.com/analytics.js$domain=maz-online.de|ostsee-zeitung.de|lvz.de
 @@||google-analytics.com/analytics.js$domain=mediamarkt.*,stealth=referrer,important
 @@||google-analytics.com/analytics.js$domain=mediamarkt.com.tr
-@@||google-analytics.com/analytics.js$domain=mediamarkt.de
 @@||google-analytics.com/analytics.js$domain=mediamarkt.nl
 @@||google-analytics.com/analytics.js$domain=mercedesclub.cz
 @@||google-analytics.com/analytics.js$domain=mgts.ru
@@ -32919,7 +32922,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||google-analytics.com/plugins/ua/ec.js$domain=m.papajohns.ru
 @@||google-analytics.com/plugins/ua/ec.js$domain=mediamarkt.*,stealth=referrer,important
 @@||google-analytics.com/plugins/ua/ec.js$domain=mediamarkt.com.tr
-@@||google-analytics.com/plugins/ua/ec.js$domain=mediamarkt.de
 @@||google-analytics.com/plugins/ua/ec.js$domain=mediamarkt.nl
 @@||google-analytics.com/plugins/ua/ec.js$domain=onul-hoi.com
 @@||google-analytics.com/plugins/ua/ec.js$domain=pult.ru
@@ -33277,7 +33279,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||googletagmanager.com/gtm.js$domain=matsukiyo.co.jp
 @@||googletagmanager.com/gtm.js$domain=maxisciences.com|gentside.*|ohmymag.*
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.com.tr
-@@||googletagmanager.com/gtm.js$domain=mediamarkt.de
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.nl
 @@||googletagmanager.com/gtm.js$domain=megacurioso.com.br
 @@||googletagmanager.com/gtm.js$domain=merrell.com|wolverine.com|catfootwear.com|chacos.com|hytest.com|saucony.com
@@ -33490,6 +33491,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||hh010.com^$generichide
 @@||highcharts.com.cn/highcharts/modules/heatmap.js
 @@||hikmall.com/js/sensorsdata.min.js
+@@||hls*-cf.xnxx-cdn.com^
 @@||hls-live.bdstatic.com/*/stream_$stealth=referrer
 @@||hls05.*.*/hls05$stealth=referrer,xmlhttprequest,domain=kisskh.co
 @@||homegrownfreaks.net^$ghide
@@ -33524,7 +33526,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||igg-games.com^$ghide
 @@||iis1.deliver.ifeng.com/showcode?$domain=v.ifeng.com
 @@||ikea.cn^*/img/ads/
-@@||iknow-pic.cdn.bcebos.com^$stealth=referrer
 @@||ilpuntotecnico.com^$ghide
 @@||images*.imagebam.com/ad^
 @@||images-*.ssl-images-amazon.com/images/*/advertising^$domain=amazon.de|amazon.com|amazon.fr|amazon.it|amazon.es|amazon.co.jp|amazon.co.uk|amazon.ca
@@ -33554,6 +33555,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||infowars.com^$csp=script-src 'self' *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com *.twitter.com *.spot.im
 @@||inkagames.com^$ghide
 @@||insideedition.com^$ghide
+@@||ip*.ahcdn.com^
 @@||ip-*.net/*.mp4$stealth=referrer,domain=animeonline.site
 @@||ip-*.net/*.mp4$stealth=referrer,domain=meusanimes.net
 @@||iphonetweak.fr^$ghide
@@ -33579,7 +33581,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||jpost.com^$csp=script-src 'self' 'unsafe-inline' http: https: blob:
 @@||jpush.cn^$domain=jiguang.cn
 @@||js.monitor.azure.com^$app=com.microsoft.office.officehubrow
-@@||js.tv.itc.cn/gg.seed.js
 @@||jsjiami.com^$generichide
 @@||justlightnovels.com^$ghide
 @@||k.apiairasia.com^$domain=airasia.com,stealth=referrer
@@ -33796,6 +33797,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||p*-ppx-report.byteimg.com^
 @@||p*-ppx-sign.byteimg.com^
 @@||p*-sdbk2-media.byteimg.com^
+@@||p*.qhimg.com^
 @@||p*.toutiaoimg.com^
 @@||pagead2.googleadservices.com^$domain=sportshub.to
 @@||pagead2.googleadservices.com^|$domain=topsporter.net
@@ -33830,7 +33832,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pcva*.manifest.auditude.com/auditude/live/live$domain=adultswim.com
 @@||per*.segmentify.com^$app=com.carrefoursa.ecommerce
 @@||per*.segmentify.com^$domain=mediamarkt.com.tr
+@@||pic*.40017.cn^
 @@||pic*.cdncl.net^$stealth=referrer,domain=cowlevel.net
+@@||pic*.zhimg.com^
 @@||pilet.elron.ee^$extension
 @@||pinduoduo.com/advert/$~third-party
 @@||pingan.com.cn^*/logger.js?
@@ -33965,6 +33969,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||s*.adform.net/banners/scripts/adx.js$domain=delfi.ee
 @@||s*.bpwco.com^$xmlhttprequest,stealth=referrer
 @@||s*.rea.reastatic.net/rs/rui_advertorial.js
+@@||s*.ssl.qhimg.com^
+@@||s*.ssl.qhmsg.com^
+@@||s*.ssl.qhres2.com^
 @@||s-delivery*.mxdcontent.net^$media,stealth=referrer
 @@||s0ft4pc.com^$ghide
 @@||s1-static.msstatic.com/mfe/huya_main/*.html$stealth,domain=huya.com
@@ -33984,6 +33991,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||scontent-*.cdninstagram.com^$stealth=referrer,domain=bella.tw
 @@||scontent-*.cdninstagram.com^$stealth=referrer,domain=wp.pl
 @@||scontent-arn*.cdninstagram.com/v/$stealth=referrer,image,domain=afisha.ru
+@@||se*.360simg.com^
 @@||securepubads.g.doubleclick.net$script,domain=last.fm
 @@||securepubads.g.doubleclick.net/*/gpt.js$domain=starkroboticsfrc.com|cryptednews.space|seoliv.com|blackwoodacademy.org|lifgam.online|crypto-radio.eu|tiktokcounter.net
 @@||securepubads.g.doubleclick.net/*/pubads_impl*.js$script,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in|thecubexguide.com|jytechs.in
@@ -34269,6 +34277,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||static*.akacdn.ru/assets/min/frontend/all.$script,stylesheet,domain=9anime.one
 @@||static*.mfcdn*.xyz^$image,stealth=referrer,domain=mangafire.to
 @@||static*.nytimes.com/newsgraphics/*/_assets/graphics/$xmlhttprequest,elemhide,jsinject,extension
+@@||static-*.xvideos-cdn.com^
 @@||static-*.xvideos.com/*/js/
 @@||static-v*.trbo.com^|
 @@||static.*.com/content/js/pubfig.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com|lightnovelpub.vip
@@ -34289,7 +34298,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||static.doubleclick.net/instream/ad_status.js$domain=tweakcentral.net
 @@||static.doubleclick.net/instream/ad_status.js$domain=youtube.com
 @@||static.doubleclick.net/instream/ad_status.js$script,domain=ignboards.com
-@@||static.hdslb.com/ad-images/$image
 @@||static.mediav.com/js/feed_ts.js$domain=jianshu.com
 @@||static.vrv.co^$media,domain=crunchyroll.com
 @@||statics.zcool.com.cn/track/sensors.$script,~third-party
@@ -34332,6 +34340,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||szhr.com^*ad
 @@||t*.baidu.com^
 @@||t*.daumcdn.net/cafeattach/$stealth=referrer
+@@||t*img.yangkeduo.com^
 @@||t-online.de^$ghide
 @@||t.appsflyer.com^$app=com.badoo.mobile|com.badoo.mobile.premium|com.bumble.app
 @@||tabooporns.com^$ghide
@@ -34341,7 +34350,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||taiba-dz.blogspot.com^$ghide
 @@||tailwindcss.com^$extension
 @@||talkgadget.google.com^$jsinject
-@@||tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js$domain=sm-unsubscribe.intlgame.com
 @@||tangdou.com/sample/share/advert?$domain=tangdoucdn.com
 @@||tanx.com/ex?i=$script,domain=dlkoo.cc
 @@||tanx.com/ex?i=$script,domain=dlkoo.com
@@ -34463,6 +34471,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||vali.cp*.ott.cibntv.net^$domain=m.youku.com,third-party
 @@||valueyourmusic.com^$ghide
 @@||vanclimg.com/js.ashx?*/google-analytics.js$domain=vancl.com
+@@||vdownload-*.sb-cd.com^
 @@||vev.*^$ghide
 @@||vfsglobal.*/*/Track/*^$stealth=donottrack|useragent|ip
 @@||viamichelin.*/jQuery/ntpagetag.js
@@ -34506,7 +34515,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||webapi.ctfile.com/getfile.php$stealth=referrer,domain=ct.999wan.wang
 @@||webbro.*^$ghide
 @@||webserver.one^$ghide
-@@||webstatic.hoyoverse.com/dora/lib/sentry/*/sentry-vue.tracing.es5.min.js$domain=act.hoyolab.com
 @@||webtvhd.com^$ghide
 @@||webzjac.reg.*.com^$stealth=referrer,domain=passport.youdao.com
 @@||webzjcaptcha.reg.*.com/api/$stealth=referrer,domain=passport.youdao.com
@@ -135369,8 +135377,8 @@ mostlyblogging.com,sonyalpharumors.com###custom_html-15
 mosung.com$image
 motachashma.com,ordertracker.com##.partnerbanner
 motaen.com,adultgamestop.com##.baner
-motchill.fail,ohaytv.pro#$#abort-on-property-read sessionStorage
 motchill93.com,trumtruyen.live#$#abort-current-inline-script setTimeout Aff
+motchilli.id,ohaytv.pro#$#abort-on-property-read sessionStorage
 motherless.com$$script[tag-content="_ml_ads_ns"][min-length="4000"][max-length="5000"]
 motohigh.pl,gosc.pl,posty.pl,zalajkowane.pl,kulinarnapolska.org,wypracowania.pl,wroclawskiejedzenie.pl,innpoland.pl,smartage.pl,joemonster.org,natemat.pl,mamadu.pl,forsal.pl,kresy.pl,mambiznes.pl,prnews.pl,weszlo.com#%#//scriptlet("abort-current-inline-script", "parseInt", "/adBlock/")
 motor1.com,motor1.uol.com.br,rideapart.com,insideevs.*##.apb
@@ -145000,7 +145008,7 @@ vidsrc2.*##body > div[style*="position: absolute;"][style*="inset:"][style*="z-i
 vidstream.*##+js(nowoif, !api?call=, 10, obj)
 vidup.*##.sponsored-container
 vidzstore.com,moviesroot.club,kissmanga.*,mangastream.mobi,leechpremium.link###myModal
-viet69.fo,truyengihotnay.com,dualeotruyenc.com,yurineko.my,sexpro.pro,phimsexhay669.pro,cliphot69.beer,doctruyen3qui10.pro,ihentai.cloud,animehay.ceo,hentaivc.com,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,tenmientruyengi.net,vn39phimsexhay.com,phim18hdxx.com,vn4.sexviet88.xyz,demo.14412882.com,sexmup3x.net,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.cam,truyenqqgo.com,clipsexsub3x.net#$#abort-current-inline-script WebAssembly instantiate
+viet69.fo,truyengihotnay.com,dualeotruyenc.com,yurineko.my,sexpro.pro,phimsexhay669.pro,cliphot69.beer,doctruyen3qui10.pro,ihentai.cloud,animehay.ceo,hentaivc.com,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,tenmientruyengi.net,vn40phimsexhay.com,phim18hdxx.com,vn4.sexviet88.xyz,demo.14412882.com,sexmup3x.net,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.cam,truyenqqgo.com,clipsexsub3x.net#$#abort-current-inline-script WebAssembly instantiate
 vietnam.1897pentagram.com$image
 view-cre.capitalone.com$image
 view-csf.capitalone.com$image
@@ -149650,6 +149658,7 @@ zzzyk.com###Tinfo
 ||52che.com/NewLocal/TemplateHtml/headflash1_
 ||52rd.com/Pic/Click/
 ||52rd.com/Pic2/*_600_60
+||52wmb.com/2014js/cn_
 ||53shop.com/ime/*.js
 ||53shop.com/img/*.js
 ||53shop.com/js/dun.js
@@ -153137,6 +153146,7 @@ zzzyk.com###Tinfo
 ||nongjitong.com/adm/
 ||nontonx.com^$replace=/=( +)?Object\.values\(.+\)\.some\(.+=>.+===( +)?false\);/=false;/,document
 ||nontonx.com^$replace=/if \(!blocked\)/if(!0)/,document
+||nontonx.com^$replace=/if \(!passed\(\)\)/if(!1)/,document
 ||nordvpn.com^$cookie=CurrentSession
 ||nordvpn.com^$cookie=FirstSession
 ||nordvpn.com^$cookie=nextbid
