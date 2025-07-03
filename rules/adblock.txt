@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2025-07-02 20:05:13(GMT+8)
-! Total count: 228663
+! ! Version: 2025-07-03 08:13:52(GMT+8)
+! Total count: 228688
  
 ###ADtip
 ###AdBlockDialog
@@ -3998,7 +3998,7 @@ $websocket,domain=wap.yushuwu.cloud
 /cdn-cgi/ping?$image
 /cdn-cgi/rum?
 /cdn-cgi/zaraz/*
-/cdn/shopifycloud/consent-tracking-api/*$domain=embodimentcelestial.com|247lingerie.co|omocat-shop.com|batida.pl
+/cdn/shopifycloud/consent-tracking-api/*
 /cdn_cookie_service.html
 /ce_l.aspx?showid=$third-party
 /cedexis.js
@@ -6560,6 +6560,7 @@ $websocket,domain=wap.yushuwu.cloud
 /sxgg/12.js
 /sxgg/13
 /sxp/i/*$script,third-party
+/sxp/i/*$script,third-party,domain=~linkvertise.com
 /symplr-analytics-
 /sync.gif?partner_
 /sync?visitor_id=
@@ -17189,6 +17190,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||pastes.binbox.io/ad/banner$subdocument
 @@||patrick-wied.at/static/heatmapjs/src/heatmap.js
 @@||pay.citylink.pro/stats/services/$~third-party
+@@||paypal.com.first-party-js.datadome.co^$domain=paypal.com
 @@||paypal.com/xoplatform/logger/api/logger$domain=play.leagueofkingdoms.com
 @@||paypalobjects.com/*/pageView.js$script,domain=paypal.com
 @@||paypalobjects.com/pa/js/min/pa.js
@@ -18552,7 +18554,7 @@ abmedia.io##a[href^="https://ace.io/"]
 abmedia.io##a[href^="https://www.okx.com/"]
 abmedia.io,appinn.com,carrotchou.blog,landiannews.com,laoliublog.cn,woniuyulew.com,zhain8.com##.widget_media_image
 abminbuy.com##body > a[rel="nofollow"] > img
-aboutyou.*#$#hide-if-matches-xpath './/a[@data-product-tile-gallery-mode-hover]/following::button/span[@class][@style]/ancestor::li[contains(@data-testid,"productTileTracker")]'
+aboutyou.*#$#hide-if-matches-xpath './/a[@data-product-tile-gallery-mode-hover]/following::button/span[@class][@style]/ancestor::li[contains(@data-testid,"productTileTracker")]'; aboutyou.*#$#hide-if-has-and-matches-style 'span' 'li[data-testid*="productTileTracker"]' 'button.w1app11q' '/display.*flex/';
 aboutyou.*#$#hide-if-matches-xpath './/a[@data-product-tile-gallery-mode-hover]/following::button/span[@class][@style]/ancestor::li[contains(@data-testid,"productTileTracker")]/parent::ul[@data-testid]/ancestor::section[@style]'
 abp?type=js&session$domain=prosieben.de|sat1.de|kabeleins.de|sixx.de|prosiebenmaxx.de
 abyoc-test2.venafi.testqa.02022024.sfmc-tlsprovisioningqa.com$image
@@ -27245,7 +27247,7 @@ cvati71usklffgoy.avalst.com$image
 cvs.com##.stencil-criteo-shelf
 cvs.com#$#hide-if-contains /Sponsored/ 'cvs-shop-product-shelf-container' 'cvs-shop-product-shelf-container ^^sh^^ * ^^sh^^ section[id] span'
 cvs.com#$#hide-if-contains /Sponsored/ 'div>div *[new-ec-recommendations] ^^sh^^ * ^^sh^^ * ^^sh^^ section[id] ul>li' 'div>div *[new-ec-recommendations] ^^sh^^ * ^^sh^^ * ^^sh^^ section[id] ul>li>* ^^sh^^ div>div.sponsored-container>span'
-cvs.com#$#hide-if-contains-visible-text /(Sponsored)/ 'div[style="width: 25%;"]' 'div[dir^="auto"]'
+cvs.com#$#hide-if-contains-visible-text /(Sponsored)/ 'div[style^="width:"]' 'div[dir^="auto"]'
 cvs.com#$#hide-if-matches-xpath './/div[@class]/*[contains(@shelf-type,"criteo")]/ancestor::div[@class][1]'
 cvs.com#?#div[class*="flex-col"]:-abp-has(>h2:-abp-contains(Sponsored))
 cw.com.tw##.ad--video
@@ -28159,6 +28161,7 @@ ebay.*#$#hide-if-contains-visible-text /Sponsored|Anzeige|Sponsorisé|Sponsorizz
 ebay.*#$#hide-if-contains-visible-text /Sponsored|Anzeige|Sponsorisé|Sponsorizzato|Sponsorowane|Gesponsord|Patrocinado/ 'div[id^="placement"][style^="min-height:144px;"]>div' 'div[data-viewport]>div'
 ebay.*#$#hide-if-matches-xpath './/span[contains(@class,"items-carousel")][contains(.,"Sponsored") or contains(.,"Anzeigen") or contains(.,"Sponsorisés") or contains(.,"Commandités") or contains(.,"Promocionado") or contains(.,"Gesponsord") or contains(.,"Sponsorowane") or contains(.,"Patrocinado") or contains(.,"Sponsorizzati") or contains(.,"贊助")]/ancestor::div[@data-hscroll]/parent::li[1]'
 ebay.*#$#override-property-read inlineScriptEle undefined; hide-if-matches-xpath './/button[contains(@aria-controls,"@container]-2-overlay")][@aria-expanded]/parent::span/ancestor::div[@id][contains(@style,"144px")]';
+ebay.*#$#race start;hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: none/' '/color: rgb\\(0, 0, 0.*; filter: none/';hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: invert/' '/color: rgb\\(0, 0, 0.*; filter: invert/';hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: none/' '/color: rgb\\(255, 255, 255.*; filter: invert/';hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: invert/' '/color: rgb\\(255, 255, 255.*; filter: none/';race stop; hide-if-matches-xpath './/li//div[contains(@class,"s-item__detail")]//div[@aria-labelledby][@style]/div[text()]/ancestor::li'
 ebay.com#$#hide-if-contains-visible-text /Sponsored/ 'div[data-testid="x-pda-placements"]>div>div>div' 'div[data-viewport]>span>div>div ^^sh^^ *'
 ebay.com#$#hide-if-contains-visible-text /Sponsored/ 'div[id*="placement_"]>div' 'div[data-viewport]>span>div[aria-labelledby]>div[aria-hidden]'
 ebay.com#$#hide-if-matches-xpath './/div[@class]/h2[contains(.,"Sponsored")]//ancestor::div[@data-viewdtls][@data-pushed-view="true"]'
@@ -110209,6 +110212,7 @@ ix8.la##div[class^="ADTOPLB_"] > .bd
 ixbt.com##.block__recommend
 ixbt.com##.fc-ab-root
 ixdi1.rebeldino.com$image
+ixdzs.tw##.abg
 ixigua.com##.J_ad
 ixigua.com##.banner-section
 ixueshu.com##a[href^="https://adapi."]
@@ -129750,6 +129754,7 @@ zzzyk.com###Tinfo
 ||2ueb.cn^
 ||2vqgtxw.cn^
 ||2wgolxk.com^
+||2wq9u06jq.com^
 ||2wt.icu^
 ||2xmzazd.cn^
 ||2yjw.com/statics/js/jquery.min.
@@ -136630,7 +136635,7 @@ zzzyk.com###Tinfo
 ||aejfyn.rsd-reisen.de^
 ||aeletheacd.com^
 ||aem-collector.daumkakao.io^
-||aem-kakao-collector.onkakao.net^
+||aem-kakao-collector.onkakao.net^$domain=~kakaotv.daum.net
 ||aem.dickssportinggoods.com^
 ||aem.goinggoinggone.com^
 ||aem.golfgalaxy.com^
@@ -137090,6 +137095,7 @@ zzzyk.com###Tinfo
 ||agcs-knowledge.allianz.com^
 ||agdewasmnjktfrdewqjgdser.top^
 ||agefans.top/js/wap2-jm-ms.js
+||ageismssoning.com^
 ||agency360.io^$third-party
 ||agent-server.sc-api.seaart.ai^
 ||agentanalytics.com^$third-party
@@ -142888,6 +142894,7 @@ zzzyk.com###Tinfo
 ||bakercommunications.actonservice.com^
 ||balanicextreat.com^
 ||baldeagle.e-ma.re^
+||balerdoits.com^
 ||balili2024.top^
 ||balkog.withmoment.co.kr^
 ||ballantine.actonservice.com^
@@ -145759,6 +145766,7 @@ zzzyk.com###Tinfo
 ||cashbeet.com^
 ||cashburners.com^$third-party
 ||cashcount.com^$third-party
+||cashooshut.com^
 ||casisi118.vip^
 ||casl.couch-associates.com^
 ||caspionlog.appspot.com^
@@ -160666,6 +160674,7 @@ zzzyk.com###Tinfo
 ||firebaseinstallations.googleapis.com^$domain=terabox.fun
 ||firebaselogging-pa.googleapis.com^
 ||firebaselogging-pa.googleapis.com^$app=com.sampleapp
+||firebaselogging-pa.googleapis.com^$domain=picsman.ai
 ||firebaselogging.googleapis.com^
 ||firecatfilms.com^$third-party
 ||firecrux.com/track/$xmlhttprequest
@@ -164236,6 +164245,7 @@ zzzyk.com###Tinfo
 ||google.com/apis/gpf_metrics?
 ||google.com/async/ddllog
 ||google.com/ccm/
+||google.com/ccm/collect$domain=picsman.ai
 ||google.com/dssw.js
 ||google.com/gen_204?
 ||google.com/gmp/
@@ -165993,6 +166003,7 @@ zzzyk.com###Tinfo
 ||hawk.makroskop.eu^
 ||hawk.mjsarfatti.com^
 ||hawky.pcgamer.com/js/*/analytics-library-entry-getCustomTrackingId.js
+||hawthorng66.top^
 ||hax.co.id/dist/js/ajax.js
 ||haxddr.crocieraonline.com^
 ||haxdym.min-breeder.com^
@@ -168472,6 +168483,8 @@ zzzyk.com###Tinfo
 ||images.healthlink.rsfh.com^
 ||images.hello.adagio.company^
 ||images.hepsiburada.net/*/web-vitals.*.js
+||images.hepsiburada.net/storefront/storefront/www/assets/scripts/onetrust/onetrust-autoblock-head
+||images.hepsiburada.net/storefront/storefront/www/assets/scripts/webtrekk/
 ||images.hepsiburada.net/webtrekk/webtrekk.js
 ||images.holtcat.com^
 ||images.hq.scorecardrewards.com^
@@ -169122,6 +169135,7 @@ zzzyk.com###Tinfo
 ||incoming.telemetry.mozilla.org^
 ||incompetentjoke.com^$third-party
 ||inconclusiveaction.com^$third-party
+||inconnubammed.shop^
 ||incs.get-go.com^
 ||incs.gianteagle.com^
 ||incs.marketdistrict.com^
@@ -171305,6 +171319,7 @@ zzzyk.com###Tinfo
 ||j198.registercitizen.com^
 ||j282.thetimes-tribune.com^
 ||j2i0.mathon.fr^
+||j2jtq0hpb.com^
 ||j300.dailynews.com^
 ||j348.citizensvoice.com^
 ||j423.oneidadispatch.com^
@@ -172544,7 +172559,7 @@ zzzyk.com###Tinfo
 ||kameleoon.eu^$third-party
 ||kaminari.click^$third-party
 ||kaminoretail.io/tracking/
-||kamp.daum.net^$xmlhttprequest
+||kamp.daum.net^$xmlhttprequest,domain=~kakaotv.daum.net
 ||kampanj.spiris.se^
 ||kampanj.vismaspcs.se^
 ||kampanja.bhtelecom.ba^
@@ -172618,6 +172633,7 @@ zzzyk.com###Tinfo
 ||kaufland.de/uts/events/
 ||kauvqr.schulteherenmode.nl^
 ||kavijaseuranta.fi^$third-party
+||kawxkg.icu^
 ||kaxlfq.testingwithtestcafe.com^
 ||kaxsdc.com^$third-party
 ||kayak.*/vestigo/measure
@@ -173201,6 +173217,7 @@ zzzyk.com###Tinfo
 ||kopsil.com^$third-party
 ||kopzkz.claytonitalia.com^
 ||koqcjd.e-shirt.jp^
+||koreatimes.co.kr/initlib/ktet.js
 ||korewaeroi.com/fukugan_$subdocument
 ||koronapay.com/*/metrika_rus.js
 ||kossog.xyz^
@@ -190723,6 +190740,7 @@ zzzyk.com###Tinfo
 ||pics.wanlibo.com/js/pagemodulestat.js
 ||pics.xgo-img.com.cn^
 ||picshost.pics^$all
+||picsman.ai/jrnl/
 ||picsuperfast.xyz/imageUpload/images/*.gif
 ||picsuperfast.xyz/imageUpload/images/*AD_
 ||picyq.com/index.php/Home/run/get_ad/
@@ -192657,6 +192675,7 @@ zzzyk.com###Tinfo
 ||qayenl.amberholl.ru^
 ||qayqa.com:6868/jquery/
 ||qbaka.net^$third-party
+||qbcyr5tfd.com^
 ||qbermy.daxon.fr^
 ||qbgvgw.angeloni.com.br^
 ||qbhmz3.com^
@@ -194886,6 +194905,7 @@ zzzyk.com###Tinfo
 ||rma.homedepot.com^
 ||rmapco.diadora.com^
 ||rmbehm.junjewelry.com^
+||rmbsfh.icu^
 ||rmc-cx.api.rakuten.co.jp/*/web/events|
 ||rmdvca.belvilla.de^
 ||rmgdapfnccsharpprd.azurewebsites.net^
@@ -212971,6 +212991,7 @@ zzzyk.com###Tinfo
 ||targettur.www.svenskaspel.se^
 ||taringa.net/ajax/track-visit.php
 ||tarnkappe.info^$ping
+||tarotmood.com/img/banner$domain=ixdzs.tw
 ||tarqk5.com^
 ||tarsier.emitremmus.com^
 ||tarsier.kriterie.se^
@@ -213877,6 +213898,7 @@ zzzyk.com###Tinfo
 ||thongke.24h.com.vn^
 ||thonkoirs.com^
 ||thoohizoogli.xyz^
+||thornenotacust.shop^
 ||thoughtmetric.io^$third-party
 ||thraka.openapp.link^
 ||threadloom.com/ga/
@@ -218426,6 +218448,7 @@ zzzyk.com###Tinfo
 ||tranquilplume.com^$third-party
 ||tranquilside.com^$third-party
 ||transact.blackboard.com^
+||transaction-watcher-2.littledata.io^
 ||transactionale.com^$third-party
 ||transform.itemfield.com^
 ||transformer.eisenhorn.com^
@@ -221776,6 +221799,7 @@ zzzyk.com###Tinfo
 ||v2.uyan.cc^
 ||v20.cnnd.vn/index2.html
 ||v225.ksbw.com^
+||v2ex.com/pro/emitter
 ||v2rayssr.com/wp-content/plugins/eazy-
 ||v3cdn.net^$third-party
 ||v402.canoncitydailyrecord.com^
@@ -227061,6 +227085,7 @@ zzzyk.com###Tinfo
 ||yh18h8s.com^
 ||yh20230625tu.com^
 ||yh6u.dealeusedevoyages.com^
+||yhak0o7rtz.com^
 ||yhbdzh.farmasiint.com^
 ||yhbsk.cn^
 ||yhdcdo.crazy-factory.com^
