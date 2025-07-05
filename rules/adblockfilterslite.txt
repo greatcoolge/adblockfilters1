@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf rule、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、GOODBYEADS、1Hosts (Lite)、AdRules DNS List、OISD Big、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、dns-blocklists、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250705001614
-! Last modified: 2025/07/05 00:16:14
-! Blocked Filters: 153195
+! Version: 20250705085913
+! Last modified: 2025/07/05 08:59:13
+! Blocked Filters: 153198
 !
 ###AC_ad
 ###AD_160
@@ -30983,6 +30983,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
 @@$websocket,domain=xvideos.com
 @@&ad_type=$domain=ultimate-guitar.com
+@@&http_referer=$domain=chaopx.com
 @@*$domain=expressurl.net,generichide
 @@*$generichide,domain=faqwiki.*
 @@*$ghide,domain=drivelinks.me|hackshort.me
@@ -32670,7 +32671,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||googletagmanager.com/gtm.js$domain=haisenryakuzu.net
 @@||googletagmanager.com/gtm.js$domain=hancomdocs.com
 @@||googletagmanager.com/gtm.js$domain=happypancake.se|happypancake.fi
-@@||googletagmanager.com/gtm.js$domain=hepsiburada.com
 @@||googletagmanager.com/gtm.js$domain=highsnobiety.com
 @@||googletagmanager.com/gtm.js$domain=hipolink.net
 @@||googletagmanager.com/gtm.js$domain=hobbystock.jp
@@ -44388,7 +44388,7 @@ dtclink.cabitest3.uk$image
 dtcloud.verwin.com$image
 dtf.ru,vc.ru##.layout__right-column > div[class*=" "][style] > div[class*=" "] > div:only-child
 dtnext.in,pornwhite.com,androidappsgame.com##div[class^="adv-"]
-dualeotruyenc.com,m.blogtruyenmoi.com#$#abort-current-inline-script document.addEventListener popunder
+dualeotruyenp.com,m.blogtruyenmoi.com#$#abort-current-inline-script document.addEventListener popunder
 duangks.com###a_d_sidebar
 duba.com,iduba.com,newduba.cn##.left_slidebar_con
 duba.com,iduba.com,newduba.cn,uu114.cn##.fav_box
@@ -142984,7 +142984,7 @@ vidsrc2.*##body > div[style*="position: absolute;"][style*="inset:"][style*="z-i
 vidstream.*##+js(nowoif, !api?call=, 10, obj)
 vidup.*##.sponsored-container
 vidzstore.com,moviesroot.club,kissmanga.*,leechpremium.link###myModal
-viet69.fo,truyengihotnay.com,dualeotruyenc.com,yurineko.my,sexpro.cv,phimsexhay669.pro,cliphot69.beer,doctruyen3qui10.pro,ihentai.cloud,animehay.ceo,hentaivc.com,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,tenmientruyengi.net,vn44phimsexhay.com,phim18hdxx.com,vn4.sexviet88.xyz,demo.14412882.com,sexmup3x.net,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.cam,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#$#abort-current-inline-script WebAssembly instantiate
+viet69.fo,truyengihotnay.com,dualeotruyenp.com,yurineko.my,sexpro.cv,phimsexhay669.pro,cliphot69.beer,doctruyen3qui10.pro,ihentai.cloud,animehay.ceo,hentaivc.com,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,tenmientruyengi.net,vn45phimsexhay.com,phim18hdxx.com,vn4.sexviet88.xyz,demo.14412882.com,sexmup3x.net,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.cam,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#$#abort-current-inline-script WebAssembly instantiate
 vietnam.1897pentagram.com$image
 view-cre.capitalone.com$image
 view-csf.capitalone.com$image
@@ -150247,6 +150247,9 @@ zzzyk.com###Tinfo
 ||images-*.ssl-images-amazon.com/images/*/sf/DAsf-*_.js
 ||images.china.cn^*first/$subdocument
 ||images.jurong.cn/bbs/
+||images.sohu.com/bill/
+||images.sohu.com/cs/
+||images.sohu.com/ytv/*.jpg
 ||imdb.com^$removeparam=/^pf_rd_[a-z]*=/
 ||imdb.com^$removeparam=ref_
 ||imeee.cn/DA_HTML/*.js
