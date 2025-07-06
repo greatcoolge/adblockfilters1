@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf rule、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、GOODBYEADS、1Hosts (Lite)、AdRules DNS List、OISD Big、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、dns-blocklists、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250706090701
-! Last modified: 2025/07/06 09:07:01
-! Blocked Filters: 153193
+! Version: 20250706123737
+! Last modified: 2025/07/06 12:37:37
+! Blocked Filters: 153198
 !
 ###AC_ad
 ###AD_160
@@ -18097,7 +18097,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .lol/sw.js$third-party
 .lol^$domain=sextb.net|javplayer.org
 .lu/ads/
-.m.qiuwu.net^
 .mail.odysee.com/o/$image
 .mailbutler.io/tracking/
 .mailgun.patreon.com/o/$image
@@ -131166,6 +131165,8 @@ m.toutiao.com##.open
 m.toutiao.com##.recommendation-container + div[class]
 m.tv.sohu.com##.btn-xz-app
 m.tv.sohu.com##.js-app-topbanner.actv-banner
+m.tvsou.com##.sogou-temp-hidden
+m.tvsou.com##.story_ad_android
 m.upstream.to$image
 m.v.qq.com##.at-app-banner
 m.v.qq.com##.btn_sharpness
@@ -142340,6 +142341,11 @@ tvportugalhd.org,tvportugalhd.eu##.xbidv468
 tvpparlament.pl,tvp.pl,tvp.info,swipeto.pl#%#//scriptlet('prevent-element-src-loading', 'script', 'hit.gemius.pl')
 tvpparlament.pl,tvp.pl,tvp.info,swipeto.pl#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 tvseans.az,videopoker.com,musescore.com,fap18.net,gamereactor.eu##div[id^="ad_"]
+tvsou.com##.sogou-temp-hidden
+tvsou.com##.sogou-temp-show
+tvsou.com##.story_ad_android
+tvsou.com##.story_ad_content_footer
+tvsou.com##.story_ad_ios
 tvspielfilm.de,tvtoday.de,chip.de,focus.de,fitforfun.de##+js(set, DL8_GLOBALS.enableAdSupport, false)
 tvspielfilm.de,tvtoday.de,chip.de,focus.de,fitforfun.de##+js(set, DL8_GLOBALS.enableHomadDesktop, false)
 tvspielfilm.de,tvtoday.de,chip.de,focus.de,fitforfun.de##+js(set, DL8_GLOBALS.enableHomadMobile, false)
@@ -142757,6 +142763,7 @@ v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.laifeng
 v.youku.com##.youku-advertise-layer
 v.youku.com#%#(()=>{const e="cna",t=()=>null!==document.cookie.match(new RegExp(`^${e}=|; ${e}=`));if(t())return;const o=new MutationObserver((()=>{const o=document.querySelector("preplay-layer > error-layer .preLayer-title");o&&o.textContent.includes("请关闭VPN代理软件或广告拦截插件后重试")&&!t()&&(document.cookie=`${e}=MwCHGEQKugYCAWoLKcbU0UGk;`,window.location.reload())})),n=document.documentElement;o.observe(n,{attributes:!0,childList:!0,subtree:!0}),setTimeout((()=>o.disconnect()),1e4)})();
+v3rmillion.net###sharingPlace
 v4iwxi9uirm1585y.avalst.com$image
 vaem.gene.com$image
 vaem.veeva.gene.com$image
@@ -149449,7 +149456,6 @@ zzzyk.com###Tinfo
 ||e10000.cn/Images/link_td01.gif
 ||e23.cn/js/aaa.js
 ||e3ol.com/inc/
-||e9377f.com^$redirect=noopmp3-0.1s,domain=eastday.com
 ||e9377f.com^$rewrite=abp-resource:blank-mp3,domain=eastday.com
 ||e95da74cd9.*.js^$domain=animefenix.tv
 ||ea3w.com/pv.js
@@ -149912,7 +149918,6 @@ zzzyk.com###Tinfo
 ||googlesyndication.com^$xhr,redirect=noopjs,domain=9to5google.com|9to5mac.com|9to5toys.com|dronedj.com|electrek.co|marketrealist.com
 ||googletagmanager.com^$app=app.shinagawa.listentonovels.androidApp
 ||gotprofits.com^$3p
-||gouhb.com/skin/jww/images/20141029114*.png
 ||gpxz.com/js2/
 ||grandfuckauto.xxx^$3p
 ||graph.facebook.com^$app=cl.android|com.shorts.wave.drama|com.drama.happy.look|com.enjoy.fancynovel.better|com.novel.eromance.ugs|com.novel.estory.free.reader.dreame.gp.us|com.fatix.fatixpro|com.coupang.mobile.eats
@@ -150527,7 +150532,6 @@ zzzyk.com###Tinfo
 ||kayak.com^$cookie=kayak.mc
 ||kayak.com^$cookie=kmkid
 ||kcby.com^$cookie=SUID
-||kdou.com/ad_js.php?adid=
 ||kdslife.com/kds_2023/kafu.
 ||kdslife.com/ui/ad/
 ||kdw*.com/layer/layer.js
@@ -152525,6 +152529,7 @@ zzzyk.com###Tinfo
 ||tv.sohu.com/upload/csad/admaster/$image
 ||tvhay.*/ads/popup-tt.js$~third-party,script
 ||tvnoviny.sk^$cookie=MS_PPID
+||tvsou.com/js/360ad.js
 ||tw*.netcore.co.in^
 ||tweakers.net^$removeparam=nb
 ||tweakers.net^$removeparam=u
