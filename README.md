@@ -85,4 +85,4 @@
 | final-rules | dns | [原始链接](https://raw.githubusercontent.com/greatcoolge/HyperADRules/refs/heads/master/final-rules.txt) | [加速链接1](https://gcore.jsdelivr.net/gh/greatcoolge/adblockfilters1@main/rules/final-rules.txt) | [加速链接2](https://github.boki.moe/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/final-rules.txt) | [加速链接3](https://ghfast.top/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/final-rules.txt) | 2025/07/06 |
 
 ## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=217heidai/adblockfilters&type=Date)](https://star-history.com/#217heidai/adblockfilters&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=greatcoolge/adblockfilters&type=Date)](https://star-history.com/#greatcoolge/adblockfilters&Date)
