@@ -83,3 +83,10 @@
 | qy-Ads-Rule | dns | [原始链接](https://raw.githubusercontent.com/790953214/qy-Ads-Rule/refs/heads/main/black.txt) | [加速链接1](https://gcore.jsdelivr.net/gh/greatcoolge/adblockfilters1@main/rules/qy-Ads-Rule.txt) | [加速链接2](https://github.boki.moe/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/qy-Ads-Rule.txt) | [加速链接3](https://ghfast.top/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/qy-Ads-Rule.txt) | 2025/06/05 |
 | adblock | filter | [原始链接](https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt) | [加速链接1](https://gcore.jsdelivr.net/gh/greatcoolge/adblockfilters1@main/rules/adblock.txt) | [加速链接2](https://github.boki.moe/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/adblock.txt) | [加速链接3](https://ghfast.top/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/adblock.txt) | 2025/07/06 |
 | final-rules | dns | [原始链接](https://raw.githubusercontent.com/greatcoolge/HyperADRules/refs/heads/master/final-rules.txt) | [加速链接1](https://gcore.jsdelivr.net/gh/greatcoolge/adblockfilters1@main/rules/final-rules.txt) | [加速链接2](https://github.boki.moe/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/final-rules.txt) | [加速链接3](https://ghfast.top/https://raw.githubusercontent.com/greatcoolge/adblockfilters1/main/rules/final-rules.txt) | 2025/07/06 |
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=217heidai/adblockfilters&type=Date)](https://star-history.com/#217heidai/adblockfilters&Date)
+
+## 以下是广告
+感兴趣的可以看下，DartNode 免费 VPS, [点击申请](https://dartnode.com?aff=PudgyBurrito637)
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
