@@ -1,11 +1,11 @@
 !
 ! Title: AdBlock Filter Lite
-! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf rule、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、GOODBYEADS、1Hosts (Lite)、AdRules DNS List、OISD Big、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
+! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf rule、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、GOODBYEADS、1Hosts (Lite)、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250709181159
-! Last modified: 2025/07/09 18:11:59
-! Blocked Filters: 149986
+! Version: 20250709194517
+! Last modified: 2025/07/09 19:45:17
+! Blocked Filters: 150016
 !
 ###AC_ad
 ###AD_160
@@ -14910,6 +14910,7 @@
 ##DIV[style^='position: fixed; bottom: 50%; z-index: 19999 !important; ']
 ##DIV[style^='width:100%;height:100%;line-height: 100%;overflow:hidden; margin:auto;border:1px #']
 ##IFRAME[src^='/Banner/index.html'][allowfullscreen='true']
+##IFRAME[src^='https://mydisplay.ctfile.com/popview.php']
 ##IMG#diads
 ##IMG.cupfox[src$='gif']
 ##IMG.lazyload[src='/statics/img/load.gif']
@@ -24413,6 +24414,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /vjslog?
 /vlado7.$script,~third-party
 /vli-platform/adb-analytics@
+/vmind.qqvideo.tc.qq.com^
 /vppdzdrw.js
 /vqa^$domain=pagalguy.com
 /vs-track.js
@@ -122274,6 +122276,7 @@ gnula.cc,series24.nu#$#abort-on-property-read localStorage; abort-on-property-wr
 gnula.nu,pelisnow.to,pelispop.me,tmomanga.com#$#abort-on-property-write JSON.parse
 gnula.nu,xpaja.net#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/
 gnula.se,pelismart.com#$#abort-on-property-read localStorage
+go.10086.cn##.gaiPing
 go.announcekit-mail.com$image
 go.bluetarp.com$image
 go.getdatafi.com$image
@@ -144452,6 +144455,7 @@ zzzyk.com###Tinfo
 ||51cto.com/js/activity_pop.js
 ||51fanli.net/misc/images/invite-v4/banner.gif
 ||51img1.com/v6/my/js/bdm.js
+||51la.net^$third-party
 ||51liucheng.com/js/dialogLogin.js
 ||51miz.com/index.php?m=Ad&
 ||51offer.com/mod/public/talk/
@@ -145068,6 +145072,8 @@ zzzyk.com###Tinfo
 ||api.bilibili.com/x/ad/
 ||api.bilibili.com/x/web-show/res/locs?$~script
 ||api.crossengage.io/api/*/track^
+||api.cupid.qiyi.com/etx?
+||api.cupid.qiyi.com/track2
 ||api.ea3w.com/hits.js
 ||api.job*.ch/public/statistic/teaser/hit
 ||api.kodcloud.com/data/notify/
@@ -145175,6 +145181,7 @@ zzzyk.com###Tinfo
 ||at-s.com^$cookie=_rld_u
 ||atom-ds.com^$3p
 ||atomohd.*/*/banners$image
+||atpanel.com^$image
 ||att.ydss.cn/attachments/portal/
 ||atyun.com/wp-content/themes/xmag/js/ad.js
 ||aucdn.net^$media,domain=clgt.one
@@ -145534,6 +145541,9 @@ zzzyk.com###Tinfo
 ||bluemediafile*.*/imgads/$image,redirect=1x1-transparent.gif,domain=bluemediafiles.*|bluemediafile.*|bluemediadownload.*|urlbluemedia.*|bluedownload.*
 ||bmovies.*/bassets/js/jquery.watch.js$script,1p
 ||bmovies.*/sw.js$script,1p
+||bmp.ali213.net/js/
+||bmp1.ali213.net/js/
+||bmp1.ali213.net/pubjs/index_sc_utf8.js
 ||bmp2.ali213.net/js/
 ||bobo.com/special/$subdocument
 ||bobo.com/special/mod-follow/
@@ -145600,6 +145610,8 @@ zzzyk.com###Tinfo
 ||c2000.cn/c2000/
 ||c4d.cn/api.php?mod=ad&adid=
 ||c4d.cn/template/iscwo_zcool/iscwo/ad/
+||ca.gtimg.com/adplugin/js/adplayer.js
+||ca.gtimg.com/client/
 ||cacheserve.*/promodisplay/
 ||cacheserve.*/promodisplay?
 ||cafepedagogique.net^$removeparam=actCampaignType
@@ -145781,6 +145793,7 @@ zzzyk.com###Tinfo
 ||clarity.ms^$cookie=MUID
 ||cleverbridge.com/*/cleverAnalytics.js^
 ||clewm.net/public/cli_analytics.js$domain=cli.im
+||click.ali213.net/
 ||click^$script,third-party,domain=upshrink.com
 ||clickstream-*.homedepot.com^
 ||client.rum.*.amazonaws.com^
@@ -146057,6 +146070,9 @@ zzzyk.com###Tinfo
 ||deliciousmagazine.pl^$replace=/(^.{1\,150}\(\{).*?"bunch".*?"bidRequestId".*(}\);)/\$1\$2/,script
 ||deliciousmagazine.pl^$replace=/(aabv\d[\s\S]*?.=\(\)=>).===.(\,)/\$1{return}\$2/,script
 ||deliciousmagazine.pl^$replace=/(aabv\d[\s\S]*?.=function\(\)\{)return .===.(\}\,)/\$1return\$2/,script
+||delivery-pc.wasu.cn/d/frontJs/3.0$redirect=noopjs,domain=wasu.cn
+||delivery-pc.wasu.cn/d/frontJs/3.0$rewrite=abp-resource:blank-js,domain=wasu.cn
+||delivery-pc.wasu.cn/d/js/
 ||deloplen.com^$csp=script-src 'none'
 ||depop.com^$cookie=ACTIVITY_TRACKER_PERSISTENT_SESSION_ID
 ||depop.com^$cookie=_px2
@@ -146234,6 +146250,7 @@ zzzyk.com###Tinfo
 ||e10000.cn/Images/link_td01.gif
 ||e23.cn/js/aaa.js
 ||e3ol.com/inc/
+||e9377f.com^$redirect=noopmp3-0.1s,domain=eastday.com
 ||e9377f.com^$rewrite=abp-resource:blank-mp3,domain=eastday.com
 ||e95da74cd9.*.js^$domain=animefenix.tv
 ||ea3w.com/pv.js
@@ -146503,6 +146520,7 @@ zzzyk.com###Tinfo
 ||fpb1.chinacar.
 ||fpdisplay.com/templates/default/js/palyflash_
 ||fpdisplay.com/upload/n_ad/
+||frame.enet.com.cn/a.php
 ||freeadultcomix.com^$badfilter
 ||freepik.*/download.gif?
 ||freepornxxxhd.*/js/exopop.js
@@ -146529,6 +146547,7 @@ zzzyk.com###Tinfo
 ||g.csdnimg.cn/asdf/*/trackad.js|$script,important
 ||g.jinti.com/f/a/a
 ||g.koowo.com^$app=cn.kuwo.player
+||g.pptv.com/game/$subdocument
 ||g.rexian.net.cn/js/
 ||ga.yiche.com/autolog
 ||gads*s.com^
@@ -146916,6 +146935,7 @@ zzzyk.com###Tinfo
 ||hwbusters.com^$cookie=advanced_ads_page_impressions
 ||hwbusters.com^$cookie=advanced_ads_visitor
 ||hwupgrade.it^$cookie=bblastvisit
+||hxsame.hexun.com/
 ||hybase.com/ckjs/
 ||hybase.com/images/hysq99.png
 ||hybbs.com/i/$image,object
@@ -147056,6 +147076,7 @@ zzzyk.com###Tinfo
 ||img.sputnik.*/min/js/libs/ria.analytics.js
 ||img.virscan.org/images/*/ad_
 ||img.xixik.net/custom/section/*/banner-$domain=xixik.com
+||img6.126.net/
 ||imgcache.qq.com/qzone/biz/comm/js/qbs.js
 ||imgdb.cn/item/6098ab56d1a9ae528f16192c.jpg
 ||imgdb.cn/item/66a73333d9c307b7e9dbb6ef.jpg
@@ -147261,7 +147282,9 @@ zzzyk.com###Tinfo
 ||js-js.oss-cn-beijing.aliyuncs.com/mnpc-umeng.js$domain=dianyingim.com
 ||js.*2023*.live^
 ||js.*2023*.xyz^
+||js.ea3w.com/pv.js
 ||js.letvcdn.com/js/*/stats/
+||js.passport.qihucdn.com/11.0.1.js
 ||js.selfimg.com.cn/cna/analytics.js
 ||js.selfimg.com.cn/cna/tracking.min.js
 ||js.selfimg.com.cn/lib/ga/ga.js
@@ -147315,6 +147338,7 @@ zzzyk.com###Tinfo
 ||kayak.com^$cookie=csid
 ||kayak.com^$cookie=kayak.mc
 ||kayak.com^$cookie=kmkid
+||kb-render.alicdn.com/html/*.html
 ||kcby.com^$cookie=SUID
 ||kdslife.com/kds_2023/kafu.
 ||kdslife.com/ui/ad/
@@ -147858,6 +147882,7 @@ zzzyk.com###Tinfo
 ||mycodes.net/js/*.js
 ||mycodes.net/js/hf_txt.js
 ||mycoolmoviez.*/sw.js
+||mydisplay.ctfile.com/$script,subdocument,popup
 ||mydrivers.com/2018/ad/
 ||mydrivers.com/2020/news/8/kkj_msi.gif
 ||mydrivers.com/2021/www/nianhuojie.png
@@ -147926,6 +147951,7 @@ zzzyk.com###Tinfo
 ||newsnow.co.uk^$cookie=nn_uid
 ||newsnow.co.uk^$cookie=nnusrst
 ||newsnow.co.uk^$cookie=uky
+||newspage.xilu.com/model/visitlog.js
 ||newsweekjapan.jp^$cookie=_pbjs_userid_consent_data
 ||newsweekjapan.jp^$cookie=_td
 ||newsweekjapan.jp^$cookie=is_visiter
@@ -148920,6 +148946,7 @@ zzzyk.com###Tinfo
 ||stat.tiara.
 ||static*.365inews.com^
 ||static-*.plista.com/async.js$third-party
+||static-img.threatbook.cn/zhugeio/zhuge.js
 ||static-td*.stfucdn.com/contents/content_sources/*/*DevilsFilm_*-Banner_*.jpg
 ||static.*.com/content/js/abdbundle.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com|lightnovelpub.vip
 ||static.doyouhike.net/partner/
@@ -148928,6 +148955,7 @@ zzzyk.com###Tinfo
 ||static.iqiyi.com/js/pingback/
 ||static.oschina.net/*_banner_$image
 ||static.oschina.net/uploads/space/20*.jpg|$image
+||static.qiyi.com/js/pingback/
 ||static.ws.126.net/*/adTracker.$script
 ||static.ws.126.net/*/js/sspAd.$script
 ||static.ws.126.net/f2e/products/analysis/
@@ -148981,6 +149009,7 @@ zzzyk.com###Tinfo
 ||survivalservers.com^$frame,domain=ads.bdcraft.net
 ||suzihaza.com^$badfilter
 ||svonm.com^$xhr,replace=/"enabled":\s*true/"enabled":false/,domain=desired.de|giga.de
+||swa.gtimg.com/
 ||swissotel.com^$cookie=/^nlbi_/
 ||swissotel.com^$cookie=/incap_/
 ||swoole.com/_images/kundian
@@ -149498,6 +149527,7 @@ zzzyk.com###Tinfo
 ||watchseries.*/wp-content/cache/min/*/scripts/nwm-fcn2.min.js
 ||watchtvseries.*/sw.js$script,1p
 ||wawacity.*/bypass
+||wb.gtimg.com/adwin/
 ||wbiao.cn/common/adapi/
 ||wbiao.cn/common/newsbannerAds/
 ||wbiao.co/src2/js/expand/fudong/
