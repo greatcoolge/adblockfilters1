@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf rule、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、GOODBYEADS、1Hosts (Lite)、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.medium、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250717162015
-! Last modified: 2025/07/17 16:20:15
-! Blocked Filters: 215920
+! Version: 20250718001846
+! Last modified: 2025/07/18 00:18:46
+! Blocked Filters: 215955
 !
 ###AC_ad
 ###AD_160
@@ -28583,6 +28583,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1l1l.to#%#//scriptlet('abort-on-property-read', 'adcash')
 1link.vip##h2 > strong > a[target="_blank"]
 1link.vip##iframe[src^="https://www.youtube.com/"]
+1lou.me,1lou.one,1lou.pro###advert > :not(.card)
 1m3d.com###klp_adtop
 1movies.life###zxc_pops
 1movies.life##.superButton > a[href^="/user/premiummembership"][target="_blank"]
@@ -47925,6 +47926,7 @@ best4you.sk##img[width="560"][height="90"]
 best4you.sk##img[width="690"][height="90"]
 bestbuy.ca##.pencilAd_EE9DV
 bestbuy.ca##.x-productListItem:has([data-automation="sponsoredProductLabel"])
+bestbuy.ca##[class^="sponsoredProdBoxGridArea"]
 bestbuy.ca##div.x-productListItem:has([class^="sponsoredProduct"])
 bestbuy.ca##div[data-automation^="criteo-sponsored-products-carousel-"]
 bestbuy.ca,bestbuy.com##[id^="atwb-ninja-carousel"]
@@ -48883,6 +48885,7 @@ bloomberg.com,speedtest.net##div[data-ad-placeholder]
 bloomberg.com,weatherpro.com,wordfinder.yourdictionary.com##.leaderboard-wrapper
 bloombergadria.com##.banner
 bloomberglinea.com##.arcad-feature-custom
+bloomingdales.com##.carousel-container:has(.header-sponsored-label)
 bloomingdales.com##.sortable-grid-monetization-items
 blphoto.net##.float-ck
 bluedollar.net##div[id^="aub"]
@@ -148156,6 +148159,22 @@ hanyu.baidu.com###download-wrapper
 hanyu.baidu.com###fengchao_els.c-container.card.fengchao-els
 hanyu.baidu.com##.app-promotion-icon
 hanyu.baidu.com##.fengchao-el
+hao.360.cn###background.festival
+hao.360.cn###daily-hotword
+hao.360.cn###festival-theme > .left-entry
+hao.360.cn###festival-theme > .right-entry-wrap
+hao.360.cn###festival_baijian
+hao.360.cn###festival_fly
+hao.360.cn###festival_fly + .couten
+hao.360.cn###iguess
+hao.360.cn###left-ria-fixed
+hao.360.cn###snatch-logo
+hao.360.cn##.applist > .app:nth-last-child(n+2)
+hao.360.cn##.cangbao_redbags
+hao.360.cn##.festival_snatch
+hao.360.cn##.hot-word
+hao.360.cn##.icon-text-nav
+hao.360.cn##.small-obj
 hao.360.cn,hao.360.com###activity
 hao.360.cn,hao.360.com###festival-logoskin
 hao.360.cn,hao.360.com###festival_balloon
@@ -149492,10 +149511,10 @@ homebook.pl,abczdrowie.pl,autokult.pl,dobreprogramy.pl,echirurgia.pl,fotoblogia.
 homebooster.de,newhome.de##+js(acs, document.getElementById, blocker_div)
 homebrewtalk.com,kitchenknifeforums.com,quadraphonicquad.com##.gb-sponsored-wrapper
 homedecoratione.com#@#.advertiser
-homedepot.com###revjet_container
 homedepot.com##.browse-search__pod:has([id^="plp_pod_sponsored"])
 homedepot.com##[id*="sponsored"]
 homedepot.com##section[id^="browse-search-pods-"] > div.browse-search__pod:has(div.product-sponsored)
+homedepot.com,nordstrom.com###revjet_container
 homegrownfreaks.net##.fp-brand
 homehound.com.au##.left-banner
 homemade.adult##.main-container > div[align="center"]
@@ -151128,6 +151147,8 @@ imagetotext.info##.bg-light.mt-2.text-center
 imagetotext.info##div[class^="text-center"][style]
 imagetotext.info#%#//scriptlet('set-constant', 'detectadsbocker', 'false')
 imagetotext.info#@##top_ad
+imagetotext.io##.below-tool-ad
+imagetotext.io##.container > .text-center:has(> .text-center > .adv_text)
 imagetotext.io#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 imagetwist.com###grip
 imagetwist.com##+js(acs, document.getElementsByTagName, "script")
@@ -151351,7 +151372,6 @@ impiego24.it#?#.annunciLavoro > li.boxAnnunci:has(> a[href^="http://go.ketc.it/a
 impiego24.it#?#.annunciLavoro > li.boxAnnunci:has(> a[href^="https://affiliate.across.it/"])
 implbits.com#@#.banner_container
 importantclass.com##.modal:not(#style_important)
-importantclass.com,thevouz.in,smartfityoga.com,mangareleasedate.com###AdbModel
 impressivetimes.com##[class$="-ads"]
 impuls.cz##.r-main
 imresizer.com##.ad-slot-1-fixed-ad
@@ -174645,6 +174665,7 @@ rajahentai.com#?##navigation-menu > ul > li:has(> center > b:contains(Wap Partne
 rajasthan.gov.in#%#//scriptlet("prevent-window-open", "rajadvt")
 rajce.idnes.cz###top-banner
 rajsayt.xyz#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
+rajssoid.online,importantclass.com,thevouz.in,smartfityoga.com,mangareleasedate.com###AdbModel
 rajwap.biz##.bhor-box
 rajwap.biz##.player-bhor-box
 rakuten.ca#@#.google-ads
@@ -187054,9 +187075,11 @@ v.qq.com##.slider_item[href^="http"]:not([href*=".qq."])
 v.qq.com##.svg_icon_client.svg_quick_icon
 v.qq.com##.svg_icon_client.svg_quick_icon > path:nth-of-type(1)
 v.qq.com##.video-card-module > .card-wrap
+v.qq.com##.video-card-wrap[element-params*="ad_creative_id"]
 v.qq.com##a[href*=".renrendai.com"]
 v.qq.com##a[href*=".vip.com"]
 v.qq.com##a[href*="amway.com.cn"]
+v.qq.com#%#//scriptlet('json-prune', 'data.CardList.[].children_list.ad_list data.CardList.[-].params.advertiser_name')
 v.qq.com,news.qq.com##+js(no-fetch-if, /(beacon|trace)\.qq\.com/)
 v.qq.com,news.qq.com##+js(no-xhr-if, snowflake.qq.com)
 v.shensgo.com##body > div[id][class*="animated"][style*="position"][style*="z-index"]
@@ -190786,6 +190809,7 @@ waamradio.com##.elementor-element-f389212
 waaw.*##+js(aopr, doSecondPop)
 waaw.*##+js(nowoif)
 waaw.*##+js(set, arrvast, [])
+waaw.to##+js(nowoif)
 wabetainfo.com##.adsTextHeader
 wabetainfo.com#$##wrapfabtest { height: 1px!important; }
 wacowla.com###home-top-narrow
@@ -197723,6 +197747,7 @@ zzzyk.com###Tinfo
 ||aspku.com/z/
 ||asserts.avple.tv/file/avple-asserts/ad.js
 ||asset.kompas.com/data/*/kgmedia/js/*notif$script
+||assets-jpcust.jwpsrv.com/*/ping.js
 ||assets-prod.sumo.prod.webservices.mozgcp.net/static/gtm-snippet.
 ||assets.adobedtm.com/extensions/*/AppMeasurement$script,domain=medscape.com
 ||assets.adobedtm.com^$app=com.aa.android|uk.co.thetimes|de.spiegel.android.app.spon|com.hilton.android.hhonors
@@ -197980,7 +198005,7 @@ zzzyk.com###Tinfo
 ||azadliq.az/ads/
 ||azarplus.com/wp-content/uploads/*.gif$image,1p
 ||azcentral.com/tangfrag/sports/gaming/bet-best?
-||azcentral.com^$cookie=gnt_ti
+||azcentral.com^$cookie=/^gnt_/
 ||azcentral.com^$cookie=gup_anonid
 ||azcentral.com^$cookie=gup_clientid
 ||azedu.az/share/share.php
@@ -206042,6 +206067,7 @@ zzzyk.com###Tinfo
 ||libs.platform.californiatimes.com/meteringjs/
 ||licai18.com/henyepweb/
 ||licai18.com/pic/article/*.gif
+||licensing.bitmovin.com/impression
 ||licklink.net/js/full-page-script.js$script,redirect=noopjs,important
 ||lidovky.cz^$cookie=kolbda
 ||lien-torrent.com/eticilbup/$image,subdocument,script
@@ -206687,6 +206713,7 @@ zzzyk.com###Tinfo
 ||marketingautomation.services/client/ss.js
 ||marketingautomation.services/koi
 ||marketingautomation.services/net?$third-party
+||marketingplatform.google.com/about/enterprise/$third-party,xmlhttprequest
 ||marketjs.cdn.start.gg/*/v*/game.js$replace=/this\['rewardedVideoResult'\]\(!0x1\);/this['rewardedVideoResult'](!0x0);/
 ||marketools.plus500.com/Widgets/
 ||marketools.plus500.com/feeds/
@@ -209991,6 +210018,7 @@ zzzyk.com###Tinfo
 ||refutationtiptoe.com^$popup
 ||region1.analytics.google.com^$third-party
 ||registercitizen.com/413gkwMT/init.js
+||registry.api.cnn.io/bundles/fave/latest-*.x/js$replace=/prod:{clips:{enabled:!0/prod:{clips:{enabled:!1/,domain=cnn.com
 ||regmedia.co.uk/*/tp.gif
 ||rehs.*.hu^
 ||reibootmac.com/script/rn_event_track_v*.min.js
@@ -210728,6 +210756,8 @@ zzzyk.com###Tinfo
 ||service.geico.com/insite/js/mbox2.js
 ||service.giosg.com^$cookie=gid
 ||service.giosg.com^$cookie=sgid
+||service.hotstar.com^*/midroll
+||service.hotstar.com^*/preroll
 ||service.iwara.tv/*/*.php?zones=
 ||service.iwara.tv/z/z.php
 ||service.prothomalo.com/padma-bridge/for_bangla.html
@@ -213956,6 +213986,8 @@ zzzyk.com###Tinfo
 ||video.onnetwork.tv^$domain=sciaga.pl
 ||video.pemersatu.org/wp-content/cache/autoptimize/js/autoptimize_single_
 ||video.qq.com/checktime?
+||video.qq.com/trpc.vector_layout.page_view.PageService/getPage$jsonprune=\$.data.CardList..children_list.ad_list
+||video.qq.com/trpc.vector_layout.page_view.PageService/getPage$jsonprune=\$.data.CardList[?(has "\$.params.advertiser_name")]
 ||video.rainberrytv.com^$app=msedgewebview2.exe
 ||video.sibnet.ru/my/settings/|
 ||video.steamstatic.com/*/stats/playerevent/?
@@ -214134,6 +214166,8 @@ zzzyk.com###Tinfo
 ||vk.com/rtrg?
 ||vk.com/videostats.php
 ||vk923.com/img/
+||vkcache.com/js/amung_counter.js
+||vkcache.com/js/video.*counter*.js
 ||vkplay.ru/tracker?js=
 ||vkplay.ru/tsmg.js
 ||vkprime.com/player*/vast.js
@@ -214248,6 +214282,7 @@ zzzyk.com###Tinfo
 ||wa.gmx.
 ||wa.slideshare.net/api/v1/events
 ||waaw.ac/cdn-cgi/trace
+||waaw.to/cdn-cgi/trace
 ||waaw1.tv/cdn-cgi/trace
 ||wacowla.com/wp-content/plugins/popover/js/
 ||wafflegirl.com/galleries/banner/$third-party
