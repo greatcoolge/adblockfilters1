@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、1Hosts (Lite)、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.medium、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250720161836
-! Last modified: 2025/07/20 16:18:36
+! Version: 20250721001646
+! Last modified: 2025/07/21 00:16:46
 ! Blocked Filters: 215227
 !
 ###AC_ad
@@ -17250,6 +17250,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/*=e3&*,1|$script,third-party
 .com/*?*&refer=*fmovies.*&adb=
 .com/*?*&refer=*fmovies.*&adb=$all
+.com/*markerclusterer_compiled.js$script,third-party
 .com/0gg/gg*.js
 .com/1?z=$script,third-party
 .com/1clkn/
@@ -17630,7 +17631,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .lol^$domain=sextb.net|javplayer.org
 .lu/ads/
 .m.gxwztv.com^
-.m.muyuge.com^
 .m.qiuwu.net^
 .mail.odysee.com/o/$image
 .mailbutler.io/tracking/
@@ -172289,6 +172289,7 @@ ppe.pl##body .navbar__ad-opera
 ppe.pl##div[class^="banner-"]
 ppe.pl#$#a.opera-bar + .navbar-wrapper { background-image: none !important; }
 ppe.pl#?#.article-list-grid > a[target="_blank"].card:has(> .card > .card__body > .card-body__text > .article-created-at:contains(/^((\n|\t)+)?Reklama((\n|\t)+)?$/))
+ppomppu.co.kr#%#//scriptlet('href-sanitizer', 'a[href^="https://s.ppomppu.co.kr?"][href*="&target="]', '?target', 'base64decode')
 ppsport.com##.slide-img[href^="http"]
 ppssppwiki.com##.mega
 ppssppwiki.com,novelasesp.blogspot.com###HTML8
@@ -207555,7 +207556,6 @@ zzzyk.com###Tinfo
 ||oppfiles.com/common/scriptjs.php
 ||oppfiles.com/script_include.php?id=
 ||oppo.com/api/country
-||opskln.com^$popup
 ||opstag.com^$third-party
 ||optics.org/banners/
 ||opticsky.cn/images/2015/gy-px201
