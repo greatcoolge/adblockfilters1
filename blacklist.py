@@ -339,6 +339,19 @@ class BlackList(object):
             blackList = []
             if len(domainSet_CN) > 100 and len(IPDict_CN) > 100:
                 thread_pool = ThreadPoolExecutor(max_workers=os.cpu_count() if os.cpu_count() > 4 else 4)
+                
+                successList = []
+                for domain in domainList:
+                    if domainDict.get(domain):  # 成功解析
+                        successList.append(domain)
+
+                if successList:
+                    successPath = os.path.join(os.getcwd(), "rules/success.txt")
+                    with open(successPath, "w") as f:
+                        for domain in successList:
+                            f.write(domain + "\n")
+                    logger.info("成功解析域名数量: %d" % len(successList))
+                
                 taskList = []
                 for domain in domainList:
                     if len(domainDict[domain]):
