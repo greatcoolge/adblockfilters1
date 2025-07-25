@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、1Hosts (Lite)、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.medium、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250725001756
-! Last modified: 2025/07/25 00:17:56
-! Blocked Filters: 148284
+! Version: 20250725090945
+! Last modified: 2025/07/25 09:09:45
+! Blocked Filters: 148293
 !
 ###AC_ad
 ###AD_160
@@ -16863,6 +16863,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 -assets/ads.$~script
 -attr.appsflyersdk.com^
 -banner-ads-$~script
+-banner-iklan-
 -bobo_recommend_
 -click-tracker.
 -client-report.honkaiimpact3.com^
@@ -18419,6 +18420,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https:\/\/[a-z]{2}\.[a-z]{7,14}\.com\/r[0-9A-Za-z]{10,16}\/[A-Za-z]{5}$/$script,third-party
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}$/$script,third-party,match-case,domain=moviesjoy.is|rawkuma.com|anichin.top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,third-party,match-case
+/^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,third-party,match-case,domain=bokepindoh.*
 /^https:\/\/[a-z]{6,13}\.(cloud|xyz)\/[A-Za-z0-9_-]{48}[A-Z]{3}$/$document
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,10}\/){0,2}[a-z]{2,}\?(?:[a-z]+=[^&=?\s]*?&)*?id=[12]\d{6}/$match-case,script,third-party,domain=nungxthai.me|pornnungxxx.me|xnxx.health
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,10}\/){0,2}[a-z]{2,}\?(?:[a-z]+=[^&=?\s]*?&)*?id=[12]\d{6}/$script,third-party,match-case
@@ -18485,6 +18487,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https?:\/\/146\.59\.211\.(\d){1,3}.*/$popup,third-party
 /^https?:\/\/[-a-z]{5,12}\.[a-z]{3,6}\/[0-9a-h]{1,17}\?[0-9a-zA-Z]{1,21}=[%0-9a-zA-Z]{200,1300}/$xmlhttprequest,3p,match-case
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$match-case,script,third-party,xmlhttprequest,domain=bokepindo13.yoga
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$third-party,match-case,script,xmlhttprequest
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$third-party,match-case,script,xmlhttprequest,domain=bokepindoh.*
+/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}(?:\?v=\d+)?$/$third-party,script,domain=bokepindoh.*
 /^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$xmlhttprequest,third-party
 /^https?:\/\/[0-9a-z]*\.?[-0-9a-z][-0-9a-z][-0-9a-z]+\.[a-z][a-z]+\.?[a-z]*\/([0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z]+\/)?\/?(article[0-9][0-9][0-9][0-9]\.doc)?\?(cid=[0-9a-z]+&)?[ou]=[0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z](&t=[0-9]+)?&[ou]=[0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z]/$document,match-case
 /^https?:\/\/[0-9a-z]*\.?[-0-9a-z]{3,}\.[a-z]{2,11}\.?[a-z]{0,7}\/(?:[0-9a-z]{6,10}\/)?\/?(?:article\d{4}\.doc)?\?(?:cid=[0-9a-z]+&)?[ou]=[0-9a-z]{7}(?:&t=\d+)?&[ou]=[0-9a-z]{7}/$document,match-case
@@ -18497,8 +18502,11 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https?:\/\/[0-9a-z]{8,}\.xyz\/.*/$~media,third-party,domain=sportcast.life,badfilter
 /^https?:\/\/[a-z-]{6,}\.(?:com?|pro|info|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z0-9]+\.rumormillnews\.com\/images\/(make_my_day.JPG|banner3kevinremade.jpeg|banner3kevinremade.jpeg|africanfamily3.jpg|acm-homeworkshop.jpg)/$domain=rumormillnews.com
+/^https?:\/\/[a-z0-9]{5,15}\.(?:com|net)\/tag\.min\.js$/$third-party,script
+/^https?:\/\/[a-z0-9]{5,15}\.[a-z]{2,3}\/5\/\d{6,7}(?:\?_=\d+|\/\??)?$/$third-party,script,xmlhttprequest,domain=bokepindoh.*
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$match-case,script,third-party,domain=bolly4u.cx|kita.rest|yomovies.golf
 /^https?:\/\/[a-z]{8,15}\.(com|net)\/tag\.min\.js$/$script,3p
+/^https?:\/\/[a-z]{8,15}\.xyz\/$/$xmlhttprequest,third-party
 /^https?:\/\/[a-z]{8,15}\.xyz\/$/$xmlhttprequest,third-party,method=head,to=xyz
 /^https?:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\/.*(\?|&)__cpo=aHR0c/$replace=/__Cpn.prototype.showAds = true;/__Cpn.prototype.showAds = false;/,document,domain=/^\d{1\,3}\.\d{1\,3}\.\d{1\,3}\.\d{1\,3}\$/
 /^https?:\/\/anonymousemail\.me\/[\S]{3,10}\.js$/$important,domain=anonymousemail.me
@@ -36557,6 +36565,7 @@ centos.avadacom.com$image
 centoschina.cn##a[href="https://www.linuxprobe.com/"]
 central.webspecmail.com$image
 centre-val-de-loire.ubilab.me$image
+centris.ca,forums.minecraftforge.net,leaked.cx,nextdoor.com,staradvertiser.com,uploadvr.com##.promo-container
 centris.ca,forums.minecraftforge.net,nextdoor.com,staradvertiser.com,uploadvr.com##.promo-container
 centris.ca,minecraftforge.net##.promo-container
 ceplik.com,udemycoursedownloader.com,articlesjar.com,mocasoft.ro,techno360.in##.kill-adblock-container
