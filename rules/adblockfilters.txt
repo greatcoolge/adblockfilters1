@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、1Hosts (Lite)、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.medium、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250727001653
-! Last modified: 2025/07/27 00:16:53
-! Blocked Filters: 211909
+! Version: 20250727091643
+! Last modified: 2025/07/27 09:16:43
+! Blocked Filters: 211917
 !
 ###AC_ad
 ###AD_160
@@ -35221,6 +35221,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||embed.watchanimesub.net/inc/embed/kampyle.js
 @@||embed.watchanimesub.net/inc/embed/suv4.js
 @@||embed.watchanimesub.net^$script,1p
+@@||embed.wcostream.com^$ghide
 @@||embeddedanalytics.com/updateeakpi.html$domain=brocardi.it
 @@||emerald.omeda.com/npdn/custsrv_login.do
 @@||emoji.gg^$generichide
@@ -136909,6 +136910,8 @@ embed.rtl.hu#%#//scriptlet('set-constant', 'gemiusStream', 'emptyObj')
 embed.rtl.hu#%#//scriptlet('set-constant', 'gemiusStream.event', 'noopFunc')
 embed.viaplay.com#%#//scriptlet('prevent-fetch', 'v.fwmrm.net/ad/g/1')
 embed.watchasian.to#%#//scriptlet("prevent-window-open")
+embed.wcostream.com##+js(rmnt, script, /google_jobrunner|blockAdBlock/)
+embed.wcostream.com##^script:has-text(/google_jobrunner|blockAdBlock/)
 embedgram.com#%#//scriptlet("prevent-window-open")
 embedrise.com#%#//scriptlet('prevent-window-open')
 embedrise.com,mangoporn.net,mangoporn.co,xxxmoviestream.xyz,watchpornfree.info,streamporn.pw###overlays
@@ -169006,6 +169009,8 @@ printablecreative.com##.gda-home-box
 printedelectronicsnow.com###exposeMask
 printedelectronicsnow.com##.globalOverlay
 printscreenshot.com#?#body > div.container > div.fieldset:has(> div.googleAd)
+printweek.in###div-button1-ad
+printweek.in##[class^="ad-section-"]
 prinxy.app##.sticky-footer
 prismmarketingco.com,questloops.com##body > div.site-outer ~ div[id][class*=" "]
 privacysavvy.com###ps-popup
@@ -203588,6 +203593,7 @@ zzzyk.com###Tinfo
 ||naturalnews.com/Javascripts/Jean-Jul.js
 ||naturalnews.com/wp-content/themes/naturalnews-child/$script
 ||nature.com/platform/track/
+||naugaugair.com^$popup
 ||naughtyblog.org/*/*.php|
 ||naughtyblog.org/81bf26be.js
 ||naughtyblog.org/wp-content/cache/minify/1e473.js
@@ -204358,6 +204364,7 @@ zzzyk.com###Tinfo
 ||ottogroup.media/ogm.nitro.
 ||ouest-france.fr/v1/javascripts/*-googletag-
 ||ouest-france.fr/v1/javascripts/*-prebid-
+||oulsaultaulert.com^$popup
 ||ouo.*/js/jbitly.js$script,1p
 ||ouo.*/js/webpush.ma.js$script,1p
 ||ouo.*/sw$script,1p
@@ -207923,6 +207930,7 @@ zzzyk.com###Tinfo
 ||stomp.straitstimes.com/sites/*/js/betterads.min.js
 ||stooq.*/ads/$subdocument,domain=stooq.pl|stooq.com
 ||stooq.*/ads/$subdocument,redirect=noopframe,domain=stooq.pl|stooq.com
+||stoorgouzoy.com^$popup
 ||stopadblock.org/adblocker-deaktivieren$subdocument
 ||storage.de.cloud.ovh.net/v*/*/sarsor/avikingdynamic.js
 ||storage.fshare.vn/images/congtruongit.com_960x128.gif
