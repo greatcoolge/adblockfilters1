@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、1Hosts (Lite)、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.medium、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250728001653
-! Last modified: 2025/07/28 00:16:53
-! Blocked Filters: 211441
+! Version: 20250728091507
+! Last modified: 2025/07/28 09:15:07
+! Blocked Filters: 211451
 !
 ###AC_ad
 ###AD_160
@@ -3308,7 +3308,6 @@
 ###k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I
 ###kargo-player
 ###kfpopupDiv
-###kp-hid-gb.uk-alert
 ###kp-hid-sport-m.fed-part-layout.fed-back-whits.fed-hide-md.uk-alert
 ###kp-mid-sport.fed-back-whits
 ###ks > .DaKuang
@@ -24330,7 +24329,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /yna_stat.js
 /yofi-telemetry-prod.min.js
 /youtubeVideoAnalytic.js
-/youtubei/v*/get_watch?$jsonprune=\$..[adPlacements\, adSlots\, playerAds],domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /youtubei/v*/player?$jsonprune=\$..[adPlacements\, adSlots\, playerAds],domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /yozons-lib/*
 /yozons-lib/*$script,~third-party,domain=bradenton.com
@@ -45252,6 +45250,7 @@ apkmoddone.com#%#//scriptlet('prevent-window-open', '/jump/next.php?', '10', 'ob
 apkmoddone.com#%#//scriptlet('set-attr', '.adsbygoogle', 'data-ad-status', '0')
 apkmoddone.phongroblox.com###fakeDown
 apkmoddone.phongroblox.com#%#//scriptlet('set-constant', 'checkStructure', 'true')
+apkmodget.com##.adv_wrap
 apkmodvn.com#%#//scriptlet('abort-on-property-write', 'tsvdRandomLink')
 apkmodvn.com,softfully.com,gamertweak.com,aastik.in,metrosaga.com##body .adsbygoogle:not(#style_important)
 apkmody.com##.above-ad-unit
@@ -136742,6 +136741,7 @@ embed.watchasian.to#%#//scriptlet("prevent-window-open")
 embed.wcostream.com##+js(rmnt, script, /google_jobrunner|blockAdBlock/)
 embed.wcostream.com##^script:has-text(/google_jobrunner|blockAdBlock/)
 embed.wcostream.com#@#.ad-unit
+embed.wcostream.com#@#.ad-unit:not(.textads)
 embedgram.com#%#//scriptlet("prevent-window-open")
 embedrise.com#%#//scriptlet('prevent-window-open')
 embedrise.com,mangoporn.net,mangoporn.co,xxxmoviestream.xyz,watchpornfree.info,streamporn.pw###overlays
@@ -145327,6 +145327,9 @@ hqq.*##a[onclick="openAuc();"]
 hqq.*,waaw.*##+js(rmnt, script, self == top)
 hqq.*,waaw.*##+js(set, adblockcheck, false)
 hqq.*,waaw.*##^script:has-text(self == top)
+hqq.ac#%#//scriptlet('prevent-element-src-loading', 'script', '/adsbygoogle.js')
+hqq.ac#%#//scriptlet('prevent-element-src-loading', 'script', '/script_')
+hqq.ac#%#//scriptlet('set-constant', 'adblockcheck', 'false')
 hqq.ac,hqq.to,hqq.tv,megaplay.cc,meucdn.vip,netuplayer.top,ntvid.online,waaw.to,wiztube.xyz##a[title="Free money easy"]
 hqq.to##+js(nowoif)
 hqq.to##.asg-vast-overlay
@@ -160771,6 +160774,7 @@ news.bitcoin.com##[style="width: 100%; height: auto; max-width: 300px;"]
 news.bitcoin.com##[style="width: 100%; height: auto; max-width: 690px;"]
 news.bloomberglaw.com##.HeaderAdSpot_height_1B2M2
 news.china.com.cn##.Wrapper > div[style]
+news.cn2che.com##.banner01
 news.cnyes.com##.content-main > div:empty
 news.cnyes.com##.content-main > div:has(> div[id^="div-gpt-"])
 news.cnyes.com##.content-main > div[class]:has(div[id^="div-gpt-ad-"])
@@ -178065,6 +178069,7 @@ thepiratebay.org##a[href^="https://ttf.trmobc.com/"]
 thepiratebay.org##label#d > a[target="_NEW"]
 thepiratebay.org#%#//scriptlet('remove-attr', 'href', '#home > header a[href^="https://"]')
 thepiratebay.party$$a[href="https://www.onlineuserdefender.com/"]
+thepiratebay0.org##a[href^="https://www.get-express-vpn.com/torrent-vpn?a_fid="]
 thepiratebay3.to##.download_buutoon
 thepiratebayorg.org##center > a[href][target="_blank"][rel="nofollow"] > img
 thepiratesproxy.org,pirateproxy.space,tpbproxypirate.com,pirateproxy-bay.com###float
@@ -188111,13 +188116,14 @@ www.youtube.com#$#override-property-read Object.prototype.adPlacementConfig unde
 www.youtube.com#$#override-property-read Object.prototype.renderingContent.instreamVideoAdRenderer undefined;
 www.youtube.com#$#override-property-read ytplayer.config.args.raw_player_response.adPlacements emptyArray; override-property-read ytplayer.config.args.raw_player_response.adSlots emptyArray; override-property-read ytplayer.config.args.raw_player_response.playerAds emptyArray;
 www.youtube.com#%#(()=>{const e={apply:(e,t,n)=>{const o=Reflect.apply(e,t,n);try{o instanceof HTMLIFrameElement&&"about:blank"===o.src&&o.contentWindow&&(o.contentWindow.fetch=window.fetch,o.contentWindow.Request=window.Request)}catch(e){}return o}};Node.prototype.appendChild=new Proxy(Node.prototype.appendChild,e)})();
+www.youtube.com#%#(()=>{const e={construct:(e,t,c)=>{try{const n=t[0];let r=t[1]?.body;if(!n?.includes("youtubei")||!r)return Reflect.construct(e,t,c);if(r.includes('"clientScreen":"WATCH"'))console.log("Intercepted YouTube request:",n),t[1].body=r.replace('"clientScreen":"WATCH"','"clientScreen":"ADUNIT"');else{const n=JSON.parse(r);if(!n.context?.client)return Reflect.construct(e,t,c);n.context.client.clientScreen="ADUNIT",r=JSON.stringify(n),t[1].body=r}}catch(e){console.trace("Error occurred:",e)}return Reflect.construct(e,t,c)}};window.Request=new Proxy(window.Request,e)})();
 www.youtube.com#%#(()=>{const t={apply:(t,o,n)=>{const e=n[0];return"function"==typeof e&&e.toString().includes("onAbnormalityDetected")&&(n[0]=function(){}),Reflect.apply(t,o,n)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,t)})();
-www.youtube.com#%#(()=>{if(Object.getOwnPropertyDescriptor(window.JSON,"stringify").writable)return;const e={construct:(e,c,r)=>{try{const e=c[0],r=c[1]?.body;e?.includes("youtubei")&&r?.includes('"clientScreen":"WATCH"')&&(c[1].body=r.replace('"clientScreen":"WATCH"','"clientScreen":"ADUNIT"'))}catch(e){console.trace("Error occurred:",e)}return Reflect.construct(e,c,r)}};window.Request=new Proxy(window.Request,e)})();
 www.youtube.com#%#(()=>{let t=document.location.href,e=[],n=[],o="",r=!1;const i=Array.prototype.push,a={apply:(t,o,a)=>(window.yt?.config_?.EXPERIMENT_FLAGS?.html5_enable_ssap_entity_id&&a[0]&&a[0]!==window&&"number"==typeof a[0].start&&a[0].end&&"ssap"===a[0].namespace&&a[0].id&&(r||0!==a[0]?.start||n.includes(a[0].id)||(e.length=0,n.length=0,r=!0,i.call(e,a[0]),i.call(n,a[0].id)),r&&0!==a[0]?.start&&!n.includes(a[0].id)&&(i.call(e,a[0]),i.call(n,a[0].id))),Reflect.apply(t,o,a))};window.Array.prototype.push=new Proxy(window.Array.prototype.push,a),document.addEventListener("DOMContentLoaded",(function(){if(!window.yt?.config_?.EXPERIMENT_FLAGS?.html5_enable_ssap_entity_id)return;const i=()=>{const t=document.querySelector("video");if(t&&e.length){const i=Math.round(t.duration),a=Math.round(e.at(-1).end/1e3),c=n.join(",");if(!1===t.loop&&o!==c&&i&&i===a){const n=e.at(-1).start/1e3;t.currentTime<n&&(t.currentTime=n,r=!1,o=c)}else if(!0===t.loop&&i&&i===a){const n=e.at(-1).start/1e3;t.currentTime<n&&(t.currentTime=n,r=!1,o=c)}}};i();new MutationObserver((()=>{t!==document.location.href&&(t=document.location.href,e.length=0,n.length=0,r=!1),i()})).observe(document,{childList:!0,subtree:!0})}))})();
 www.youtube.com#%#(()=>{window.JSON.parse=new Proxy(JSON.parse,{apply(r,e,t){const n=Reflect.apply(r,e,t);if(!location.pathname.startsWith("/shorts/"))return n;const a=n?.entries;return a&&Array.isArray(a)&&(n.entries=n.entries.filter((r=>{if(!r?.command?.reelWatchEndpoint?.adClientParams?.isAd)return r}))),n}});})();
 www.youtube.com#%#//scriptlet('adjust-setTimeout', '[native code]', '17000', '0.001')
 www.youtube.com#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{try{document.currentScript.remove()}catch{}const t={apply:(t,e,o)=>{const n=o[0];return"function"==typeof n&&n.toString().includes("onAbnormalityDetected")&&(o[0]=function(){}),Reflect.apply(t,e,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,t)})();')
 www.youtube.com#%#//scriptlet('trusted-replace-outbound-text', 'JSON.stringify', '"clientScreen":"WATCH"', '"clientScreen":"ADUNIT"')
+www.youtube.com#%#//scriptlet('trusted-replace-outbound-text', 'JSON.stringify', 'isWebNativeShareAvailable":true}}', 'isWebNativeShareAvailable":true},"clientScreen":"ADUNIT"}')
 www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read playerResponse.adPlacements undefined;
 www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read ytInitialPlayerResponse.adPlacements undefined;
 www.youtube.com,m.youtube.com,youtube-nocookie.com#$#skip-video 'video.html5-main-video' './/div[@id="ytlr-player__player-container"]//div[contains(@class,"ad-interrupting") or contains(@class,"ad-showing")]';
@@ -189632,7 +189638,7 @@ youtube.com##ytd-engagement-panel-section-list-renderer[target-id^="engagement-p
 youtube.com##ytd-item-section-renderer > .ytd-item-section-renderer > ytd-ad-slot-renderer.style-scope
 youtube.com##ytd-rich-item-renderer:has(> #content > ytd-ad-slot-renderer)
 youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.adSlots', 'playerResponse.streamingData.serverAbrStreamingUrl')
-youtube.com#%#//scriptlet('json-prune-fetch-response', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/playlist\?list=|player\?|watch\?[tv]=|get_watch\?/')
+youtube.com#%#//scriptlet('json-prune-fetch-response', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/playlist\?list=|player\?|watch\?[tv]=/')
 youtube.com#%#//scriptlet('json-prune-xhr-response', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/playlist\?list=|\/player(?!.*(get_drm_license))|watch\?[tv]=|get_watch\?/')
 youtube.com#%#//scriptlet('set-constant', 'google_ad_status', '1')
 youtube.com#?#ytd-rich-grid-renderer ytd-rich-item-renderer div > ytd-display-ad-renderer:upward(2)
@@ -195242,6 +195248,7 @@ zzzyk.com###Tinfo
 ||clicktime.symantec.com^$script,third-party
 ||clickx.io^$third-party
 ||client.rum.*.amazonaws.com^
+||client.smartpushedm.com/eclytics/n.gif
 ||clients.ragezone.com/serve.php/display/
 ||clientstream.launchdarkly.com/eval/
 ||clik.pw/bomb.png$popup
@@ -197142,6 +197149,7 @@ zzzyk.com###Tinfo
 ||eventcom.api.np.km.playstation.net/event^
 ||eventful.com/apps/generic/$image,third-party
 ||eventhub.au01.miro.com/api/stream
+||eventhub.us01.miro.com/api/stream
 ||eventiavversinews.it/wp-json/vinkmag/*/visitortrack/
 ||events*.cre.ma^
 ||events-*.op.hicloud.com^
@@ -199363,6 +199371,7 @@ zzzyk.com###Tinfo
 ||hqporn.su/myvids/
 ||hqpornstream.com/pub/
 ||hqq.*/cdn-cgi/trace$xhr,1p,important
+||hqq.ac/cdn-cgi/trace
 ||hqq.to/cdn-cgi/trace
 ||hqq.to/js/script-*js
 ||hqq.tv/cdn-cgi/trace
@@ -207140,7 +207149,6 @@ zzzyk.com###Tinfo
 ||st.kp.yandex.net/images/bnnr/$domain=kinopoisk.ru
 ||st.mngbcn.com/scripts/tagmanager.js
 ||st.ozone.ru/s3/ozon-tag-manager/
-||st.sooplive.co.kr/api/da_block_api.php
 ||st.work.ua/js/banners/global-counter-min_*.js
 ||st.work.ua/js/send_stat-min_*.js
 ||st.work.ua/js/site_counters-min_*.js
@@ -208210,6 +208218,7 @@ zzzyk.com###Tinfo
 ||theporndude.com/graphics/tpd-$third-party
 ||theporndude.com/promo/$third-party
 ||thepresetsroom.com/wp-content/uploads/*/daddd$script
+||theproxy.to/x.js
 ||therealreal.com/ev56mY37/init.js
 ||theseotools.net/sponsors/$image
 ||theseoultimes.com/ST/banner/
@@ -208540,6 +208549,7 @@ zzzyk.com###Tinfo
 ||torrentdownloads.cc/logo_d*.jpg
 ||torrentdownloads.cc/templates/new/images/one*.gif
 ||torrentdownloads.me/templates/new/images/titl_tag2.jpg
+||torrentdownloads.theproxy.to/templates/new/images/titl_tag2.jpg
 ||torrenteditor.com/img/graphical-network-monitor.gif
 ||torrentfreak.com/images/nordvpn-disc.jpeg
 ||torrentfreak.com/wp-content/banners/
