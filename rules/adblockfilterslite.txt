@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、uBlock filter、EasyList、EasyList China、EasyPrivacy、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、1Hosts (Lite)、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、DigitalSide Threat-Intel、light、cpbl-abp-list、tif.medium、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250731091113
-! Last modified: 2025/07/31 09:11:13
+! Version: 20250731162127
+! Last modified: 2025/07/31 16:21:27
 ! Blocked Filters: 89795
 !
 ###AC_ad
@@ -15145,10 +15145,6 @@
 ##a[href$="/hjdt9.com"]
 ##a[href$="/xha77.com"]
 ##a[href*="&maxads="]
-##a[href*="-load"][href*=".com/content/"]:has(+ amp-pixel + div[aria-hidden="true"]) > amp-img.aspw
-##a[href*="-load"][href*=".com/content/"][style$="margin:0px auto;text-decoration:none;"]
-##a[href*="-load"][href*=".com/content/"][style$="width:   100%;height:   100%"]
-##a[href*="-load"][href*=".com/content/"][style="display:inline-block;"]
 ##a[href*=".68hantang.com"]
 ##a[href*=".adsrv.eacdn.com/"]
 ##a[href*=".asd257642.com:"]
@@ -15249,6 +15245,10 @@
 ##a[href*="?register="] > img[width="100%"]
 ##a[href*="aHR0cHM6Ly9xc2Z2bDExLmFsYXp2LmNvbS8zNzA4Lmh0bWw="]
 ##a[href*="bjty"] > img[src*="imgsrc.baidu.com"]
+##a[href*="html-load.com"]:has(+ amp-pixel + div[aria-hidden="true"]) > amp-img.aspw
+##a[href*="html-load.com"][style$="margin:0px auto;text-decoration:none;"]
+##a[href*="html-load.com"][style$="width:   100%;height:   100%"]
+##a[href*="html-load.com"][style="display:inline-block;"]
 ##a[href*="kdocs.cn"] > img[src*=".ax1x.com/"]
 ##a[href*="kdocs.cn"] > img[src*="sstv."]
 ##a[href*="xchina.click/prepare."]
@@ -15350,15 +15350,14 @@
 ##body > a[href^="https://s.click.aliexpress.com"][target="_blank"][rel="noopener noreferrer"]
 ##body > a[href^="https://www.amazon."][href*="tag=adshield"][target="_blank"]
 ##body > a[id*='hudie_']
-##body > a[target="_blank"][rel="noopener noreferrer"][href^="https://"][href*="/content/"][href*="/0/"]
 ##body > div#bottommob.bottommob
 ##body > div#dontfoid
 ##body > div#fixedban
 ##body > div#inplayer[align="center"]
 ##body > div.demo-wrapper[style="display:none;"] + div[id][class]
 ##body > div:not([class]):not([id]) > script + div[id^="img_"] > div[id^="img_"][visibility="visible"]
-##body > div:not([class]):not([id]) > script + div[id^="img_"] > script + span[id^="img_"][style] > a[href*="-load"][href*=".com/content/"]
-##body > div[class^="img_"] > a[href*="-load"][href*=".com/content/"][target="_blank"]
+##body > div:not([class]):not([id]) > script + div[id^="img_"] > script + span[id^="img_"][style] > a[href*="html-load.com"]
+##body > div[class^="img_"] > a[href*="html-load.com"][target="_blank"]
 ##body > div[class^="img_"] > style + div[id^="img_"] + div[class^="img_"]
 ##body > div[class^="img_"][id^="img_"] > button[type="button"][class^="img_"][id^="img_"]
 ##body > div[id^="img_"] > div[style$="height:280px;"][class*=" img_"]
@@ -15370,11 +15369,11 @@
 ##body > div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
 ##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 ##body > div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"][style*=";cursor:pointer"]:empty
-##body > iframe[src*="-load"][src*=".com/content/"] + div[id^="img_"]
-##body > iframe[src*="-load"][src*=".com/content/"] ~ script + div[class^="img_"]
-##body > script + div + div[style="display:inline"] > a[target="_blank"][href*="-load"][href*=".com/content/"]
+##body > iframe[src*="html-load.com"] + div[id^="img_"]
+##body > iframe[src*="html-load.com"] ~ script + div[class^="img_"]
+##body > script + div + div[style="display:inline"] > a[target="_blank"][href*="html-load.com"]
 ##body > script + script + script + div + div[style="display:inline"] > div:not([id]):not([class])
-##body > script + script + script + div + div[style="display:inline"] > div[class^="img_"][id^="img_"] > div[class^="img_"] > div[class^="img_"] > div[class*=" img_"] > a[href*="-load"][href*=".com/content/"][target="_blank"][rel="nofollow"]
+##body > script + script + script + div + div[style="display:inline"] > div[class^="img_"][id^="img_"] > div[class^="img_"] > div[class^="img_"] > div[class*=" img_"] > a[href*="html-load.com"][target="_blank"][rel="nofollow"]
 ##body > script[src]:first-child + div:not([id]):not([class]) > script + script[src] + script + div[id^="img_"]
 ##body > script[src]:first-child + script + div:not([id]):not([class]) > script + script[src] + script + div[id^="img_"]
 ##body ~ div[style^="z-index: 2147483647 !important; position: fixed !important; width:"]
@@ -15490,7 +15489,7 @@
 ##div.stui-player.col-pd DIV[style='text-align:center']
 ##div.swiper-slide > A[rel='nofollow noopenner']
 ##div.synopsisArea > a[id*='hudie_']
-##div:not([class]) + style + div[class^="img_"] > img[src*=".com/content/"]
+##div:not([class]) + style + div[class^="img_"] > img[src*="html-load.com"]
 ##div[align="center"] > a[href^="/url/"] > img[src*=".alicdn.com"]
 ##div[align="center"] > a[href^="/url/"] > img[src*=".qpic.cn"]
 ##div[aria-label="Ads"]
@@ -15628,7 +15627,7 @@
 ##div[role="listitem"] > div > div > .bannerliststyle
 ##div[style$="-10000px; position: absolute;"] + div[id^="img_"]
 ##div[style$="overflow: hidden; width: 300px; height: 250px; margin: 0px auto;"]
-##div[style$="text-indent: 0px !important;"] > a[href*="-load"][href*=".com/content/"]
+##div[style$="text-indent: 0px !important;"] > a[href*="html-load.com"]
 ##div[style*="box-shadow: rgb(136, 136, 136) 0px 0px 12px; color: "]
 ##div[style*="left: 0px; z-index: 1000000000"] > div > div[id^="img_"]
 ##div[style=" max-width:990px; margin:0 auto;"] > a > img[height="120px"]
@@ -15649,7 +15648,7 @@
 ##div[style^="position:absolute;left:0px;"] + div[class^="img_"]
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="transition-duration:0ms!important;margin:0px!important;padding:0px!important;border:none!important;position:absolute!important;top:0px!important;"]
-##div[style^="v"] > a[href*="-load"][href*=".com/content/"][target][style="text-decoration:none;"]
+##div[style^="v"] > a[href*="html-load.com"][target][style="text-decoration:none;"]
 ##div[style^="width: 300px; height: 256px;"][id^="img_"]
 ##div[x-frame-height$="50"] > div[style="position:absolute;display:none;"] + meta + meta + div[class^="img_"]
 ##div[x-frame-height="100"] > div[style="position:absolute;display:none;"] + meta + meta + div[class^="img_"]
@@ -15677,10 +15676,10 @@
 ##iframe.ad-frame
 ##iframe[id^="img_"][style^="cursor: pointer; display: block; position: absolute; overflow: hidden; margin: 0px; padding: 0px; pointer-events: auto; opacity: 0.8;"]
 ##iframe[scrolling="no"][sandbox*="allow-popups allow-modals"][style^="width: 100%; height: 100%; border: none;"]
-##iframe[src*="-load"][src*=".com/content/"] + div[id^="img_"]:empty
-##iframe[src*="-load"][src*=".com/content/"][style="display:none"][aria-hidden="true"] + div:not([class]):not([id])
 ##iframe[src*=".xxmh"][src*="?u="]
 ##iframe[src*="content-loader.com/"] + style + div
+##iframe[src*="html-load.com"] + div[id^="img_"]:empty
+##iframe[src*="html-load.com"][style="display:none"][aria-hidden="true"] + div:not([class]):not([id])
 ##iframe[src*="html-load.com/"] + style + div
 ##iframe[src="javascript:false"] ~ div[style="display:inline"]
 ##iframe[src^="//ad.a-ads.com/"]
@@ -15718,7 +15717,6 @@
 ##img[onclick^="window.open"][src*="pc.qq.com"]
 ##img[src$=".gif"][style="width:100%;max-width: 960px;height:45px;margin-bottom:2px;"]
 ##img[src$="/img/tianbo.gif"]
-##img[src*="-load"][src*=".com/content/"][width="100%"][alt=""][style="display: block;"]
 ##img[src*=".c-ctrip.com"][style="width:100%;height:70px;"]
 ##img[src*=".jd.com"][style="width:100%;height:70px;"]
 ##img[src*=".meituan.net"][style="width:100%;height:70px;"]
@@ -15726,11 +15724,12 @@
 ##img[src*=".qpic.cn"][width="980"][height="80"]
 ##img[src*=".sinaimg."][style="width:1025px;height:80px"]
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
-##img[src*="content-loader.com/"][style^="border-style:"]
-##img[src*="content-loader.com/"][style^="position: absolute; left: 0px;"]
+##img[src*="content-loader.com"][style^="border-style:"]
+##img[src*="content-loader.com"][style^="position: absolute; left: 0px;"]
 ##img[src*="counter.yadro.ru"]
-##img[src*="html-load.com/"][style^="border-style:"]
-##img[src*="html-load.com/"][style^="position: absolute; left: 0px;"]
+##img[src*="html-load.com"][style^="border-style:"]
+##img[src*="html-load.com"][style^="position: absolute; left: 0px;"]
+##img[src*="html-load.com"][width="100%"][alt=""][style="display: block;"]
 ##img[src^="//counter.ukr.net/"]
 ##img[width="240"][height="400"]
 ##img[width="240px"][height="400px"]
@@ -15744,9 +15743,9 @@
 ##ins[class^="img_"][style^="display:inline-block;"]
 ##ins[id^="img_"][style*="--gn-ov-ad-height"]
 ##link + div[class^="img_"][style="width: 300px; height: 250px;"]
-##link + style + script + a[href*="-load"][href*=".com/content/"]
-##link[rel="stylesheet"][href*="-load"][href*=".com/content/"] + script + script + div[id^="img_"]
-##link[rel="stylesheet"][href*="-load"][href*=".com/content/"][media="screen"] + script + div[class^="img_"]
+##link + style + script + a[href*="html-load.com"]
+##link[rel="stylesheet"][href*="html-load.com"] + script + script + div[id^="img_"]
+##link[rel="stylesheet"][href*="html-load.com"][media="screen"] + script + div[class^="img_"]
 ##meta + style + div[class^="img_"]
 ##meta + title + script + div[id^="img_"]
 ##meta + title + script + script + div[id^="img_"]
@@ -15766,8 +15765,8 @@
 ##script[id^="img_"] + div[id^="img_"]
 ##script[name="scrbnr"] + div[class^="img_"]
 ##script[src$="/base.js"] + #couplet
-##script[src*="-load"][src*=".com/content/"] + div[id^="img_"]:empty
-##script[src*="-load"][src*=".com/content/"] + div[id^="img_"][style="width: auto;"]
+##script[src*="html-load.com"] + div[id^="img_"]:empty
+##script[src*="html-load.com"] + div[id^="img_"][style="width: auto;"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##secion#ly LI[role='group'],secion#ly > H2
 ##section > SPAN[style='display: block; clear: both; overflow: hidden;']
@@ -15785,7 +15784,7 @@
 ##style + .topd
 ##style + .topd + .bottomd
 ##style + .vdgdo
-##style + script[src*="-load"][src*=".com/content/"] + script + div[id^="img_"]
+##style + script[src*="html-load.com"] + script + div[id^="img_"]
 ##style + title + script + div[id^="img_"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 ##td[id^="td_"] > a[href^="/htmm/"]
@@ -15796,7 +15795,7 @@
 ##vg-pause-ads
 ##vg-pause-f
 ##video[class^="img_"][playsinline]
-##video[poster*="-load"][poster*=".com/content/"]
+##video[poster*="html-load.com"]
 ##zeus-ad
 #%#//scriptlet('no-protected-audience')
 #%#//scriptlet('no-topics')
@@ -17462,6 +17461,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .lol/sw.js$third-party
 .lol^$domain=sextb.net|javplayer.org
 .lu/ads/
+.m.qiuwu.net^
 .mail.odysee.com/o/$image
 .mailbutler.io/tracking/
 .mailgun.patreon.com/o/$image
@@ -26161,7 +26161,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://gtm.*.js?st=
 ://gtrack.*.com/dye?
 ://gtrack.*/dye
-://html-load.com/content/
+://html-load.com/article/
 ://html-load.com/loader.min.js
 ://html-load.com/loader.min.js$urltransform=/loader\.min\.js/error.js/,domain=~dogdrip.net|~infinityfree.com|~smsonline.cloud
 ://insights-collector.
@@ -27410,7 +27410,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||cy.com^$generichide
 @@||d*-magic.static.yximgs.com^
 @@||d*.static.yximgs.com^
-@@||dailymotion.com^$ghide
 @@||dailythanthi.com^$ghide
 @@||damnripped.com^$ghide
 @@||darkw.pl^$ghide
@@ -67891,6 +67890,7 @@ ithome.com#?#.placeholder:-abp-has(> a > .plc-con > .plc-footer > .tip-gray)
 ithome.com#?#li:-abp-has(>.block a[href*="/lapin."])
 ithome.com,zhihu.com##.AdblockBanner
 itijobalert.in,edukaroo.com##div[id*="-Ads"]
+itmedia.co.jp,mag.osdn.jp##div[id^="logly-lift-"]
 itopmusic.com,brokensilenze.net,financeyogi.net,satcesc.com,quatvn.club,audiotools.in,insider-gaming.com,bg-gledai.co##body > script + div[class][style="display:none;"] + div[id][class*=" "]
 itopmusics.com,novelasligeras.net,4horlover.com#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'pagead2.googlesyndication.com')
 itrwrestling.com,tjrwrestling.net##div[ad-slot]
@@ -89775,8 +89775,8 @@ zzzyk.com###Tinfo
 ~car.kdslife.com,enet.com.cn,fjsen.com,hupu.com,kdslife.com,~my.hupu.com,mysteel.com,news.cnyes.com,pchome.net,rznews.cn##div[class^="ad"]
 ~cbachina.sports.sohu.com,sohu.com##sohuadcode
 ~dogdrip.net,~infinityfree.com,~smsonline.cloud##*:not(body) > a[href^="https://07c225f3.online/content"]
-~dogdrip.net,~infinityfree.com,~smsonline.cloud##*:not(body) > a[href^="https://content-loader.com/content"]
-~dogdrip.net,~infinityfree.com,~smsonline.cloud##*:not(body) > a[href^="https://html-load.com/content"]
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##*:not(body) > a[href^="https://content-loader.com/article"]
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##*:not(body) > a[href^="https://html-load.com/article"]
 ~dogdrip.net,~infinityfree.com,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2502032353000"]
 ~fishmsg.net,~briian.com##.a_pt
 ~google.com,~google.ad,~google.ae,~google.com.af,~google.com.ag,~google.com.ai,~google.al,~google.am,~google.co.ao,~google.com.ar,~google.as,~google.at,~google.com.au,~google.az,~google.ba,~google.com.bd,~google.be,~google.bf,~google.bg,~google.com.bh,~google.bi,~google.bj,~google.com.bn,~google.com.bo,~google.com.br,~google.bs,~google.bt,~google.co.bw,~google.by,~google.com.bz,~google.ca,~google.cd,~google.cf,~google.cg,~google.ch,~google.ci,~google.co.ck,~google.cl,~google.cm,~google.cn,~google.com.co,~google.co.cr,~google.com.cu,~google.cv,~google.com.cy,~google.cz,~google.de,~google.dj,~google.dk,~google.dm,~google.com.do,~google.dz,~google.com.ec,~google.ee,~google.com.eg,~google.es,~google.com.et,~google.fi,~google.com.fj,~google.fm,~google.fr,~google.ga,~google.ge,~google.gg,~google.com.gh,~google.com.gi,~google.gl,~google.gm,~google.gp,~google.gr,~google.com.gt,~google.gy,~google.com.hk,~google.hn,~google.hr,~google.ht,~google.hu,~google.co.id,~google.ie,~google.co.il,~google.im,~google.co.in,~google.iq,~google.is,~google.it,~google.je,~google.com.jm,~google.jo,~google.co.jp,~google.co.ke,~google.com.kh,~google.ki,~google.kg,~google.co.kr,~google.com.kw,~google.kz,~google.la,~google.com.lb,~google.li,~google.lk,~google.co.ls,~google.lt,~google.lu,~google.lv,~google.com.ly,~google.co.ma,~google.md,~google.me,~google.mg,~google.mk,~google.ml,~google.com.mm,~google.mn,~google.ms,~google.com.mt,~google.mu,~google.mv,~google.mw,~google.com.mx,~google.com.my,~google.co.mz,~google.com.na,~google.com.nf,~google.com.ng,~google.com.ni,~google.ne,~google.nl,~google.no,~google.com.np,~google.nr,~google.nu,~google.co.nz,~google.com.om,~google.com.pa,~google.com.pe,~google.com.pg,~google.com.ph,~google.com.pk,~google.pl,~google.pn,~google.com.pr,~google.ps,~google.pt,~google.com.py,~google.com.qa,~google.ro,~google.ru,~google.rw,~google.com.sa,~google.com.sb,~google.sc,~google.se,~google.com.sg,~google.sh,~google.si,~google.sk,~google.com.sl,~google.sn,~google.so,~google.sm,~google.sr,~google.st,~google.com.sv,~google.td,~google.tg,~google.co.th,~google.com.tj,~google.tk,~google.tl,~google.tm,~google.tn,~google.to,~google.com.tr,~google.tt,~google.com.tw,~google.co.tz,~google.com.ua,~google.co.ug,~google.co.uk,~google.com.uy,~google.co.uz,~google.com.vc,~google.co.ve,~google.vg,~google.co.vi,~google.com.vn,~google.vu,~google.ws,~google.rs,~google.co.za,~google.co.zm,~google.co.zw,~google.cat#%#function urchinTracker() {};
