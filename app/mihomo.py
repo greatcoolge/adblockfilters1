@@ -36,8 +36,8 @@ class Mihomo(APPBase):
                 f.write("  # Homepage: %s\n"%(self.homepage))
                 f.write("  # Source: %s/%s\n"%(self.source, os.path.basename(fileName)))
                 f.write("  # Version: %s\n"%(self.version))
-                f.write("  # Last modified: %s\n"%(self.time))
-                f.write("  # Blocked domains: %s\n"%(len(blockList)))
+                f.write("  # modified: %s\n"%(self.time))
+                f.write("  # domains: %s\n"%(len(blockList)))
                 f.write("  #\n")
                 for domain in blockList:
                     f.write("  - '+.%s'\n"%(domain))
