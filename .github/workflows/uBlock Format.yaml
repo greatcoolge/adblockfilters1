@@ -25,7 +25,7 @@ jobs:
           pip install requests
       
       - name: Run conversion script
-        run: python convert_to_ublock_subscribe.py rules/adblockdns.txt rules/output.txt
+        run: python ublock_subscribe.py rules/adblockdns.txt rules/output.txt
 
       - name: Commit and push output file
         run: |
