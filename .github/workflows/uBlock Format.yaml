@@ -1,0 +1,36 @@
+name: uBlock Format
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install --upgrade pip
+
+      - name: Run conversion script
+        run: python convert_to_ublock_subscribe.py input.txt output.txt
+
+      - name: Commit and push converted file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output.txt
+          git commit -m "Update converted uBlock rules"
+          git push
+        # 避免没变动时报错
+        continue-on-error: true
