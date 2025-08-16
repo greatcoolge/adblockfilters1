@@ -1,3 +1,4 @@
+from .ublock_subscribe import convert_to_ublock
 from .base import APPBase
 from .adguard import AdGuard
 from .adguardhome import AdGuardHome
