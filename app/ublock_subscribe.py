@@ -32,8 +32,14 @@ class UBlock(APPBase):
             if os.path.exists(fileName):
                 os.remove(fileName)
 
+            if isLite:
+                title = "UBlock Lite"
+            else:
+                title = "UBlock Pro"
+            
             # 写入头信息
             with open(fileName, 'a', encoding='utf-8') as f:
+                f.write("!\n")
                 f.write(f"! Title: {title}\n")
                 f.write("! Homepage: %s\n" % self.homepage)
                 f.write("! Source: %s/%s\n" % (self.source, os.path.basename(fileName)))
