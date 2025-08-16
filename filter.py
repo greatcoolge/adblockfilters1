@@ -6,7 +6,7 @@ from typing import List,Dict,Set,Tuple
 from loguru import logger
 from tld import get_tld
 
-from app import APPBase, AdGuard, AdGuardHome, DNSMasq, Hosts, InviZible, Loon, Mihomo, QuantumultX, Shadowrocket, SingBox, SmartDNS
+from app import APPBase, AdGuard, AdGuardHome, DNSMasq, Hosts, InviZible, Loon, Mihomo, QuantumultX, Shadowrocket, SingBox, UBlock, SmartDNS
 from readme import Rule
 from resolver import Resolver
 
