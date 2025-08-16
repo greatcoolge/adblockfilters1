@@ -123,8 +123,8 @@ class ReadMe(object):
             f.write("| 规则12' |" + self.__subscribeLink("adblocksingboxlite.srs") + " sing-box 1.12.x srs |\n")
             f.write("| 规则13 |" + self.__subscribeLink("adblockloon.list") + " Loon |\n")
             f.write("| 规则13' |" + self.__subscribeLink("adblockloonlite.list") + " Loon |\n")
-            f.write("| 规则14 |" + self.__subscribeLink("adblockublock.list") + " ublock |\n")
-            f.write("| 规则14' |" + self.__subscribeLink("adblockublocklite.list") + " ublock |\n")
+            f.write("| 规则14 |" + self.__subscribeLink("adblockublock.txt") + " ublock |\n")
+            f.write("| 规则14' |" + self.__subscribeLink("adblockublocklite.txt") + " ublock |\n")
             f.write("\n")
 
             f.write("## 上游规则源\n")
