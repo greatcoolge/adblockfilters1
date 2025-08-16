@@ -51,7 +51,11 @@ class UBlock(APPBase):
                     # f.write("||%s^$all\n" % domain)  # 只加 $all，不生成响应
                     f.write("||%s^$all,redirect=nooptext\n" % domain)
 
-            logger.info("adblock UBlock %s: block=%d" % ('Lite' if isLite else 'Pro', len(blockList)))
+            if isLite:
+                logger.info("adblock UBlock Lite: block=%d"%(len(blockList)))
+            else:
+                logger.info("adblock UBlock: block=%d"%(len(blockList)))
+            # logger.info("adblock UBlock %s: block=%d" % ('Lite' if isLite else 'Pro', len(blockList)))
 
         except Exception as e:
             logger.error("UBlock generate failed: %s" % e)
