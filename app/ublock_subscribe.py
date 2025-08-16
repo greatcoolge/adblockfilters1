@@ -41,7 +41,8 @@ class UBlock(APPBase):
                 f.write("! domains: %s\n" % len(blockList))
                 f.write("!\n")
                 for domain in blockList:
-                    f.write("||%s^$all,redirect=nooptext\n" % domain)
+                    f.write("||%s^$all\n" % domain)  # 只加 $all，不生成响应
+                    # f.write("||%s^$all,redirect=nooptext\n" % domain)
 
             logger.info("adblock UBlock %s: block=%d" % ('Lite' if isLite else 'Pro', len(blockList)))
 
