@@ -34,6 +34,7 @@ class UBlock(APPBase):
 
             # 写入头信息
             with open(fileName, 'a', encoding='utf-8') as f:
+                f.write(f"! Title: {title}\n")
                 f.write("! Homepage: %s\n" % self.homepage)
                 f.write("! Source: %s/%s\n" % (self.source, os.path.basename(fileName)))
                 f.write("! Version: %s\n" % self.version)
