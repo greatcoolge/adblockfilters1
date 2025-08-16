@@ -18,6 +18,7 @@ with open(input_file, 'r', encoding='utf-8') as f:
 
 converted = []   # 用来存放转换后的规则列表
 
+converted.append("! Title: 我的规则")
 for line in lines:
     line = line.strip()  # 去除行首尾空白
     # 跳过空行，注释行（以!开头），以及含有 $ 符号的规则（防止误杀复杂规则）
