@@ -238,7 +238,7 @@ class Filter(object):
             QuantumultX (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.path + "/adblockqx.conf",       sourceRule),
             Shadowrocket(blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.path + "/adblockclash.list",    sourceRule),
             SingBox     (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.path + "/adblocksingbox.json",  sourceRule),
-            UBlock      (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.path + "/output_pro.txt",    sourceRule),
+            UBlock      (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.path + "/adblockublock.txt",    sourceRule),
             SmartDNS    (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.path + "/adblocksmartdns.conf", sourceRule),
         ]
         for g in generaterList:
