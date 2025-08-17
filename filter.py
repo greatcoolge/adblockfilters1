@@ -211,6 +211,21 @@ class Filter(object):
         
         logger.info("domain backup: %d"%(len(domainList)))
 
+    def __generateFilterDict(self, filterDict: Dict[str,str], fileName: str):  
+        logger.info("generate filter dict...")  
+        if os.path.exists(fileName):  
+            os.remove(fileName)  
+      
+        with open(fileName, 'a') as f:  
+            f.write("# FilterDict - 正则表达式和复杂过滤规则\n")  
+            f.write("# 生成时间: %s\n" % time.strftime("%Y-%m-%d %H:%M:%S"))  
+            f.write("# 规则数量: %d\n" % len(filterDict))  
+            f.write("#\n")  
+            for filter_rule, domain in filterDict.items():  
+                f.write("%s\n" % filter_rule)  
+      
+        logger.info("filter dict saved: %d rules" % len(filterDict))
+    
     def generate(self, sourceRule):
         # 从上游规则中提取规则
         blockDict,unblockDict,filterDict = self.__getFilters()
