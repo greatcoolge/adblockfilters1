@@ -246,3 +246,5 @@ class Filter(object):
         
         # 生成用于域名连通性检测的全域名清单
         self.__generateDomainBackup(blockSet_block | unblockSet_unblock | domainSet_filter, self.path + "/domain.txt")
+        # 生成 filterDict 文件
+        self.__generateFilterDict(filterDict, self.path + "/filterdict.txt")
