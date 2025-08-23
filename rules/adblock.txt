@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2025-08-22 20:05:16(GMT+8)
-! Total count: 175264
+! ! Version: 2025-08-23 08:13:07(GMT+8)
+! Total count: 175277
  
 ###ADtip
 ###AdBlockDialog
@@ -1652,6 +1652,7 @@
 ##div[style="position: fixed;top: 60px;right:0;z-index:999;width:250px"]
 ##div[style^="line-height"][style*="http"][style$="fixed;"]
 ##div[style^="position"][onclick^="window.open"]
+##div[style^="position:fixed; bottom:0vw; left:"][style$="vw;background: #000;opacity:0.01;"]
 ##dl#listwoBox
 ##header + #main:nth-child(n+4) .container-fluid.mb-0.p-0
 ##header + #main:nth-child(n+4) .container-fluid.mb-3.p-0
@@ -1725,6 +1726,7 @@
 #@#.has-ad
 #@#.uk-container.uk-container-expand
 #@#div[itemtype="http://schema.org/WPAdBlock"]
+$$script:contains(?is_not=1&target=1&ty=2)
 $app=com.fiberhome.wifiserver
 $app=com.miui.analytics
 $app=com.miui.systemAdSolution
@@ -4492,7 +4494,7 @@ $websocket,domain=wap.yushuwu.cloud
 /ent_counter?
 /entry_stats?
 /eo?_t=$image
-/eos/v1/$image
+/eos/v1/*$image
 /err/js/?url=
 /err0r/rum/*
 /error/js/log?
@@ -6378,6 +6380,7 @@ $websocket,domain=wap.yushuwu.cloud
 /shopify-boomerang-
 /shopify-datalayer-minified.js
 /shopify-event.gif?
+/shopify/assets/themes_support/notifications/spacer-
 /shopify/track.js
 /shopify_stats.js
 /shopifycloud/media-analytics/v*/analytics.js
@@ -11902,6 +11905,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||cdn.static.zdbb.net/js/zd-email.min.js$domain=pcmag.com
 @@||cdn.staticfile.org^$domain=20me.net|fbqg.cc|xianguke.net|tellgillian.com|m-ia.net|cleavagecoverup.com|83kss.cc|memduh.net|56xiaoshuo.net|yourbiquge.com|00ksw.com|147xiaoshuo.com|91zww.com|bxwx.live|lzbao.net
 @@||cdn.staticfile.org^$script,domain=movieffm.net
+@@||cdn.stroeerdigitalgroup.de/metatag/live/ctc_golem_relaunch/metaTag.min.js$domain=golem.de
 @@||cdn.taboola.com/libtrc/*/loader.js$domain=ilmeteo.it
 @@||cdn.taboola.com/libtrc/axelspringer-dieweltprojectberlin/loader.js$domain=welt.de
 @@||cdn.taboola.com/libtrc/impl.*-RELEASE.js$domain=handelsblatt.com
@@ -17421,7 +17425,6 @@ bing.com###id_mobile
 bing.com##.OpInNwWndw
 bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
-bing.com##[id$="adsMvCarousel"]
 bing.com#?#.b_algo:-abp-has(.ad_esltitle)
 bing.com#?#.b_algo:-abp-has(.b_ads1line)
 bing.com#?#.sb_form_placeholder:-abp-has(>.ad-ghost-slug)
@@ -17873,6 +17876,8 @@ cdiscount.com#$#hide-if-contains /Sponsorisé/ 'div[class="o-block"]' 'div[class
 cdiscount.com#$#hide-if-matches-xpath './/article[contains(@class,"sponsored")]//ancestor::div[@id][@class="c-fp__cell--side"]'
 cdiscount.com#$#hide-if-matches-xpath './/img[contains(@src,"sponso")]/parent::a/ancestor::div[contains(@style,"background-color: rgb(255, 255, 255);")][.//div[contains(@style,"color: rgb(41, 56, 71);")]]'
 cdiscount.com#$#hide-if-matches-xpath './/input[contains(@name,"Sponsored")]/ancestor::*[(self::article[contains(@class,"c-productCard")] and parent::li) or (self::form and ancestor::div[contains(@class,"prdtBlocInline")])]/ancestor::li[1]'; hide-if-canvas-contains Sponsorisé; hide-if-contains-and-matches-style '' 'li , div.l-fp-row' 'li custom-mentions , custom-mentions ^^sh^^ canvas' /./ 'background-image: repeating';  hide-if-contains-and-matches-style '' li 'custom-mentions ^^sh^^ canvas' '' 'display: none';
+cdn.shopify.com%2Fshopifycloud%2Fshopify%2Fassets%2Fthemes_support%2Fnotifications%2Fspacer-$image
+cdn.shopify.com/shopifycloud/shopify/assets/themes_support/notifications/spacer-$image
 cdn.tiv.pw###Advertisement1
 cdn.tiv.pw##.drt
 cdn.tiv.pw##.floater
@@ -21498,12 +21503,10 @@ customerio_email.referralcandy.com$image
 customerioemail.stackbit.com$image
 customeriotrk.travelperk.com$image
 cuttlefish.baidu.com##.link-pc-client
-cvs.com##.stencil-criteo-shelf
 cvs.com#$#hide-if-contains /Sponsored/ 'cvs-shop-product-shelf-container' 'cvs-shop-product-shelf-container ^^sh^^ * ^^sh^^ section[id] span'
 cvs.com#$#hide-if-contains /Sponsored/ 'div>div *[new-ec-recommendations] ^^sh^^ * ^^sh^^ * ^^sh^^ section[id] ul>li' 'div>div *[new-ec-recommendations] ^^sh^^ * ^^sh^^ * ^^sh^^ section[id] ul>li>* ^^sh^^ div>div.sponsored-container>span'
 cvs.com#$#hide-if-contains-visible-text /(Sponsored)/ 'div[style^="width:"]' 'div[dir^="auto"]'
 cvs.com#$#hide-if-matches-xpath './/div[@class]/*[contains(@shelf-type,"criteo")]/ancestor::div[@class][1]'
-cvs.com#?#div[class*="flex-col"]:-abp-has(>h2:-abp-contains(Sponsored))
 cw.com.tw##.ad--video
 cw.com.tw##.article__promotion
 cw.com.tw##.bottombar
@@ -46183,6 +46186,7 @@ link.bicycling.com$image
 link.big5sportinggoods.com$image
 link.bigrapidsnews.com$image
 link.bigtop40.com$image
+link.bilibili.com#?#.shortcut-item:contains(下载客户端)
 link.billings.townsquarenewsletters.com$image
 link.binghamton.townsquarenewsletters.com$image
 link.biocompare.com$image
@@ -47918,6 +47922,7 @@ m-1.fm#%#//scriptlet('set-constant', 'ga', 'noopFunc')
 m.07073.com##.main_content_tit + div
 m.07073.com##.new_heads
 m.07073.com##.new_heads_bg
+m.13xsw.com,wap.yushuwu.cloud#%#//scriptlet('prevent-addEventListener', 'touchend', 'clientheight')
 m.163.com##.floatMenu-backflow
 m.163.com##.floatMenu-logo
 m.163.com##footer > span
@@ -50034,7 +50039,6 @@ onebox.mydown.com##.advertisement_pic
 onebox.mydown.com##.fcAgain
 onebox.mydown.com##.fcGg
 onefootball.com##section[class^="XpaTaboolaPlaceholder_"]
-oneindia.com###closePopupDiv
 oneindia.com##a[href^="https://bit.ly/"]
 oneindia.com##div[style] > div[class="discounts-section"]
 oneindia.com#$#hide-if-matches-xpath './/div[@class="rightArtImg"]/img[contains(@src,"boldsky.com") or contains(@src,"gizbot.com") or contains(@src,"careerindia.com") or contains(@src,"nativeplanet.com") or contains(@src,"goodreturns.in") or contains(@src,"drivespark.com") or contains(@src,"filmibeat.com") or contains(@src,"mykhel.com")]/ancestor::div[@class="rightArt"][@data-content_id]'
@@ -52728,7 +52732,6 @@ quizlet.com#%#//scriptlet('abort-current-inline-script', 'document.createElement
 qunar.com##.flight_ad
 qunar.com##.list_promotion_bar
 quora.com##.answer_auto_expanded_comments + div > div.feed_expand
-quora.com##.dom_annotate_ad_promoted_answer
 quora.com##.dom_annotate_multifeed_bundle_AdBundle
 quora.com##.feedback_wrapper.hidden:not(.negative_action) + .FeedStory.HyperLinkFeedStory.feed_item
 quora.com##.pagedlist_item > div[id$="_paged_list"]
@@ -52741,7 +52744,6 @@ quora.com##.q-box.qu-borderTop>[class^="Box-"] .q-box.qu-pt--medium.qu-pb--tiny
 quora.com##.q-box.qu-borderTop>[class^="Box-sc-"]>div:not([class])
 quora.com##.qu-bg--white>[class^="Box-"] .qu-pt--medium
 quora.com##.qu-mb--small.qu-bg--white > .q-box > div > span[data-nosnippet="true"] > .q-box
-quora.com##.spacing_log_question_page_ad
 quora.com##.u-margin-top--lg+div[class="UnifiedAnswerPagedList PagedListFoo unified"][id$="_paged_list"]
 quora.com##[class="q-box qu-bg--white"]>[class="q-box "]>[class="q-box"]
 quora.com##[class="q-box qu-borderTop"]>[class="q-box "]
@@ -53098,7 +53100,6 @@ sameday.costco.*#$#hide-if-matches-xpath './/div[@style]/following::span[text()]
 sameday.costco.*#$#override-property-read ADBLOCK_DETECTED false
 sameday.costco.*#$#race start; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spons")] and descendant::span[contains(@style, "inline-")]]/ancestor::div[3]'; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spons")] and descendant::span[contains(text(), "ored")]]/ancestor::div[3]'; race stop;
 samehadaku.net#@##adsense
-samsclub.com##.sc-plp-cards-vast-ad
 samsclub.com##div[class="analytics"][data-strategy="Sponsored products"]
 samsclub.com#$#hide-if-contains-visible-text /Sponsored/ 'div[style][class]' span[class]
 samsclub.com#$#hide-if-matches-xpath './/span[@class="sc-specials-label"]/following::a[@role="button"]/ancestor::div[@class="sc-sba-modules-logo"]/parent::div[contains(@class,"sc-sba-modules")][1]'
@@ -57633,7 +57634,6 @@ wap.sogou.com###indexAppOneClose
 wap.sogou.com##.index-carousel
 wap.sogou.com##.index-tab
 wap.sougou.com###sug_wraper
-wap.yushuwu.cloud#%#//scriptlet('prevent-addEventListener', 'touchend', 'clientheight')
 wap.yushuwu.cloud#%#//scriptlet('prevent-eval-if', 'WebSocket')
 wap.zol.com.cn###waitrep
 wapwenku.baidu.com,wk.baidu.com###bottomFixed
@@ -57983,7 +57983,7 @@ www.facebook.com,web.facebook.com#$#json-prune 'require.0.3.0.__bbox.require.[].
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains /Anzeige|Sponsored|Sponsorlu|Gesponsert|Patrocinado|Sponsorisé|Commandité|Gesponsord|Sponsorowane|Publicidad|Sponsrad|Sponsoreret|Sponsoroitu|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato/ 'div[aria-describedby][aria-labelledby]' 'span[aria-labelledby] svg[style] * ^^svg^^ * ^^svg^^'; hide-if-contains /Anzeige|Sponsored|Sponsorlu|Gesponsert|Patrocinado|Sponsorisé|Commandité|Gesponsord|Sponsorowane|Publicidad|Sponsrad|Sponsoreret|Sponsoroitu|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato/ 'div[aria-describedby][aria-labelledby]' 'span[aria-labelledby] svg[style] * ^^svg^^'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href^="?__cft__"] span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[aria-label][attributionsrc][href^="?__cft__"][role="link"]>span>span[aria-labelledby]'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href*="/ads/about/"][role="link"][tabindex="0"]>span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href="#"][role="link"][tabindex="0"]>span>span[aria-labelledby]>span[style]'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrwae]{12}|[Patrocind]{11}|[Sponsrizat]{13}|[Anzeig]{6}/ 'div[role=feed] div[role=article]' a[href^="?__cft__"]; race stop;
-www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(br_lael_content_new|cont_brws_laobe|contenrt_brs_lbe_flag|the_cone_brs_lbl_lbe|cntent_labbe_brs|contxe_brms_labl_lbl|conte_brf_la|lael_flag_cntent_label_bras|the_conten_brs_lbe|labe_label_brs_conent|contn_of_brs_for_la|flag_cnte_label_brs|the_brs_content_labe|lael_the_conteun_brs_label|new_conen_for_brs_la|lbel_brs_contnt|brs_contena_of_labe|the_contenh_lab_for_brs|brs_flag_lael_of_connte|contet_lbl_brs_the_lbel|brg_larb_coten|conte_of_lab_for_br|lbe_label_of_conte_brs|label_of_lbel_conten_brr|lb_conte_brl_la|lbl_conteb_brls_lab|conteynt_brrs_label|label_brs_cont_the_labl|brs_cont_lbe|flag_labe_content_brs|lbe_conen_brd_lbl|new_conent_brs_la|cote_new_labj_brs|brs_lbel_conten|of_lbl_brs_contet_labl|brs_for_labecl_conen|label_brfs_contte_lab_lbl|conteln_for_brs_labe|la_conten_brs|the_conte_lab_br|labiel_brs_cont|cote_the_lael_brs_of|new_coenten_lbe_br|br_lae_content|flag_for_conent_brs_labe|lagbel_coten_bre|lagbel_coten_br|content_label_flag_new_br|labl_for_coniten_of_brs|brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"daspo_sto")[^\n]+?("SponsoredData"|"lbl_adv_iden"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon|dist_auct_spons_lbl|auctio_spnsor_distace|for_auci_new_sponsor_distanyc|dist_sponsor_auc|au_spon_flag_dist|di_auc_fl_spo|fl_au_flag_di_sp|auc_lb_dis_spon_the|auc_sponsor_dist|lbl_sponsor_dist_au|auc_for_dis_sponso|au_dista_spon|distanc_sponsore_aucti|au_sponsor_dist|auct_spon_dist|auction_distanc_sponsored|auctio_dist_sponsore|sponsocr_distanc_of_auctido|sponsred_auct_dista_of|sponsorexd_aucto_for_lbl_distance|dist_sponso_auctio|aution_disan_new_sonsored|auc_sponsore_distan|sponsor_au_dis|aucton_sponso_ditance|label_sposor_disntance_auctin|lbl_auti_flag_dstanc_sponsord|label_au_lb_spon_fla_dstan|spons_aut_dsta_lb_fla|label_aut_dstan_fl_spons_lb|sponsor_aut_dst_lb_fl|sponsorce_aucio_distanc|auti_the_sponsore_distnc|ditanc_flag_sponsore_aujction|distanc_new_sonsored_auctilo)/'
+www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(conent_lbl_brqs_lbe|br_lael_content_new|cont_brws_laobe|contenrt_brs_lbe_flag|the_cone_brs_lbl_lbe|cntent_labbe_brs|contxe_brms_labl_lbl|conte_brf_la|lael_flag_cntent_label_bras|the_conten_brs_lbe|labe_label_brs_conent|contn_of_brs_for_la|flag_cnte_label_brs|the_brs_content_labe|lael_the_conteun_brs_label|new_conen_for_brs_la|lbel_brs_contnt|brs_contena_of_labe|the_contenh_lab_for_brs|brs_flag_lael_of_connte|contet_lbl_brs_the_lbel|brg_larb_coten|conte_of_lab_for_br|lbe_label_of_conte_brs|label_of_lbel_conten_brr|lb_conte_brl_la|lbl_conteb_brls_lab|conteynt_brrs_label|label_brs_cont_the_labl|brs_cont_lbe|flag_labe_content_brs|lbe_conen_brd_lbl|new_conent_brs_la|cote_new_labj_brs|brs_lbel_conten|of_lbl_brs_contet_labl|brs_for_labecl_conen|label_brfs_contte_lab_lbl|conteln_for_brs_labe|la_conten_brs|the_conte_lab_br|labiel_brs_cont|cote_the_lael_brs_of|new_coenten_lbe_br|br_lae_content|flag_for_conent_brs_labe|lagbel_coten_bre|lagbel_coten_br|content_label_flag_new_br|labl_for_coniten_of_brs|brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"daspo_sto")[^\n]+?("SponsoredData"|"lbl_adv_iden"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon|dist_auct_spons_lbl|auctio_spnsor_distace|for_auci_new_sponsor_distanyc|dist_sponsor_auc|au_spon_flag_dist|di_auc_fl_spo|fl_au_flag_di_sp|auc_lb_dis_spon_the|auc_sponsor_dist|lbl_sponsor_dist_au|auc_for_dis_sponso|au_dista_spon|distanc_sponsore_aucti|au_sponsor_dist|auct_spon_dist|auction_distanc_sponsored|auctio_dist_sponsore|sponsocr_distanc_of_auctido|sponsred_auct_dista_of|sponsorexd_aucto_for_lbl_distance|dist_sponso_auctio|aution_disan_new_sonsored|auc_sponsore_distan|sponsor_au_dis|aucton_sponso_ditance|label_sposor_disntance_auctin|lbl_auti_flag_dstanc_sponsord|label_au_lb_spon_fla_dstan|spons_aut_dsta_lb_fla|label_aut_dstan_fl_spons_lb|sponsor_aut_dst_lb_fl|sponsorce_aucio_distanc|auti_the_sponsore_distnc|ditanc_flag_sponsore_aujction|distanc_new_sonsored_auctilo|distan_lbl_au_sponsore)/'
 www.forum.click.s11.sfmc-osl.com$image
 www.ghxi.com##.wpcom_ad_wrap
 www.ghxi.com##DIV[style^='padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: ']
@@ -70442,6 +70442,7 @@ zzzyk.com###Tinfo
 ||api.datinghelp.dk^
 ||api.datingxperten.de^
 ||api.deafios.com.br^
+||api.deeplink.dev^
 ||api.designerexpert.com.br^
 ||api.diegorial.com^
 ||api.diffchecker.com/external/mixpanel/user-properties|
@@ -72954,6 +72955,7 @@ zzzyk.com###Tinfo
 ||attn.tv^
 ||attn.tv^*/dtag.js
 ||attr-2p.com^$third-party
+||attr-logs.*.amazonaws.com^
 ||attr.appsflyer.com^
 ||attracta.com^$third-party
 ||attractionbanana.com^
@@ -74113,6 +74115,7 @@ zzzyk.com###Tinfo
 ||bazaarvoice.com^*/magpie.js
 ||bazlny.homepal.it^
 ||baztrack.com^$third-party
+||bazu.cc/api/baidu_tui.php
 ||bb.carosello.com.au^
 ||bb.cena.melbourne^
 ||bb.hugodining.com.au^
@@ -76582,6 +76585,7 @@ zzzyk.com###Tinfo
 ||c.arstechnica.com^
 ||c.autozen.tv^
 ||c.bazo.io^
+||c.bazu.cc^
 ||c.bigmir.net
 ||c.bigmir.net^
 ||c.bing.com/c.gif
@@ -92160,6 +92164,7 @@ zzzyk.com###Tinfo
 ||event.dfinery.io^
 ||event.dnv.com^
 ||event.evtm.53.com^
+||event.flareflow.tv^
 ||event.geniee-search.net^
 ||event.getblue.io^$third-party
 ||event.gitexfuturehealth.com^
@@ -102777,6 +102782,7 @@ zzzyk.com###Tinfo
 ||httdev.it/e/c?
 ||httjs.davidscookies.com^
 ||http-inputs-itv.splunkcloud.com/services/collector
+||http-inputs-notion.splunkcloud.com^
 ||httpcn.com/Images/banner
 ||httpcn.com/m/tg/
 ||httpcn.com^*-120
@@ -106124,6 +106130,7 @@ zzzyk.com###Tinfo
 ||instantfox.co^
 ||instapage.com^$third-party,domain=~pagedemo.co
 ||instapagemetrics.com^$third-party
+||instarooliths.com^
 ||instore.biz^$third-party
 ||instreamatic.com^$third-party
 ||instructables.com/counter
@@ -119202,6 +119209,7 @@ zzzyk.com###Tinfo
 ||med.viibrydhcp.com^
 ||med.vraylar.com^
 ||med66.com/lamu/
+||medakasreglaze.com^
 ||medal.tv^$ping
 ||medals.bizrate.com^$third-party
 ||meddleplant.com^
@@ -124892,6 +124900,7 @@ zzzyk.com###Tinfo
 ||nostalgicneed.com^
 ||nostalgicneed.com^$third-party
 ||nosto.com/analytics/
+||nosydorymen.com^
 ||notcardboard.com^
 ||notconscious.com^
 ||note.com/api/v*/trackings/
@@ -126404,6 +126413,7 @@ zzzyk.com###Tinfo
 ||ookaso.com^
 ||ookbgd.hajuvesi.fi^
 ||ooksq.top^
+||oomiakyetapa.com^
 ||ooopym.younited-credit.com^
 ||oopej.xyz^
 ||oopt.norauto.es^
@@ -126496,6 +126506,7 @@ zzzyk.com###Tinfo
 ||openshop.m-shop.me^
 ||openstat.net^
 ||openstat.net^$third-party
+||openstats.co^
 ||opensubtitles.org/gfx/banners_campaigns/2x2.gif
 ||opentelemetry-collector.shared-services.us-east-1.general.prod.wildlife.io^
 ||opentracker.net^$third-party
@@ -132618,6 +132629,7 @@ zzzyk.com###Tinfo
 ||rehabilitatereason.com^
 ||rehabilitatereason.com^$third-party
 ||rehmann.actonservice.com^
+||rei.com/customer-analytics-attributes/
 ||reibootmac.com/script/rn_event_track_v*.min.js
 ||reichelt.com/setsid.php?
 ||reico.actonservice.com^
@@ -157937,6 +157949,7 @@ zzzyk.com###Tinfo
 ||tainec.fun^
 ||taiqingjiu.com^
 ||taisha.org/statics/js/pc2.0/common/form.bottom.
+||taituranite.click^
 ||taiwandaily.net/wp-content/uploads*_600x100.
 ||taiwannutrition.com/blog/wp-content/plugins/arscode-ninja-popups/
 ||taiwanplus.com/api/video/startVideo
