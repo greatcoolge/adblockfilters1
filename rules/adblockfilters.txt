@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250825001503
-! Last modified: 2025/08/25 00:15:03
-! Blocked Filters: 140517
+! Version: 20250825090440
+! Last modified: 2025/08/25 09:04:40
+! Blocked Filters: 140543
 !
 ###AC_ad
 ###AD_160
@@ -18277,7 +18277,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https:\/\/(?:[a-z]{2}\.)?[a-z]{7,14}\.[a-z]{3,7}\/[a-z][0-9A-Za-z]{10,16}\/\d{4,6}$/$script,third-party,match-case
 /^https:\/\/(?:[a-z]{2}\.)?[a-z]{7,14}\.com\/[a-z](?=[a-z]*[0-9A-Z])[0-9A-Za-z]{10,27}\/[A-Za-z]{5}$/$match-case,script,third-party,domain=cineby.app
 /^https:\/\/(?:[a-z]{2}\.)?[a-z]{7,14}\.com\/[a-z](?=[a-z]*[0-9A-Z])[0-9A-Za-z]{10,27}\/[A-Za-z]{5}$/$script,third-party,match-case
-/^https:\/\/(?:as(?:loader)?|loader)\.[-0-9A-Za-z]+.[-A-Za-z]{2,30}\/loader.min.js$/$script,~third-party
+/^https:\/\/(?:as(?:loader)?|loader)\.[-0-9A-Za-z]+\.[-A-Za-z]{2,16}\/loader\.min\.js$/$script,~third-party
 /^https:\/\/(a|c)\.[0-9a-f]{56}\.com$/
 /^https:\/\/(www\.)?zxzjhd\.com\/[0-9]+\.gif/$domain=zxzjhd.com
 /^https:\/\/(www|checkout|giris)\.hepsiburada\.com\/([a-zA-Z0-9\-_]+\/){3,7}([a-zA-Z0-9\-_]+|[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_]+)$/$script,~third-party,domain=hepsiburada.com
@@ -50095,6 +50095,9 @@ complaintsingapore.com##[href*="/adv.php"]
 complaintsingapore.com##[href="https://thechillipadi.com/"]
 compleatgolfer.com,sacricketmag.com###slidein
 complex.com##.AdWrapper__AdPlaceholderContainer-sc-15idjh1-0
+complex.com##.base__header-ad
+complex.com##.latest-stories__ad
+complex.com##.suitcase-ad
 compoundsemiconductor.net##.mega-bar
 compoundsemiconductor.net##.popular__section-newsx
 compress-or-die.com##.component_global-ad
@@ -76837,6 +76840,7 @@ freebitcoin.top#%#//scriptlet("abort-current-inline-script", "decodeURIComponent
 freebitcoin.win##a[href^="https://coinad.com"]
 freebitcoin.win$$script[wildcard="*popunder_moon_ads*adblock*"][max-length="500"]
 freebookcentre.net#?#.page-head ~ div.row:has(> div[class^="col-"] > div[class] > div.ad-adverting)
+freebusinessapps.net##.sp-res
 freebusinessapps.net,freefinancetools.net##.sp
 freecampsites.net###googleSquareAd
 freecampsites.net##.adLeaderBoard
@@ -116509,6 +116513,7 @@ whatsafterthemovie.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication
 whatsgabycooking.com##.manual-adthrive-sidebar
 whatsmydns.net##div[class*="md\:w-\[728px\] md\:min-h-\[90px\]"]
 whatsmydnsserver.com##.maindivleft > div[id] ~ p > a[target="_blank"] > img
+whatsmyip.com##.holidAds
 whatsmyreferer.com##[href="http://fakereferer.com"]
 whatsmyreferer.com##[href="http://fakethereferer.com"]
 whatsondisneyplus.com###sidebar > .widget_text.amy-widget
@@ -122003,6 +122008,7 @@ zzzyk.com###Tinfo
 ||api.tinypass.com/api/v*/anon/error/log
 ||api.tinypass.com^$domain=dallasnews.com
 ||api.transcy.io/api/statistic/
+||api.trwl1.com/ascripts/gcrt.js
 ||api.tsc.ca/Tracking/v1/events/
 ||api.tua.gov.tr/api/visitor_statistics
 ||api.tv.de/*/tracking/
@@ -124284,6 +124290,7 @@ zzzyk.com###Tinfo
 ||chewy.com/static/spa/chewy-home-ui/_next/static/chunks/*.js$replace=/throw Error\(\w\((329|423)\)\)/null/
 ||chexun.com/delivery?
 ||chexun.net/images/sales//cxgg/
+||chibi.sh^$third-party
 ||chickadvisor.com/js/detect.min.js
 ||chiglees.com^$popup
 ||chikiporn.com/sqkqzwrecy/
@@ -125795,6 +125802,7 @@ zzzyk.com###Tinfo
 ||domhouse.it/wp-content/themes/soledad/js/detector.js
 ||dominicantoday.com/wp-content/themes/dominicantoday/banners/
 ||dominos.co.uk/qRgAwS/
+||donga.com/proc/ad_history
 ||dongchedi.com/motor/ad/
 ||dongfangtai.com/2018/
 ||donghuaworld.com/wp-content/plugins/no-adblock-access/detector.js
@@ -128140,6 +128148,7 @@ zzzyk.com###Tinfo
 ||hasbro.com/includes/js/metrics/
 ||hasbro.com/js/omniture.js
 ||hashflare.eu/banners/
+||hashvault.pro^$third-party
 ||haszon.hu/images/banners/
 ||hatarako.net/api/recommend/analyze_logger
 ||hatena.ne.jp/api/log?
@@ -134430,6 +134439,7 @@ zzzyk.com###Tinfo
 ||r.dcs.redcdn.pl/*/tracking/atdsTracking.min.js
 ||r.stripe.com^$ping,script,xmlhttprequest
 ||r.trojmiasto.pl/www/delivery/*.php?*=banner*vast$important
+||r.trwl1.com/s1/$subdocument
 ||r.wykop.pl/widget-api/*/widget$xmlhttprequest
 ||r.yna.co.kr/global/lib/*/js/nlogger.js
 ||r18.com/track/
@@ -134837,6 +134847,7 @@ zzzyk.com###Tinfo
 ||rockstorageplace.com^$popup
 ||roforum.net/youtube/banner.php$popup
 ||roispy.com^$third-party
+||roistat.com^$third-party
 ||rojadirecta.me$replace=/it.rojadirecta.eu\/goto\///,important
 ||rokt.com/v1/events^
 ||rokt.com/v2/metrics^
@@ -134877,6 +134888,8 @@ zzzyk.com###Tinfo
 ||rryy99.com/statics/js/stat.js
 ||rs.aoxx69.net/image/banner/
 ||rs.maxiporn.com/js/iframe-tracker.js
+||rs6.net^$image,script,third-party
+||rs6.net^$third-party
 ||rshrt.com^$cookie=app_visitor
 ||rt.ru/proxy?
 ||rtbimp-loadbalancer-*.amazonaws.com^
@@ -135104,6 +135117,7 @@ zzzyk.com###Tinfo
 ||salescs.com/liveagent/scripts/track.js
 ||salesforce.com/beacon/
 ||salesforce.com/sfga.js
+||salesloft.com/sl.js
 ||salesmanago.com/api/r.gif
 ||salesmartly.com/client/log/
 ||salesmartly.com/client/station/log?
@@ -135212,6 +135226,7 @@ zzzyk.com###Tinfo
 ||scores24.live/tvsv/offers?
 ||scoresinplay.com/366bwinad.html
 ||scoresinplay.com/366unibet.html
+||scout.salesloft.com/r?tid=
 ||screenov.site^$popup
 ||screenrant.com/strpixel.png
 ||screensaversplanet.com/js/analytics.js
@@ -135833,6 +135848,7 @@ zzzyk.com###Tinfo
 ||sleazyneasy.com/contents/other/player/candygaby
 ||sleazyneasy.com/jsb/
 ||sledujserialy.io/theme/json/episode.ad.etarget.php?adlink=
+||sleeknotestaticcontent.sleeknote.com/production/package-tracker.js
 ||sli-spark.com/b.png$third-party
 ||slickdeals.net/ajax/stats/
 ||slideplayer.biz.tr/slide/getviewscount/
@@ -135849,6 +135865,7 @@ zzzyk.com###Tinfo
 ||smallpdf.com/build/track-js.js
 ||smallseotools.com/webimages/garamar*.png^$image,domain=smallseotools.com
 ||smallseotools.com^$third-party
+||smart-dmp.com^$third-party
 ||smartapp-tvplayer*-prod.tvp.pl/releases/tvplayer*/default/player.js$replace=/(onerror=null\,e\()"[\s\S]*?"(\))/\$1undefined\$2/
 ||smartasset.com^$third-party
 ||smartdestinations.com/ai/
@@ -136222,6 +136239,7 @@ zzzyk.com###Tinfo
 ||ssl.pstatic.net/adimg3.search/adpost/js/ad.js
 ||ssl.pstatic.net/img.tvcast/pc/js/wcslog
 ||ssl.pstatic.net/static.gn/js/clickcrD.js$domain=~search.naver.com
+||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/statistics_jquery.js
 ||ssl.pstatic.net/t.static.blog/nmobile/versioning//common/lib/ntm/ntm-blog-web-*.js
 ||ssl.pstatic.net/t.static.blog/nmobile/versioning/NtmBaLog-*.js
 ||ssl4us.*/pro.js^$third-party
@@ -136937,6 +136955,7 @@ zzzyk.com###Tinfo
 ||tagdatax.com^$third-party
 ||tagesschau.de/resources/framework/js/sitestat.js
 ||tagesschau.de/resources/framework/js/tracking.js
+||tagmngrs.com^$third-party
 ||tags.news.com.au^$script
 ||tags.news.com.au^$~script
 ||tags.tiqcdn.com^$app=uk.co.thetimes|com.hulu.plus
@@ -138152,6 +138171,7 @@ zzzyk.com###Tinfo
 ||u*.takru.com^
 ||u.gg/affiliate/amazon/*.jpg
 ||u.riju.com/click.php
+||u1pmt.com^$popup
 ||ua.financialexpress.com/api/capture
 ||uai.com.br^*/analytics.js
 ||uapi.production-public.tubi.io/datascience/logging
@@ -138223,6 +138243,7 @@ zzzyk.com###Tinfo
 ||uidhealth.com^$popup
 ||uiqatnpooq.com/0f8b73d477b554394e23077935e1fff4.js$script,domain=extratorrent.cc
 ||uira.live/_next/image?url=%2Fadthing.gif
+||uitopadxdy.com^$popup
 ||uitvconnect.com/wp-content/uploads/2023/01/2-2
 ||uitvconnect.com/wp-content/uploads/2023/01/3-2
 ||uitvconnect.com/wp-content/uploads/2023/01/4-2
@@ -139200,6 +139221,8 @@ zzzyk.com###Tinfo
 ||widgetserver.com/metrics/
 ||widgetserver.com/t/
 ||widgetserver.com^*/image.gif?
+||wieistmeineip.de/ip-address/$third-party
+||wieistmeineip.de/ip-adresse/$third-party
 ||wielkahistoria.pl/wp-content/uploads/*/*/banner_okupowana.jpg
 ||wifeo.com/compteurs/$third-party
 ||wikihow.com/*?events=
@@ -139348,6 +139371,7 @@ zzzyk.com###Tinfo
 ||wowgame.jp/countup.asp
 ||wowow.co.jp/API/new_prg/get_tracking_url.php
 ||wowroms.com/images/Banner*.gif
+||wowshortvideos.com^$popup
 ||wowtcgloot.com/share/?d=$third-party
 ||woyaoq.com/201904100958_5cad4dbac9c5f.png
 ||wp-engage.org/api/v5/post/activity/log/
@@ -139770,6 +139794,8 @@ zzzyk.com###Tinfo
 ||xtits.*/static/js/custom.js
 ||xtits.xxx/static/js/ppndr*.js
 ||xtrasize.pl/banner/
+||xtremeserve.xyz/*.php$xmlhttprequest,other
+||xtremeserve.xyz/*.php$xmlhttprequest,other,redirect=nooptext
 ||xtube.com/js/ht.js
 ||xtube.com/theme/v2/vendor/js-popunder/
 ||xtv.cz/api/v3/log/
