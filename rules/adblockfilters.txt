@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250831001430
-! Last modified: 2025/08/31 00:14:30
-! Blocked Filters: 145408
+! Version: 20250831090431
+! Last modified: 2025/08/31 09:04:31
+! Blocked Filters: 145412
 !
 ###AC_ad
 ###AD_160
@@ -18953,6 +18953,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /api/checkout/web/metrics|$domain=nordstrom.com|nordstromrack.com
 /api/click/*?c=
 /api/cmp_tracker|
+/api/collect|$ping,xmlhttprequest
 /api/direct/*?s1=$script
 /api/drpStats
 /api/event-rfkj/*
@@ -21540,6 +21541,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /o.gif?
 /o.gif?mi_u=$image
 /o.js$domain=tptoon.com
+/o/o.gif
 /o_code.js
 /o_tealium.js
 /oa-tracking?
@@ -51764,6 +51766,8 @@ domekiogrodek.pl,swiatzwierzat.pl##.scrollAd
 domhouse.it#@#ins.adsbygoogle[data-ad-slot]
 dominationworld.com,femdomzzz.com##.ban-tezf
 dominicantoday.com###header-banners
+dominos.*%2Fo%2Fo.gif$image
+dominos.*/o/o.gif$image
 dominus.kiev.ua##body > #myModal
 domiporta.pl##.sponsored_article
 domodedovo.ru#@##adBanner1
