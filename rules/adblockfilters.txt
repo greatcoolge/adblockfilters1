@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250831161554
-! Last modified: 2025/08/31 16:15:54
-! Blocked Filters: 145003
+! Version: 20250901001446
+! Last modified: 2025/09/01 00:14:46
+! Blocked Filters: 145005
 !
 ###AC_ad
 ###AD_160
@@ -17481,7 +17481,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /1.js|$domain=torrentproject2.*|torrentproject2.com|torrentproject2.net|torrentproject2.org
 /120-600-
 /120-600.
-/120_600/*
 /120_600_
 /120x600-
 /120x600.
@@ -18094,9 +18093,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https:\/\/mkvcinemas\.[a-z]+\/data\/cache\/min\/1\/[a-f0-9]{8}\.js/$script,domain=mkvcinemas.*
 /^https:\/\/rayinfosports\.com\/wp-content\/uploads\/[a-z]{8}\.js\?ver=/$script,domain=rayinfosports.com
 /^https:\/\/www\.38ksw\.com\/public\/[0-9]+\.js/$domain=38ksw.com
-/^https:\/\/www\.[0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-]+\.xyz\/script\/[0-9A-Za-z.-]+\.[A-Za-z-][A-Za-z-]+\.js$/$script,third-party,match-case
-/^https:\/\/www\.[0-9a-z-]{8,}\.com\/script\/(?=[0-9a-z]{0,29}[A-Z])[0-9A-Za-z]{10,30}\.js$/$script,third-party,match-case
-/^https:\/\/www\.[0-9a-z-]{8,}\.xyz\/script\/[-.0-9A-Za-z]+\.[A-Za-z-]{2,30}\.js$/$script,third-party,match-case
+/^https:\/\/www\.[0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-][0-9a-z-]+\.xyz\/script\/[0-9A-Za-z.-]+\.[A-Za-z-][A-Za-z-]+\.js$/$script,third-party,match-case
+/^https:\/\/www\.[0-9a-z-]{6,}\.com\/script\/(?=[0-9a-z]{0,29}[A-Z])[0-9A-Za-z]{10,30}\.js$/$script,third-party,match-case
+/^https:\/\/www\.[0-9a-z-]{6,}\.xyz\/script\/[-.0-9A-Za-z]+\.[A-Za-z-]{2,30}\.js$/$script,third-party,match-case
 /^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,third-party,match-case,header=link:/adsco\.re\/>;rel=preconnect/
 /^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,third-party,match-case,header=popads-node
 /^https:\/\/www\.[a-z]{8,9}\.com\/[a-z]+\.js$/$domain=pornhoarder.net
@@ -107975,6 +107974,7 @@ saveur.com##div[class*="arcAds"]
 savevideo.me##div[id^="ads_notice_"]
 savevideo.me##td > div[class]:not([id])[style*="important"]
 savevideo.tube#%#//scriptlet("prevent-window-open")
+savingcountrymusic.com###top-goog
 savvytime.com##.converter-ad
 sawlive.tv###sawdiv
 saydigi.com#@#.social-bottom
@@ -110006,7 +110006,10 @@ softarchive.is##.un-link
 softblog.tw#@#.dshare
 softcobra.com##.message
 softdaily.ru##.advertisement-ad
+softexia.com###top-line
 softexia.com##.a1g2022w
+softexia.com##.a1g2023w
+softexia.com##.head-discount
 softexia.com##.offer
 softfamous.com##.container_ads
 softfamous.com#?##sidebars > .sidebar:has(> .widget > .container_ads)
@@ -113759,7 +113762,7 @@ thichxemphim1.site#$#abort-on-property-read affUrls
 thienvadia.net##.my_responsive_ads
 thinbug.com###inktokad
 thingiverse.com##.AdBanner__adBanner--GpB5d
-thingiverse.com##.item-card-container:has-text(Advertisement)
+thingiverse.com##.item-card-container:has-text(/^Ad$/)
 thingiverse.com##div[class*="AdBanner_"]
 thingiverse.com##div[class^="AdBlockDetect"]
 thingiverse.com##div[class^="AdCard"]
@@ -130040,7 +130043,6 @@ zzzyk.com###Tinfo
 ||docomo.ne.jp/scripts/retargeting/retargeting.js
 ||docs.github.com/events
 ||docs.google.com/forms/*/naLogImpressions^
-||doct-umb.org^$popup
 ||docviewer.yandex.com/monitoring.txt
 ||doczj.com/js/common.js
 ||doda.jp/DodaCommon/Html/js/RtoasterTrack.js
@@ -134790,7 +134792,6 @@ zzzyk.com###Tinfo
 ||l-host.net/etn/omnilog?
 ||l-tike.com/akam/$script
 ||l.aaxads.com/log^
-||l.erodatalabs.com^$popup
 ||l.iplsc.com/logger/
 ||l.ivi.ru/logger/
 ||l.usaa.com/e/v1/
@@ -142882,6 +142883,7 @@ zzzyk.com###Tinfo
 ||utopicmobile.com^$popup
 ||utrack.buybox.click/analytics.js
 ||utrack.buybox.click/bb4shop.js
+||utsgw.gmarket.co.kr/vi/send
 ||utt.pm/utm/
 ||uugtv.com/x/app/videoSpread?
 ||uuoozz.com/L7QQ.js
