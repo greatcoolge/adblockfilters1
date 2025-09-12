@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250912001627
-! Last modified: 2025/09/12 00:16:27
-! Blocked Filters: 84145
+! Version: 20250912085747
+! Last modified: 2025/09/12 08:57:47
+! Blocked Filters: 84150
 !
 ###AC_ad
 ###AD_160
@@ -4331,6 +4331,7 @@
 ###taboola-below-article-thumbnails-2
 ###taboola-below-article-thumbnails-express
 ###taboola-below-article-thumbnails-mg
+###taboola-below-article-thumbnails-new
 ###taboola-below-article-thumbnails-photo
 ###taboola-below-article-thumbnails-v2
 ###taboola-below-disco-board
@@ -22277,6 +22278,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /seotracking-v3.js
 /servead/request/*$script,subdocument
 /serveads.php$script
+/server-side/amsweb.php?$document
 /server.php?request=track&output=
 /server/detect.php?
 /service/ad/*
@@ -29350,6 +29352,7 @@ Mplay/kk1.js
 [$path=/advertisement]tupaki.com##.wrapper > div#header + div.container
 [$path=/forum/]hwupgrade.it##.page-content td[style="padding-left:10px; width:300px;"]:not([class],[id])
 [$path=/gp/video]amazon.co.uk,amazon.de,amazon.co.jp,amazon.com#%#//scriptlet('json-prune', 'cuepointPlaylist vodPlaybackUrls.result.playbackUrls.cuepoints vodPlaylistedPlaybackUrls.result.playbackUrls.pauseBehavior vodPlaylistedPlaybackUrls.result.playbackUrls.pauseAdsResolution vodPlaylistedPlaybackUrls.result.playbackUrls.intraTitlePlaylist.[-].shouldShowOnScrubBar')
+[$path=/gp/your-account/ship-track]amazon.*#@%#((e,t)=>{const p={apply:(p,o,n)=>{if(n[0]&&n[1]&&n[1].includes(t)){const t=new URL(n[1]);t.searchParams.delete(e),n[1]=t.href.replace("%2CCuepointPlaylist","")}return Reflect.apply(p,o,n)}};window.XMLHttpRequest.prototype.open=new Proxy(window.XMLHttpRequest.prototype.open,p)})("deviceAdInsertionTypeOverride","/GetPlaybackResources?");
 [$path=/interstice-ad]americass.net#%#//scriptlet('trusted-click-element', '.row > a.btn-link')
 [$path=/jobs]linkedin.com###ember33
 [$path=/jobs]linkedin.com##.discovery-templates-entity-item:has(> div[data-job-id="search"] > div > .job-card-list__footer-wrapper > .job-card-container__footer-item.align-items-center:first-child)
@@ -71534,6 +71537,7 @@ pro.pureology.com$image
 probe.zalando.com$image
 proboards.com,freeforums.net,boards.net###support-message
 procrackerz.org,torrentdownload.info,freeappstorepc.com,masseurporn.com,rennlist.com,f4freesoftware.com,sadeempc.com##center > a[rel="nofollow"] > img
+production.k-trk.com$image
 proewildfire.cn##.comiis_nav ~ a
 profil.wp.pl,echirurgia.pl,kafeteria.pl#%#//scriptlet("set-constant", "Object.prototype.advViewability", "undefined")
 profil.wp.pl,echirurgia.pl,kafeteria.pl#%#//scriptlet("set-constant", "Object.prototype.rekids", "undefined")
@@ -72324,6 +72328,7 @@ sadnowoczesny.pl,warzywaiowoce.pl,elita-magazyn.pl,profitechnika.pl##.container-
 sadnowoczesny.pl,warzywaiowoce.pl,elita-magazyn.pl,profitechnika.pl##.grid--ad
 sadnowoczesny.pl,warzywaiowoce.pl,elita-magazyn.pl,profitechnika.pl##.position_item_right_01_top
 sadnowoczesny.pl,warzywaiowoce.pl,elita-magazyn.pl,profitechnika.pl##.position_right_01_top
+saffronwaldenreporter.co.uk,glasgowtimes.co.uk##div[data-uses-js="dfp-top-ad-fixed"]
 sahibinden.com%2Fmail%2FreadStatistics%2F$image
 sahibinden.com%2Ftrace%2Femail%2Fread%2F$image
 sahibinden.com/mail/readStatistics/$image
