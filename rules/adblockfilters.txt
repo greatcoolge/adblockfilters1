@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250915001330
-! Last modified: 2025/09/15 00:13:30
-! Blocked Filters: 145179
+! Version: 20250915090314
+! Last modified: 2025/09/15 09:03:14
+! Blocked Filters: 145181
 !
 ###AC_ad
 ###AD_160
@@ -99114,6 +99114,7 @@ notifications.hickorytraining.com$image
 notifications.mail.inframationnews.com$image
 notifications.mergermarket.com$image
 notifications.rxtro.com$image
+notion.so#%#//scriptlet('prevent-fetch', 'http-inputs-notion.splunkcloud.com')
 notizie.tiscali.it##div[data-old="search-form-h"]
 notizie.tiscali.it##div[style="width:100%"] > div[style="margin:44px 0px"]
 notonthehighstreet.com#%#//scriptlet('set-constant', 'window.DD_RUM.init', 'noopFunc')
@@ -108511,6 +108512,8 @@ sfgate.com##main > div.f:has(> div.zone > div.package div[data-block-type="ad"])
 sflix.*,sflix2.*,flixhq.*#$#abort-current-inline-script parseInt break;case $.; abort-current-inline-script appendChild iframe; abort-on-iframe-property-read Math.random;
 sg.hu#$#body.ad-test { background-image: none !important; }
 sg.hu#%#//scriptlet("prevent-window-open", "bbelements.com")
+sg1.wizrocketmail.net%2Fr%3Fe%3D$image
+sg1.wizrocketmail.net/r?e=$image
 sg169.com##.Mappdiv
 sg169.com##.jy-pos-3
 sgcarmart##.dealer_banner
@@ -128118,7 +128121,6 @@ zzzyk.com###Tinfo
 ||caoporn.com/ggs.php
 ||caoporn.com/images/bmqp
 ||caoporn.com/templates/frontend/dark-blue/js/caoaa5.js
-||capi.elements.video/tr/
 ||capital.com/widgets/$third-party
 ||capital.com^$ping
 ||capitalbrief.com/ad/
