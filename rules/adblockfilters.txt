@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251003161734
-! Last modified: 2025/10/03 16:17:34
-! Blocked Filters: 141762
+! Version: 20251004001540
+! Last modified: 2025/10/04 00:15:40
+! Blocked Filters: 141769
 !
 ###AC_ad
 ###AD_160
@@ -35721,6 +35721,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
 @@||seamanmemories.com^$generichide
 @@||search.brave.com/search$xmlhttprequest
+@@||search.powergap.de/indexes/$stealth=3p-auth
 @@||searchtap.net^$stealth=3p-auth,domain=designerframesoutlet.com
 @@||seattletimes.com/wp-content/plugins/st-privacy-detection/js/src/ads/ad-test.js
 @@||sec.levexis.com/clients/nbty/$domain=puritan.com
@@ -43109,6 +43110,7 @@ bilibili.com##a[href="/video/av8587236/?tg"]
 bilibili.com##div[style*="height:"][data-loc-id]
 bilibili.com##span[style*="height:"][data-loc-id]
 bilibili.com#$#.container > div[class*="-card"]:has(div[style="display: none !important;"]) { position: absolute !important; left: -3000px !important; }
+bilibili.com#$?#.bili-feed-card:has(> div.bili-video-card[style*="display: none !important;"]) { remove: true; }
 bilibili.com#$?#.container > .feed-card:has(> .bili-video-card.is-rcmd > div.bili-video-card__wrap .bili-video-card__stats--icon > path[d*="M16.9122 1.50323C17.4366 1.48358 17.99745 1.54938 18.4701 1.8207C18.9423 2.09168 19.28085"]) { remove: true; }
 bilibili.com#$?#.ex-card-common:has(.gg-icon) { remove: true; }
 bilibili.com#$?#.feed-card:has(> div.bili-feed-card > div > div > div.bili-video-card__no-interest + a[target="_blank"]:not([href^="https://www.bilibili.com/"])) { remove: true; }
@@ -45049,6 +45051,7 @@ cbs12.com##div[class^="index-module_adAfterContent"]
 cbs12.com##div[id^="js-Taboola-Container"]
 cbsnews.com###taboola-around-the-web-video-door
 cbsnews.com##.nativeAds
+cbsnews.com##div[data-ad]
 cbsnews.com#%#//scriptlet('set-constant', 'Object.prototype.shouldShowAd', 'falseFunc')
 cbssports.com##.GamblingPartnerAdWrapperHome
 cbssports.com##.skybox-top-wrapper
@@ -50245,6 +50248,7 @@ commonhealth.com.tw##div[class*="ad--"]
 commonwealmagazine.org##.block-custom-ad
 comms.scdhhs.gov$image
 communications.dmgmedia.co.uk$image
+community.freepbx.org##.banner-box
 community.hackintoshshop.com##div[align="center"] > div[style="height:25px"]
 community.hackintoshshop.com##div[style="width: 100%; display: table;"]
 community.headlightmag.com##.Banner-B-Top-Step2
@@ -51440,6 +51444,8 @@ dailyadvertiser.com.au,newcastleherald.com.au#$#.md\:inline > .fixed.sticky { to
 dailyadvertiser.com.au,newcastleherald.com.au#$#.md\:inline > .invisible { display: none !important; }
 dailybitcoins.org#@#.ad-img
 dailyboulder.com###mvp-post-bot-ad
+dailyboulder.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
+dailyboulder.com#%#//scriptlet('prevent-setTimeout', '/siteAccessNotification|AdBlockDetector/')
 dailycal.org##div[class^="LiveBanners_specialCont"]
 dailycaller.com###dailycaller_incontent_1
 dailycaller.com###dailycaller_incontent_2
@@ -85762,8 +85768,8 @@ kinox.lat##a[href^="/engine/player.php"]
 kio.ac##main > div:not([class], [id]) > .w-full > .min-h-4 > div[style^="height:"][style*="width:"][style$="overflow: hidden;"]:has(> script:only-child)
 kio.ac#%#(()=>{const e={apply:(e,o,t)=>{try{const e=o;e.length>0&&e.length<5&&"object"==typeof e[0]&&null!==e[0]&&Object.hasOwn(e[0],"blocked")&&(e.forEach((e=>{e&&"object"==typeof e&&Object.hasOwn(e,"blocked")&&(e.blocked=!1)})),o=e)}catch(e){}return Reflect.apply(e,o,t)}};window.Array.prototype.some=new Proxy(window.Array.prototype.some,e)})();
 kio.ac#%#(()=>{const n={construct:(n,o,t)=>{const c=o[0];return"function"==typeof c&&c.toString().includes("(){Date.now()>=")&&(o[0]=()=>{}),Reflect.construct(n,o,t)}};window.Promise=new Proxy(window.Promise,n)})();
-kio.ac#%#(()=>{const t=window.Set.prototype.has,e={apply:(e,o,p)=>{try{if(0===o?.size&&4===p[0])return window.Set.prototype.has=t,!0}catch(t){}return Reflect.apply(e,o,p)}};window.Set.prototype.has=new Proxy(window.Set.prototype.has,e)})();
 kio.ac#%#(()=>{const t={apply:(t,e,r)=>{try{3===e.length&&e.every((t=>"function"==typeof t&&t.toString().includes("element:")))&&(r[0]=()=>!1)}catch(t){}return Reflect.apply(t,e,r)}};window.Array.prototype.map=new Proxy(window.Array.prototype.map,t)})();
+kio.ac#%#(()=>{const t={apply:(t,o,e)=>{try{0===o?.size&&"function"==typeof e[0]&&e[0]?.toString().includes("'DISAB'+")&&o.add(4)}catch(t){}return Reflect.apply(t,o,e)}};window.Set.prototype.forEach=new Proxy(window.Set.prototype.forEach,t)})();
 kio.ac#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
 kio.ac#@#.ad-slot
 kio.ac#@#.adsbygoogle-noablate
@@ -90565,6 +90571,7 @@ map.riftkit.net##.coachify_wrapper
 mapa-turystyczna.pl##.ts-map-layout__content > .ts-com.ts-com--non-mobile
 mapchart.net#?#.row:-abp-contains(Advertisement)
 mapcrunch.com#$?##bottom-box { remove: true; }
+maplescouter.com##div.items-center:empty
 maplestage.com##div[class*="-page-module__ad728Holder___"]
 maplestage.com##div[class*="-page-module__right"] > div > div[style="margin-bottom:20px;padding:16px 10px;box-sizing:border-box;width:100%;background-color:#eee;border:1px solid #ddd;text-align:center;"]:first-child:not([class]):not([id])
 mapquest.ca##.directions-ad
@@ -101606,13 +101613,13 @@ pv-magazine.*,pv-magazine-usa.com,pv-magazine-australia.com###home-top-rectangle
 pvcalc.ru##div[style^="position:fixed; top:0px; left:0px; opacity: 0.9;"]
 pvpoke-re.com##.nitro-any
 pvpoke-re.com#%#//scriptlet('prevent-xhr', '/^https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-3497863494706299$/')
-pvpoke-re.com#%#//scriptlet('trusted-create-element', '.adsbygoogle:has(> #aswift_1)', 'div', 'id="aswift_1_host" style="height: 400px; width: 240px;"')
-pvpoke-re.com#%#//scriptlet('trusted-create-element', '.adsbygoogle:has(> #aswift_2)', 'div', 'id="aswift_2_host" style="height: 280px; width: 396px;"')
-pvpoke-re.com#%#//scriptlet('trusted-create-element', '.adsbygoogle:has(> #aswift_3)', 'div', 'id="aswift_3_host" style="height: 280px; width: 368px;"')
-pvpoke-re.com#%#//scriptlet('trusted-create-element', 'div#aswift_1_host', 'iframe', 'src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299&output=html&h=400&slotname=3999999999&adk=1777777777&adf=345678901&pi=t.ma~as.3999999999&w=240&fwrn=1&fwrnh=0&lmt=1777777777&rafmt=1&armr=3&format=240x400&url=https%3A%2F%2Fpvpoke-re.com%2F&fwr=0&fwrattr=false&rpe=1&resp_fmts=3&wgl=1&aieuf=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTQwLjAuNzMzOS4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjEyNyJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTI3Il1dLDBd&abgtt=6&dt=1777777777777&bpp=1&bdt=252&idt=113&shv=r20250910&mjsv=m202509090101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&prev_fmts=0x0&nras=1&correlator=272184725288&frm=20&pv=1&rplot=4&u_tz=540&u_his=2&u_h=1080&u_w=1920&u_ah=1032&u_aw=1920&u_cd=24&u_sd=1&dmc=8&adx=431&ady=1160&biw=1600&bih=800&scr_x=0&scr_y=0&eid=31004570%2C31094653%2C95366795%2C95370519%2C95370776%2C95371477%2C95371688&oid=2&pvsid=7778888888888890&tmod=1111111111&uas=0&nvt=1&fc=1920&brdim=165%2C55%2C165%2C55%2C1920%2C0%2C1673%2C901%2C1657%2C806&vis=1&rsz=%7C%7CpoeEbr%7C&abl=CS&pfx=0&fu=128&bc=31&bz=1.01&td=1&tdf=2&psd=W251bGwsbnVsbCxudWxsLDNd&nt=1&ifi=2&uci=a!2&btvi=1&fsb=1&dtd=116" style="width:240px;height:400px;" width="240" height="400"')
-pvpoke-re.com#%#//scriptlet('trusted-create-element', 'div#aswift_2_host', 'iframe', 'src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299&output=html&h=280&slotname=4999999999&adk=1222222222&adf=1000000000&pi=t.ma~as.4999999999&w=396&fwrn=1&fwrnh=100&lmt=1777777777&rafmt=1&format=396x280&url=https%3A%2F%2Fpvpoke-re.com%2F&fwr=0&fwrattr=false&rpe=1&resp_fmts=3&wgl=1&aieuf=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTQwLjAuNzMzOS4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjEyNyJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTI3Il1dLDBd&abgtt=6&dt=1777777777777&bpp=1&bdt=449&idt=202&shv=r20250910&mjsv=m202509090101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&prev_fmts=0x0%2C397x280&nras=1&correlator=4111111111111&frm=20&pv=1&u_tz=540&u_his=2&u_h=1080&u_w=1920&u_ah=1032&u_aw=1920&u_cd=24&u_sd=1&dmc=8&adx=1242&ady=95&biw=1600&bih=800&scr_x=0&scr_y=0&eid=31004370%2C31094533%2C31094584%2C95370518%2C95370628%2C95370775%2C95371814%2C95371477&oid=2&pvsid=7778888888888890&tmod=1111111111&uas=0&nvt=1&fc=1920&brdim=184%2C41%2C184%2C41%2C1920%2C0%2C1675%2C933%2C1659%2C492&vis=1&rsz=%7C%7CfoeE%7C&abl=CF&pfx=0&fu=128&bc=31&bz=1.01&td=1&tdf=2&psd=W251bGwsbnVsbCxudWxsLDNd&nt=1&ifi=3&uci=a!3&fsb=1&dtd=204" style="width:396px;height:280px;" width="396" height="280"')
-pvpoke-re.com#%#//scriptlet('trusted-create-element', 'div#aswift_3_host', 'iframe', 'src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299&output=html&h=280&slotname=6666666666&adk=3444444444&adf=1000000000&pi=t.ma~as.6666666666&w=368&fwrn=1&fwrnh=100&lmt=1777777777&rafmt=1&format=368x280&url=https%3A%2F%2Fpvpoke-re.com%2F&fwr=0&fwrattr=false&rpe=1&resp_fmts=3&wgl=1&aieuf=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTQwLjAuNzMzOS4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjEyNyJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTI3Il1dLDBd&abgtt=6&dt=1777777777777&bpp=1&bdt=270&idt=143&shv=r20250910&mjsv=m202509160101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&prev_fmts=0x0%2C780x280%2C368x280&nras=1&correlator=5111111111111&frm=20&pv=1&u_tz=540&u_his=2&u_h=1080&u_w=1920&u_ah=1032&u_aw=1920&u_cd=24&u_sd=1&dmc=8&adx=1213&ady=95&biw=1600&bih=800&scr_x=0&scr_y=0&eid=31004370%2C31094533%2C31094584%2C95370518%2C95370628%2C95370775%2C95371814%2C95371477&oid=2&pvsid=7778888888888890&tmod=1111111111&uas=0&nvt=1&fc=1920&brdim=184%2C61%2C164%2C61%2C1920%2C0%2C1616%2C902%2C1600%2C734&vis=1&rsz=%7C%7Cfoe%7C&abl=CF&pfx=0&fu=128&bc=31&bz=1.01&td=1&tdf=2&psd=W251bGwsbnVsbCxudWxsLDNd&nt=1&ifi=4&uci=a!4&fsb=1&dtd=145" style="width:368px;height:280px;" width="396" height="280"')
-pvpoke-re.com#%#//scriptlet('trusted-set-attr', 'ins.adsbygoogle', 'data-ad-status', 'filled')
+pvpoke-re.com#%#//scriptlet('trusted-create-element', '.adsbygoogle:has(> #aswift_1)', 'div', 'id="aswift_1_host" style="height: 280px; width: 365px;"')
+pvpoke-re.com#%#//scriptlet('trusted-create-element', '.adsbygoogle:has(> #aswift_2)', 'div', 'id="aswift_2_host" style="height: 250px; width: 300px;"')
+pvpoke-re.com#%#//scriptlet('trusted-create-element', '.adsbygoogle:has(> #aswift_3)', 'div', 'id="aswift_3_host" style="height: 280px; width: 336px;"')
+pvpoke-re.com#%#//scriptlet('trusted-create-element', 'div#aswift_1_host', 'iframe', 'src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299&output=html&h=280&slotname=4999999999&adk=1777777777&adf=1059123170&pi=t.ma~as.4999999999&w=365&fwrn=1&fwrnh=100&lmt=1777777777&rafmt=1&format=365x280&url=https%3A%2F%2Fpvpoke-re.com%2F&fwr=0&fwrattr=false&rpe=1&resp_fmts=3&wgl=1&aieuf=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTQwLjAuNzMzOS4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjEyNyJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTI3Il1dLDBd&abgtt=6&dt=1777777777777&bpp=1&bdt=400&idt=228&shv=r20250910&mjsv=m202509090101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&prev_fmts=0x0%2C780x280&nras=1&correlator=3696633791444&frm=20&pv=1&u_tz=540&u_his=2&u_h=1080&u_w=1920&u_ah=1032&u_aw=1920&u_cd=24&u_sd=1&dmc=8&adx=5&ady=95&biw=1600&bih=900&scr_x=0&scr_y=0&eid=31993849%2C31094918%2C42531705%2C95367554%2C95370628%2C95372358%2C31095029%2C95340252%2C95340254&oid=2&pvsid=6669999996390579&tmod=555555555&uas=0&nvt=1&fc=1920&brdim=135%2C40%2C235%2C40%2C1920%2C0%2C1611%2C908%2C1595%2C740&vis=1&rsz=%7C%7CfoeE%7C&abl=CF&pfx=0&fu=128&bc=31&bz=1.01&td=1&tdf=2&psd=W251bGwsbnVsbCxudWxsLDNd&nt=1&ifi=3&uci=a!3&fsb=1&dtd=231" style="width:365px;height:280px;" width="365" height="280"')
+pvpoke-re.com#%#//scriptlet('trusted-create-element', 'div#aswift_2_host', 'iframe', 'src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299&output=html&h=250&slotname=6644444444&adk=622222222&adf=1800000000&pi=t.ma~as.6644444444&w=311&fwrn=1&fwrnh=100&lmt=1777777777&rafmt=1&format=311x250&url=https%3A%2F%2Fpvpoke-re.com%2F&fwr=0&fwrattr=false&rpe=1&resp_fmts=3&wgl=1&aieuf=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTQwLjAuNzMzOS4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjEyNyJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTI3Il1dLDBd&abgtt=6&dt=1777777777777&bpp=1&bdt=48&idt=39&shv=r20250910&mjsv=m202509090101&ptt=9&saldr=aa&abxe=1&cookie=ID%3Df9ff9d85de22864a%3AT%3D1759485678%3ART%3D1759468123%3AS%3DALNI_MbxpFMHXxNUuCyWH6v9bG0HYb9CAA&gpic=UID%3D0000119ee4397d0e%3AT%3D1759485653%3ART%3D1759486123%3AS%3DALNI_MaM7_XK5d3ZNzHUSRiSxebpYHHkqQ&eo_id_str=ID%3Dc5c3b54a79c7654a%3AT%3D1579486234%3ART%3D1579468123%3AS%3DAA-AfjaTNZ7cvD7GU7Ldz2zVXaRx&prev_fmts=0x0%2C780x280%2C311x250&nras=1&correlator=6111111111111&frm=20&pv=1&u_tz=540&u_his=2&u_h=1080&u_w=1920&u_ah=1032&u_aw=1920&u_cd=24&u_sd=1&dmc=8&adx=1156&ady=1073&biw=1400&bih=900&scr_x=0&scr_y=978&eid=31993849%2C31094918%2C42531705%2C95367554%2C95370628%2C95372358%2C31095029%2C95340252%2C95340254&oid=2&pvsid=7778888888888890&tmod=1111111111&uas=0&nvt=2&fc=1920&brdim=135%2C40%2C235%2C20%2C1920%2C0%2C1503%2C908%2C1487%2C519&vis=1&rsz=%7C%7CfoeE%7C&abl=CF&pfx=0&fu=128&bc=31&bz=1.01&td=1&tdf=2&psd=W251bGwsbnVsbCxudWxsLDNd&nt=1&ifi=4&uci=a!4&fsb=1&dtd=42" style="width:300px;height:250px;" width="300" height="250"')
+pvpoke-re.com#%#//scriptlet('trusted-create-element', 'div#aswift_3_host', 'iframe', 'src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299&output=html&h=280&slotname=4999999999&adk=3666666666&adf=1000000000&pi=t.ma~as.4999999999&w=336&fwrn=1&fwrnh=100&lmt=1777777777&rafmt=1&format=336x280&url=https%3A%2F%2Fpvpoke-re.com%2F&fwr=0&fwrattr=false&rpe=1&resp_fmts=3&wgl=1&aieuf=1&uach=WWyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTQwLjAuNzMzOS4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjEyNyJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTI3Il1dLDBd&abgtt=6&dt=1777777777777&bpp=1&bdt=38&idt=27&shv=r20250910&mjsv=m202509160101&ptt=9&saldr=aa&abxe=1&cookie=ID%3Df9ff9d85de22864a%3AT%3D1759485678%3ART%3D1759468123%3AS%3DALNI_MbxpFMHXxNUuCyWH6v9bG0HYb9CAA&gpic=UID%3D0000119ee4397d0e%3AT%3D1759485653%3ART%3D1759486123%3AS%3DALNI_MaM7_XK5d3ZNzHUSRiSxebpYHHkqQ&eo_id_str=ID%3Dc5c3b54a79c7654a%3AT%3D1579486234%3ART%3D1579468123%3AS%3DAA-AfjaTNZ7cvD7GU7Ldz2zVXaRx&prev_fmts=0x0%2C780x280&nras=1&correlator=4555555555888&frm=20&pv=1&u_tz=540&u_his=2&u_h=1080&u_w=1920&u_ah=1032&u_aw=1920&u_cd=24&u_sd=1&dmc=8&adx=5&ady=1073&biw=1500&bih=900&scr_x=0&scr_y=978&eid=31993849%2C31094918%2C42531705%2C95367554%2C95370628%2C95372358%2C31095029%2C95340252%2C95340254&oid=2&pvsid=4222228888888888&tmod=1111111111&uas=0&nvt=2&fc=1920&brdim=135%2C40%2C235%2C40%2C1920%2C0%2C1553%2C908%2C1537%2C519&vis=1&rsz=%7C%7CfoeE%7C&abl=CF&pfx=0&fu=128&bc=31&bz=1.01&td=1&tdf=2&psd=W251bGwsbnVsbCxudWxsLDNd&nt=1&ifi=3&uci=a!3&fsb=1&dtd=30" style="width:336px;height:280px;" width="336" height="280"')
+pvpoke-re.com#%#//scriptlet('trusted-set-attr', 'ins.adsbygoogle:not(.adsbygoogle-noablate):not(.nitro-body)', 'data-ad-status', 'filled')
 pvpoke-re.com#@#.nitro-any
 pvpoke-re.com#@#ins.adsbygoogle[data-ad-client]
 pvpoke-re.com#@#ins.adsbygoogle[data-ad-slot]
@@ -123077,6 +123084,7 @@ zzzyk.com###Tinfo
 ||at.mklaud.com/at/at_log_*.php
 ||at.ua/stat/
 ||atatus.com^$third-party
+||ate60vs7zcjhsjo5qgv8.com/a1a324ccfa224cd51f79094470751af2.js
 ||atentherel.org^$popup
 ||atlas.rambler.ru/metrics
 ||atlasfiles.com^*/sp3_ep.js$third-party
@@ -125496,7 +125504,6 @@ zzzyk.com###Tinfo
 ||cntronics.com/adsupload/
 ||cntv.cn/hezuo/
 ||cntvboxnow.com//ads_
-||cnwebperformance.biz^$third-party
 ||cnwnews.com/ad-nrtop/
 ||cnwnews.com/gg
 ||cnwnews.com/images/kgt
@@ -127606,7 +127613,6 @@ zzzyk.com###Tinfo
 ||feedblitz.com/imp?$third-party
 ||feedblitz.com^*.gif?$third-party
 ||feedburner.com/~r/
-||feedcat.net^$third-party
 ||feedly.com/mxpnl/
 ||feedou.com/nzq/style/pc/js/popbig.js
 ||feedou.com/nzq/style/pc/js/zt_bottom.js
@@ -128459,7 +128465,6 @@ zzzyk.com###Tinfo
 ||gg163.net/20*ad/
 ||gg163.net/js/163bbsad.js
 ||gg163.net/js/gg163ad.js
-||ggbetapk.com^$popup,third-party
 ||ggg*.com/static/js/common.js
 ||ggsel.com/js/download/analytics.js
 ||ggwan.com^$third-party,domain=~linghit.com
@@ -132841,6 +132846,7 @@ zzzyk.com###Tinfo
 ||mon*-*.tiktokv.us^
 ||mon*-misc-lf.fqnovel.com^
 ||mon*-misc.fqnovel.com^
+||mon*.tiktokv.us^
 ||mon-*.lemon8-app.com^
 ||mon-*.lemon8-app.us^
 ||mon-*.tiktokv.com^
@@ -133437,6 +133443,7 @@ zzzyk.com###Tinfo
 ||newser.com/utility.aspx?
 ||newserv.xyz^$third-party
 ||newshaifakrayot.net/bannershtml/
+||newsinmir.com/jquerys.js
 ||newsiqra.com^$subdocument,third-party
 ||newsletter.lidl.*^$removeparam=x
 ||newsletters.nationalgeographic.com^$image,third-party
@@ -133816,6 +133823,7 @@ zzzyk.com###Tinfo
 ||office-partner.de^$removeparam=sPartner
 ||officetablntry.org^$popup
 ||official.cam/*/?track=*&*&campaign=$domain=ratedgross.com
+||offidocs.com/media/system/*afi$script,~third-party
 ||ofmweb.wpcdn.pl/dist/*/static/chunks/*.js$replace=/adv:!.\,/adv:!1\,/,domain=open.fm
 ||ofweek.com/pop/ad/
 ||oggimilazzo.it/*/index.html
@@ -133994,7 +134002,6 @@ zzzyk.com###Tinfo
 ||opstag.com^$third-party
 ||optics.org/banners/
 ||opticsky.cn/images/2015/gy-px201
-||optify.net^$third-party
 ||optiklink.com/arlinablock.js
 ||optimizely.com/client_storage/
 ||optimizely.com/js/geo.js
@@ -134079,6 +134086,7 @@ zzzyk.com###Tinfo
 ||outlook.live.com/ows/*/OutlookOptions/AdsAggregate
 ||outputter.io/uploads/$subdocument
 ||oval.id/tracker/
+||overbuff.com/cargo.js
 ||overclockers.co.uk/KitGuru/similarArticle?sku=$domain=kitguru.net
 ||overstock.com/analytics/
 ||overstock.com/dlp?
@@ -137216,6 +137224,7 @@ zzzyk.com###Tinfo
 ||speed.cloudflare.com/__log
 ||speedporn.net/iamfront.js
 ||speedporn.net/wp-content/themes/retrotube/nex1.js
+||speedrun.com/bluepill.js
 ||speedtest.cn/api/v2/show
 ||speedtest.cn/assets/images/ce_
 ||speedtest.dailymotion.com/latencies.js
@@ -139572,9 +139581,7 @@ zzzyk.com###Tinfo
 ||urbtix.hk/api/internet/log/add?
 ||urgayporn.com/bn/
 ||uriports.com/reports/$third-party
-||url.rw/*&a=
 ||url.rw/*&a=$popup
-||url.rw/*&mid=
 ||url.rw/*&mid=$popup
 ||urlbeat.net/Webservices/jsParseLinks.aspx$script,third-party
 ||urlbeat.net/visitScript/$script,third-party
