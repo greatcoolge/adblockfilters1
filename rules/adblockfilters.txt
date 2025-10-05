@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251005161555
-! Last modified: 2025/10/05 16:15:55
-! Blocked Filters: 141744
+! Version: 20251006001438
+! Last modified: 2025/10/06 00:14:38
+! Blocked Filters: 141747
 !
 ###AC_ad
 ###AD_160
@@ -15387,6 +15387,7 @@
 ##div[id^="adrotate_widgets-"]
 ##div[id^="adspot-"]
 ##div[id^="adv-"].adv
+##div[id^="apn_native_ad_slot_"]
 ##div[id^="crt-"][style]
 ##div[id^="dfp-ad-"]
 ##div[id^="div-ads-"]
@@ -122674,6 +122675,7 @@ zzzyk.com###Tinfo
 ||api.patienten.helios-gesundheit.de/api/unleash/client/metrics
 ||api.perspektywy.pl/v*/banners/
 ||api.phnx.click/js/article-stat-
+||api.pico.tools/metrics/
 ||api.picox.bendingspoons.com/v1/events
 ||api.pixai.art/graphql$jsonprune=\$.data.publicDynamicConfig.campaign.feed.*..[?(key-eq "\$.isAd" true)]
 ||api.plebmasters.de/v*/dlcs/$jsonprune=\$..results..[?(has adTitle)]
@@ -125507,6 +125509,7 @@ zzzyk.com###Tinfo
 ||cntronics.com/adsupload/
 ||cntv.cn/hezuo/
 ||cntvboxnow.com//ads_
+||cnwebperformance.biz^$third-party
 ||cnwnews.com/ad-nrtop/
 ||cnwnews.com/gg
 ||cnwnews.com/images/kgt
@@ -125829,7 +125832,6 @@ zzzyk.com###Tinfo
 ||creately.com/static/js/creately-analytics-
 ||creative*.bidease.com^
 ||creative*.simulmedia-apis.com$media,redirect=noopmp4-1s,domain=play.geforcenow.com
-||creative.bulecams.com/widgets/$domain=xxxbule.com
 ||creative.myasian.live/widgets/
 ||creative.speednetwork*.com/speednetwork*/tags/x*/x*.js?ap=
 ||creativefactory.zalando.de/impressions^
@@ -129796,6 +129798,7 @@ zzzyk.com###Tinfo
 ||icqwindow.
 ||icutlink.com/img/download-now.gif
 ||icutlink.com/team.js
+||icws.jb51.net/good/arc2019.js
 ||icy-veins.com/prolix^
 ||id.google.*/verify/
 ||id.rambler.ru/api/v3/session/getRsidx
@@ -131425,7 +131428,6 @@ zzzyk.com###Tinfo
 ||lastpass.com/m.php/proxy_tracker
 ||latestlaws.com/frontend/ads/
 ||latestly.com^$cookie=personalization_id
-||launch.galacticow.com^$popup
 ||launcher-api.bignox.com/desktop/v1/ad
 ||launcher-api.bignox.com/desktop/v1/hotseat
 ||launchpad-wrapper.privacymanager.io/*/launchpad-liveramp.js
@@ -132497,6 +132499,7 @@ zzzyk.com###Tinfo
 ||meetup.com^$cookie=MEETUP_TRACK
 ||meetup.com^$removeparam=_xtd
 ||meetup.com^$removeparam=rv
+||megacot.com^$popup
 ||megaline.co/Webservices/jsParseLinks.aspx$script,third-party
 ||megaline.co/visitScript/$script,third-party
 ||megaplay.cc/cdn-cgi/trace
@@ -133821,7 +133824,6 @@ zzzyk.com###Tinfo
 ||ofweek.com/pop/ad/
 ||oggimilazzo.it/*/index.html
 ||oh100.com/js/pubuliu.
-||ohayoo.io^$third-party
 ||ohmygore.com/ef_pub
 ||ohmynews.com/NWS_Web/Common/JS/GoogleAnalytics
 ||ohmynews.com/NWS_Web/Common/JS/TagManage
@@ -134630,6 +134632,7 @@ zzzyk.com###Tinfo
 ||player.ooyala.com/errors/report?
 ||player.performgroup.com/eplayer.js$domain=fcinternews.it
 ||player.sbs.co.kr/log/
+||player.sendtonews.com^$third-party
 ||player.serverbk.com/bkcdn*.xml
 ||player.svc.litv.tv/pixel/
 ||player.twitch.tv/js/embed/$domain=wiki.fextralife.com
