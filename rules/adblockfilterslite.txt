@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20251008161916
-! Last modified: 2025/10/08 16:19:16
-! Blocked Filters: 79095
+! Version: 20251009001703
+! Last modified: 2025/10/09 00:17:03
+! Blocked Filters: 79089
 !
 ###AC_ad
 ###AD_160
@@ -28817,6 +28817,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||youtrack.cloud^$removeparam
 @@||zaixianjisuan.com^$generichide
 @@||zee5*.akamaized.net^$stealth=ip,domain=zee5.com
+@@||zol-img.com.cn^$stealth=referrer,domain=zol.com.cn
 @@||zpmobi.cn^*/ad.css?$stylesheet
 @||crunchyroll.com/*/ads_enabled_flag*.js$script
 Banner468x60
@@ -58103,22 +58104,6 @@ hanyu.baidu.com###download-wrapper
 hanyu.baidu.com###fengchao_els.c-container.card.fengchao-els
 hanyu.baidu.com##.app-promotion-icon
 hanyu.baidu.com##.fengchao-el
-hao.360.cn###background.festival
-hao.360.cn###daily-hotword
-hao.360.cn###festival-theme > .left-entry
-hao.360.cn###festival-theme > .right-entry-wrap
-hao.360.cn###festival_baijian
-hao.360.cn###festival_fly
-hao.360.cn###festival_fly + .couten
-hao.360.cn###iguess
-hao.360.cn###left-ria-fixed
-hao.360.cn###snatch-logo
-hao.360.cn##.applist > .app:nth-last-child(n+2)
-hao.360.cn##.cangbao_redbags
-hao.360.cn##.festival_snatch
-hao.360.cn##.hot-word
-hao.360.cn##.icon-text-nav
-hao.360.cn##.small-obj
 hao.360.cn,hao.360.com###activity
 hao.360.cn,hao.360.com###festival-logoskin
 hao.360.cn,hao.360.com###festival_balloon
@@ -58475,6 +58460,7 @@ homestolove.e.aremedia.com.au$image
 hometheaterforum.com,orbz.io##div[style="width: 300px; height: 600px;"]
 homo.xxx,hello.porn##.btn-dvd
 hongrentao.cc,houhuayuan.pink,mrmad.com.tw,myself-bbs.com,paltv.top,pbhz.com,sportsyeah.hk,zhaoze.party#@##adsense
+honkailab.com,genshinlab.com##div[id^="pw-incontent"]
 horizon-dev.dailycaller.com$image
 horizon-dev.greetz.nl$image
 horizon-dev.justfab.com$image
@@ -63893,6 +63879,7 @@ nationalmemo.com,spectrum.ieee.org,theodysseyonline.com##div[class^="rblad-"]
 nationalpost.com,vancouversun.com##.ad__inner
 nationalworld.com,scotsman.com##.dmpu-item
 nb.zol.com.cn##.article-cont > div.zol-eshop
+nb.zol.com.cn#%#//scriptlet('set-cookie', 'getIsToJd', '1')
 nba.hupu.com##div[class^="nba-ad"]
 nbaup.live,goalup.live#%#//scriptlet("abort-on-property-read", "popup")
 nbk.io,senpa.io###ad-slot-center-panel
@@ -69394,7 +69381,7 @@ truyengihotnhat.com,rule34hentai.net,zinchanmanga.com,streamhub.to,javstream.com
 truyenhentaivn.*##.ads_popup
 truyenqqtto.com,phim.haysex.asia#$#abort-current-inline-script Promise break;case
 truyensextv.com,yanhh3d.vip,s4.chinav.sex#$#abort-current-inline-script document.addEventListener opup
-truyensieuhay.com,quangcaoyenbai.com,phimmoi.ing,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.best,teamlanhlung8.shop,forum.timfshare.com,ungtycomicshot.com,honghotduongpho.vn#$#abort-on-property-read document.cookie
+truyensieuhay.com,quangcaoyenbai.com,phimmoi.ing,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.best,teamlanhlung8.shop,forum.timfshare.com,ungtycomicshot.com,honghotduongpho.vn,chich69.blog#$#abort-on-property-read document.cookie
 tube8.*###flvplayer > div#togglerWrapper ~ div[id][style="display: block;"]
 tube8.*###main-nav > li > a[rel="nofollow noopener"][onclick^="pageTracker"]
 tube8.*##.footerBanner
@@ -69899,7 +69886,7 @@ vidsrc.*#%#//scriptlet('abort-current-inline-script', 'document.write', '.js?_='
 vidsrc.*,cucuflix.*#$#abort-current-inline-script document.createElement /referrerPolicy.*no-referrer-when-downgrade/;
 vidsrc2.*##body > div[style*="position: absolute;"][style*="inset:"][style*="z-index:"]
 vidzstore.com,moviesroot.club,kissmanga.*,leechpremium.link###myModal
-viet69.lt,dualeotruyenf.com,yurineko.my,haysexvl.net,cliphot69.shop,doctruyen3qui14.com,ihentai.cloud,animehay.life,hentaivc.net,streamvl.top,buomtv.media,truyenvn.shop,javtiful.com,quatvn.love,vn82phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,demo.14412882.com,phim.sexnungvl.pro,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.net,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art,motphim.pokemonviet.com#$#abort-current-inline-script WebAssembly instantiate
+viet69.lt,dualeotruyenzx.com,yurineko.my,haysexvl.net,cliphot69.shop,doctruyen3qui14.com,ihentai.cloud,animehay.life,hentaivc.net,streamvl.top,buomtv.media,truyenvn.shop,javtiful.com,quatvn.love,vn82phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,demo.14412882.com,phim.sexnungvl.pro,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.net,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art,motphim.pokemonviet.com#$#abort-current-inline-script WebAssembly instantiate
 view-cre.capitalone.com$image
 view-csf.capitalone.com$image
 view-old.email.realestate.com.au$image
@@ -72774,8 +72761,8 @@ www.mail.reedexport.com.cn$image
 www.medicalupdate.at$image
 www.mgtv.com##.m-headgg
 www.milestonefs.net$image
-www.motchill26.com,trumtruyen.live#$#abort-current-inline-script setTimeout Aff
-www.motchill26.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#$#abort-on-property-read localStorage
+www.motchill27.com,trumtruyen.live#$#abort-current-inline-script setTimeout Aff
+www.motchill27.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#$#abort-on-property-read localStorage
 www.mydrivers.com###weixin_box
 www.network.click.s11.sfmc-osl.com$image
 www.news.icemiller.com$image
@@ -75696,6 +75683,8 @@ zzzyk.com###Tinfo
 ||fapnado.*.php|
 ||fapnado.*/bump/
 ||faro-collector-prod-*.grafana.net^
+||fashionnova.com^$cookie=2c.cld
+||fashionnova.com^$cookie=OptimizelyUserId
 ||faxingw.cn/js/*0
 ||faxingw.cn/js/*ad
 ||faxingw.cn/js/detailgcbox.js
@@ -76199,6 +76188,7 @@ zzzyk.com###Tinfo
 ||icnkr.com/cnkradv/
 ||icnkr.com/data/attachment/portal/
 ||icon.zol-img.com.cn/mainpage/js/click.js
+||icon.zol-img.com.cn/public/bdshare/static/api/js/trans/logger.js
 ||icourse163.org/dwr/call/plaincall/CommonBean.obtain.dwr
 ||icq-window.
 ||icqwindow.
@@ -76292,6 +76282,9 @@ zzzyk.com###Tinfo
 ||images-*.ssl-images-amazon.com/images/*/sf/DAsf-*_.js
 ||images.china.cn^*first/$subdocument
 ||images.jurong.cn/bbs/
+||images.sohu.com/bill/
+||images.sohu.com/cs/
+||images.sohu.com/ytv/*.jpg
 ||imdb.com^$removeparam=/^pf_rd_[a-z]*=/
 ||imdb.com^$removeparam=ref_
 ||imeee.cn/DA_HTML/*.js
@@ -77242,6 +77235,7 @@ zzzyk.com###Tinfo
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=75
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=77
 ||offcn.com/offcnewm/
+||offer.alibaba.com^$popup
 ||office-partner.de^$removeparam=campaign
 ||office-partner.de^$removeparam=sPartner
 ||ofweek.com/pop/ad/
