@@ -4,7 +4,7 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2025-10-09 08:12:38(GMT+8)
+! ! Version: 2025-10-09 14:05:09(GMT+8)
 ! Total count: 179743
  
 ###ADtip
@@ -6662,6 +6662,7 @@ $websocket,domain=wap.yushuwu.cloud
 /statscounter/*
 /statscript.js
 /statsd_proxy
+/statsig/rgstr?k=client-
 /statstracker.
 /statstracker/*
 /statstracker?
@@ -49913,6 +49914,7 @@ nyb.soundestlink.com*track$image
 nypost.com#%#//scriptlet('set-local-storage-item', 'SPOTIM_DEVICE_UUID_V2', '$remove$')
 nypost.com#%#//scriptlet('set-local-storage-item', 'ow/social-browser-storage', '$remove$')
 nytimes.com#%#//scriptlet("set-constant", "Navigator.prototype.joinParakeetInterestGroup", "noopFunc")
+nytimes.com,slideshare.net#%#//scriptlet('set-local-storage-item', '/^statsig/', '$remove$')
 o2.pl##div[class$="cevoIl"]
 o2.pl,wp.pl#?#div:-abp-has(> script:-abp-contains(=== 'function'))
 o2.pl,wp.pl#?#div:-abp-has(> script:-abp-contains(adsFirstRegisterSlot))
@@ -53013,7 +53015,6 @@ sli.fortune.com$image
 sli.thedailybeast.com$image
 slickdeals.net#$#hide-if-matches-xpath '//div[contains(@class,"displayAdContainer searchPage__")]/ancestor-or-self::div[@class="searchPage__headerContent"][1]'
 slickdeals.net#$#hide-if-matches-xpath '//span[contains(text(),"Sponsored")][@data-partial="sponsor"]/ancestor-or-self::div[@data-role="announcementBar"][1]'
-slideshare.net#%#//scriptlet('set-local-storage-item', '/^statsig/', '$remove$')
 slit.cn#%#//scriptlet("abort-current-inline-script", "alert", "typeof(ad)")
 slivap.ru##.svg-adblock
 slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com#%#//scriptlet('abort-current-inline-script', 'atob', 'eval(decodeURIComponent(escape(window.atob("KCgpPT5')
@@ -136460,7 +136461,6 @@ zzzyk.com###Tinfo
 ||s.srvsynd.com^
 ||s.srvsynd.com^$third-party
 ||s.ssl.qhres2.com/ssl/
-||s.ssl.qhres2.com^
 ||s.stcatharinesstandard.ca^
 ||s.sternregister.de^
 ||s.stgeorgeafc.com.au^
