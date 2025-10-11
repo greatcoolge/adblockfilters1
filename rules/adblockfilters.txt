@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251011161614
-! Last modified: 2025/10/11 16:16:14
-! Blocked Filters: 141313
+! Version: 20251012001426
+! Last modified: 2025/10/12 00:14:26
+! Blocked Filters: 141321
 !
 ###AC_ad
 ###AD_160
@@ -39653,6 +39653,7 @@ amazon.*##div[data-csa-c-painter="sp-cart-mobile-carousel-cards"]
 amazon.*##div[data-csa-c-slot-id^="loom-mobile-brand-footer-slot_hsa-id-"]
 amazon.*##div[data-csa-c-slot-id^="loom-mobile-top-slot_hsa-id-"]
 amazon.*##div[id^="dp-ads-"]
+amazon.*##div[id^="sims-simsContainer_feature_div_"]:has(.sp_info_link)
 amazon.*##div[id^="sp_detail"]
 amazon.*##span[cel_widget_id^="MAIN-FEATURED_ASINS_LIST-"]
 amazon.*##span[cel_widget_id^="MAIN-loom-desktop-brand-footer-slot_hsa-id-CARDS-"]
@@ -94732,6 +94733,7 @@ newstm.in,3pm.in##a[href*="/click.htm?"][target="_blank"]
 newstracklive.com##.addBox
 newsweek.com###block-nw-content-recirc
 newsweek.com###recommended
+newsweek.com##.FeaturedMedia_articleFeaturedMedia__LEpVY
 newsweek.com##.block-ibtmedia-dfp
 newsweek.com##.right-rail-ads
 newsweek.com##.subscription-tabs
@@ -102267,6 +102269,8 @@ reddxxx.com##.w-screen.backdrop-blur-md
 reddxxx.com#?#.items-center:-abp-contains(/^ad$/)
 reddxxx.com#?#.mx-auto > div.mb-2:has(> div.flex > div.flex > div > h2:contains(VALENTINES SALE))
 reddxxx.com#?#[role="gridcell"]:-abp-contains(/^AD$/)
+redefine.pl,redcdn.pl,polsatnews.pl,polsatsport.pl,twojapogoda.pl,geekweek.pl,polsatboxgo.pl#%#//scriptlet('google-ima3')
+redefine.pl,redcdn.pl,polsatnews.pl,polsatsport.pl,twojapogoda.pl,geekweek.pl,polsatboxgo.pl#%#//scriptlet('prevent-element-src-loading', 'script', 'imasdk.googleapis.com/js/sdkloader/ima3.js')
 redferret.net##.redfads
 redflagdeals.com###rfd-primis-wrapper
 redflagdeals.com##.inline_leaderboard
@@ -125046,6 +125050,7 @@ zzzyk.com###Tinfo
 ||cntronics.com/adsupload/
 ||cntv.cn/hezuo/
 ||cntvboxnow.com//ads_
+||cnwebperformance.biz^$third-party
 ||cnwnews.com/ad-nrtop/
 ||cnwnews.com/gg
 ||cnwnews.com/images/kgt
@@ -129888,6 +129893,7 @@ zzzyk.com###Tinfo
 ||internships.com/oGckki0e/init.js
 ||interpark.com/elog
 ||interpark.com/logs/
+||interpersonalskillse.info^$popup
 ||interracial-girls.com/chaturbate/
 ||interracial-girls.com/i/$image
 ||interracial.com/int354/script.php
@@ -133185,6 +133191,7 @@ zzzyk.com###Tinfo
 ||notion.so/api/v*/teV1|
 ||notube.*/p/$popup
 ||notyf.com/pixel/
+||nougacoush.com^$popup
 ||nova.cz^$removeparam=dop_ab_variant
 ||nova.cz^$removeparam=dop_id
 ||nova.cz^$removeparam=dop_req_id
@@ -135253,6 +135260,7 @@ zzzyk.com###Tinfo
 ||refershareus.xyz/ads?
 ||reflow.tv/pixels/
 ||reformal.ru/log.php
+||refundsreisner.life^$popup
 ||refutationtiptoe.com^$popup
 ||region1.analytics.google.com^$third-party
 ||registercitizen.com/413gkwMT/init.js
