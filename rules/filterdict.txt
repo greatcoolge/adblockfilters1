@@ -1,6 +1,6 @@
 # FilterDict - 正则表达式和复杂过滤规则
-# 生成时间: 2025-10-13 00:14:57
-# 规则数量: 161918
+# 生成时间: 2025-10-13 09:03:51
+# 规则数量: 161926
 #
 ||st-n.ads*-adnow.com^
 ||reachableads-av.*.amazonaws.com^
@@ -92,6 +92,7 @@
 ||rtbimp-loadbalancer-*.amazonaws.com^
 ||deloton.com$important
 ||oclasrv.com$important
+||*-sdk.rum.aliyuncs.com^
 ||ecommerce-events*.adscale.com^
 ||install*.zonastat.com^
 ||log*.zijieapi.com^
@@ -24006,6 +24007,8 @@ ghbrisk.com###adbd
 ghbrisk.com#%#//scriptlet('prevent-element-src-loading', 'script', 'imasdk.googleapis.com/js/sdkloader/ima3.js')
 crazygames.com#$#.adsbox.advertisement.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links { display: block !important; }
 @@||crazygames.com^$generichide
+||pvpoke-re.com/*.js?v=$replace=/[-\$0-9A-Z_a-z]+?\([-\$0-9A-Z_a-z]*?\)[\,;]console\[(?:['"]log['"]|_?0x[0-9a-f]+\(0x[0-9a-f]+\))\]\((?:['"].+?['"](?:\+_?0x[0-9a-f]+)?|_?0x[0-9a-f]+\(0x[0-9a-f]+\))\)/console.log()/
+||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 ||pvpoke-re.com/*.js?v=$replace=/([};])location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)===-(?:\(.+?\)|_?0x[0-9a-f]+|1)&&.*?location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)+(?:[\,>]|===)-(?:\(.+?\)+|_?0x[0-9a-f]+|1)\?/\$1 0 ?/
 ||pvpoke-re.com/*.js?v=$replace=/if\(location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\).*?&&.*?location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)+(?:[\,>]|===)-(?:\(.+?\)+|_?0x[0-9a-f]+\)|1)/if(0)/
 ||pvpoke-re.com/*.js?v=$replace=/([};])_0x[0-9a-f]+\[(?:_0x[0-9a-f]+\([-0-9a-fx\,]+?\)|'[A-Za-z]+'|[.Oa-z]+)\]\(location(?:\[(?:_0x[0-9a-f]+\(.+?\)|'[A-Za-z]+'|[.Oa-z]+)\]){2}\(.+?\)\,-\(.+?\)\)&&.*?location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)+(?:[\,>]|===)-(?:\(.+?\)|1)\?/\$1 0 ?/
@@ -68811,6 +68814,7 @@ kliuki.bg###container > div[style="float:left;"] > div[style]
 ?adspot_$domain=~sponichi.co.jp
 ?advertiser_id=$domain=~ads.pinterest.com
 ?cs=*&abt=0&red=1&sm=$third-party
+?id=3&adl=3$subdocument,~third-party
 ?key=*&uuid=$subdocument,third-party
 ?service=ad&$script
 ?usid=*&utid=
@@ -68960,8 +68964,8 @@ wss://www.*.xyz/ws^$third-party
 /prebidlink/*$script
 /tagman/*$domain=~abelssoft.de
 _prebid.js$script
-://r.*/s1/$subdocument,third-party
-://t.*/s1/$subdocument,third-party
+://r.*/s1/$other,subdocument,third-party
+://t.*/s1/$other,subdocument,third-party
 &sadbl=1&abtg=$third-party
 &sadbl=1&chu=$third-party
 /webservices/jsparselinks.aspx?$script
@@ -88561,6 +88565,7 @@ browsershots.org#@#.advert_area
 ||iwanttodeliver.com^$third-party
 ||ixspublic.com^$third-party
 ||javbucks.com^$third-party
+||javhd-trk.com^$third-party
 ||joyourself.com^$third-party
 ||kadam.ru^$third-party
 ||kaplay.com^$third-party
@@ -100272,6 +100277,7 @@ sexvid.xxx##.under_player_link
 upornia.com,upornia.tube##.underplayer > section
 thegay.com##.underplayer__info > div:not([class])
 videojav.com##.underplayer_banner
+vjav.com,vjav.tube##.undp
 redtube.com,tube8.com,you-porn.com,youporn.com##.upgradeButtonContainer
 tryindianporn.com##.uvk
 hentaiprn.com##.v-overlay
@@ -100652,6 +100658,7 @@ tokyomotion.com##.is-gapless > .has-text-centered:has(> div > .adv)
 rule34video.com##.item.thumb:has(> [title="Advertisement"])
 4kporn.xxx,crazyporn.xxx,hoes.tube,love4porn.com##.item:has(> [class*="ads"])
 stockingfetishvideo.com##.item:has(> [href*="/?action=trace&"])
+vjav.com,vjav.tube##.left + div:has(> div[class] > [id^="ntv"])
 vagina.nl##.list-item:has([data-idzone])
 adultgamesworld.com##.masonry-layout__panel:has(a[href^="https://access-the-website.com/"])
 darknessporn.com,familyporner.com,freepublicporn.com,pisshamster.com,punishworld.com,xanimu.com##.no-gutters > .col-6:has(> #special-block)
@@ -152189,6 +152196,7 @@ zx-pk.ru##div[style="background-color: yellow; border-width: 2px; border-style: 
 ||goldgay.tv/stats.gif^
 ||goldsilbershop.de/go.cgi?
 ||goldstats.com^$third-party
+||golem.de/staticrl/scripts/external/snow-390-min.js
 ||golem.de/staticrl/scripts/golem_cpxl_
 ||gomoxie.solutions^*/events
 ||gondolagnome.com^$third-party
