@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2025-10-14 14:05:06(GMT+8)
-! Total count: 182390
+! ! Version: 2025-10-14 20:06:00(GMT+8)
+! Total count: 182410
  
 ###ADtip
 ###AdBlockDialog
@@ -4897,6 +4897,7 @@ $websocket,domain=wap.yushuwu.cloud
 /gs-analytics-init.js
 /gs-analytics.js
 /gs.gif?
+/gs/ccm/collect?
 /gscounters.
 /gtag.js
 /gtag.min.js
@@ -15530,8 +15531,6 @@ acglover.me##.myas
 acgnx.net,acgnx.se##a > img[src^="/images/"]
 achaec.cc##[style*='px; bottom: 0px; left: 0px; z-index: ']
 achaec.cc##[style*='px; top: 0px; left: 0px; z-index:']
-achristmascarollive.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
-achristmascarollive.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 acmemarkets.com,albertsons.com,andronicos.com,balduccis.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,randalls.com,safeway.com,shaws.com,starmarket.com,tomthumb.com,vons.com#$#hide-if-matches-xpath './/div/span[contains(@data-qa,"spnsrd")][text()="Sponsored"]/parent::div/ancestor::div[contains(@class,"position-relative")][1]/parent::*[contains(@class,"prdItem")]'; hide-if-matches-xpath '//span[text()="Sponsored"][@aria-hidden="false"]/ancestor::div[contains(@class,"position-relative")][1]';
 acmemarkets.com,albertsons.com,andronicos.com,balduccis.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,randalls.com,safeway.com,shaws.com,starmarket.com,tomthumb.com,vons.com#$#race start; hide-if-matches-xpath './/div[contains(text(),"Sponsored")]/parent::div/ancestor::div[contains(@class,"slick-product")][1]'; hide-if-matches-xpath './/span[contains(text(),"Sponsored")]/parent::div/ancestor::div[contains(@class,"slick-product")][1]'; race stop;
 acmemarkets.com,albertsons.com,andronicos.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,randalls.com,safeway.com,shaws.com,starmarket.com,tomthumb.com,vons.com#$#hide-if-contains Sponsored 'div[class^="slick-slide"] meals-card[style]' 'span>span'
@@ -16348,6 +16347,8 @@ audiofanzine.com#$#abort-on-property-read TextDecoder; abort-on-property-read re
 audiofanzine.com#$#hide-if-matches-xpath './/img[contains(@src,"/advert/label-ad-")]/parent::div[1]'
 audiotag.info###dclaim
 audiotag.info##.dialog-fog
+audiotruyenfull.com#$#abort-current-inline-script document.addEventListener ai_run
+audiotruyenfull.com#$#abort-current-inline-script setTimeout Aff
 audiotruyenfull.com#$#abort-on-property-read adpiaListUrl
 augsburger-allgemeine.de,nikkansports.com##div[id^="cx_"]
 aupetitparieur.com,meilleurpronostic.fr,mamieastuce.com##div[class] > div[id] > main[class][id]
@@ -20137,7 +20138,7 @@ client=ca-pub-$subdocument,domain=expres.cz|auto.cz|autorevue.cz|maminka.cz|refl
 client=ca-pub-$subdocument,domain=iprima.cz|www.ahaonline.cz|info.cz|onetv.cz
 clikcoin.pl#@##adsense
 cliphot69.pics#$#override-property-read a_vid 0
-clipphot.net#¢#abort-current-inline-script document.addEventListener POP
+clipphot.net#$#abort-current-inline-script document.addEventListener POP
 clipsex.cam,ww12.sexkhongchemoi.com#$#override-property-read video.adVast ''
 clk.amplifyi.com$image
 clk.email.lyft.com$image
@@ -46998,12 +46999,12 @@ infoseek.co.jp#$#.co-Widget[style="min-height: 6000px;"] { min-height: auto !imp
 infusionsoft.com/app/emailOpened$image
 inmywordz.com,ants.tw##.acca-block
 inside-games.jp##.cx-subhead
+instacart.*##div[id][class]:has(> a > div:first-child img):has(> a div[style*="display:"] span)
+instacart.*##div[id][class]:has(> a img[alt="Advertisement"]):has(li:first-of-type a div[style*="display:"] span)
+instacart.*##div[id][class]:has(> div:first-child > a img[alt*="Sponsored"], > div[aria-hidden="true"]:last-child)
+instacart.*##li:has(fp-ads-tag):not(:has(h2))
 instacart.*#$#abort-on-property-write window.ADBLOCK_DETECTED; abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read adblockDetected false;
-instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/ancestor::div[@id][@class="e-1hv1sre"][1]'
-instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[@aria-hidden="true"]/preceding::img[contains(@alt,"Sponsored")]/ancestor-or-self::div[@id][@class][1]';
 instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[text()="Top picks from other aisles"]/ancestor-or-self::h2/ancestor-or-self::div[@class="e-1yrpusx"]'
-instacart.*#$#hide-if-matches-xpath './/span[text()]/ancestor-or-self::*[@data-fp-eligible]/ancestor::div[@aria-label="Product"]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]';
-instacart.*#$#race start; hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/ancestor-or-self::div[@id][contains(@class,"e-1qzz7bi")][1]'; hide-if-matches-xpath '//span[text()]/preceding::div[contains(@style,"display:")]/ancestor-or-self::div[@id][contains(@class,"e-y7s1ry")][1]'; race stop;
 instagram.com#$#hide-if-contains-visible-text '/Anzeige|Gesponsert|Sponsored|Geborg|Sponzorováno|Sponsoreret|Χορηγούμενη|Publicidad|Sponsoroitu|Sponsorisé|Bersponsor|Sponsorizzato|広告|광고|Ditaja|Sponset|Gesponsord|Sponsorowane|Patrocinado|Реклама|Sponsrad|ได้รับการสนับสนุน|May Sponsor|Sponsorlu|赞助内容|贊助|প্রযোজিত|પ્રાયોજિત|स्पॉन्सर्ड|Sponzorirano|ಪ್ರಾಯೋಜಿತ|സ്‌പോൺസർ ചെയ്‌തത്|पुरस्‍कृत|प्रायोजित|ਪ੍ਰਾਯੋਜਿਤ|මුදල් ගෙවා ප්‍රචාරය කරන ලදි|Sponzorované|விளம்பரதாரர்கள்|స్పాన్సర్ చేసింది|Được tài trợ|Спонсорирано|Commandité|Sponsorizat|Спонзорисано/' 'article>div[class]' 'span[class]';
 instagram.com#$#json-prune data.xdt_injected_story_units.ad_media_items
 instantmanga.com###notice
@@ -48079,6 +48080,7 @@ lesbian8.com#$#hide-if-matches-xpath './/div[contains(@class,"pignr")]/div[@styl
 lessentiel.lu#%#//scriptlet('set-local-storage-item', 'clientId', '$remove$')
 letsjerk.tv#?#div[class*="widget_text"]:-abp-has(>div:-abp-contains(Advertisement))
 letsplay.tw##.entry-content > div[style="min-width: 300px; min-height:300px;"]
+letterboxd.com#%#//scriptlet('href-sanitizer', 'a[href^="https://click.justwatch.com/"]', '?r')
 letv.com###JS_banner01
 letv.com###JS_banner02
 letv.com##.fl_app_bot_wrap
@@ -54572,6 +54574,8 @@ right.com.cn###hd > div.wp > div.hdc > h2
 right.com.cn##.wp > .a_t:has(> table > tbody > tr > td > .adsbygoogle)
 right.com.cn##a[href^="https://jd.dangbei.com/"]
 right.com.cn#@##sitefocus.focus
+rileygainescenter.org#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+rileygainescenter.org#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 ringside24.com,gagadget.com#$#abort-on-property-read localStorage
 rireetchansons.fr###popins
 rireetchansons.fr###upsell
@@ -62440,6 +62444,7 @@ zzzyk.com###Tinfo
 ||79zxcv.com^
 ||7aey.icu^
 ||7awf4fi9k7.com^
+||7bfst8xxtc.com^
 ||7bpeople.com^$third-party
 ||7caidai.xyz^
 ||7car.com.cn^
@@ -71390,6 +71395,7 @@ zzzyk.com###Tinfo
 ||analytics.mobilegamestats.com^
 ||analytics.mokuleleairlines.com^
 ||analytics.mondotv.jp^
+||analytics.monetha.io^
 ||analytics.monobloc.de^
 ||analytics.motoemotostore.it^
 ||analytics.mouthshut.com^
@@ -78068,6 +78074,7 @@ zzzyk.com###Tinfo
 ||booking.com/sendlayoutevents
 ||booking.com^$domain=honglingjin.co.uk|sunnylife.tw
 ||booking.getwaitnot.com^
+||bookitnow.lt/gtm/
 ||bookoffonline.co.jp/files/inc_js/ac/
 ||bookoffonline.co.jp/files/tracking/
 ||bookprobe.com^
@@ -80593,6 +80600,8 @@ zzzyk.com###Tinfo
 ||cdn.kaizenplatform.net^
 ||cdn.klambt.services/matomo/$third-party
 ||cdn.kmalgo.com^
+||cdn.liga.net/assets/js/campaign.js
+||cdn.liga.net/assets/js/remplib.js
 ||cdn.lihkg.com/static/*/js/21.chunk.js
 ||cdn.listrakbi.com^$third-party
 ||cdn.lmiutil.com/lpassets/contentsquare/
@@ -93316,6 +93325,7 @@ zzzyk.com###Tinfo
 ||egtpf.freshcleantees.com^
 ||egvemw.aboutyou.ee^
 ||egvtnv.spellsmell.ru^
+||egxo.cn^
 ||egzfc.topluxuryproperty.com^
 ||egzum.instyler.com^
 ||eh6xjr8p0.com^
@@ -98999,6 +99009,7 @@ zzzyk.com###Tinfo
 ||geqzt6tkg.top^
 ||ger.fachportal-hundegesundheit.com^
 ||ger.hundebund.com^
+||geradovana.lt/gtm/
 ||gerbil.buf.build^
 ||gerbil.clapsaddleart.com^
 ||gerbil.downtown-mafia.com^
@@ -99401,6 +99412,7 @@ zzzyk.com###Tinfo
 ||ggo10130lq.com^
 ||ggo10131lq.com^
 ||ggo10140lq.com^
+||ggo10141lq.com^
 ||ggpig.melodymaison.co.uk^
 ||ggs.myzaker.com^
 ||ggsel.com/js/download/analytics.js
@@ -113896,6 +113908,7 @@ zzzyk.com###Tinfo
 ||letsdoeit.com/tracking/
 ||letsencrypt.data.ensighten.com^
 ||lettenfluoric.com^
+||letterboxd.com/sm_stats_bug.do
 ||letterboxtrail.com^$third-party
 ||lettucex977.com^
 ||letv.com/cloud_pl/
@@ -114093,6 +114106,7 @@ zzzyk.com###Tinfo
 ||lidrhb.icu^
 ||liebaovip.com^
 ||liecso.e-himart.co.kr^
+||lieliskadavana.lv/gtm/
 ||lien-torrent.com/eticilbup/$image,subdocument,script
 ||liepin.com/event/jobadver/
 ||lieqinews.com/json/zhiketj/
@@ -128878,6 +128892,7 @@ zzzyk.com###Tinfo
 ||nqyuel589fq5.esgrounding.com^
 ||nqzgyb.observatoiredelafranchise.fr^
 ||nqzvxx.naturekind.co.kr^
+||nr-beacon.movingimage.com^
 ||nr-data.net^$third-party
 ||nr-data.noelleeming.co.nz^
 ||nr-js.imaios.com^
@@ -133486,6 +133501,7 @@ zzzyk.com###Tinfo
 ||plsbl-staging.edison.se^
 ||plsbl.edison.se^
 ||plsbl.martinkriegeskorte.de^
+||plsec7wll8.com^
 ||plssga.prolineoptions.com^
 ||plthnh.icu^
 ||pluckypocket.com^
@@ -136977,6 +136993,7 @@ zzzyk.com###Tinfo
 ||reports.tunein.com^
 ||reportsk.web.sdo.com^
 ||reportwest-midas.codmwest.com^
+||repost.aws/api/v*/content/markResourceViewed
 ||reppify.actonservice.com^
 ||reprocautious.com^$third-party
 ||reproio.com^$third-party
@@ -137269,6 +137286,7 @@ zzzyk.com###Tinfo
 ||rewe.de/api/xrd/page-data/data-layer
 ||rewe.de/shop/api/productlist/impressions
 ||rewe.de/shop/api/productlist/interactions
+||rewvfghoya.com^
 ||reydrj.kozaczek.pl^
 ||reydrj.papilot.pl^
 ||reyzol.jdsports.dk^
@@ -160121,6 +160139,7 @@ zzzyk.com###Tinfo
 ||stats.autoscout24.ch^
 ||stats.avery.ae^
 ||stats.avg.com^
+||stats.avito.ru^
 ||stats.aws.rubiconproject.com^
 ||stats.backcountry.com^
 ||stats.baddworldwide.com^
@@ -175813,6 +175832,7 @@ zzzyk.com###Tinfo
 ||vonht.foragehyperfoods.com^
 ||vonvdn.garden.ne.jp^
 ||voonik.com/analytics.min.js
+||voorkeuren.tvgids.nl/v1/_|
 ||vooxe.com/analytics.js
 ||vopzhl.icu^
 ||voqwao.commonhaus.co.kr^
