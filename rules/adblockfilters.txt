@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251018161646
-! Last modified: 2025/10/18 16:16:46
-! Blocked Filters: 143254
+! Version: 20251019001523
+! Last modified: 2025/10/19 00:15:23
+! Blocked Filters: 143251
 !
 ###AC_ad
 ###AD_160
@@ -21127,7 +21127,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /live800.
 /livecounter.php?wid=
 /liveinternet.js$domain=russia-tv.online
-/livejasmin.$~xmlhttprequest,domain=~livejasmin.com
 /livestats.js
 /livezilla/server.php?request=track&
 /ljcounter/?d=
@@ -38252,7 +38251,6 @@ aa.com.tr#?#.container > style ~ div.ad:has(> span > a:not([href^="https://www.a
 aa25.cn###content_head
 aa25.cn,kafan.cn###content_top
 aaa.avadacom.com$image
-aaaweb.cn##a[href$=".yhzu.cn"]
 aads.com,ad-maven.com,adcash.com,admitad.com,adskeeper.com,adspyglass.com,adsupply.com,chpadblock.com,exoclick.com,hilltopads.com,juicyads.com,luckyads.pro,monetag.com,popads.net,propellerads.com,purpleads.io,trafficshop.com,yavli.com##HTML
 aae3.com###menu
 aae3.com##form + center > p[align="center"]
@@ -39642,6 +39640,7 @@ amazon.*###sponsoredProducts_feature_div
 amazon.*###typ-recommendations-stripe-1
 amazon.*###typ-recommendations-stripe-2
 amazon.*##.AdsCard_container__K6vmo
+amazon.*##.a-cardui[class*="_new-detail-faceout-box_"]:has(.dynamicSponsoredLabelClass)
 amazon.*##.amzn-safe-frame-container
 amazon.*##.dp-widget-card-deck:has([data-ad-placement-metadata])
 amazon.*##.s-main-slot > div.s-result-item:has(> .sg-col-inner:only-child > div[class*="widget=loom-"][class*="FEATURED"])
@@ -42550,6 +42549,7 @@ beincrypto.com##.before-author-block-bio:has-text(Sponsored)
 beincrypto.com##.cont-wrapper
 beincrypto.com##.entry-content > small.text-grey-600
 beincrypto.com##.multi-news-card:has(> .cont-wrapper)
+beincrypto.com##[class^="TopAdBanner-"]
 beincrypto.com##aside[class^="Aside-"] > div.ant-card:has(div[data-analytics-events])
 beincrypto.com##div[class^="TopAdBanner-"]
 beincrypto.com#%#//scriptlet('abort-on-property-write', 'absrc')
@@ -90443,7 +90443,9 @@ linkedin.com##.go-premium
 linkedin.com##.jserp-ad-container
 linkedin.com##.premium-search-upsell
 linkedin.com##.scaffold-finite-scroll__content > div > div[data-id^="urn:li:activity:"]:has(.update-components-text-view > span[aria-hidden="true"]):not(:has(li-icon > svg))
+linkedin.com##[componentkey*="_expandedurn:li:sponsoredContentV2"]
 linkedin.com##article[data-is-sponsored]
+linkedin.com##iframe[componentkey$="_ad"]
 linkedin.com##iframe[componentkey="MynetworkDesktopNav_mynetwork_desktop_nav_ad"]
 linkedin.com##iframe[title="Advertisement"]
 linkedin.com##iframe[title="advertisement"]
@@ -126842,7 +126844,6 @@ zzzyk.com###Tinfo
 ||cnt.yeptube.
 ||cntv.cn/hezuo/
 ||cntvboxnow.com//ads_
-||cnwebperformance.biz^$third-party
 ||cnwnews.com/ad-nrtop/
 ||cnwnews.com/gg
 ||cnwnews.com/images/kgt
@@ -127159,7 +127160,6 @@ zzzyk.com###Tinfo
 ||creately.com/static/js/creately-analytics-
 ||creative*.bidease.com^
 ||creative*.simulmedia-apis.com$media,redirect=noopmp4-1s,domain=play.geforcenow.com
-||creative.bulecams.com/widgets/$domain=xxxbule.com
 ||creative.myasian.live/widgets/
 ||creative.speednetwork*.com/speednetwork*/tags/x*/x*.js?ap=
 ||creativeservice-production.scdn.co/mp3-ad/*.mp3$media,~xmlhttprequest,redirect=noopmp4-1s,app=Spotify.exe
@@ -127467,7 +127467,6 @@ zzzyk.com###Tinfo
 ||data.liba.com/_.gif
 ||data.pendo.statista.com/data/ptm.gif
 ||data.product.lastpass.com/data/ptm.gif/
-||data.qiota.com/api/event
 ||data.riotgames.com/collector/*/events
 ||data.shopgate.com/tracking/shopgate-analytics-sdk.production.min.js
 ||data.taschen.com/gtm.js
@@ -133947,7 +133946,6 @@ zzzyk.com###Tinfo
 ||member.aetna.com/appConfig/navReporting/tealeaf.js
 ||member.jschina.com.cn/AD
 ||memesng.com/ads
-||memo.co^$third-party
 ||memonotepad.com/js/modules/google-analytics-bundle.js
 ||menepe.com^$popup
 ||meninosonline.net/assets/filmesgratis-$image
@@ -136059,6 +136057,7 @@ zzzyk.com###Tinfo
 ||player.ooyala.com/errors/report?
 ||player.performgroup.com/eplayer.js$domain=fcinternews.it
 ||player.sbs.co.kr/log/
+||player.sendtonews.com^$third-party
 ||player.serverbk.com/bkcdn*.xml
 ||player.svc.litv.tv/pixel/
 ||player.twitch.tv/js/embed/$domain=wiki.fextralife.com
@@ -136729,9 +136728,6 @@ zzzyk.com###Tinfo
 ||qingqingxs.*/static/xbiquge/wap.js
 ||qingsedhh.com/images/gg.gif
 ||qinxue100.com/qinxue/pc/js/add_js.js
-||qiota.com/api/event
-||qiota.com/assets/qiotasession.gif?
-||qiota.com^$third-party
 ||qishula.com/css/ding.js
 ||qishula.com/css/wap.
 ||qiuw.com/static/xin-ad.js
@@ -137384,6 +137380,7 @@ zzzyk.com###Tinfo
 ||rotaban.
 ||rotabanner.
 ||rotator.
+||rottentomatoes.com/assets/pizza-pie/javascripts/bundles/roma/rt-common.js
 ||rotter.net/*.html$subdocument,domain=rotter.name|rotter.net,badfilter
 ||rou.video/_next/static/chunks/pages/fuli-
 ||rou.video/js/exo.js
