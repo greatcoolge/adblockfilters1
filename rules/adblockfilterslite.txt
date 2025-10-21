@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20251021090216
-! Last modified: 2025/10/21 09:02:16
-! Blocked Filters: 83623
+! Version: 20251021162003
+! Last modified: 2025/10/21 16:20:03
+! Blocked Filters: 83635
 !
 ###AC_ad
 ###AD_160
@@ -21070,6 +21070,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /matomo-tracking.js
 /matomo.js$domain=~github.com
 /matomo.php
+/matomo.php$ping
 /matomo.php?action_name=
 /matomo.php?idsite=
 /matomo/*$script,domain=~github.com|~hub.docker.com|~matomo.org|~wordpress.org
@@ -28466,6 +28467,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||partner.googleadservices.com^$domain=popsugar.com
 @@||partner.googleadservices.com^$domain=slacker.com
 @@||payments.jagex.com^$jsinject
+@@||paywall-ad-bucket.s3.amazonaws.com/ad_300_250.jpg
 @@||pcva*.manifest.auditude.com/auditude/live/live$domain=adultswim.com
 @@||per*.segmentify.com^$app=com.carrefoursa.ecommerce
 @@||per*.segmentify.com^$domain=mediamarkt.com.tr
@@ -28545,6 +28547,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pubads.g.doubleclick.net^$object-subrequest,domain=vercanalestv.com
 @@||pubscholar.cn/static/common/fingerprint.js$script,~third-party
 @@||qccommunity.qcloudimg.com^$stealth=referrer,domain=cloud.tencent.com
+@@||qcheng.cc/x/statics/js/guanggao.
 @@||qianpanso.cn/other/*.js$domain=cilimao.co|cilimao.one
 @@||qingcheng.com^*/ad
 @@||qiyipic.com/common/fix/pub_images/
@@ -68394,6 +68397,8 @@ nowscore.com###toperAd
 nowscore.com###toperBaskText
 nowscore.com###toperText
 nowscore.com##div[style="background-color:#F0F0F0;line-height:25px;height:25px;text-align:center"]
+npmmirror.com##.ant-alert:has(a[target="_blank"])
+npmmirror.com##a[target="_blank"] > img:is([alt="ad"], [alt="vps-ad"])
 nr5i143apcwbv88l.click.s11.sfmc-osl.com$image
 ns.eurofins-labazur-rhone-alpes.ubilab.me$image
 ns.townsquaremedia.info$image
@@ -72688,6 +72693,8 @@ t.marketing.casablanca.at$image
 t.mgx.cabify.com$image
 t.mp*.tripadvisor.com$image
 t.notifications.casablanca.at$image
+t.qq.com###homeBannerNew
+t.qq.com###talkList > li[ispopula="1"][tv="2"]
 t.r.emporiaresearch.com$image
 t.senal$image
 t.sidekickopen$image
@@ -76923,6 +76930,7 @@ web.netmovies.*#$#hide-if-matches-xpath './/iframe[@style="width: 100% !importan
 web2.merial.com$image
 webconfglobalid3.click.s11.sfmc-osl.com$image
 webfail.com$$script[tag-content="omi-service"][min-length="20000"][max-length="150000"]
+webjx.com###middleimg
 webkaka.com##.pNavigateAd
 webkaka.com##.pTopTextAd
 webkaka.com##a[href*=".simcentric."]
@@ -79980,7 +79988,6 @@ zzzyk.com###Tinfo
 ||douyin.com/aweme/v1/web/solution/resource/list/*_banner&
 ||douyu.com/japi/sign/web/getinfo
 ||douyu.com/member/gamegift/gameList/
-||down-id.img.susercontent.com/file/*.webp$domain=lk21.am.in
 ||downlinker.*/ad_dl.js
 ||downlinker.*/ads.js
 ||download*.vzuu.com^
@@ -80815,6 +80822,9 @@ zzzyk.com###Tinfo
 ||images-*.ssl-images-amazon.com/images/*/sf/DAsf-*_.js
 ||images.china.cn^*first/$subdocument
 ||images.jurong.cn/bbs/
+||images.sohu.com/bill/
+||images.sohu.com/cs/
+||images.sohu.com/ytv/*.jpg
 ||imdb.com^$removeparam=/^pf_rd_[a-z]*=/
 ||imdb.com^$removeparam=ref_
 ||imeee.cn/DA_HTML/*.js
@@ -81772,6 +81782,7 @@ zzzyk.com###Tinfo
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=75
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=77
 ||offcn.com/offcnewm/
+||offer.alibaba.com^$popup
 ||office-partner.de^$removeparam=campaign
 ||office-partner.de^$removeparam=sPartner
 ||ofweek.com/pop/ad/
@@ -83169,6 +83180,7 @@ zzzyk.com###Tinfo
 ||webdock.io^$cookie=Webdock-Internal-Ad-Two
 ||webfunny.cn^$third-party
 ||webgozar.*/c.aspx*&t=counter
+||webjx.com/zanzhushang/
 ||webkaka.com*/click/$image
 ||webkaka.com/ad/
 ||webkaka.com/info/script/articleAd.js
