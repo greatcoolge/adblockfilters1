@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2025-10-27 20:05:50(GMT+8)
-! Total count: 196846
+! ! Version: 2025-10-28 08:12:50(GMT+8)
+! Total count: 196860
  
 ###ADtip
 ###AdBlockDialog
@@ -2680,6 +2680,7 @@ $websocket,domain=wap.yushuwu.cloud
 .gif?mpe=*&mpn=
 .gif?stat=open
 .gif|$domain=/87[0-9]{2}ck\.cc/
+.gif|$domain=18j.tv
 .gif|$domain=7mshipin.org|viidii.info
 .gif|$domain=8727ck.cc|8726ck.cc
 .gif|$domain=99re.com
@@ -2871,8 +2872,6 @@ $websocket,domain=wap.yushuwu.cloud
 .ru/ads/
 .ru/stat/?c=$domain=ucoz.net
 .s-pt.jp/mail/info/*/img/_.gif
-.salesforce.com%2Fservlet%2Fservlet.ImageServer$image
-.salesforce.com/servlet/servlet.ImageServer$image
 .salesforce.com/servlet/servlet.ImageServer?$image
 .secureserver.net/bbimage.aspx?
 .sendcloud.net/track/$image
@@ -8692,6 +8691,8 @@ $websocket,domain=wap.yushuwu.cloud
 18comic.org,18comic.vip,jmcomic1.win#@?#:-abp-has(> script[src*=".realsrv.com"])
 18comic.vip##IMG[src^='//18comic.vip/media/albums/']
 18h.animezilla.com###manga-bottom
+18j.tv##div[class="container"] > div.main > div[class]:has(> a[href][target="_blank"][rel="nofollow"])
+18j.tv##div[class="container"] > div[class="warp"]
 18moe.org##.alignnone[alt="恰饭广告"]
 18moe.vip##a[href^="http"]:not([href*="18moe.vip"]) > img[src*="tc.18moe.net"]
 19.avadacom.com$image
@@ -11509,6 +11510,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||api.cxense.com/public/widget/data?json=$domain=journaldequebec.com
 @@||api.cxense.com/public/widget/data?json=$domain=lavoz.com.ar
 @@||api.cxense.com/public/widget/data?json=$domain=milenio.com
+@@||api.cxense.com/public/widget/data?json=$domain=onetz.de
 @@||api.cxense.com/public/widget/data?json=$domain=pcgames.de
 @@||api.cxense.com/public/widget/data?json=$domain=s.response.jp
 @@||api.cxense.com/public/widget/data?json=$domain=shueisha.co.jp
@@ -11846,6 +11848,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||cdn.crowdtwist.com/img/$image,domain=myperks.catchow.com
 @@||cdn.cxense.com/cx*.js$domain=bangkokpost.com
 @@||cdn.cxense.com/cx*.js$domain=farodevigo.es
+@@||cdn.cxense.com/cx*.js$domain=onetz.de
 @@||cdn.cxense.com/cx*.js$domain=tn.com.ar
 @@||cdn.cxense.com/cx.cce.js$domain=bild.de
 @@||cdn.cxense.com/cx.cce.js$domain=bizjournals.com
@@ -11879,6 +11882,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||cdn.cxense.com/cx.js$domain=tvaplus.ca
 @@||cdn.cxense.com/cx.js$domain=tvnet.lv
 @@||cdn.cxense.com/cx.js$domain=wsj.com
+@@||cdn.cxense.com/sp*.html$domain=onetz.de
 @@||cdn.cxense.com/t_init.min.js$domain=dhnet.be
 @@||cdn.dimml.io/dimml.js$domain=consumentenbond.nl
 @@||cdn.dimml.io/static/*.js$domain=consumentenbond.nl
@@ -12338,7 +12342,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||detik.com/urchin.js
 @@||dev.virtualearth.net/webservices/$domain=multiroute.de
 @@||dev.visualwebsiteoptimizer.com/server-side/settings?a=$domain=olx.co.id
-@@||dev.visualwebsiteoptimizer.com^$script,domain=dominos.jp
+@@||dev.visualwebsiteoptimizer.com^$script,xmlhttprequest,domain=dominos.jp
 @@||dev.visualwebsiteoptimizer.com^$stylesheet,script,domain=hancomdocs.com
 @@||developer.apple.com$generichide
 @@||device-api.urbanairship.com^$app=com.caribou.caribouapp
@@ -66165,6 +66169,8 @@ pianyuan.org###myModal
 piaoliang.com##.hot990
 pic4you.ru,pic5you.ru##.centerdiv
 pic4you.ru,pic5you.ru##body > #bb
+pidruchniki.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+pidruchniki.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 pigai.org###newnotice
 pikabu.ru#$#replace-xhr-response 'processCallbacks'
 pikabu.ru#%#//scriptlet('href-sanitizer', 'a[href^="https://pikabu.ru/"][href*="?u="]', '?u')
@@ -68091,8 +68097,6 @@ streaminporn.com,gaypornmasters.com#@##adsense
 streamlive.to###adblockplus
 streamm4u.com.co#$#prevent-listener beforeunload (); abort-on-property-write _g_sb_click
 streamsportlive.es###WarningCodecBanner
-streettokitchen.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
-streettokitchen.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 strikeout.co,vipbox.sx,vipleague.co,vipleague.is##div[style="display: block;"]
 strikeout.me,strikeout.co###overlayad
 strikeout.me,strikeout.co##.in.fade.modal-backdrop
@@ -84696,6 +84700,7 @@ zzzyk.com###Tinfo
 ||androidpolice.com/pixel.png?
 ||andyhoppe.com/count/
 ||andyhoppe.com^$third-party
+||anelewakas.com^
 ||anemonew33.top^
 ||anesthesiaos.actonservice.com^
 ||anet.abphotos.link^
@@ -87306,6 +87311,7 @@ zzzyk.com###Tinfo
 ||applyless.com^$third-party
 ||applytics.napps-1.com^
 ||applytics.nordvpn.com^
+||applytics.os4work.com^
 ||appmetr.com^
 ||appmetrica.yandex.com^
 ||appmetrica.yandex.com^$third-party
@@ -97509,6 +97515,7 @@ zzzyk.com###Tinfo
 ||curtaincows.com^$third-party
 ||curvedhoney.com^
 ||curvedhoney.com^$third-party
+||curveshore.com^
 ||curvycord.com^$third-party
 ||curvycry.com^
 ||curvycry.com^$third-party
@@ -108804,6 +108811,7 @@ zzzyk.com###Tinfo
 ||extremetech.com/sbs/beacon.js
 ||extremetracking.com^$third-party
 ||extstat.info^$third-party
+||extypalhallow.com^
 ||exuberantedge.com^
 ||exuberantedge.com^$third-party
 ||exvl.cn^
@@ -111064,6 +111072,7 @@ zzzyk.com###Tinfo
 ||furlhp.kango.mynavi.jp^
 ||furnishings.bellacor.com^
 ||furnituredl.istaging.co^
+||furoinalexas.com^
 ||furryfork.com^
 ||furryfork.com^$third-party
 ||furryhorses.com^$third-party
@@ -125347,6 +125356,7 @@ zzzyk.com###Tinfo
 ||khoqetslh.com^
 ||khrbo.obakki.com^
 ||khrtac.xiangha.com^
+||khutedov.com^
 ||khvdma.clarins.com.tw^
 ||kia.ru/bitrix/templates/.default/js/jquery.gatrack.dpack.js
 ||kib.hu^
@@ -141699,6 +141709,7 @@ zzzyk.com###Tinfo
 ||newtest.wunderman-email.cjm.adobe.com^
 ||newtimes.com/analytics?
 ||newton.pm/events/track_bulk
+||newtsbowk.com^
 ||newume.com/v1/data/ume-
 ||newwcrsed.com^
 ||newyorker.com^$removeparam=bxid
@@ -190362,6 +190373,7 @@ zzzyk.com###Tinfo
 ||vtrtl.de^
 ||vttics.world.co.jp^
 ||vtvnnl.xyz^
+||vtx2r60nuf.com^
 ||vtzad.focl.com^
 ||vtzik.amberjack.shop^
 ||vtzkz.freshcleantees.com^
@@ -194190,6 +194202,7 @@ zzzyk.com###Tinfo
 ||xmm.wxc.cc^
 ||xmmbqa.goradin.com.br^
 ||xmmnsl.com^
+||xmo0oixbx8.com^
 ||xmohlh.melia.com^
 ||xmozol.eurotops.de^
 ||xmpzln.icu^
@@ -195451,6 +195464,7 @@ zzzyk.com###Tinfo
 ||ytn.co.kr/_comm/yct.js
 ||ytn.co.kr/_comm/ylog.php?
 ||yto3kavwud.com^
+||ytoontoteh.com^
 ||ytouvy.arezzo.com.br^
 ||ytqeavc.icu^
 ||ytqlyw.xyz^
