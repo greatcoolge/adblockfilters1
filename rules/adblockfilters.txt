@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251116001447
-! Last modified: 2025/11/16 00:14:47
-! Blocked Filters: 147796
+! Version: 20251116090831
+! Last modified: 2025/11/16 09:08:31
+! Blocked Filters: 147799
 !
 ###AC_ad
 ###AD_160
@@ -29802,6 +29802,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||bestreamsports.org^$generichide
 @@||betaplayer.site/embed/$stealth=referrer
 @@||betaprofiles.com^$generichide
+@@||betconnect.website/kanalresim$stealth=referrer
+@@||betconnect.website/player/$stealth=referrer
 @@||betterads.org/hubfs/$image,~third-party
 @@||betterads.org/hubfs/Mobile-Web-Ad-Experiences-Ranking-*.jpg
 @@||bettycrocker.com/Shared/Javascript/UnicaTag.js
@@ -51221,8 +51223,8 @@ ctinews.com##.show-in-md:has(> .ad-container)
 ctinsider.com##.md\:block.y100
 ctrip.com###fl_wrap_default
 ctrip.com##.set-phone.set-list > .nav-myctrip.person-text
-ctrk.klclick2.com%2Fo%2F$image
-ctrk.klclick2.com/o/$image
+ctrk.klclick*.com%2Fo%2F$image
+ctrk.klclick*.com/o/$image
 ctrlq.org,labnol.org##.kuber
 ctrlv.sk,ctrlv.cz,ctrlv.link##body > div[id][style="display: flex;"]
 ctrlv.sk,ctrlv.cz,ctrlv.link#%#//scriptlet('set-constant', 'adbId', 'null')
@@ -111161,7 +111163,6 @@ skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"Spo
 skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"SponsoredInfoButton_adInfoBtn")]/preceding::div[contains(@class,"ItineraryInlinePlusWrapperHeader_header")][@role="group"][@aria-label]/parent::div[1]'
 skyscrapercity.com##img[src^="http://www.skyscrapercity.com/images/ads/"]
 skysports.com##.sdc-site-outbrain
-skysports.com##.site-component-vertical-margin
 skysports.com##.ui-advert
 skysports.com##.widge-marketing
 skysports.com##div[class^="smartfeed-ad-"]
@@ -117316,6 +117317,8 @@ tripadvisor.com/img/cdsi/partner/transparent_pixel$image
 tripsonabbeyroad.com##.e-con-inner:has(tp-cascoon)
 tripsonabbeyroad.com##[href^="https://tp.media/"]
 trivago.com##.item-list-ads-container
+trk.*.com%2Fo%2F$image
+trk.*.com/o/$image
 trk.bonpote.com$image
 trk.commercialistideltriveneto.org$image
 trk.djrj.dowjones.com$image
