@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20251126162019
-! Last modified: 2025/11/26 16:20:19
+! Version: 20251127001821
+! Last modified: 2025/11/27 00:18:21
 ! Blocked Filters: 64210
 !
 ###AC_ad
@@ -26588,6 +26588,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||fangcloud.com^$generichide
 @@||feedback-pa.clients*.google.com/*/google.internal.feedback.$stealth=referrer
 @@||fengkongcloud.com/fpv2.js
+@@||fhd.*.xyz/v/*.png$stealth=referrer
 @@||filelions.*/js/boxad.js
 @@||files*.lynda.com/secure/courses/*.mp4$media,domain=linkedin.com|lynda.com
 @@||findernet.com^$content
@@ -34124,8 +34125,6 @@ coinpedia.org,elhayat-life.com##.stream-title
 coinpedia.org,siasat.com##.stream-item-inline-post
 cointelegraph.com,doodle.com##[class*="ad-slot"]
 cokemine.com,eveaz.com,jubuzz.com,skyarea.cn,tianfateng.cn#@#.category-share
-collinsdictionary.com,bab.la,timesofindia.indiatimes.com,winfuture.de#$#override-property-read Date.now noopFunc
-collinsdictionary.com,bab.la,tz.de,timesofindia.indiatimes.com,winfuture.de#$#override-property-read Element.prototype.remove noopFunc
 collive.com,strategicenergy.eu##.spu-box
 colombiareports.com,filmschoolrejects.com,hongkongfp.com,phoneia.com,weatherboy.com###custom_html-6
 colombiareports.com,miloserdov.org,mostlyblogging.com###custom_html-14
@@ -35147,7 +35146,7 @@ ebay.*#$#hide-if-has-and-matches-style 'span' 'ul > li' 'ul > li span.s-item__se
 ebay.*#$#hide-if-matches-xpath './/span[contains(.,"Sponsored") or contains(.,"Anzeigen") or contains(.,"Sponsorisés") or contains(.,"Commandités") or contains(.,"Promocionado") or contains(.,"Gesponsord") or contains(.,"Sponsorowane") or contains(.,"Patrocinado") or contains(.,"Sponsorizzati") or contains(.,"贊助")]/ancestor::div[@data-hscroll]/parent::li[contains(@class,"ITEMS_CAROUSEL")][1]'
 ebay.*#$#hide-if-matches-xpath '//a[contains(.,"Sponsored")][@target="_self"]/ancestor-or-self::aside[contains(@class,"home-item-carousel")][@aria-labelledby]'
 ebay.*#$#hide-if-matches-xpath '//div[contains(@class,"carousel--slides carousel--peek")]/preceding::h2[contains(.,"Sponsored")]/ancestor-or-self::div[@data-viewport][1]'
-ebay.*#$#hide-if-svg-contains /S.*p.*o.*n.*s.*o.*r.*e.*d|A.*n.*z.*e.*i.*g.*e|S.*p.*o.*n.*s.*o.*r.*i.*s.*é|C.*o.*m.*m.*a.*n.*d.*i.*t.*é|P.*a.*t.*r.*o.*c.*i.*n.*a.*d.*o|S.*p.*o.*n.*s.*o.*r.*i.*z.*z.*a.*t.*o/ 'ul > li' 'ul > li span[aria-labelledby]'
+ebay.*#$#hide-if-svg-contains /S.*p.*o.*n.*s.*o.*r.*e.*d|A.*n.*z.*e.*i.*g.*e|S.*p.*o.*n.*s.*o.*r.*i.*s.*é|C.*o.*m.*m.*a.*n.*d.*i.*t.*é|P.*a.*t.*r.*o.*c.*i.*n.*a.*d.*o|S.*p.*o.*n.*s.*o.*r.*i.*z.*z.*a.*t.*o/ 'ul > li' 'ul > li *[aria-labelledby]'
 ebay.*#$#race start; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] div > div[aria-labelledby]' 'div > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: none/' '/color: rgb\\(0, 0, 0.*; filter: none/'; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] div > div[aria-labelledby]' 'div > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: invert/' '/color: rgb\\(0, 0, 0.*; filter: invert/'; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] div > div[aria-labelledby]' 'div > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: none/' '/color: rgb\\(255, 255, 255.*; filter: invert/'; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] div > div[aria-labelledby]' 'div > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: invert/' '/color: rgb\\(255, 255, 255.*; filter: none/'; race stop;
 ebay.*#$#race start; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] span > div[aria-labelledby]' 'span > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: none/' '/color: rgb\\(0, 0, 0.*; filter: none/'; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] span > div[aria-labelledby]' 'span > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: invert/' '/color: rgb\\(0, 0, 0.*; filter: invert/'; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] span > div[aria-labelledby]' 'span > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: none/' '/color: rgb\\(255, 255, 255.*; filter: invert/'; hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li[data-viewport][id] span > div[aria-labelledby]' 'span > div[aria-labelledby] > div[aria-hidden="true"]' '/; filter: invert/' '/color: rgb\\(255, 255, 255.*; filter: none/'; race stop;hide-if-matches-xpath './/li//div[@class="s-card__footer--row"]//div[@aria-labelledby][@style]/ancestor::li'
 ebay.*#$#race start;hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: none/' '/color: rgb\\(0, 0, 0.*; filter: none/';hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: invert/' '/color: rgb\\(0, 0, 0.*; filter: invert/';hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: none/' '/color: rgb\\(255, 255, 255.*; filter: invert/';hide-if-contains-and-matches-style /Sponsored|Anzeige|Sponsorisé|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助/ 'li div.s-item__detail div[aria-labelledby]' 'li div.s-item__detail div[aria-labelledby] > div' '/; filter: invert/' '/color: rgb\\(255, 255, 255.*; filter: none/';race stop; hide-if-matches-xpath './/li//div[contains(@class,"s-item__detail")]//div[@aria-labelledby][@style]/div[text()]/ancestor::li'
@@ -53982,6 +53981,7 @@ timesofindia.com,indiatimes.com##div[data-articlebody] div.mgid_second_mrec_pare
 timesofindia.com,indiatimes.com#?#div:has(> div[data-type="in_view"] > div.ctn-workaround-div)
 timesofindia.indiatimes.com,sankei.com,sourceforge.net,bab.la,loawa.com,gazetaprawna.pl,tz.de,winfuture.de,gutefrage.net,collinsdictionary.com#$#override-property-read performance.getEntriesByType noopFunc; override-property-read window.requestIdleCallback undefined; override-property-read ResizeObserver undefined;
 timesofindia.indiatimes.com,sankei.com,sourceforge.net,dictionary.cambridge.org,bab.la,loawa.com,gazetaprawna.pl,tz.de,winfuture.de,gutefrage.net,collinsdictionary.com#$#override-property-read googletag emptyObj; event-override message disable /^r_/; prevent-listener message /postMessage|error-report|adb/;
+timesofindia.indiatimes.com,winfuture.de#$#override-property-read Date.now noopFunc
 timesofisrael.com,ipvoid.com,mp4compress.com,changenow.io##.banner-wrap
 ting89.com,tingshuge.com##.banner250
 ting89.com,tingshuge.com##.banner688_1
@@ -54560,7 +54560,6 @@ tw-link.cosmopolitan.com$image
 tw-link.elle.com$image
 tw-link.harpersbazaar.com$image
 tw.news.yahoo.com,tw.stock.yahoo.com##iframe[src^="https://tw.buy.yahoo.com/smartbanner/"]
-tw.yahoo.com,news.yahoo.com##div[id^="sda-"]
 tweaksforgeeks.com,thesaurus.net,cboard.net,joongdo.co.kr,viva100.com,thephoblographer.com,gamingdeputy.com,alle-tests.nl,maketecheasier.com,automobile-catalog.com,motorbikecatalog.com,jjang0u.com,interfootball.co.kr$$script[tag-content="KCgpPT57bGV0IGU"]
 twinfalls.townsquaremedia.info$image
 twinsyang.net,free.com.tw###custom_html-7
@@ -54604,6 +54603,7 @@ tyla.com,gamingbible.com,unilad.com,ladbible.com#$#body > div[id].margin-Advert 
 tyla.com,gamingbible.com,unilad.com,ladbible.com#%#//scriptlet("set-constant", "pbjs.adUnits", "emptyArr")
 tyla.com,gamingbible.com,unilad.com,ladbible.com#@#div[class*="margin-Advert"]
 tyler.townsquaremedia.info$image
+tz.de,timesofindia.indiatimes.com,winfuture.de#$#override-property-read Element.prototype.remove noopFunc
 tzfdc.com##.AD_B
 tzfdc.com.cn##div[id^="LMT_"]
 u.pcloud.com*trackmail$image
@@ -58600,7 +58600,7 @@ zzzyk.com###Tinfo
 ||*.website/*^$xmlhttprequest,domain=knaben.xyz
 ||*/ad/$redirect=noopmp3-0.1s,domain=huaren.tv
 ||*/ad/$rewrite=abp-resource:blank-mp3,domain=huaren.tv
-||*/loader.min.js|$script,domain=bab.la|collinsdictionary.com|gutefrage.net
+||*/loader.min.js|$script,domain=gutefrage.net
 ||*/snscosdownload/*/reserved/*$app=com.tencent.mm
 ||*/vhot2.qqvideo.tc.qq.com^
 ||*ad.wtzw.com^
