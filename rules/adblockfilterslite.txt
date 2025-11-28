@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20251128001758
-! Last modified: 2025/11/28 00:17:58
-! Blocked Filters: 64216
+! Version: 20251128090209
+! Last modified: 2025/11/28 09:02:09
+! Blocked Filters: 64217
 !
 ###AC_ad
 ###AD_160
@@ -25716,6 +25716,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@.m3u8$domain=rapid-cloud.co,xmlhttprequest,stealth=referrer
 @@.m3u8$stealth,domain=luluvdo.com
 @@.m3u8$stealth=referrer,domain=edgedeliverynetwork.com
+@@.m3u8$stealth=referrer,domain=iyf.tv
 @@.m3u8$stealth=referrer,domain=streameeeeee.site|videostr.net
 @@.m3u8$stealth=referrer,domain=yfsp.tv
 @@.m3u8$xmlhttprequest,stealth=referrer,domain=megaup.site
@@ -25922,6 +25923,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/cdn/hls/*/master.txt$stealth=referrer,domain=diziyo.*|dzyco.*
 @@/cgi-bin/counter_module?action=list_models$subdocument,~third-party
 @@/check.php?callback=$script,domain=ytmp3.cc
+@@/chunklist.m3u8$stealth=referrer
 @@/chunklist/*.m3u8$xmlhttprequest,stealth=referrer,domain=decmelfot.xyz|usgate.xyz|arcasiangrocer.store
 @@/chunks.m3u8$stealth=referrer
 @@/clarity-*.js$domain=clarity-project.info
@@ -59075,7 +59077,6 @@ zzzyk.com###Tinfo
 ||ad.bench.utorrent.com^$app=uTorrent.exe
 ||ad.kisstvshow.*^
 ||ad4point.*.digitaloceanspaces.com/afp_p.js
-||adblock*.static-cloudflare.workers.dev^
 ||adcounter*.uptolike.ru^
 ||adcs-*.myappsget.com^
 ||adform.net^$cookie=/uid|TPC/

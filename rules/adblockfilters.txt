@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、ilpl、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251128001758
-! Last modified: 2025/11/28 00:17:58
-! Blocked Filters: 126705
+! Version: 20251128090209
+! Last modified: 2025/11/28 09:02:09
+! Blocked Filters: 126707
 !
 ###AC_ad
 ###AD_160
@@ -26780,6 +26780,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@.m3u8$domain=rapid-cloud.co,xmlhttprequest,stealth=referrer
 @@.m3u8$stealth,domain=luluvdo.com
 @@.m3u8$stealth=referrer,domain=edgedeliverynetwork.com
+@@.m3u8$stealth=referrer,domain=iyf.tv
 @@.m3u8$stealth=referrer,domain=streameeeeee.site|videostr.net
 @@.m3u8$stealth=referrer,domain=yfsp.tv
 @@.m3u8$xmlhttprequest,stealth=referrer,domain=megaup.site
@@ -26986,6 +26987,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/cdn/hls/*/master.txt$stealth=referrer,domain=diziyo.*|dzyco.*
 @@/cgi-bin/counter_module?action=list_models$subdocument,~third-party
 @@/check.php?callback=$script,domain=ytmp3.cc
+@@/chunklist.m3u8$stealth=referrer
 @@/chunklist/*.m3u8$xmlhttprequest,stealth=referrer,domain=decmelfot.xyz|usgate.xyz|arcasiangrocer.store
 @@/chunks.m3u8$stealth=referrer
 @@/clarity-*.js$domain=clarity-project.info
@@ -71524,6 +71526,7 @@ keyrblx.com#%#//scriptlet('prevent-fetch', 'chpadblock.com')
 keyt.com##.vf-trending-articles__ad
 keywin.org##.appdownload
 keywin.org##.pindaolist
+kf.qq.com#%#//scriptlet('set-constant', 'Aegis', 'noopFunc')
 kgm-actyon.co.kr#%#//scriptlet('set-constant', 'kakaoPixel', 'noopFunc')
 khaberni.com##div[class$="-banners"]
 khaberni.com#?#div:has(> img[src="https://www.khaberni.com/themes/default/images/open122x25.png"])
@@ -106160,7 +106163,6 @@ zzzyk.com###Tinfo
 ||adage.com/assets/js/min/adBlockDetector.js$script
 ||adalytics.io/api/view
 ||adameve.com/emetrics/
-||adblock*.static-cloudflare.workers.dev^
 ||adblock-one-protection.com^$popup
 ||adblock-tester.com/banners/$~third-party
 ||adblock-zen-download.com^$popup
@@ -118649,7 +118651,6 @@ zzzyk.com###Tinfo
 ||oload.tv/assets/js/script.packed
 ||olx.com.br^*/lurker.
 ||olyhdliveextra-a.akamaihd.net/*.mp4$domain=theplatform.com
-||olympics.com/ddna-event-router/ddna-analytics.js
 ||om.cn/api/ad-om/
 ||omataloyhtio.fi/ffsw-pushcrew.js
 ||omataloyhtio.fi/kuvat/pi.gif$image
@@ -125891,6 +125892,7 @@ zzzyk.com###Tinfo
 ||xp85.com/common/js/allpage.js
 ||xpee.com/application//assets/scripts/sgunder.js
 ||xpics.me/everyone.
+||xplay.gg/api/server/analytics/mixpanel
 ||xpornotubes.com/ponrtube.html
 ||xprime4u.*/wp-content/uploads/*/*_ads.gif
 ||xranks.com/api/a/proxydocker.com
