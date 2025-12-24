@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20251224001911
-! Last modified: 2025/12/24 00:19:11
-! Blocked Filters: 63639
+! Version: 20251224090706
+! Last modified: 2025/12/24 09:07:06
+! Blocked Filters: 63641
 !
 ###AC_ad
 ###AD_160
@@ -16234,6 +16234,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 *.lijie.*/*_*?$third-party
 */blsx_*_*_*?*$third-party
 */larkf?id=*$domain=animeunity.cc
+*/tags/*akira.js$domain=akirabox.to
 */web/js/th/$domain=cam4.com
 */widget/spage_game_tab/$domain=tieba.baidu.com
 *bet*.jpg$domain=037hdmovie.com,~third-party
@@ -42895,8 +42896,8 @@ gamesindustry.biz,newscientist.com,usgamer.net##.leaderboard-container
 gamesindustry.biz,vg247.com,eurogamer.*,rockpapershotgun.com###sticky_leaderboard
 gameslol.net,yabiladi.com##.pub_header
 gamesmain.xyz,foodtechnos.in###adblock-modal
-gamesmain.xyz,foodtechnos.in#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'window.open')
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
+gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('set-constant', 'adsbygoogle', 'emptyObj')
 gamesradar.com,livescience.com,tomshardware.com,whathifi.com##.jwplayer__widthsetter
 gamesradar.com,tomsguide.com,tomshardware.com,whathifi.com##.vid-present
@@ -44610,10 +44611,6 @@ instacart.*##li:has(fp-ads-tag):not(:has(h2))
 instacart.*#$#abort-on-property-write window.ADBLOCK_DETECTED; abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read adblockDetected false;
 instacart.*#$#hide-if-matches-xpath './/*[ self::div[span[text()="Spons"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spon"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]';
 instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[text()="Top picks from other aisles"]/ancestor-or-self::h2/ancestor-or-self::div[@class="e-1yrpusx"]'
-instacart.ca,instacart.com###store-wrapper img[alt^="• Sponsored:"]
-instacart.ca,instacart.com#?##store-wrapper div.e-ijs5rh
-instacart.ca,instacart.com#?##store-wrapper div[class] > ul li:has(div[aria-label="Product"] div[data-sssp-eligible])
-instacart.ca,instacart.com#?##store-wrapper div[class] > ul li:has(div[aria-label="Product"]:has(img[alt="Sponsored"]))
 instagram.com#$?#article:has(> div[style*="display: none !important;"]:only-child) { padding-bottom: 0px !important; border-bottom: none !important; border: none !important; }
 instagram.com#$?#main > div > div > div[style*="flex-direction: column;"] > div:has(span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|内容 内容|贊助|告 告|広告|സ്‌പോൺസർ ചെയ്‌തത്)/)) { visibility: hidden !important; }
 instagram.com#$?#main > div div[style*="flex-direction: column;"] > article > div:has(span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|内容 内容|贊助|告 告|広告|സ്‌പോൺസർ ചെയ്‌തത്)/)) { height: 1px !important; visibility: hidden !important; }
@@ -52618,6 +52615,9 @@ sonyliv.com$$meta[name="referrer"][content="never"]
 soopat.com###SoopatAside
 sosg.net###postlist + .cc
 sou-yun.cn###ads_index_2
+sou-yun.cn#$##adsPanel { display: none !important; }
+sou-yun.cn#$#body { overflow: auto !important; }
+sou-yun.cn#@##adsPanel
 sou.com###ad_wrapper_cpc_conversation-comment-right
 soufun.com##.danmu_inbox
 sound-park.*,soundpark.rocks#$#abort-current-inline-script $ open
@@ -57818,10 +57818,12 @@ zmamobile.com,getpczone.com##main > center > a[target="_blank"] > button
 znds.com###diy_mobanbus_view_right2
 zol.com.cn###Article_Top_Banner
 zol.com.cn###btmLoginLayer
+zol.com.cn###downBoxGaosu
 zol.com.cn###downBoxGaosu + a
 zol.com.cn###iframe_zmall
 zol.com.cn###official_url
 zol.com.cn###relatedProduct
+zol.com.cn###sideDoubao
 zol.com.cn##.down-append-mol__pic
 zol.com.cn##.local-spe-bottom
 zol.com.cn##.pv-mol_ask

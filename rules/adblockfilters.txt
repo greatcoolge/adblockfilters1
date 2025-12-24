@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251224001911
-! Last modified: 2025/12/24 00:19:11
-! Blocked Filters: 126505
+! Version: 20251224090706
+! Last modified: 2025/12/24 09:07:06
+! Blocked Filters: 126513
 !
 ###AC_ad
 ###AD_160
@@ -16428,6 +16428,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 *.lijie.*/*_*?$third-party
 */blsx_*_*_*?*$third-party
 */larkf?id=*$domain=animeunity.cc
+*/tags/*akira.js$domain=akirabox.to
 */web/js/th/$domain=cam4.com
 */widget/spage_game_tab/$domain=tieba.baidu.com
 *bet*.jpg$domain=037hdmovie.com,~third-party
@@ -61841,6 +61842,7 @@ foodnetwork.com##[data-slot-type="ad_aside_top"]
 foodnetwork.com#$#body[style^="margin-top: 90px;"] { margin-top: 0!important; }
 foodrenegade.com##.top-cta
 foodsforbetterhealth.com###text-46
+foodtechnos.in#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'window.open')
 fool.com###articles-incontent2
 fool.com###articles-top
 fool.com##.promobox-container
@@ -63316,9 +63318,11 @@ gameskinny.com##div[id^="div-sjr-"]
 gameslay.net##a[rel="noreferrer nofollow"] > img
 gameslol.net##.pubGside
 gameslol.net,yabiladi.com##.pub_header
+gamesmain.xyz#%#//scriptlet('prevent-addEventListener', 'click', 'location.href', 'elements', '#link-ready')
+gamesmain.xyz#%#//scriptlet('prevent-setTimeout', 'window.location.href')
 gamesmain.xyz,foodtechnos.in###adblock-modal
-gamesmain.xyz,foodtechnos.in#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'window.open')
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
+gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('set-constant', 'adsbygoogle', 'emptyObj')
 gamesmarket.global##.MuiBox-root > .MuiBox-root:has(> .adSlot)
 gamesofdesire.com###chat
@@ -68854,10 +68858,6 @@ instacart.*##li:has(fp-ads-tag):not(:has(h2))
 instacart.*#$#abort-on-property-write window.ADBLOCK_DETECTED; abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read adblockDetected false;
 instacart.*#$#hide-if-matches-xpath './/*[ self::div[span[text()="Spons"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spon"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]';
 instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[text()="Top picks from other aisles"]/ancestor-or-self::h2/ancestor-or-self::div[@class="e-1yrpusx"]'
-instacart.ca,instacart.com###store-wrapper img[alt^="• Sponsored:"]
-instacart.ca,instacart.com#?##store-wrapper div.e-ijs5rh
-instacart.ca,instacart.com#?##store-wrapper div[class] > ul li:has(div[aria-label="Product"] div[data-sssp-eligible])
-instacart.ca,instacart.com#?##store-wrapper div[class] > ul li:has(div[aria-label="Product"]:has(img[alt="Sponsored"]))
 instacart.com##.image-banner-a-9l2sjs
 instacart.com##.image-banner-a-ak0wn
 instacart.com##.shoppable-list-a-las2t7
@@ -90712,6 +90712,9 @@ sotwe.com##.fab-container:has(.sweetdream-fab-card)
 sotwe.com#%#//scriptlet('abort-on-stack-trace', 'String.fromCharCode', '/Array\.map[\s\S]*?\[Symbol\.replace\][\s\S]*?String\.replace/')
 sotwe.com#%#//scriptlet('prevent-window-open')
 sou-yun.cn###ads_index_2
+sou-yun.cn#$##adsPanel { display: none !important; }
+sou-yun.cn#$#body { overflow: auto !important; }
+sou-yun.cn#@##adsPanel
 sou.com###ad_wrapper_cpc_conversation-comment-right
 soufun.com##.danmu_inbox
 sound-park.*,soundpark.rocks#$#abort-current-inline-script $ open
@@ -104460,10 +104463,12 @@ zoechip.com##.block_area > div[style^="width: 100%;"]
 zoiper.com#%#//scriptlet('remove-class', 'track-click', 'a')
 zol.com.cn###Article_Top_Banner
 zol.com.cn###btmLoginLayer
+zol.com.cn###downBoxGaosu
 zol.com.cn###downBoxGaosu + a
 zol.com.cn###iframe_zmall
 zol.com.cn###official_url
 zol.com.cn###relatedProduct
+zol.com.cn###sideDoubao
 zol.com.cn##.down-append-mol__pic
 zol.com.cn##.local-spe-bottom
 zol.com.cn##.pv-mol_ask
@@ -109149,6 +109154,7 @@ zzzyk.com###Tinfo
 ||cdn.jsdelivr.net/gh/unib0ts/
 ||cdn.jsdelivr.net/gh/vli-platform/adb-analytics@*/v1.0.min.js
 ||cdn.jsdelivr.net/gh/vli-platform/adb-analytics@a6f3a45/v1.0.min.js
+||cdn.jsdelivr.net/gh/willthequeencome/adcsh/june.js
 ||cdn.jsdelivr.net/gh/zahidsattarahmed/storeview/newtrackingscript.min.js
 ||cdn.jsdelivr.net/npm/@adshield/
 ||cdn.jsdelivr.net/npm/@fancyapps/$domain=hcbdsm.com
@@ -121555,6 +121561,7 @@ zzzyk.com###Tinfo
 ||sizzlingclicks.com/t62ad1898cac
 ||sjks88.com/templets/default/js/mydata4.js
 ||skalnik.pl/static/*/js/tracking.min.js
+||skat.com.ua/api/collect
 ||skechers.com/dL6GOSf9/init.js
 ||skeepers.io/data/collect
 ||skeeping.com/live/$subdocument,third-party
@@ -123959,6 +123966,7 @@ zzzyk.com###Tinfo
 ||tv99.tv/wp-content/uploads/pum/
 ||tvas-b.pw^$popup
 ||tvbarata.club/ads/
+||tvchosun.com/dhitlog/
 ||tvgids.nl/collect
 ||tvhay.*/ads/popup-tt.js$~third-party,script
 ||tvigle.ru/track/
