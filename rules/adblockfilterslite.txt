@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20251227090547
-! Last modified: 2025/12/27 09:05:47
-! Blocked Filters: 63651
+! Version: 20251227161938
+! Last modified: 2025/12/27 16:19:38
+! Blocked Filters: 63662
 !
 ###AC_ad
 ###AD_160
@@ -2201,6 +2201,7 @@
 ###bigsidead
 ###billboard-ad
 ###billboard-atf
+###billboard-container.bg-gray-100.py-3
 ###bingadcontainer2
 ###bl_mobile_float
 ###bl_mobile_float[style='height: 152px;']
@@ -3425,6 +3426,7 @@
 ###magneturlpost + .movie + .movie[style="padding:12px; margin-top:15px"]
 ###main-ad
 ###main-advert
+###main-side-container.bg-gray-100.space-y-2
 ###mainAd
 ###mainAd1
 ###mainAdUnit
@@ -3564,6 +3566,8 @@
 ###mpuad
 ###mpubox
 ###mpuholder
+###mrec-297631-container
+###mrec-leaderboard-298545-container
 ###mui-player + #player_pic
 ###mv_ad_dom
 ###mv_float_layer
@@ -3592,6 +3596,9 @@
 ###netease_mail_footer
 ###newAd
 ###news_top_advert
+###newswell-leaderboard-container
+###newswell-side-1-container
+###newswell-side-2-container
 ###ng-ad
 ###ng-ad-lbl
 ###ni-ad-row
@@ -4289,6 +4296,11 @@
 ###stop_ad3
 ###story-ad
 ###story-bottom-ad
+###story-side-1-container.min-w-mrec
+###story-side-2-container.min-w-mrec
+###story3-container.py-2.bg-gray-100
+###story4-container.py-2.bg-gray-100
+###story5-container.py-2.bg-gray-100
 ###storyAd
 ###story_ad
 ###story_ads
@@ -15269,6 +15281,7 @@
 ##div[id^="img_"][x-frame-height^="40"]
 ##div[id^="img_"][x-frame-width="336"][x-frame-height="336"]
 ##div[id^="lazyad-"]
+##div[id^="mrec-leaderboard-"]
 ##div[id^="optidigital-adslot"]
 ##div[id^="photo-header-title-content-text-dall"]
 ##div[id^="rc-widget-"]
@@ -25063,6 +25076,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 52pk.com,downmsn.com##.bzClick
 52pk.com,hao.rising.cn,vpgame.com##.add
 52solution.com,imydl.com##div[class*="banner"]
+52tian.net##.sidebar960
 52tian.net,starbaby.cn##.bdad
 52vfx.com#@##head_ad
 52wmb.com###popContent
@@ -26669,6 +26683,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||godaddy.com^$cookie=_ga
 @@||godaddy.com^$cookie=_gid
 @@||gogoanime.*//page-recent-release*.html
+@@||gomein.net.cn^*,
 @@||google-analytics.com$domain=bt.com
 @@||google-analytics.com/analytics.js$domain=0mniscient.github.io
 @@||google-analytics.com/analytics.js$domain=24timezones.com
@@ -42153,11 +42168,6 @@ express.co.uk,iflscience.com,nypost.com#%#//scriptlet('set-local-storage-item', 
 express.co.uk,the-express.com###mantis-recommender-placeholder
 express.co.uk,the-express.com###ovp-primis
 expresspharma.in,gamertweak.com,thelivemirror.com,nullpress.net,frendx.com##div[itemtype="https://schema.org/WPAdBlock"]
-expreview.com##.babaBox
-expreview.com##.colbaba
-expreview.com##.crossAd
-expreview.com##.crossBa
-expreview.com##.mamaBox
 extralinks.*##a[class^="ad_b"]
 extramovies.*##.ad_btn
 extramovies.*##a[href*="://adfpoint.com/"]
@@ -52043,8 +52053,6 @@ sg169.com##.jy-pos-3
 sgcarmart##.dealer_banner
 sgcn.com,wangjing.cn##.fad
 shameless.com,imguur.pictures,imgdone.com,xxxdessert.com,xaoutchouc.live,simply-hentai.com,akaihentai.com#%#(function(){Object.defineProperty(window, 'ExoLoader', { get: function() { return; } }); var c=document.addEventListener;document.addEventListener=function(a,b,d,e){"getexoloader"!=a&&-1==b.toString().indexOf('loader')&&c(a,b,d,e)}.bind(document);})();
-shangyexinzhi.com##.hang-baidu_adv
-shangyexinzhi.com##.img2text-adv_wrapper
 shangyexinzhi.com,hg6384.com-www.6u7u.com##.advert
 share.weiyun.com#@#.page-ad
 sharecast.eu,sharecast.to###table1
@@ -57027,6 +57035,7 @@ www.36kr.com##.article-top-swiper-goapp
 www.36kr.com##.float-app-button-wrp
 www.423down.com##article + .archive-list
 www.423down.com##article > div:last-child
+www.52tian.net##.adwidewrap
 www.67tool.com##.footer-banner
 www.acfun.cn###guide-fix
 www.actuator-0.cloud.s11.sfmc-osl.com$image
@@ -58310,6 +58319,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||52che.com/NewLocal/TemplateHtml/headflash1_
 ||52rd.com/Pic/Click/
 ||52rd.com/Pic2/*_600_60
+||52tian.net^*/xuanfu.js
 ||52wmb.com/2014js/cn_
 ||53shop.com/ime/*.js
 ||53shop.com/img/*.js
@@ -60154,7 +60164,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||expedia.*/minify/client-logger-bundle-
 ||expressvpn.com^$cookie=/gtm/
 ||expressvpn.com^$cookie=xvid
-||expreview.com/baba/
 ||eyuyao.com/yyad/
 ||f*.baidu.com/it/u=*,*&fm=$third-party,domain=~hao123.com|~haokan.com|~yoojia.com
 ||f-log-*.grammarly.io^
@@ -63050,6 +63059,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||ulog-*.ksapisrv.com^
 ||ulog.*.ksapisrv.com^
 ||ulog.*.kwai-pro.com^
+||umami.*/script.js|$script
 ||umdc.alibaba-inc.com/ru.gif
 ||ump.sf-express.com/monitor/*/report|
 ||unagi*.amazon.*/events/
@@ -63498,6 +63508,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||ytbbs.com/images/index/
 ||ytmp3.*/ad/$subdocument
 ||ytse*.top/Static/Home/GongGao/img/
+||yuanpinghengkangfuyouxiangongsi.top^$domain=9xav.cc
 ||yuedu.baidu.com/hybrid/wkrec/search?
 ||yun.baidu.com/act/api/activityentry?
 ||yuntue.com/zb_users/plugin/MoreLinks*.php
