@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260103161939
-! Last modified: 2026/01/03 16:19:39
-! Blocked Filters: 64015
+! Version: 20260104001650
+! Last modified: 2026/01/04 00:16:50
+! Blocked Filters: 64036
 !
 ###AC_ad
 ###AD_160
@@ -15320,6 +15320,7 @@
 ##div[style^="position:"][ontouchstart="fCidsp(event)"]
 ##div[style^="position:absolute;"] > div[id^="img_"]
 ##div[style^="position:absolute;left:0px;"] + div[class^="img_"]
+##div[style^="position:fixed; bottom:"][style$="vw;background: #000;opacity:0.01;"]
 ##div[style^="position:fixed; bottom:0vw; left:"][style$="vw;background: #000;opacity:0.01;"]
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="transition-duration:0ms!important;margin:0px!important;padding:0px!important;border:none!important;position:absolute!important;top:0px!important;"]
@@ -15483,6 +15484,7 @@
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 $$div[style="display: none !important;"]:contains(!function(){function a(a){var _idx=)
 $$div[style="display: none !important;"]:contains('ed2k://)
+$$div[style="display: none !important;"]:contains(return atob()
 $$script[wildcard="*adcashMacros*zoneSett*"][min-length="2000"][max-length="25000"]
 $app=com.fiberhome.wifiserver
 $app=com.miui.analytics
@@ -17161,6 +17163,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .top/herebyad
 .top/upload/ad.js
 .top:*/js.php?z=*=$third-party
+.top:9956/$third-party
 .top^*-960x80-*.gif
 .tor*/js/jquery.bpopup.
 .tourlane.com/servlet/servlet.ImageServer?$image
@@ -25581,7 +25584,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 :701/Pus/pus.js
 :701/gd_xueersi/$popup
 :7701/load.cw.js
+:800*/d/*?t=$script,third-party,xmlhttprequest
 :800*/d/*n=$script,third-party
+:800*/d/*n=$script,third-party,xmlhttprequest
 :800*/d/*n=$third-party
 :800*/d/*t=$script,third-party
 :800*/sc/*n=$script,third-party
@@ -43795,6 +43800,22 @@ hanyu.baidu.com###download-wrapper
 hanyu.baidu.com###fengchao_els.c-container.card.fengchao-els
 hanyu.baidu.com##.app-promotion-icon
 hanyu.baidu.com##.fengchao-el
+hao.360.cn###background.festival
+hao.360.cn###daily-hotword
+hao.360.cn###festival-theme > .left-entry
+hao.360.cn###festival-theme > .right-entry-wrap
+hao.360.cn###festival_baijian
+hao.360.cn###festival_fly
+hao.360.cn###festival_fly + .couten
+hao.360.cn###iguess
+hao.360.cn###left-ria-fixed
+hao.360.cn###snatch-logo
+hao.360.cn##.applist > .app:nth-last-child(n+2)
+hao.360.cn##.cangbao_redbags
+hao.360.cn##.festival_snatch
+hao.360.cn##.hot-word
+hao.360.cn##.icon-text-nav
+hao.360.cn##.small-obj
 hao.360.cn,hao.360.com###activity
 hao.360.cn,hao.360.com###festival-logoskin
 hao.360.cn,hao.360.com###festival_balloon
@@ -59464,6 +59485,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||baidu.com/api/wikiui/getasp?
 ||baidu.com/api/wikiui/guesslike?
 ||baidu.com/article/ajax/getmarticlestepdata?
+||baidu.com/baidu.php?url=
 ||baidu.com/baidu.php?url=$popup
 ||baidu.com/brands/yxtg/source/yxCoupletsAd.js
 ||baidu.com/buy/ad/home
@@ -61157,9 +61179,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||images-*.ssl-images-amazon.com/images/*/sf/DAsf-*_.js
 ||images.china.cn^*first/$subdocument
 ||images.jurong.cn/bbs/
-||images.sohu.com/bill/
-||images.sohu.com/cs/
-||images.sohu.com/ytv/*.jpg
 ||imdb.com^$removeparam=/^pf_rd_[a-z]*=/
 ||imdb.com^$removeparam=ref_
 ||imeee.cn/DA_HTML/*.js
@@ -62131,8 +62150,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=75
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=77
 ||offcn.com/offcnewm/
-||offer.alibaba.com/cps/*rc=$popup
-||offer.alibaba.com^$popup
 ||office-partner.de^$removeparam=campaign
 ||office-partner.de^$removeparam=sPartner
 ||ofweek.com/pop/ad/
@@ -62999,6 +63016,9 @@ zzztube.com,videoporn.tube##.b-random-column
 ||static.iqiyi.com/js/common/mars_v.js^$script
 ||static.iqiyi.com/js/pingback/
 ||static.qiyi.com/js/pingback/
+||static.tieba.baidu.com/tb/img/pv.gif
+||static.tieba.baidu.com/tb/img/track.gif
+||static.tieba.baidu.com/tb/pms/
 ||static.tripcdn.com/packages/ubt/websdk/*/ubt.minh.js
 ||static.ws.126.net/f2e/products/analysis/
 ||static.youku.com/*/index/js/iresearch.js
@@ -63997,6 +64017,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ~github.com$$script:contains(!function(){function a(a){var _idx=)
 ~github.com$$script:contains(/document\.write[^|&%$#@!]{0,400}:8007"\+"\/cc\//)
 ~github.com$$script:contains(?is_not=1&target=1&ty=2)
+~github.com$$script:contains(F6O2cY=Fa[67c}vFvvcY85cYaa)
 ~github.com$$script:contains(_mJd5Y2FNOfYm62LY5FuY7O5Yc6)
 ~github.com$$script:contains(var d10={win:false,mac:false,xll:false};)
 ~github.com$$script:contains(||!navigator.platform){setTimeout(function () {w.location.href=url)
