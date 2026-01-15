@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2026-01-14 20:06:00(GMT+8)
-! Total count: 150916
+! ! Version: 2026-01-15 08:14:15(GMT+8)
+! Total count: 150933
  
 ###ADtip
 ###AdBlockDialog
@@ -2351,6 +2351,7 @@ $websocket,domain=wap.yushuwu.cloud
 *$script,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|x.com|51.la|cloudflareinsights.com|tongjiniao.com|vp1shop.shop|lamparasde.net|hoopchina.com.cn|kankan2024.com|ovscdns.com|rumanhua.org|cdnsrc.asp.net|ddxsmf.com|apps.bdimg.com,_____,domain=wap.dmwenku.com|m.wfxs.tw|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|wap.xkushu.com|spoilertop.com|booktxts.com|bixia33.com|rouwenwu19.com|91porny.com|yznnw.com|vodtw.la|ckplayer.vip|uuread.tw|fengchedmp.com|aeahsck.cc|xiaoshubao.net|wap.yushuwu.cloud|twbook.cc|vodtw.xyz|xbqg6.com|qq3009qq.link|18jtv.cc|m.haxuku.com|xm200.com|av6k.com|18j.tv|haiwaishubao.com|uaa.com|lamparasde.net|bbs.hupu.com|kankan2024.com|hanime1-me.icu|hanime1-me.top|rumanhua.org|ddxsmf.com
 *$script,third-party,domain=sxyprn.com
 *$script,third-party,xmlhttprequest,domain=m.biquge700.com|biquge001.com
+*$script,xmlhttprequest,third-party,domain=m.1024txt.com
 *$third-party,domain=440012.xyz
 *$xmlhttprequest,denyallow=ddxsmf.com|apps.bdimg.com|cdnsrc.asp.net,domain=ddxsmf.com
 *-ad.sm.cn*
@@ -10346,6 +10347,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||api.sprig.com/sdk/1/environments/$xmlhttprequest,domain=developer.salesforce.com
 @@||api.taiga.io^$removeparam
 @@||api.touchnote.io^$xmlhttprequest,domain=app.touchnote.com
+@@||api.twitter.com/1.1/onboarding/referrer.json$~third-party
 @@||api.useinsider.com/api/web/$xmlhttprequest
 @@||api.val.qq.com/go/agame/resource/banner?bannerid=aclos_website_banner$domain=val.qq.com
 @@||api.vk.com/method/statEvents.$~third-party
@@ -30592,7 +30594,6 @@ inven.co.kr#$#override-property-read Element.prototype.remove noopFunc
 investing.com##div[class*="adBlock"]
 investing.com##div[class*="overlay_overlay"]
 investor-web.hdfcfund.com#%#//scriptlet('set-constant', 'smartech', 'noopFunc')
-invoice-generator.com#$#override-property-read window.navigator.connection.rtt 1001
 inwestycje.pl###show-message
 ios.codevn.net#$#abort-current-inline-script jQuery Popup
 ip.cn##.well > p > a
@@ -32987,6 +32988,7 @@ m-1.fm#%#//scriptlet('set-constant', 'ga', 'noopFunc')
 m.07073.com##.main_content_tit + div
 m.07073.com##.new_heads
 m.07073.com##.new_heads_bg
+m.1024txt.com#%#//scriptlet('abort-on-stack-trace', 'document.createElement', '/(?=^(?![\s\S]*(static|jquery)))/')
 m.13xsw.com,wap.yushuwu.cloud#%#//scriptlet('prevent-addEventListener', 'touchend', 'clientheight')
 m.163.com##.fixedOpenNewsapp
 m.163.com##.floatMenu-backflow
@@ -37854,6 +37856,11 @@ skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"Spo
 skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"SponsoredInfoButton_adInfoBtn")]/ancestor-or-self::div[@aria-label]/parent::div[1]'
 skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"SponsoredInfoButton_adInfoBtn")]/preceding::div[contains(@class,"ItineraryInlinePlusWrapperHeader_header")][@role="group"][@aria-label]/parent::div[1]'
 slashdot.org##iframe[src*="report.error-report.com/modal"]
+slashdot.org#$#abort-current-inline-script document.querySelectorAll /loader/
+slashdot.org#$#abort-current-inline-script localStorage /loader/
+slashdot.org#$#abort-on-property-read window.alert false
+slashdot.org#$#abort-on-property-read window.confirm false
+slashdot.org#$#override-property-read Element.prototype.remove noopFunc false
 slashlook.com###AdvertisementBottom
 slashlook.com###AdvertismentInline
 slashlook.com#$##mdAdsAnnouncement { display: none!important; }
@@ -43235,7 +43242,6 @@ zzzyk.com###Tinfo
 ||*/loader.min.js|$script,domain=fansided.com
 ||*/loader.min.js|$script,domain=flatpanelshd.com
 ||*/loader.min.js|$script,domain=inven.co.kr
-||*/loader.min.js|$script,domain=invoice-generator.com
 ||*/loader.min.js|$script,domain=issuya.com
 ||*/loader.min.js|$script,domain=kreuzwortraetsel.de
 ||*/loader.min.js|$script,domain=laleggepertutti.it
@@ -43256,6 +43262,7 @@ zzzyk.com###Tinfo
 ||*/loader.min.js|$script,domain=wordhippo.com
 ||*/loader.min.js|$script,domain=worldhistory.org
 ||*/loader.min.js|$script,domain=woxikon.de
+||*/loader.min.js|$script,rewrite=abp-resource:blank-js,domain=slashdot.org
 ||*/script.min.js|$script,domain=m.inven.co.kr
 ||*/vhot2.qqvideo.tc.qq.com^
 ||*adapt-beacon.awsprodops.movetv.com^
@@ -54684,6 +54691,7 @@ zzzyk.com###Tinfo
 ||analytics.viisviis.fi^
 ||analytics.villagehouse.jp^
 ||analytics.vinevida.com^
+||analytics.vinovo.si^
 ||analytics.virginaustralia.com^
 ||analytics.virginmobileusa.com^
 ||analytics.visible.com^
@@ -60285,6 +60293,7 @@ zzzyk.com###Tinfo
 ||bid.run^$third-party
 ||bidarblam.com^
 ||bidbpo.dr-10.com^
+||bidder.doceree.com^
 ||bidder.dsp.outfit7.com^
 ||bidder.mdspinc.com^
 ||bidder.mediams.mb.softbank.jp^
@@ -60637,6 +60646,7 @@ zzzyk.com###Tinfo
 ||blau-subdomain.b.information.blau.de^
 ||blava.viessmann.sk^
 ||blavity.black.news^
+||blazeoccamy.com^
 ||bld.mobi^
 ||bldr.mkt.samsung.com^
 ||ble.ubm-licensing.com^
@@ -75899,7 +75909,6 @@ zzzyk.com###Tinfo
 ||error-report.com^$domain=fansided.com
 ||error-report.com^$domain=flatpanelshd.com
 ||error-report.com^$domain=inven.co.kr
-||error-report.com^$domain=invoice-generator.com
 ||error-report.com^$domain=issuya.com
 ||error-report.com^$domain=kreuzwortraetsel.de
 ||error-report.com^$domain=laleggepertutti.it
@@ -76492,6 +76501,7 @@ zzzyk.com###Tinfo
 ||events-proxy.mintlify.com/decide/
 ||events-proxy.mintlify.com/e/?ip=*&ver=$xmlhttprequest,redirect=noopjson
 ||events-stream-svc.cordial.com^
+||events-stream-svc.cordial.io^
 ||events-stream-svc.usw2.cordial.com^
 ||events-tracker.deliveroo.net^
 ||events.*/takeaway/takeaway.com/*/*.gif$domain=thuisbezorgd.nl|takeaway.com|just-eat.ch|lieferando.at|lieferando.de|just-eat.fr|pyszne.pl|just-eat.dk|just-eat.no
@@ -76562,6 +76572,7 @@ zzzyk.com###Tinfo
 ||events.glory-global.com^
 ||events.gogoair.com^
 ||events.golubcapital.com^
+||events.gonative.io^
 ||events.groggs.com^
 ||events.hermanmiller.com^
 ||events.hotjar.io^
@@ -78683,6 +78694,7 @@ zzzyk.com###Tinfo
 ||fpida.wacoal.co.jp^
 ||fpida.wacoalholdings.jp^
 ||fpida.yue-japan.com^
+||fpjs.io^
 ||fpjs.io^$third-party
 ||fpjscdn.net^
 ||fpnpmcdn.net/v*/*/loader_*.js$script,redirect=noopjs,domain=member.neofinancial.com
@@ -79694,6 +79706,7 @@ zzzyk.com###Tinfo
 ||gbtracking.cubiq.com^
 ||gbtracking.finning.com^
 ||gbvrgf.hibarai.com^
+||gbxreport-*.wf.com^
 ||gc.acut3.net^
 ||gc.grokhard.com^
 ||gc.miluchacontraeltabaco.com^
@@ -81776,7 +81789,7 @@ zzzyk.com###Tinfo
 ||googletagmanager.com/ns.html?$third-party
 ||googletagmanager.com/static/service_worker/
 ||googletagmanager.com^
-||googletagmanager.com^$app=app.shinagawa.listentonovels.androidApp|com.edadeal.android
+||googletagmanager.com^$app=app.shinagawa.listentonovels.androidApp|com.edadeal.android|com.mysticsense.androidapp
 ||googletagservices-cn.com^
 ||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com,redirect=googletagservices-gpt,important
 ||googletagservices.com/tag/js/gpt.js$domain=sinoptik.ua|gutefrage.net|dt.ua|ngs.ru|unian.net|easybib.com|bohenon.com|linuxtopia.org|newsroom.kh.ua|hclips.com|noticierodigital.com|northumberlandgazette.co.uk|mywebtimes.com|watchuseek.com|telekritika.ua|fontanka.ru|bhub.com.ua|guhoyas.com|rst.ua|hh.ru|buhgalter.com.ua|unocero.com|autonews.com|metropoles.com|okezone.com|m.yeniakit.com.tr|kanalukraina.tv|day.az|knuddels.de
@@ -81956,7 +81969,7 @@ zzzyk.com###Tinfo
 ||graph.facebook.com/*?fields=supports_implicit_sdk_logging
 ||graph.facebook.com/?ids=*&callback=$script,third-party
 ||graph.facebook.com/logging_client_events
-||graph.facebook.com^$app=cl.android|com.shorts.wave.drama|com.drama.happy.look|com.enjoy.fancynovel.better|com.novel.eromance.ugs|com.novel.estory.free.reader.dreame.gp.us|com.fatix.fatixpro|com.coupang.mobile.eats|com.warmweather.forecast.reporter|com.booking
+||graph.facebook.com^$app=cl.android|com.shorts.wave.drama|com.drama.happy.look|com.enjoy.fancynovel.better|com.novel.eromance.ugs|com.novel.estory.free.reader.dreame.gp.us|com.fatix.fatixpro|com.coupang.mobile.eats|com.warmweather.forecast.reporter|com.booking|com.mysticsense.androidapp
 ||graph.instagram.com/logging_client_events
 ||graphcomment.com/api/thread/*/stats
 ||grapheffect.com^$third-party
@@ -99535,6 +99548,7 @@ zzzyk.com###Tinfo
 ||matomo.mobilism.org^
 ||matomo.motorpresse.de^
 ||matomo.oekoloewe.de^
+||matomo.podslink.net^
 ||matomo.promobil.de^
 ||matomo.shoppersguide.com.ph^
 ||matomo.similarweb.io^
@@ -127512,6 +127526,7 @@ zzzyk.com###Tinfo
 ||st.entdecke-deutschland-bahn.de^
 ||st.fahrkartenshop2-bahn.de^
 ||st.film.ru^
+||st.freedom24.com^
 ||st.hbrd.io^
 ||st.huliyinzi.com/ads_app_pic/^
 ||st.iceportal.de^
@@ -131130,6 +131145,7 @@ zzzyk.com###Tinfo
 ||successfulscent.com^$third-party
 ||successfultogether.co.uk^$third-party
 ||succinwafer.com^
+||succubmisship.com^
 ||suchanalytik.hideandsec.sh^
 ||suche.web.de/click
 ||sucloud.xyz/js/tou.js
@@ -146106,6 +146122,7 @@ zzzyk.com###Tinfo
 ||winitout.com^$third-party
 ||winnersmindset.org^
 ||winniephc.com^
+||winsurbox.com^
 ||wintorrents.ru/templates/WinTorentsNew/images/gp.jpg
 ||winwin7.com/statics/js/pos_js/
 ||winwin7.com/statics/js/user/xz.
