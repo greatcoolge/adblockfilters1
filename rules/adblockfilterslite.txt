@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260118161925
-! Last modified: 2026/01/18 16:19:25
-! Blocked Filters: 64051
+! Version: 20260119001738
+! Last modified: 2026/01/19 00:17:38
+! Blocked Filters: 64060
 !
 ###AC_ad
 ###AD_160
@@ -5755,6 +5755,7 @@
 ##.ad-ldrbrd
 ##.ad-lead
 ##.ad-lead-bottom
+##.ad-lead-magnet
 ##.ad-leader
 ##.ad-leader-board
 ##.ad-leader-bottom
@@ -17799,6 +17800,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /\.com\/watch\?|\.com\/playlist\?list=|\/youtubei\/v.*\/(get_watch|player)\?/$xmlhttprequest,replace=/"(adPlacements|adSlots|playerAds)"/"no_ads"/,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /\.goplay\.su\/[a-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z]+\/[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$/$xmlhttprequest,match-case
 /\.goplay\.su\/[a-z][0-9A-Za-z]{10,}\/\d{3,6}$/$xmlhttprequest,match-case
+/\.gsmarena\.com\/[0-9]+\.[a-z]+\?s?Search=/$xmlhttprequest,domain=gsmarena.com
 /\.net\/[0-9a-f]+\.js$/$script,~third-party,domain=imgdrive.net
 /\.net\/[a-z-]+\.html$/$subdocument,~third-party,domain=imgdrive.net
 /\.tv\/[0-9a-z]{12}\.js$/$script,~third-party,domain=camlovers.tv
@@ -25475,6 +25477,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://dreemdmbabys.oss-cn-
 ://dwh-prod.*/de.npg/
 ://e.*/open?$image
+://edge-client/$domain=barrons.com
 ://elqtrk.
 ://email.*/o/$image
 ://emailtracking.$image
@@ -28019,6 +28022,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=lastampa.it
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=league-funny.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=line.me
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=m2o.it
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=maharashtratimes.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=manchestereveningnews.co.uk
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=midomi.com
@@ -28305,6 +28309,7 @@ Mplay/kk1.js
 [$domain=/cosmic\d+\.co/]##.kln
 [$domain=/mi?\d?xdrop\d{0,2}\.net/]#%#//scriptlet("abort-current-inline-script", "document.createElement", "dtnoppu")
 [$domain=/mi?\d?xdrop\d{0,2}\.net/]#%#//scriptlet("prevent-addEventListener", "click", "dtnoppu")
+[$domain=/mmsbee\d+\.com/]#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 [$domain=/pornolomka\d+\.com/]#%#//scriptlet('abort-on-property-read', 'popns')
 [$domain=/tigoals\d+\.com/]##.banner
 [$domain=facebook.com,path=/adsmanager]#$#body > .AdBox.Ad.advert { display: block !important; }
@@ -48529,7 +48534,6 @@ mltrk.io/pixel$image
 mmonly.cc###\32 vm_box
 mmoovvfr.cloudfree.jp,skidrowreloaded.com###page-wrap + div[id][class*=" "]
 mmorpg.com,101greatgoals.com,biology-online.org,bizportal.co.il,calcalist.co.il,eurweb.com,freewarefiles.com,hobbyconsolas.com,jpost.com,letras.com,letras.mus.br,maariv.co.il,mako.co.il,phonesreview.co.uk,roadracerunner.com,thefreethoughtproject.com,trifind.com,veteranstoday.com,videograbby.com,yad2.co.il,ynet.co.il#%#(function(a){Object.defineProperty(window,"upManager",{get:function(){return{push:a,register:a,fireNow:a,start:a}},set:function(a){if(!(a instanceof Error))throw Error();}})})(function(){});
-mmsbee42.com,mmsmasala.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 mngdoom.com,mangainn.net##.chapter-top-ads
 mnw.cn##.mnw_685
 mnw.cn##.mnw_960
@@ -60461,7 +60465,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||eclog*-*.cafe24.com^
 ||eclog*-*.cafe24.com^$third-party
 ||ecommerce-events*.adscale.com^
-||edge-client^$script,domain=barrons.com
 ||edgetrksvc.ebay.
 ||edith.xiaohongshu.com/api/sns/web/v1/note/metrics_report
 ||edmontonchina.*/pic/
@@ -61900,6 +61903,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||mipengine.baidu.com/common?
 ||missav*/herebyad
 ||missevan.com^$domain=jijidown.com
+||mistat.*.xiaomi.com^
 ||mitbbs.*/servicedata/static_ad.php
 ||miwifi.com^*ads/
 ||mixer.video.iqiyi.com/jp/mixin/resources/
@@ -62021,6 +62025,8 @@ zzztube.com,videoporn.tube##.b-random-column
 ||mytanwan.com^$third-party
 ||myvidplay.com^$badfilter
 ||mzyfz.*/modules/46/
+||n*adserv.com^
+||n*adserv.xyz^
 ||n.sinaimg.cn/sinakd10117/*/bd54-kentcvx6065228.png
 ||nakenprat.com/adlast*.php^
 ||nanrenfuli.*/zb_users/upload/
@@ -62223,7 +62229,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||p*-webcast-sign.douyinpic.com^
 ||p.pstatp.com/origin/$domain=pianba.tv|pianba.net
 ||p.qlogo.cn^$domain=jumi.tv
-||p.zol.com.cn/download/detail.js
 ||p26.gejulm*.com^
 ||p2peye.com/ajax.php?mod=ad&
 ||p2peye.com/ajax.php?mod=advertisement&
@@ -62259,7 +62264,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||patched.to^$cookie=mybb[lastvisit]
 ||patched.to^$cookie=mybb[threadread]
 ||patched.to^$cookie=sid
-||pbmp.ali213.net/js/
 ||pc6.com/img/
 ||pcauto.com.cn/forum/1508/intf7631.js
 ||pcauto.com.cn/forum/autobbs/clubtl/
@@ -62311,6 +62315,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||picyq.com/index.php/Home/run/get_ad/
 ||piguiqproxy.com^$badfilter
 ||pijama.*.elasticbeanstalk.com^
+||ping*.qq.com^
 ||ping.contactpigeon.com^$cookie=bi
 ||pinggu.org/api/bbsgg.
 ||pingwest.com/api/news_ad
@@ -62387,11 +62392,14 @@ zzztube.com,videoporn.tube##.b-random-column
 ||prezi.com/*/log/json^
 ||prima-vod-prep.ssl.cdn.cra.cz/vod_Prima^$media
 ||probablerootport-*/*/?utm_campaign=*&sid=$all
+||prod.*.analytics.console.aws.a2z.com^
+||prod.*.publishers.advertising.a2z.com^
 ||producthunt.com^$cookie=/visitor_id|track_code|first_visit/
 ||production-adserver-*.amazonaws.com^
 ||productreview.com.au^$cookie=pr_guest_id
 ||productreview.com.au^$cookie=pr_visitor_id
 ||proginn.com/cms/10000/
+||promo-*.vercel.app^
 ||proporn.*/proporn_right_ads.php
 ||prothomalo.com^$cookie=uuid_v2
 ||prvnizpravy.cz^$removeparam=xid
@@ -62717,7 +62725,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||sdk.fra-*.braze.eu^
 ||sdo.com/static/image/mkads/
 ||sdzbcg.com/images/sdfhyl
-||seal.globalsign.com^$third-party
 ||searchrecterm.kuwo.cn^$app=cn.kuwo.player
 ||seed*.bitchute.com/*/media_*.mp4$media,redirect=noopmp3-0.1s
 ||seed*.bitchute.com/*/play_*.mp4$media,redirect=noopmp4-1s
@@ -63159,6 +63166,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||tb.cn^$removeparam=sm
 ||tb58.net/plugin.php?id=tb58_
 ||tbcdn.cn/mm/tanxssp-custom/sina_
+||tblog-*.kgslb.com^
 ||tc.weszxdrf.com^$app=com.apkpure.aegon
 ||tccd.douglas.
 ||tchibo.de^$removeparam=wbdcd
@@ -63470,6 +63478,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||v*-ad.video.yximgs.com^
 ||v*-novelapp.fqnovelvod.com^
 ||v*.astar.bz/*/ping.gif
+||v*.denakop.com^
 ||v*.sitecounter.site^
 ||v*.sitecounter.site^$third-party
 ||v.icbc.com.cn/userfiles/ADResources/$domain=icbc.com.cn
