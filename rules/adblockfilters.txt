@@ -1,11 +1,11 @@
 !
 ! Title: AdBlock Filter
-! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、tif.mini、qy-Ads-Rule、adblock、final-rules。
+! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260203092529
-! Last modified: 2026/02/03 09:25:29
-! Blocked Filters: 165197
+! Version: 20260203101648
+! Last modified: 2026/02/03 10:16:48
+! Blocked Filters: 165216
 !
 ###AC_ad
 ###AD_160
@@ -25625,6 +25625,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1full4movies.beer###customAdPopup
 1in.am##.baner_zone_main
 1in.am##.header_logo_wrapper > div > a[href^="https://www.caucasus.am"][target="_blank"]
+1ink.cc##body > div[id^="Ad"][style^="position:fixed;"]
 1keydata.com#$##detect.ad-placement { display: block !important; }
 1keydata.com#%#//scriptlet("abort-on-property-read", "detect")
 1keydata.com#%#//scriptlet('abort-current-inline-script', 'document.querySelector', 'window.getComputedStyle')
@@ -41616,7 +41617,7 @@ archeologia.com.pl##div[style="”min-height:280px;height:280px;width:100%;text-
 archeologia.com.pl#?#p:contains(/^Reklama$/)
 architecturesideas.com##.linkpub_right_img
 architonic.com###header-top
-archive.fo,archive.is,archive.li,archive.md,archive.ph,archive.today,archive.vn#%#//scriptlet('prevent-setInterval', 'fetch')
+archive.fo,archive.is,archive.li,archive.md,archive.ph,archive.today,archive.vn,btdig.com#%#//scriptlet('prevent-setInterval', 'fetch')
 archive.org#%#//scriptlet('set-constant', 'archive_analytics', 'noopFunc')
 archive.org#%#//scriptlet('set-constant', 'archive_analytics.create_tracking_image', 'noopFunc')
 archive.org#%#//scriptlet('set-constant', 'archive_analytics.get_data_packets', 'noopFunc')
@@ -109726,6 +109727,11 @@ limanowa.in##.ardContainer
 limanowa.in##.barnerContainer
 limanowa.in##img[src^="/app/default/assets/ads/"]
 limetor.com##a[href^="https://affiliate.rusvpn.com/"]
+limetorrents.lol###content > a[target="_blank"] > img
+limetorrents.lol##.torrentinfo > div > div[style^="float:"]
+limetorrents.lol#%#//scriptlet('prevent-window-open')
+limetorrents.lol#?##rightbar > div:not([class]) > div.head:contains(Advertisement):upward(1)
+limetorrents.lol#?#.torrentinfo > .downloadareabig:has(> .dltorrent > div > a[rel])
 limetorrents.ninjaproxy1.com##[href^="https://gamestoday.org/"]
 limetorrents.to###rightbar > div:has(> div > a[href="https://www.ssstiktok.org"])
 limetorrents.torrentbay.st,limetorrents.*#?##content > table.table3:has(> tbody > tr > th:contains(Sponsored))
@@ -121021,6 +121027,7 @@ pastebin.com##iframe[src="/_lead_custom.php"]
 pastebin.com#?#div[style]:not([class]):not([id]) > .adsbyvli:first-child:upward(1)
 pastebin.pl##a[href^="https://www.binance.com/"] > img
 pastedownload.com##.uk-list > li:has(> .uk-label + span > a[rel][target="_blank"])
+pasteflash.sx#%#//scriptlet('prevent-requestAnimationFrame', 'blocked')
 pastehouse.com##.col-md-9 > .text-center > a[target="_blank"][rel="nofollow"] > img
 pastehouse.com#%#//scriptlet('abort-current-inline-script', 'document.write', 'Banner')
 pastemagazine.com##body #top_leaderboard
@@ -145181,6 +145188,7 @@ zzzyk.com###Tinfo
 ||allyes.$third-party
 ||almamedia.fi^*/scroll-monitor.min.js
 ||alotporn.com/*_*.js|
+||alpenridge.top^$popup
 ||alphaporno.com/ap-script.js
 ||alphaporno.com/bravoplayer/custom/alphapornocom/scripts/inplaybn-
 ||alphaporno.com/pop/
@@ -157411,6 +157419,7 @@ zzzyk.com###Tinfo
 ||oulsaultaulert.com^$popup
 ||ouo.press/js/*.js?
 ||ourcommonnews.com^$popup
+||ourcommonstories.com^$popup
 ||ourcoolposts.com^$popup
 ||ourcoolstories.com^$popup
 ||outbid.io^$third-party
@@ -158450,6 +158459,7 @@ zzzyk.com###Tinfo
 ||proporn.*/proporn_right_ads.php
 ||proporn.com/ajax/log/
 ||propps.com/v1/referrer/
+||propvideo.net/vast.php
 ||prosecrets.pro/js/VietXfAdvStats/frontend.js
 ||protect-link.biz/js/jquery-custom.js
 ||protect-your-privacy.net^$popup
@@ -159240,6 +159250,7 @@ zzzyk.com###Tinfo
 ||ro-ph.com/img/banners/roph.jpg$domain=sa-mp.ro
 ||roaddataay.live^$popup
 ||roadster.com/roadster_dealer_analytics
+||roastoup.com^$popup
 ||robert.golem.de/g/collect
 ||roblox.com/_/_/1px.gif
 ||roblox.com/report
@@ -160580,6 +160591,7 @@ zzzyk.com###Tinfo
 ||sp.fanatical.com/i?cd_c=*&aid=
 ||sp148.global.ssl.fastly.net^$redirect=nooptext
 ||spa-tracker*.spapi.io^
+||space-blogs.net/include/counter/
 ||space.bilibili.com^$removeparam=spm_id_from
 ||spackgeranic.shop^$popup
 ||spanishdict.com/page-view-metadata
@@ -161850,6 +161862,7 @@ zzzyk.com###Tinfo
 ||thedefiant.io/_next/image?url=*-300x250.
 ||theerrortool.com^$popup
 ||theeverydaygame.com/lg/$popup,third-party
+||theextensionexpert.com^$popup
 ||thefappening.so/sproject/*.php
 ||thefappeningblog.com/wp-content/uploads/2017/11/stripchat.gif
 ||thefrappening.so/sproject/sproject.php
@@ -162203,6 +162216,8 @@ zzzyk.com###Tinfo
 ||tnc0-*.zijieapi.com^
 ||tnc16-*.byteoversea.com^
 ||tnc16-*.hypic.com^
+||tnctrx.com^$popup
+||tnctrx.com^$third-party
 ||tns-sifo.se^$third-party
 ||tnspro.com.tr/0/sendEventV2
 ||tnwcdn.com/assets/next/js/tnw-ads.*.js
@@ -162655,6 +162670,7 @@ zzzyk.com###Tinfo
 ||turkiyegazetesi.com.tr/item/hit?
 ||turkmenportal.com/images/uploads/banners/
 ||turner.com/analytics/comscore/streamsense.
+||turnstileunavailablesite.com^$popup
 ||turnto.com/event
 ||turnto.com/webEvent/$third-party
 ||tusmangas.net/ama/oso.js$script
@@ -163954,6 +163970,7 @@ zzzyk.com###Tinfo
 ||wondershare.com/trk
 ||wondershare.com/wsid/com/static/utils/track.js
 ||wondershare.es/jslibs/track.js
+||wonkychickens.org/data/statics/nflong.jpg
 ||woonboulevardpoortvliet.nl/*/Tagging_GTM/
 ||woot.com^$removeparam=/^ref_?=/
 ||woozooo.com/img/*.js
@@ -164184,6 +164201,7 @@ zzzyk.com###Tinfo
 ||xbiquge99.cc/js/dj
 ||xbiqugela.com/js/basisc.
 ||xbjav.com/asset/js/vast.js
+||xbokepfb.co/andreaz.js
 ||xbooru.com/ex.js^
 ||xbooru.com/x^
 ||xboxservices.com/xboxcomfd/experimentation?
@@ -165062,6 +165080,7 @@ zzzyk.com###Tinfo
 ||znqip.net^$popup
 ||zoho.com^$removeparam=iref
 ||zoiper.com/*/js/tracker.js
+||zokjds.com/js/xiao.js
 ||zol-img.com.cn/ad/
 ||zol-img.com.cn/detail/js/module/app-download-float/script.js
 ||zol-img.com.cn/star/image/star-banner2.gif
