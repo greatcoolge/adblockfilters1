@@ -1,6 +1,6 @@
 # FilterDict - 正则表达式和复杂过滤规则
-# 生成时间: 2026-02-08 00:21:33
-# 规则数量: 186375
+# 生成时间: 2026-02-08 09:57:13
+# 规则数量: 186395
 #
 ||direct-specific.com
 ||ad-host-backup-*.aliyuncs.com^
@@ -16773,6 +16773,10 @@ m.zol.com.cn##.zolapp-download.flex-box
 ||zjgfq.com^$third-party
 207.148.44.179$network
 /^https:\/\/[a-z0-9-]{3,12}\.[a-z0-9]+\.com\/([A-Za-z0-9.]+)(?:\/([A-Za-z0-9.]+))?\.\d{4}\.(doc|docx|html|jpeg|jpg|js|json|odf|pdf|png|ppt|psd|rtf|shtml|sxml|txt|wedp|wps|xml|xps)\?\d{13}$/$third-party,match-case
+tstrs.me#%#//scriptlet('prevent-setTimeout', 'offsetHeight === 0')
+@@||tstrs.me^$generichide
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tstrs.me
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=tstrs.me
 tt1069.com#@#.adzone
 w.waipian.sbs##.popup-tips
 w.waipian.sbs##.shortcuts-mobile-overlay
@@ -24042,6 +24046,7 @@ youporn.com$$script:contains(/window\.[\s\S]*?_zone_[\s\S]*?{"zone_id":/)
 ##.ad-top-728:not([style="width: 10px; height: 10px;"])
 ##.stickyads:not([style^="width: 32px"], [style^="width: 33px"], [style*="left: -43px"], [style*="-3"][style*="important"][style*="display: block;"], [style*="position: fixed"][style*="-188"], [style*="!important;"][style*="width:"][style*="height:"][style*="position"][style*="left:"][style*="top:"][style*="display"], [data-freestar-ad="123"]):not(:empty)
 ##.ads_banner:not([style^="width: 32px"], [style^="width: 33px"], [style*="left: -43px"], [style*="-3"][style*="important"][style*="display: block;"], [style*="position: fixed"][style*="-188"], [style*="!important;"][style*="width:"][style*="height:"][style*="position"][style*="left:"][style*="top:"][style*="display"]):not(:empty)
+@@||manhuarmtl.com^$generichide
 rez.jbnews.it.com#%#//scriptlet('prevent-addEventListener', 'load', 'location.reload')
 rpmplay.online#%#//scriptlet('google-ima3')
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=rpmplay.online
@@ -28780,7 +28785,6 @@ uflash.tv#$#body .video .ad300x250 { display: block!important; height: 250px!imp
 javtiful.com#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsBlocked")
 @@||habbokritik.de/FuckAdBlock/fuckadblock.js
 @@||tstrs.me/img/*#/
-@@||tstrs.me^$generichide
 androidpolice.com#%#//scriptlet("abort-on-property-write", "ai_adb")
 @@||bookscool.com/*/advertisement.js
 ||bookscool.com/*/adblock-checker.
@@ -43121,6 +43125,15 @@ $subdocument,third-party,denyallow=disqus.com,domain=love4u.net
 $third-party,script,domain=klto9.com|f2movies.to|hacamchicac.com|yourporngod.com|zinchanmanga.com|yaoimangaonline.com|tututweak.app|mangaraw.ac|eromanga-show.com|hentai-one.com|hentaipaw.com|nukibooks.com|paipancon.com|jgvdata.com|youtubevanced.com|pandamtl.com|mangaplus.shueisha.tv|shueisharaw.tv
 ||linksconsole.com/ad-system/
 techarmor.xyz##.my-ad-container
+g2a.com###popupLink
+g2a.com#?#li[class^="SearchPage_StyledProductCard"]:has(> div.contents > div[class^="group/unibox"] > div.flex > div > div > div.flex > div.inline-grid:contains(SPONSORED))
+g2a.com#?#ul[class^="uni-box-slider__chunk"] > .col-span-1:has(> div.contents > div > div.flex-col > div > div.inline-grid:contains(SPONSORED))
+g2a.com##li[data-locator="ppa-offers-list__item"]:has(> div > div > div[class^="ZTH_StyledContainer"] > div[class^="ZTH_StyledProfileInfoDetails-sc"] > div[class^="OffersList_StyledProfileNameAndSponsored-sc-"])
+etherscan.io##a[href="https://etherscan.io/contactusadvertise#contactSection"]
+etherscan.io##a[href="https://blockscan.com/"]
+mamamia.com.au#$#.top-leaderboard-ad-container { display: none !important; }
+mamamia.com.au#$#.header-main-container { top: 0 !important; }
+manhuarmtl.com##.custom-ads-wrapper
 g2.com##div[data-track-in-viewport-options*="Advertisements"] + div[data-funnel-fingerprinting-path-value]
 tomshardware.com##.listingResult:has(> div.sponsored-post)
 80.lv##div[class*="BrPrMainShell"]
@@ -97224,6 +97237,7 @@ firstpost.com##.newadd
 farminguk.com##.news-advert-button-click
 hurriyetdailynews.com##.news-detail-adv
 sammobile.com##.news-for-you-wrapper
+caspianpost.com##.news-inner__banner
 blabbermouth.net##.news-single-ads
 dailysocial.id##.news__detail-ads-subs
 digit.in##.news_adhide_device
@@ -105180,6 +105194,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /cdn/qualtrics.js$domain=fredmeyer.com|frysfood.com|smithsfoodanddrug.com|ralphs.com
 /cdn/s/trekkie.storefront.*.min.js
 /cdn/shopifycloud/consent-tracking-api/*
+/cdn/wpm/b3918e4e0wbf3ac3cepc5707306mb02b36c6m.js
 /cdn_cookie_service.html
 /cedexis.js
 /cedexis.radar.js
@@ -105657,6 +105672,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /fbox/fblaunch.js$script
 /fbpix-events-
 /fbpixel.js
+/fdmg-tag-manager/tags.js
 /fe_logger?
 /feature/metrics$xmlhttprequest
 /federated-analytics.all.min.js
@@ -107352,6 +107368,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /supercookie.asp
 /supercookie.js
 /svs.gif?
+/sw.js?origin=
 /sw/analytics.js
 /swa_t.gif?
 /swatag.js
@@ -109672,6 +109689,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ://signals.*/hardal
 ://sp.*/sp/h|$xmlhttprequest
 ://ss.*.js?st=
+://ssgtm.
 ://sst.*.js?id=GTM-
 ://stat.*/pageview/$xmlhttprequest
 ://stats.*/code/e.js
@@ -180411,6 +180429,7 @@ zx-pk.ru##div[style="background-color: yellow; border-width: 2px; border-style: 
 ||partners.etoro.com^$script
 ||partners.sbermarketing.ru/api/tracker/sdk.js
 ||partplanes.com^$third-party
+||partsgeek.com/sspgt/
 ||paruvendu.fr/*/stats/
 ||pass-1234.com^$third-party
 ||passivepolo.com^$third-party
@@ -183056,6 +183075,7 @@ zx-pk.ru##div[style="background-color: yellow; border-width: 2px; border-style: 
 ||sslproxy.dk^*/analytics.js
 ||sslwidget.criteo.com/event^
 ||sso.meine-vrm.de/api/tracking-cue
+||sst.carwow.
 ||sstatic-rmcnmv.pstatic.net/resources/log/media-capable-log.js
 ||sstats.adobe.com/*/collect?configId=
 ||sstats.adobe.com/ee/irl1/v1/interact?requestId=

@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260208002131
-! Last modified: 2026/02/08 00:21:31
-! Blocked Filters: 164901
+! Version: 20260208095712
+! Last modified: 2026/02/08 09:57:12
+! Blocked Filters: 164918
 !
 ###AC_ad
 ###AD_160
@@ -19547,6 +19547,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /cdn/qualtrics.js$domain=fredmeyer.com|frysfood.com|smithsfoodanddrug.com|ralphs.com
 /cdn/s/trekkie.storefront.*.min.js
 /cdn/shopifycloud/consent-tracking-api/*
+/cdn/wpm/b3918e4e0wbf3ac3cepc5707306mb02b36c6m.js
 /cdn_cookie_service.html
 /ce_l.aspx?showid=$third-party
 /cedexis.js
@@ -20239,6 +20240,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /fbpix-events-
 /fbpixel.js
 /fdjdjghrut_tt.js
+/fdmg-tag-manager/tags.js
 /fe_logger?
 /feature/metrics$xmlhttprequest
 /federated-analytics.all.min.js
@@ -23012,6 +23014,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /svr/*.aspx?placeid=$third-party
 /svr/popwin.aspx?$third-party
 /svs.gif?
+/sw.js?origin=
 /sw/analytics.js
 /swa_t.gif?
 /swatag.js
@@ -27763,6 +27766,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://sli.*/imp?s=$image
 ://sp.*/sp/h|$xmlhttprequest
 ://ss.*.js?st=
+://ssgtm.
 ://sst.*.js?id=GTM-
 ://stat.*/pageview/$xmlhttprequest
 ://stats.*/code/e.js
@@ -34265,6 +34269,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||mangasail.co/sites/default/files/*//*_adsense_
 @@||manhua.acimg.cn^$stealth=referrer,domain=ac.qq.com
 @@||manhuagui.com^$stealth=referrer
+@@||manhuarmtl.com^$generichide
 @@||manjaro.pl^$generichide
 @@||manoramamax.com/videojs/videojs-contrib-ads.min.js$domain=manoramamax.com
 @@||manta.com^$generichide
@@ -36370,6 +36375,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=theglobeandmail.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=thehealthsite.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=tractorsupply.com
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=tstrs.me
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=usatoday.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=vogue.ru
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=wunderground.com
@@ -45695,6 +45701,7 @@ casecontrol.collections.breyta.nl$image
 cashbackdeals.it##aside[class^="SideBanners_"]
 cashless.pl##body > div.container:has(> a[href^="https://www.cashless.pl/pliki/"])
 cashless.pl#?#.container > div.text-xs:contains(/^Reklama/)
+caspianpost.com##.news-inner__banner
 cast4u.tv###notice
 cast4u.tv###video_ads_overdiv
 castanet.net###hdad
@@ -96451,6 +96458,8 @@ etherscan.io##.container-xxl > div.align-items-center > div.col-md-9 + div.col-a
 etherscan.io##.container-xxl:has(> div[class^="py-"] > div > span#ContentPlaceHolder1_lblAdResult)
 etherscan.io##.d-flex.card-body > div[data-nosnippet=""] > div[style^="min-height:"]
 etherscan.io##[href^="https://moonpay-affiliate-program.sjv.io/"]
+etherscan.io##a[href="https://blockscan.com/"]
+etherscan.io##a[href="https://etherscan.io/contactusadvertise#contactSection"]
 etherscan.io##div[data-nosnippet]:has(> ins[id])
 etherscan.io##div[id^="ContentPlaceHolder"][id*="_divMultichainAddress"] + .scrollbar-custom > .d-flex > .text-center > ins
 etherscan.io##form[action="/search"] + p.text-white
@@ -99711,7 +99720,11 @@ g.pl##div[class^="ban00"][class*="wrap"]
 g.pl##div[id^="banC"]
 g2.com##.product-head__leads
 g2.com##div[data-track-in-viewport-options*="Advertisements"] + div[data-funnel-fingerprinting-path-value]
+g2a.com###popupLink
 g2a.com##div[data-testid="placement"]
+g2a.com##li[data-locator="ppa-offers-list__item"]:has(> div > div > div[class^="ZTH_StyledContainer"] > div[class^="ZTH_StyledProfileInfoDetails-sc"] > div[class^="OffersList_StyledProfileNameAndSponsored-sc-"])
+g2a.com#?#li[class^="SearchPage_StyledProductCard"]:has(> div.contents > div[class^="group/unibox"] > div.flex > div > div > div.flex > div.inline-grid:contains(SPONSORED))
+g2a.com#?#ul[class^="uni-box-slider__chunk"] > .col-span-1:has(> div.contents > div > div.flex-col > div > div.inline-grid:contains(SPONSORED))
 g2esports.com##.js-side-banner
 g4media.ro##div[class^="code-block code-block-"][style]
 g4u.to##table tr > td:has(> a[href*="/update/"])
@@ -112564,6 +112577,8 @@ malwaretips.com##div[id^="mwtad-"]
 mamahawa.com,10short.pro#%#//scriptlet('trusted-replace-node-text', 'script', '/function openLink\(\)[\s\S]*?window\.location\.href/', '/(function openLink\(\)[\s\S]*?)window\.location\.href.*;/', '$1')
 mamalisa.com##div[class] > div[style$="padding-top:1em;font-size:.85em;"]
 mamalisa.com#?#.row div[class] > div[style]:contains(Advertisement)
+mamamia.com.au#$#.header-main-container { top: 0 !important; }
+mamamia.com.au#$#.top-leaderboard-ad-container { display: none !important; }
 mamaslatinas.com##.top-bar-content
 mamazone.pl#?#.row div[class][style*="border-bottom"][style*="max-height:"] > div[style]:contains(REKLAM):upward(1)
 mambiznes.pl##.a-zone
@@ -112741,6 +112756,7 @@ manhuagui.com##div[style^="width: 300px; height: 250px;"]
 manhuapica.com##a[href^="/ad/"]
 manhuaren.com###lb-win
 manhuarmmtl.com#%#//scriptlet('prevent-fetch', '_adcheck')
+manhuarmtl.com##.custom-ads-wrapper
 manhuascan.com##.itemupdate2
 manhuasy.com,teenmanhua.com##.body-wrap > div.c-sidebar
 manhuatop.org##.c-sidebar
@@ -134044,6 +134060,7 @@ tsdm39.com###ct > div > a[target="_blank"] > img
 tsmodelstube.com##.spot-regular
 tsmodelstube.com##a[href="https://tsmodelstube.com/a/tangels"]
 tsn.ca##widgets-bms-bet-slip[sponsor="fanduel"]
+tstrs.me#%#//scriptlet('prevent-setTimeout', 'offsetHeight === 0')
 tsubasa.im#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
 tsubasa.im#%#//scriptlet('prevent-setInterval', '/home/?adblock=')
 tsubasa.im#%#//scriptlet('prevent-setTimeout', '/home/?adblock=')
@@ -144428,7 +144445,6 @@ zzzyk.com###Tinfo
 ||aisixiang.com/images/*-20
 ||aisy19.com/dm/
 ||aitotop.com^*/collect.js?
-||aitsatho.com^$popup
 ||aiuw.com/images/*?from=ad
 ||aiv-delivery.net/*/TrackingEvents?
 ||aiv-delivery.net/Events/
@@ -146103,7 +146119,6 @@ zzzyk.com###Tinfo
 ||baike.com/newtop/news.html
 ||baikebcs.bdimg.com/*banner*.jpg
 ||baimakanshu.com/assets/public/
-||baipahanoop.net^$popup
 ||baishuku.com/news/$script
 ||baiten.cn/images/weInternation/
 ||baitoru.com/*/adobe_send_tracking.js
@@ -157151,6 +157166,7 @@ zzzyk.com###Tinfo
 ||partner.pcloud.com/media/banners/*72890.jpg
 ||partner.superbahisaffiliates*.com^
 ||partner.video.syndication.msn.com^$~object,third-party
+||partsgeek.com/sspgt/
 ||parturemv.top^$popup
 ||partwithner.com/partners/
 ||paruvendu.fr/*/stats/
@@ -160427,6 +160443,7 @@ zzzyk.com###Tinfo
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||sss.xxx/poppy/$script
 ||sss777.net/Alove-A/
+||sst.carwow.
 ||sstatic-rmcnmv.pstatic.net/resources/log/media-capable-log.js
 ||sstats.bitdefender.com^$xmlhttprequest,redirect=nooptext,~third-party,important
 ||ssyy881.com/zz/
