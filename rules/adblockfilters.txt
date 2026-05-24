@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260524174947
-! Last modified: 2026/05/24 17:49:47
-! Blocked Filters: 114406
+! Version: 20260525005456
+! Last modified: 2026/05/25 00:54:56
+! Blocked Filters: 114405
 !
 ###AC_ad
 ###AD_160
@@ -30659,8 +30659,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||ib.adnxs.com^$image,domain=scubidu.eu
 @@||ib.adnxs.com^$image,domain=world4.eu
 @@||ibb.istanbul^$stealth=dpi
-@@||ibf.tw/user/plugins/webtech-topbar/fuckadblock.js
-@@||ibf.tw^$generichide
 @@||iblitzmods.ru^$generichide
 @@||ibmmainframes.com^$generichide
 @@||ibon.com.tw/imageserver/images/ad_file/
@@ -31304,8 +31302,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||link.adtidy.org/forward.html
 @@||link.technics-goods.info^$generichide
 @@||link1s.*^$stealth=referrer
-@@||link1s.com/wp-banners.js
-@@||link1s.com^$generichide
 @@||linkdrop.net^$generichide
 @@||linkneverdie.com/Ads/Micro/?size=$domain=linkneverdie.com
 @@||linkneverdie.com^$generichide
@@ -33662,7 +33658,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||progress.org.uk/wp-content/plugins/adsanity-adblock-detection/public/js/ads.js$~third-party
 @@||projetomotog.blogspot.com^$generichide
 @@||promipool.com^$generichide
-@@||promo-visits.site^$generichide
 @@||promo.allo.ua^$domain=allo.ua
 @@||promo.awempire.com/live_feeds/script_basic_livefeed.php?$domain=sexcamdb.com
 @@||promo.com/embed/$subdocument,3p
@@ -34728,8 +34723,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||spareroom.co.uk/*/offered-$domain=spareroom.co.uk
 @@||spark.co.nz/content/*/utag.sync.js$domain=skinny.co.nz
 @@||sparkylinux.org/images/ad/$image
-@@||spaste.com/ads/$subdocument
-@@||spaste.com^$generichide
 @@||spbentleigheast.schoolzineplus.com/_file/media/*/*.pdf
 @@||speaker-test.com^$generichide
 @@||speedcurve.com/js/lux.js$script,domain=tv8.it
@@ -42482,9 +42475,6 @@ bombuj.si#%#//scriptlet('remove-attr', 'href', 'a[id][target="_blank"][onclick*=
 bombuj.si#%#//scriptlet('trusted-click-element', '#players .blink_me_ad > p > font > font', '', '300')
 bonappetit.com##[data-testid="sticky-hero-ad"]
 bonbonme.com##.topbannerer
-bondagevalley.cc##+js(abort-current-script, jQuery, /makeMoney|please/)
-bondagevalley.cc##.pleasedoit
-bondagevalley.cc#%#//scriptlet('abort-current-inline-script', 'jQuery', '/makeMoney|please/')
 bongda.com.vn##.adv
 bongda365f.com#$#override-property-read isSkipAds true
 bongdaplus.vn###ad-in-page
@@ -46390,6 +46380,8 @@ crypto.news##.a49292cf69626
 crypto.news##.b6470de94dc
 crypto.news##.rexas-presale
 crypto.news##.sponsored-button-group
+cryptobriefing.com##.ad-sticky-banner
+cryptobriefing.com##.na-item.item
 cryptocompare.com##.front-page-info-wrapper
 cryptocompare.com##.item-special
 cryptocompare.com##.title-hero
@@ -54395,6 +54387,12 @@ gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-element-src-loading', 'scrip
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('set-constant', 'adsbygoogle', 'emptyObj')
 gamesmarket.global##.MuiBox-root > .MuiBox-root:has(> .adSlot)
+gamesofdesire.com###chat
+gamesofdesire.com###maincol > div.game_box:has(> a[href="https://www.mnfclub.com"])
+gamesofdesire.com##[alt="banner"]
+gamesofdesire.com##[id^="skin_"]
+gamesofdesire.com##a#img_left
+gamesofdesire.com##a#img_right
 gamespot.com##.vjs-overlay-onceux-countdown-text
 gamespot.com##script.stub-leader
 gamespot.com##script.stub-mpu
@@ -74903,6 +74901,8 @@ poop.*#$#abort-current-inline-script String.fromCharCode 2147483647; abort-on-pr
 popart.hk###slideshow
 popbee.com##.adblocker
 popcornflix.com#%#//scriptlet('trusted-replace-fetch-response', '"adEnabled":true', '"adEnabled":false')
+popcornmovies.org##+js(json-prune, *, ppuClicks)
+popcornmovies.org#%#//scriptlet("json-prune", "*", "ppuClicks")
 popcorntv.it##+js(set-constant, adstarted, 5)
 popcorntv.it##+js(set-constant, wantedPreroll, 0)
 popcorntv.it##+js(set-constant, waterfallIndex, 11)
@@ -98244,7 +98244,6 @@ zzzyk.com###Tinfo
 ||bombaytimes.com/bbtrue/
 ||bombuj.tv/adblock/fuckadblock2.js
 ||bonbonme.com/js/g1313166/
-||bondagevalley.cc/upload/photos/kcs.webp
 ||bondzgi*.
 ||bonertube.com/*/license.*.js
 ||bonertube.com/*/script.js
@@ -98395,7 +98394,6 @@ zzzyk.com###Tinfo
 ||btbtdy.*/templets/btdy/js/ad
 ||btbuluo.com/uploads/*.gif
 ||btc.com/v1/poster/production/explorer-banner.
-||btccasinoexpert.com^$popup
 ||btcfans.com/template/comiis_lssy/ad/
 ||btdb.*/bal.js
 ||btdb.in/beacon.html
@@ -101548,7 +101546,6 @@ zzzyk.com###Tinfo
 ||flower-ads.com^$3p
 ||flowerdicks.com^$popup
 ||flowplayer.com/releases/ads/
-||fls-cn.amazon.cn^$third-party
 ||flurry.agentportal-*.yahoodns.net^
 ||flurry.agentportal.*.yahoodns.net^
 ||flux.com/geo.html?
@@ -101953,6 +101950,9 @@ zzzyk.com###Tinfo
 ||games-direct.skynetworkcdn.com^$subdocument,third-party
 ||games.masque.com/util/crossPromo/crossPromo.php?id=
 ||gamesdeal.com/media/allkeyshop/banner/text.html
+||gamesofdesire.com/files/flash/*-side.swf
+||gamesofdesire.com/skin/*_*.html
+||gamesofdesire.com/vghd/
 ||gamesports.net/monkey_
 ||gamespot.com^$removeparam=PostType
 ||gamespot.com^$removeparam=ServiceType
@@ -103136,7 +103136,6 @@ zzzyk.com###Tinfo
 ||hqtrk.com^$popup
 ||hqtube.xxx/api/pu/
 ||hqtube.xxx/tmp/
-||hrbpark.bid^$third-party
 ||hrjg.com.cn^$3p
 ||hrtyh.com^$popup
 ||hrzn-nxt.com^$3p
@@ -107720,7 +107719,6 @@ zzzyk.com###Tinfo
 ||pexels.com^*/sponsored_
 ||pexu.com^$popup
 ||pfkgl.top/images/*.gif
-||pfp.sina.com.cn^$script,subdocument
 ||pfp.sina.net/ea/ad/
 ||pg.ignimgs.com/pogoadkit.js
 ||pg.totaaltv.nl/api/metrics
@@ -112388,6 +112386,7 @@ zzzyk.com###Tinfo
 ||users-api.com^$third-party
 ||userscript.zone/s.js
 ||usersonline.org/ping.php?
+||userstatics.com/get/script.js
 ||userway.org/api/abn/events
 ||userway.org/api/seo-widget/
 ||userway.org/api/v1/stats
