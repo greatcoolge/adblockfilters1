@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260526012916
-! Last modified: 2026/05/26 01:29:16
-! Blocked Filters: 114634
+! Version: 20260526103329
+! Last modified: 2026/05/26 10:33:29
+! Blocked Filters: 114637
 !
 ###AC_ad
 ###AD_160
@@ -29569,6 +29569,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||embed.nana2play.com^$subdocument,stealth=referrer
 @@||embed.new.video^$stealth=referrer|ip
 @@||embed.sendtonews.com/player*.php$domain=earth.com
+@@||embed.sendtonews.com/player3/$domain=nypost.com
 @@||embed.watchanimesub.net/inc/embed/ads.js
 @@||embed.watchanimesub.net/inc/embed/kampyle.js
 @@||embed.watchanimesub.net/inc/embed/suv4.js
@@ -31934,6 +31935,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||moyens.net^$generichide
 @@||moyu.im/*.jpg$stealth=referrer
 @@||mozu.com^*/monetate.js$script,domain=acehardware.com
+@@||mp.mmvideocdn.com/mini-player/$domain=nypost.com
 @@||mp.mmvideocdn.com/mini-player/$domain=theplayerstribune.com
 @@||mp.mmvideocdn.com/mini-player/prod/voltax_mp.js$domain=earth.com
 @@||mp3fiber.com^$generichide
@@ -36000,6 +36002,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||vms-players.minutemediaservices.com^$script,domain=si.com
 @@||vms-videos.minutemediaservices.com/*/m3u8/$domain=reignoftroy.com
 @@||vms-videos.minutemediaservices.com/*/mpd/$xmlhttprequest,domain=beargoggleson.com
+@@||vms-videos.minutemediaservices.com^$domain=nypost.com
 @@||vms-videos.minutemediaservices.com^$xhr,domain=fortune.com
 @@||vms-videos.minutemediaservices.com^$xhr,domain=si.com
 @@||vms-videos.minutemediaservices.com^$xmlhttprequest,domain=fortune.com
@@ -72119,6 +72122,7 @@ nypost.com##body .ad--container
 nypost.com#%#//scriptlet('adjust-setTimeout', '[native code]', '7000', '0.001')
 nypost.com#?#.recirc--outbrain
 nypost.com#@#.recirc
+nypost.com#@#[class^="s2nPlayer"]
 nypost.com,pagesix.com##.billboard-overlay
 nysino.com##body > div.qodef-wrapper + div[id][class*=" "]
 nysun.com##.mr-\[-50vw\]
@@ -109069,7 +109073,6 @@ zzzyk.com###Tinfo
 ||qzonestyle.gtimg.cn/qzone/biz/ac/comm/$script
 ||qzonestyle.gtimg.cn/qzone/v8/ic/iframeReport.js
 ||qzwb.com/phpstat/
-||qzzr.com/_uid.gif
 ||r.bat.bing.com/?ld=$script,redirect=noop.js,domain=mcappx.com
 ||r.bat.bing.com/?ld=$script,redirect=noopjs,domain=mcappx.com
 ||r.r10s.jp/com/ap/plugin/mediatrack/mediatracker_ichiba_item.js
