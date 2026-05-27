@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260527021933
-! Last modified: 2026/05/27 02:19:33
-! Blocked Filters: 114528
+! Version: 20260527104309
+! Last modified: 2026/05/27 10:43:09
+! Blocked Filters: 114537
 !
 ###AC_ad
 ###AD_160
@@ -16947,7 +16947,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .st/ads/
 .starbucks.com/a/
 .stats?action=
+.stg.html-load.com/feed/$xhr,domain=~dogdrip.net|~smsonline.cloud
 .stg.html-load.com/feed/$xmlhttprequest,domain=~dogdrip.net|~smsonline.cloud
+.stg.html-load.com/media/$xhr,domain=~dogdrip.net|~smsonline.cloud
 .stg.html-load.com/media/$xmlhttprequest,domain=~dogdrip.net|~smsonline.cloud
 .streamplay.to/*?zoneid=$script
 .su/jquerys.js
@@ -23952,7 +23954,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1337x.to,mexa.sh##+js(abort-current-script, openedWindows, adfpoint)
 1337x.to,mexa.sh#%#//scriptlet("abort-current-inline-script", "openedWindows", "adfpoint")
 1337x.to,x1337x.eu,x1337x.ws##[href^="https://limeiptv.to"]
-1377x.*,123moviesfree.*,1flix.*,bigclatterhomesguideservice.com,camslib.com,camwhores.*,callistanise.com,cucuflix.*,doood.*,dooodster.*,dramacool.sr,embdmstrplayer.com,gogoanimes.*,hltv.org,igetintopc.com,japscan.me,jasminetesttry.com,l1afav.*,maxfinishseveral.com,minochinos.com,miraculous.to,movies-watch.com.pk,moviesapi.*,myflixerzz.*,nosteam.ro,primewire.*,ployan.*,readcomiconline.li,reputationsheriffkennethsand.com,root-nation.com,putarvid.com,seaporn.org,sfile.mobi,soap2day.*,solarmovie.*,toongod.com,usersdrive.com,vid2faf.*,vidara.*,vidfast.*,vidlink.*,vidsrc.*,watchflix.*,watchseriestv.*,yomovies.*#$#abort-on-property-read window.open
+1377x.*,123moviesfree.*,1flix.*,bigclatterhomesguideservice.com,camslib.com,camwhores.*,callistanise.com,cucuflix.*,doood.*,dooodster.*,dramacool.sr,embdmstrplayer.com,gogoanimes.*,hltv.org,igetintopc.com,japscan.me,jasminetesttry.com,l1afav.*,maxfinishseveral.com,minochinos.com,miraculous.to,movies-watch.com.pk,moviesapi.*,myflixerzz.*,nosteam.ro,primewire.*,ployan.*,readcomiconline.li,reputationsheriffkennethsand.com,root-nation.com,putarvid.com,tpead.net,seaporn.org,sfile.mobi,soap2day.*,solarmovie.*,toongod.com,usersdrive.com,vid2faf.*,vidara.*,vidfast.*,vidlink.*,vidsrc.*,watchflix.*,watchseriestv.*,yomovies.*#$#abort-on-property-read window.open
 139.45.197.151$network
 139.45.197.152$network
 139.45.197.153$network
@@ -31564,6 +31566,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||mathworks.com^$stealth=ip
 @@||matomo.miraheze.org/matomo.js$script,~third-party
 @@||matomo.moeci.com/matomo.js$domain=moeci.com
+@@||matprat.no^$stealth=dpi
 @@||matrix.org/_matrix/$removeparam
 @@||matrix.redditspace.com^$stealth=3p-auth
 @@||matsukiyococokara-online.com/store/*/rtoaster.js
@@ -39436,6 +39439,7 @@ arukereso.hu##.promotion-container
 arydigital.tv###zzright
 arydigital.tv,barakbulletin.com##.bsac
 arynews.tv##.tdi_103
+as.com##.a_rel
 as.com##.ad-e2
 as.com##.slider-producto
 as.com,desdelinux.net,tutiempo.net,ubunlog.com##.publi
@@ -49435,7 +49439,6 @@ ebay.*##div#placement100379 + section
 ebay.*##div.picture-panel-container section[data-viewport]
 ebay.*##div.s-clipped[aria-hidden="true"]
 ebay.*##div.x-atf-left-bottom-river
-ebay.*##div.x-evo-atf-top-river
 ebay.*##div.x-evo-btf-river > div.vim.d-vi-evo-region > section:not([class])
 ebay.*##div.x-evo-middle-river section[data-viewport]
 ebay.*##div.x-pda-placements
@@ -66449,6 +66452,7 @@ malaysiastock.biz#%#//scriptlet("set-constant", "canRunAds", "true")
 malekal.com##.Here
 malekal.com##.topad
 mallorca.com##a[data-ad]
+maltadaily.mt##.max-w-3xl:has(> div.flex > span.font-semibold:contains(/^Continue reading$/i))
 maltadaily.mt##.max-w-5xl > a[href]:has(> img[alt*="Advertisement"])
 maltadaily.mt##div[id^="malta-"]
 maltadaily.mt#?#.max-w-3xl:has(> div.flex > span.font-semibold:contains(/^Continue reading$/i))
@@ -73847,6 +73851,8 @@ ph4.ru##table[width][height="90"][style]
 phandroid.com##[href^="https://howl.link/"]
 phaply.net.vn##.no-margin-ads
 pharmacytimes.com##div[class*="728px"][class*="98px"]
+pharmnet.com.cn###img1
+pharmnet.com.cn##.ad9502
 pheclip.dev,phim18vip.site,sieudam.dev,subnhanh.plus#$#abort-current-inline-script $ pop
 pherotruth.com##+js(abort-current-script, Array.prototype.shift, void 0===)
 pherotruth.com##.footerad
@@ -103261,6 +103267,7 @@ zzzyk.com###Tinfo
 ||hstats*.hepsiburada.com^
 ||hsyipos.com/template/mxone/html_tplmx/vod/*.gif
 ||htm*.hepsiburada.com^
+||html-load.com/l/$xhr
 ||html-load.com/l/$xmlhttprequest
 ||html-load.com/loader.min.js^$script,domain=scribd.com
 ||html-load.com/players/*/70/$xmlhttprequest,domain=mentalfloss.com
@@ -107842,6 +107849,8 @@ zzzyk.com###Tinfo
 ||ph-files.imgix.net/381feabc-7331-4b7e-a5be-1d606cf38c06.png$domain=producthunt.com
 ||ph-files.imgix.net/c160f39d-096a-4679-a8ef-eb68c537359c.png$domain=producthunt.com
 ||phaitaghy.com^$popup
+||pharmnet.com.cn/cnbanner/
+||pharmnet.com.cn/js/float_div.js
 ||phb123.com/skin/js/tongji.js
 ||phbkm.com/js/
 ||pheniter.com^$popup
