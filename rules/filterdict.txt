@@ -1,6 +1,6 @@
 # FilterDict - 正则表达式和复杂过滤规则
-# 生成时间: 2026-05-31 10:45:12
-# 规则数量: 131964
+# 生成时间: 2026-05-31 18:09:07
+# 规则数量: 131967
 #
 ||direct-specific.com
 ||ad-host-backup-*.aliyuncs.com^
@@ -21440,6 +21440,9 @@ ikan6.vip,www.1111modruba.cc##IMG[src$='.gif']
 ##A[href*='com:'] > IMG[src],A[href*='cc:'] > IMG[src]
 ##div#h2_player_prevideo > A[href][target='_blank']
 ##body#reader-m-fix IMG[src*='.gif'][style='width:100%;height:100%']
+||google.com/pagead/
+||static.doubleclick.net^$domain=youtube.com
+||youtube.com/get_midroll_
 /^.+stat\.kugou\.com/
 /^admarvel\./
 /^admaster\./
@@ -21540,9 +21543,6 @@ ikan6.vip,www.1111modruba.cc##IMG[src$='.gif']
 ||w*.*skwai.com^
 ||widgets.*.webengage.com^
 ||xy-*pcdn.msstatic.com^
-||google.com/pagead/
-||static.doubleclick.net^$domain=youtube.com
-||youtube.com/get_midroll_
 ||*/snscosdownload/*/reserved/*$app=com.tencent.mm
 ||*adintl.cn^
 ||*googleads*^
@@ -93481,7 +93481,7 @@ $third-party,xmlhttprequest,domain=mega4upload.net
 ||amazonaws.com/cdn.mobverify.com
 ||amazonaws.com/dazeddigital.com/Ads-main.js$domain=dazeddigital.com
 ||amazonaws.com/jsstore/$domain=babylonbee.com
-||amazonaws.com^$domain=mangakakalot.gg|nelomanga.net|uploadhaven.com
+||amazonaws.com^$domain=animeflv.net|mangakakalot.gg|nelomanga.net|uploadhaven.com
 ||animeland.tv/zenny/
 ||api.bitchute.com/slot1/
 ||api.bitchute.com/slot2/
@@ -94123,7 +94123,7 @@ $third-party,xmlhttprequest,domain=mega4upload.net
 ||welcomemagazinecy.com/media/advertisements/
 ||wikihow.com/x/zscsucgm?
 ||wordcount.im/js/ad.js
-||workers.dev^$domain=chessgames.com
+||workers.dev^$domain=chessgames.com|player.vidzee.wtf
 ||worthplaying.com/ad_left.html
 ||wowroms.com/images/Banner336x280.gif
 ||wowroms.com/images/Banner970x250.gif
@@ -106332,8 +106332,8 @@ $xhr,redirect-rule=noop.txt,domain=oko.sh|tii.la
 /CreateCookieSSO_
 /CustomTrackingScript.js
 /DG/DEFAULT/rest/*
-/DNSCheck.js
-/DNSChecker.js
+/DNSCheck.js$domain=~github.com
+/DNSChecker.js$domain=~github.com
 /DynamicAnalytics.js
 /EmailOpenTrackLog.aspx?$image
 /EmbedAsyncLogger.js
@@ -111165,6 +111165,7 @@ $xhr,redirect-rule=noop.txt,domain=oko.sh|tii.la
 @@||identity.mparticle.com^$xmlhttprequest
 @@||ieeexplore.ieee.org^$removeparam
 @@||iejima.org/ad-banner/$image,~3p
+@@||ienohikari.net/ad/img/$~3p
 @@||ignitetv.rogers.com/js/api/fingerprint.js$script,~third-party
 @@||ignitetv.shaw.ca/js/api/fingerprint.js$~third-party
 @@||ikea.com^*/analyticsEvent.$script,~third-party
@@ -113035,6 +113036,7 @@ bellezashot.com##+js(noeval-if, pub_300x250 pub_300x250m text-ad textAd text_ad 
 bemyhole.com##+js(remove-node-text, script, egoTab)
 benacer-techpro.com##+js(prevent-fetch, pagead2.googlesyndication.com)
 benchmark.pl###adblock-info
+benchmark.pl,select.wp.pl,so-magazyn.pl,kafeteria.pl,informacje.wp.pl,wplatform.media,pcformat.pl,staszownews.pl,zdrowienews.pl,kurierostrowiecki.pl,ostrowiec24.info,kielce112.pl,lublinnews.pl,lovelifestyle.pl,telefan24.pl,marketing-zone.pl,panoramaplock.pl,ipolska24.pl,dzieckopoznan.pl,historiapoznania.pl,sportpoznan.pl,pysznosci.pl,kultura.wp.pl,jastrzabpost.pl,wirtualnemedia.pl,open.fm,deliciousmagazine.pl,poczta.wp.pl,pilot.wp.pl,polygamia.pl,abczdrowie.pl,money.pl,dobreprogramy.pl,o2.pl,gadzetomania.pl,komorkomania.pl,autocentrum.pl,pudelek.pl,vpolshchi.pl,parenting.pl,autokult.pl,fotoblogia.pl,dom.wp.pl,pogoda.wp.pl,gry.wp.pl,wroclaw.wp.pl,moto.wp.pl,wideo.wp.pl,kuchnia.wp.pl,facet.wp.pl,sportowefakty.wp.pl,turystyka.wp.pl,magazyn.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,tech.wp.pl,opinie.wp.pl,teleshow.wp.pl,gwiazdy.wp.pl,film.wp.pl,wiadomosci.wp.pl,finanse.wp.pl##+js(remove-cookie, /^WPsad/)
 benchmarkreviews.com##body:style(background-image: none!important;)
 benyixiwang.com##p:has(a[href="http://www.sm9166.com"])
 beppegrillo.it#@#div[id^="div-gpt-ad-"]
@@ -114630,7 +114632,6 @@ flightconnections.com##+js(remove-attr, id, .display-box)
 flightradar24.com###bottomRightPanel
 flightradar24.com###responsiveBottomPanel
 flightradar24.com##.noads
-flipkart.com##.fWi7J_:contains(Brands In Spotlight)
 flipkart.com##.grid-formation:has(div:contains(AD))
 flipkart.com#$#hide-if-contains Sponsored 'div[style*="position: absolute"][style*="transform"]' 'div[dir="auto"]'
 flipkart.com#$#hide-if-matches-xpath './/a[contains(@href,"_AD")][@style]/ancestor::div[contains(@class,"grid-formation")]/parent::div[@style]'; hide-if-matches-xpath './/a[contains(@href,"_AD")][@style]/ancestor::div[contains(@class,"grid-formation")]/parent::div[@style]/parent::div[@style]/parent::div[.//div[text()="Sponsored"]]'
@@ -118740,7 +118741,6 @@ segmentfault.com###question-wrap > .row > .col-xl-auto:has(> #first-ad:first-chi
 segurosdevida.site##+js(prevent-fetch, pagead2.googlesyndication.com)
 seirsanduk.com##+js(set-constant, canRunAds, true)
 seks-studentki.pro,sex-studentki.gold#$#prevent-listener DOMContentLoaded click_time
-select.wp.pl,so-magazyn.pl,kafeteria.pl,informacje.wp.pl,wplatform.media,pcformat.pl,staszownews.pl,zdrowienews.pl,kurierostrowiecki.pl,ostrowiec24.info,kielce112.pl,lublinnews.pl,lovelifestyle.pl,telefan24.pl,marketing-zone.pl,panoramaplock.pl,ipolska24.pl,dzieckopoznan.pl,historiapoznania.pl,sportpoznan.pl,pysznosci.pl,kultura.wp.pl,jastrzabpost.pl,wirtualnemedia.pl,open.fm,deliciousmagazine.pl,poczta.wp.pl,pilot.wp.pl,polygamia.pl,abczdrowie.pl,money.pl,dobreprogramy.pl,o2.pl,gadzetomania.pl,komorkomania.pl,autocentrum.pl,pudelek.pl,vpolshchi.pl,parenting.pl,autokult.pl,fotoblogia.pl,dom.wp.pl,pogoda.wp.pl,gry.wp.pl,wroclaw.wp.pl,moto.wp.pl,wideo.wp.pl,kuchnia.wp.pl,facet.wp.pl,sportowefakty.wp.pl,turystyka.wp.pl,magazyn.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,tech.wp.pl,opinie.wp.pl,teleshow.wp.pl,gwiazdy.wp.pl,film.wp.pl,wiadomosci.wp.pl,finanse.wp.pl##+js(remove-cookie, /^WPsad/)
 semawur.com##+js(no-window-open-if)
 semprot.com##+js(abort-current-script, String.fromCharCode, ahli)
 send-anywhere.com##+js(adjust-setInterval, autoClose, , 0.02)
@@ -119642,7 +119642,6 @@ tikmate.app##+js(set-constant, detectAdBlock, noopFunc)
 tikmate.app##+js(set-constant, powerAPITag, {})
 tim.it##.modal-backdrop:style(display:none!important;)
 tim.it##.modal-open:style(overflow:visible!important;)
-timesascent.com##.animate-pulse > div[class^="w-[3"].bg-gray-100:has(> svg:only-child)
 timesnownews.com##+js(json-prune, ads breaks)
 timesnownews.com##+js(set-constant, SlikePlayer.prototype.playAd, noopFunc)
 timesnownews.com##+js(set-constant, player.adm.destroy, noopFunc)
@@ -120323,6 +120322,7 @@ vjav.com##+js(set-constant, adver, noopFunc)
 vk.barkov.net##.alert-danger
 vk.com,vk.ru#$#abort-on-property-read vk__adsLight.adsShowed
 vknsorgula.net##+js(abort-current-script, document.createElement, adsbygoogle.js)
+vladan.fr##html > body:style(background-image: none !important;)
 vlxy.org##+js(prevent-fetch, magsrv.com)
 vn.trueid.net##+js(prevent-fetch, www3.doubleclick.net)
 vndoc.com#$#override-property-read seconds 0
@@ -124969,6 +124969,7 @@ zzbaike.com##.ceo-margin-bottom:has(img[width="340"])
 ||ftbpro.com^$third-party
 ||ftimg.net/js/log.js?
 ||ftz.io^$third-party
+||fubuki-umami.space/api/script.js
 ||fudge.ai/metrics?
 ||fuel-design.com/js/script.js
 ||fueldeck.com^$third-party
@@ -125829,6 +125830,7 @@ zzbaike.com##.ceo-margin-bottom:has(img[width="340"])
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=androidpolice.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=berlingske.dk|bt.dk
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=businessnovinite.bg|btv.bg|btvsport.bg|btvplus.bg|btvnovinite.bg
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=cargames.com|yiv.com|puzzlegame.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=cbssports.com,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=click2houston.com,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=cnews.cz
@@ -125851,6 +125853,7 @@ zzbaike.com##.ceo-margin-bottom:has(img[width="340"])
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl|eska.pl|radiosupernova.pl|vibefm.pl|urzadzamy.pl|mediateka.pl|muratordom.pl
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=radiozet.pl,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=smoothpre.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=theguardian.com|timesofindia.indiatimes.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=tokfm.pl,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=trojmiasto.pl
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=typingtest.com
@@ -128037,6 +128040,7 @@ zzbaike.com##.ceo-margin-bottom:has(img[width="340"])
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xhr,redirect=noop.js,domain=freebinchecker.com
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xhr,redirect=noop.js,domain=pricez.co.il
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xhr,redirect=noop.js,domain=tw-calc.net
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=hexanaut.io,important
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,important,redirect=googlesyndication_adsbygoogle.js,domain=s0ft4pc.com|portable4pc.com,script
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,redirect=googlesyndication_adsbygoogle.js,domain=pomofocus.io,script
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,redirect=googlesyndication_adsbygoogle.js,script
@@ -128373,7 +128377,6 @@ zzbaike.com##.ceo-margin-bottom:has(img[width="340"])
 ||posthog.com/*/logs?$xmlhttprequest
 ||posthog.com/api/homepage-hits
 ||posthog.com/api/signup-count
-||postmedia.app^$3p
 ||potsdamer-stadtplan.com/t.gif
 ||power.adhacker.online^$3p
 ||powercount.com^$third-party
