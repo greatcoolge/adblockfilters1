@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260607010304
-! Last modified: 2026/06/07 01:03:04
-! Blocked Filters: 114835
+! Version: 20260607104859
+! Last modified: 2026/06/07 10:48:59
+! Blocked Filters: 114838
 !
 ###AC_ad
 ###AD_160
@@ -15438,6 +15438,7 @@
 ##div[id][style$="width:336px; max-width:100%; min-height:250px; background-color:transparent;"]
 ##div[id][style="border: 0pt; width:    970px; height:    90px;"]
 ##div[id][style="max-height: 180px; text-align: center; margin: 0px auto; display: block;"]
+##div[id][style="width:   100%;height:   280px;overflow:hidden"]
 ##div[id][style^="min-width: 300px; min-height: 250px"]
 ##div[id][style^="width:    3"][style*="height:    1"]
 ##div[id^="M"][id*="Composite"]
@@ -16448,7 +16449,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/dongcidaci/
 .com/ed/java.js$script
 .com/exload.js
-.com/f_lo.js|$script,~third-party
 .com/g.gif?
 .com/gg.js
 .com/gg/*?x=$script,3p
@@ -19905,7 +19905,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /flashad.asp$subdocument
 /flashad.js$script
 /flipptag.js
-/flo.js|
 /floa.js$domain=ah-me.com|beeg.com|croea.com|imagetwist.com|kporno.com|picshick.com|picturelol.com|porntube.com
 /float_ad.js$script
 /float_r.js
@@ -47846,6 +47845,7 @@ designtaxi.com##[id^="in-news-link-"]
 designtaxi.com##a.a-click[target="_blank"]
 designwizard.com##.blog-footer
 designyourway.net##.reclamaint
+desihoes.com###topRightBanner
 desimartini.com##.bor_bot > div[style="background-color: #f5f5f5; min-height: 110px; padding: 10px 0 10px 0;"]:empty
 desipapa.tv##.video-tb > .video-col
 desiporn.one,gay0day.com,thetranny.com,xlilith.com##.block-video > .table:has(> div[id][style^="height:"] > iframe.na)
@@ -59377,6 +59377,7 @@ ideegreen.it#?##sidebar > div.widget_text:has(> div.textwidget > center > font >
 idevice.ro##.td-post-content > #getsocialmain + center
 ideya-biznesa.ru##.admania_adblock_detector
 idg.se##.spklw-post-attr[data-type="ad"]
+idhubs.app##+js(remove-node-text, script, __AB_DET)
 idhubs.app#%#//scriptlet('remove-node-text', 'script', '__AB_DET')
 idilyazar.com#@#.ads_wrapper
 idiva.com##.hometop-ads
@@ -75022,6 +75023,8 @@ player.starlight.digital#$#replace-fetch-response testadv
 player.theplatform.com#%#(()=>{window.XMLHttpRequest.prototype.open=new Proxy(window.XMLHttpRequest.prototype.open,{apply:async(a,b,c)=>{const d=c[1];return"string"!=typeof d||0===d.length?Reflect.apply(a,b,c):(d.match(/manifest\..*\.theplatform\.com\/.*\/.*\.m3u8\?.*|manifest\..*\.theplatform\.com\/.*\/*\.meta.*/)&&b.addEventListener("readystatechange",function(){if(4===b.readyState){const a=b.response;Object.defineProperty(b,"response",{writable:!0}),Object.defineProperty(b,"responseText",{writable:!0});const c=a.replaceAll(/#EXTINF:.*\n.*tvessaiprod\.nbcuni\.com\/video\/[\s\S]*?#EXT-X-DISCONTINUITY|#EXT-X-VMAP-AD-BREAK[\s\S]*?#EXT-X-ENDLIST/g,"");b.response=c,b.responseText=c}}),Reflect.apply(a,b,c))}})})();
 player.twitch.tv##.video-player__container div[class^="Layout-"]:has(> span[data-a-target="video-ad-label"])
 player.videasy.net,vidfast.*,embdmstrplayer.com#$#abort-on-iframe-property-read open
+player.videasy.to##+js(addEventListener-defuser, unload, unloaded_at)
+player.videasy.to##+js(no-window-open-if)
 player.videasy.to#%#//scriptlet('prevent-addEventListener', 'unload', 'unloaded_at')
 player.videasy.to#%#//scriptlet('prevent-window-open')
 player.vidify.top#$##root > .group > .inset-0.fade-in:has(> video.object-cover) { display: none !important; }
