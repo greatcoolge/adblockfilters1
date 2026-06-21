@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260621191202
-! Last modified: 2026/06/21 19:12:02
-! Blocked Filters: 114986
+! Version: 20260622012145
+! Last modified: 2026/06/22 01:21:45
+! Blocked Filters: 114991
 !
 ###AC_ad
 ###AD_160
@@ -22181,7 +22181,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /scroll-tracker.js
 /scrollgg_index.js
 /sda/*$domain=chineseinla.com
-/sdc.js
+/sdc.js|
 /sdc1.js
 /sdc2.js
 /sdcTrackingCode.js
@@ -25192,6 +25192,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 5184.com##.fixed_bgg
 5184.com##.fixed_bgg2
 5184.com##.gg600
+51cg1.com##+js(set-constant, DPLAYER_PREROLL_AD.attachPreRollAd, noopFunc)
 51cg1.com##.dplayer-pre-bg
 51cg1.com##.dplayer-pre-countdown
 51cg1.com##.dplayer-pre-img
@@ -39197,8 +39198,6 @@ apkmodget.com##.adv_wrap
 apkmodvn.com##+js(abort-on-property-write, tsvdRandomLink)
 apkmodvn.com#%#//scriptlet('abort-on-property-write', 'tsvdRandomLink')
 apkmodvn.com,softfully.com,gamertweak.com,aastik.in,metrosaga.com##body .adsbygoogle:not(#style_important)
-apkmody.com##.above-ad-unit
-apkmody.com##a[href*="ldplayer.net?n="][target="_blank"]
 apkmody.fun##+js(no-window-open-if)
 apkmody.fun#%#//scriptlet('prevent-window-open')
 apkmody.mobi###custom-container
@@ -42362,6 +42361,7 @@ bljiex.com###player_pause
 blockaway.net###infoBarContainer
 blockaway.net##.twitterWidget
 blockaway.net##a[href^="https://www.patreon.com/croxyproxy?"]
+blockchain.com##a[href^="https://snapmarkets.com/?utm_"]
 blockchain.info###tx_container > div:not([id]):not([class]) > table.table.table-striped[style="float:left;margin:0;width:100%;padding: 0 0 30px;"]
 blockchain.info##li.ad
 blockchain.info##span[translate="SPONSORS"]
@@ -45169,6 +45169,7 @@ cloudfam.io#%#//scriptlet('abort-current-inline-script', 'EventTarget.prototype.
 cloudfam.io#%#//scriptlet('abort-on-stack-trace', 'document.createElement', 'openAdWithFallback')
 cloudfam.io#%#//scriptlet('prevent-element-src-loading', 'script', '/adsbygoogle|doubleclick/')
 cloudfam.io#%#//scriptlet('prevent-fetch', '/pagead|adserve|adsbygoogle/')
+cloudfam.io#%#//scriptlet('prevent-fetch', 'method:HEAD')
 cloudfam.io#%#//scriptlet('prevent-window-open')
 cloudfam.io#?#.text-center:contains(Advertisement)
 cloudflareinsights.com$third-party
@@ -55829,6 +55830,7 @@ gloswielkopolski.pl##.componentsPromotionsPromoted__list
 gloswielkopolski.pl##.linkiSponsorowane
 gloucestershirelive.co.uk##+js(set-constant, chameleonVideo.adDisabledRequested, true)
 gloucestershirelive.co.uk#%#//scriptlet("set-constant", "chameleonVideo.adDisabledRequested", "true")
+glowing.com##.adsWrapper-0-0-136
 gmanetwork.com###mrec-container
 gmanetwork.com##.ad-hldr
 gmanetwork.com##.ivs-placeholder
@@ -57264,7 +57266,6 @@ hax.co.id#@#.ad-box
 hax.co.id#@#.ad-box:not(#ad-banner):not(:empty)
 hax.co.id#@#.ad-wrapper
 haxball.com##.flexRow > .rightbar
-haxmac.cc##[onclick^="window.open"]
 haxmaps.com##+js(no-setTimeout-if, log_abb_tests)
 haxmaps.com#%#//scriptlet('prevent-setTimeout', 'log_abb_tests')
 haxmaps.com#@##bottomAd
@@ -89305,6 +89306,7 @@ uploadrar.com##.my-4 > form[method="POST"] > center
 uploadrar.com##a[href*="?"][target="_blank"]
 uploadrar.com##a[role="button"][href^="http://"]
 uploadrar.com##center > a.btn:not([href*="uploadrar.com"])
+uploadrar.com##center > a[href][target="_blank"]
 uploadrar.com#?#div[class^="banner"]:not(:has(> div#commonId))
 uploadrar.com#?#div[class^="download"][class*="page"] div[class^="banner"]:has(> .as_ads_guard:only-child)
 uploadrar.com#?#div[class^="download"][class*="page"] div[class^="banner"]:has(> script:first-child + .adsbygoogle)
@@ -95799,7 +95801,6 @@ zzzyk.com###Tinfo
 ||192ly.com/wp-content/cache/*.js
 ||199.180.100.185/love44^
 ||1990tu.com^$3p
-||1abzar.ir/abzar/tools/stat/
 ||1av.to/assets/ad/
 ||1biqug.com/js/ajax.js
 ||1bitspace.github.io/wgaming/es/rectangle-medium/v2.html
@@ -97766,6 +97767,7 @@ zzzyk.com###Tinfo
 ||api.taboola.com^$app=Mahjong.exe|Solitaire.exe|Microsoft.Msn.News.exe
 ||api.tacotax.fr/v2/amplitude_trackers
 ||api.takealot.com^$ping
+||api.tally.so/forms/*/events
 ||api.tblcontent.com*/log/
 ||api.thefantazy.com/web-vitals
 ||api.tin.network/banners/
@@ -98997,6 +98999,7 @@ zzzyk.com###Tinfo
 ||bokecc.com/flash/timerecorder?
 ||bol.com/click/
 ||bol.com/tracking/
+||boldin.com/rails/arrival
 ||bolecdn.com/button/txt.js
 ||bolt.com/v1/log?
 ||bombaytimes.com/bbtrue/
@@ -102945,6 +102948,7 @@ zzzyk.com###Tinfo
 ||glomex.com^$ping
 ||glospowiatusredzkiego.pl/pl/_ajax/getBanners.php
 ||glospowiatusredzkiego.pl/pl/js/qp.js
+||glowing.com/unilog
 ||glsfreeads.com^$popup
 ||gluxouvauure.com^$popup
 ||glzy8.com/img/ceo/js.js
@@ -103102,6 +103106,7 @@ zzzyk.com###Tinfo
 ||google.com/pagead/1p-user-list/
 ||google.com/pagead/conversion_async.js
 ||google.com/pagead/drt/
+||google.com/pagead/form-data/
 ||google.com/pagead/landing?
 ||googleapis.com/aam.js
 ||googleapis.com/gadasource/gada.js
@@ -110145,7 +110150,6 @@ zzzyk.com###Tinfo
 ||searchenginejournal.com/xcs0MhRsfxHG.js
 ||searchenginereports.net/theAdGMC/$image
 ||searchiq.co/api/tr?
-||searchnowexpert.com/sr/
 ||searchpeack.com^$3p
 ||searchrecterm.kuwo.cn^$app=cn.kuwo.player
 ||searchrys.com/dot.php
@@ -111702,6 +111706,7 @@ zzzyk.com###Tinfo
 ||takefile.link/promo/$third-party
 ||talkfx.*/showTKImg?
 ||talkingpointsmemo.com/whoami
+||tally.so/api/forms/*/events
 ||talpa-analytics.
 ||tamedia.com.tw^$3p
 ||tamil.samayam.com/tsiag/
