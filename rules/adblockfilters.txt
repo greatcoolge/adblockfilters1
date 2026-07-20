@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260720004951
-! Last modified: 2026/07/20 00:49:51
-! Blocked Filters: 115745
+! Version: 20260720101308
+! Last modified: 2026/07/20 10:13:08
+! Blocked Filters: 115747
 !
 ###AC_ad
 ###AD_160
@@ -44453,6 +44453,7 @@ chatelaine.com##.assmbly-ad-text
 chatelaine.com,fashionmagazine.com##.assmbly-ad-wrapper
 chatglm.cn##.agent_head_DownloadApp
 chatgpt.com##.border-token-border-default.mt-2.border-t:has(button[aria-label="Ad options"])
+chatgpt.com##[class*="_assistantAds"]
 chatgpt.com##[data-testid="bazaar-v2-elevated-box"]:has([data-ad-card-root="true"])
 chatgpt.com##[data-testid="bazaar-v2-elevated-box"]:has([data-testid="image-card-v2-elevated-disclosure"])
 chatgpt.com##div.opacity-100.transition-opacity.ease-out:has(button[aria-label="Sponsored options"], button[aria-label="Ad options"])
@@ -46608,7 +46609,7 @@ crazyporn.xxx#?#.item:has(> script[src^="/ai/"])
 crazyporn.xxx,4kporn.xxx##+js(remove-node-text, script, initPopunder)
 crazyporn.xxx,4kporn.xxx#%#//scriptlet('remove-node-text', 'script', 'initPopunder')
 crazyporn.xxx,4kporn.xxx$$script:contains(initPopunder)
-crazyshit.com##+js(abort-current-script, jQuery, document.cookie)
+crazyshit.com##+js(abort-current-script, jQuery, window['open)
 crazyshit.com##a[href^="https://trustberrie.com/zn/"]
 crazyshit.com##body > div[style^="position: fixed;"][style*="transform:"][style*="z-index:"]
 crazyshit.com##div[id^="aad-footer"]
@@ -48786,6 +48787,7 @@ dobro.systems#@#.advBox
 dobryruch.co.uk#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
 dobrzemieszkaj.pl##.abc
 dobrzemieszkaj.pl##.ad-wrap-2
+dobrzemieszkaj.pl##.sad
 dobrzemieszkaj.pl##body .ad:not(#style_important)
 doc.mbalib.com###viewer > div.doc-ad
 doc.thinkphp.cn#%#//scriptlet('inject-css-in-shadow-dom', 'a[href*="?utm_source="][target="_blank"] > img { display: none !important; }')
@@ -75207,21 +75209,16 @@ pixiv.net##.multi-ads-area
 pixiv.net##[class*="style_ads_"]
 pixiv.net##[data-gtm-recommend-zone="index"] li:has(> div > iframe[name$="rectangle"])
 pixiv.net##[span="1"]:has(> div > div > div[style="display: block; width: 100%; height: 434px;"])
-pixiv.net##[style="display: block; height: 345px; width: 500px;"]
 pixiv.net##[style="display: block; width: 100%; height: 520px;"]
 pixiv.net##[style="display: block; width: 300px; height: 250px;"]
 pixiv.net##[style="margin: 48px auto 8px; width: 728px; line-height: 0; font-size: 0px;"]
-pixiv.net##[style^="display: block; width: 100%; height"]:has(> iframe[data-uid])
 pixiv.net##[style^="display: block;"]:has(> iframe[data-uid])
 pixiv.net##a[target="premium_noads"]
 pixiv.net##aside > section[class^="sc-"]:has(> div[class^="sc-"] > iframe[width="100%"])
 pixiv.net##div[class^="sc-"]:has(> [style^="display"][style*="468px;"][style*="60px"])
-pixiv.net##div[id^="adsdk-"]
 pixiv.net##div[style="font-size: 0px;"] a[target="premium_noads"]
 pixiv.net##div[style="height: 540px; opacity: 1;"]
-pixiv.net##iframe[height="300"][name="responsive"]
 pixiv.net##iframe[src^="https://pixon.ads-pixiv.net/"]
-pixiv.net##iframe[width="300"][height="250"]
 pixiv.net##li.overflow-hidden:has(> .pt-0 > [style="display: block; width: 300px; height: 250px;"])
 pixiv.net##section:has(> div > div > iframe[name="illusttop_appeal"])
 pixiv.net#$##js-mount-point-header { min-height: 0!important; }
@@ -90836,6 +90833,7 @@ vik1ngfile.site#%#//scriptlet('prevent-addEventListener', 'click', 'document.cre
 vik1ngfile.site,zpaste.net##+js(abort-current-script, Uint8Array, /=\[\][\s\S]*?new[\s\S]*?\)\)\(\)\}\)/)
 vik1ngfile.site,zpaste.net#%#//scriptlet('abort-current-inline-script', 'Uint8Array', '/=\[\][\s\S]*?new[\s\S]*?\)\)\(\)\}\)/')
 vikacg.com##+js(no-window-open-if, !/external)
+vikacg.com##a[href^="https://acg01.com/]"]
 vikacg.com#%#//scriptlet('prevent-window-open', '!/external')
 vikacg.com,vikacg.icu,vikacg.xyz##div[class^="my-"] > .grid > a[href^="http"]:not([href*="vikacg."])
 vikacg.com,vikacg.icu,vikacg.xyz##div[class^="my-"] > a[href^="http"]:not([href*="vikacg."])
@@ -105810,6 +105808,7 @@ zzzyk.com###Tinfo
 ||jjwxc.net/jjad*.html$popup
 ||jlmhk.com/images/data/
 ||jlpcn.net/img/300p-
+||jlwz.cn/js/xf*.js
 ||jmbbs.cn/sjgg/
 ||jmcomic.asia/iframe_*&idzone=
 ||jmcomic1.me/exads
@@ -106419,6 +106418,7 @@ zzzyk.com###Tinfo
 ||ldmnq.com^$3p,badfilter
 ||ldmnq.com^$third-party,badfilter
 ||le.com/op/
+||leadconnectorhq.com/stats/event
 ||leadelephant.com^$third-party
 ||leadfamly.com/campaign/sdk/popup.min.js
 ||leadliaison.com/tracking_engine/
@@ -109116,6 +109116,7 @@ zzzyk.com###Tinfo
 ||perlmaven.com/img/*0x2
 ||perlmaven.com/img/sticker-you.jpg
 ||perplexity.ai/rest/event/analytics
+||personalize-edge.contentstack.com/events
 ||pervclips.com/tube/js/customscript.js
 ||pervclips.com/tube/jsb/$script
 ||pervclips.com/tube/plugin.js
@@ -109195,6 +109196,7 @@ zzzyk.com###Tinfo
 ||piccy.org.ua/c?
 ||picgd.com/images/*.gif
 ||picgd.com/images/2018/12/01/h1pi5.png
+||picjs.xyz/image/*.gif$domain=vikacg.com
 ||piclick.cn^$third-party
 ||pico.tools/metrics/
 ||picpar.com^$domain=18board.com|18p2p.com
