@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260801100515
-! Last modified: 2026/08/01 10:05:15
-! Blocked Filters: 49352
+! Version: 20260801175241
+! Last modified: 2026/08/01 17:52:41
+! Blocked Filters: 49358
 !
 ###AC_ad
 ###AD_160
@@ -29137,6 +29137,7 @@ audiobookbay.*##.torrent_infos tr:has( > td a[href*="ddl"])
 audiobookbay.*##a[href*="?dnow="]
 audiobookbay.*##a[href^="/dirddl-now?"]
 audiobookbay.*##div[style^="text-align:left;"] > a img
+audiobookbay.*##table[class^="torrent_info"] > tbody > tr:has(> td:contains(/^(ad:|Secured Download:|Direct Download:)/i))
 audiobookbay.*#?##rsidebar > ul > li > h2:contains(/^AD$/)
 audiobookbay.*#?##rsidebar > ul > li:has(> h2:contains(Ad))
 audiobookbay.*#?#.torrent_info tr:has(a[rel=nofollow]:not([href^="/downld?"]))
@@ -31285,7 +31286,6 @@ cyclinguptodate.com,tennisuptodate.com##.sda
 cykf.net,xpressarticles.com##.elementor-location-footer + div[id][class*=" "]
 cyol.com,hc360.com##div[class^="AD"]
 cyol.net##.AD960_90
-czbj.js.cn#@#.adArea
 cztv.com###adsmall
 cztv.com##.ad003
 cztv.com##.ad_003
@@ -31452,7 +31452,6 @@ deliveroo.*##[class^="Carousel"] li[class^="Slide-"]:has(div[style*="d815008c-8a
 deliveroo.*##a[role="button"]:has(p:contains(Sponsored))
 deliveroo.*##div[class^="HomeFeedScrollTracker-"]:has(div[data-testid="sponsored-badge"] > p[data-testid="sponsored-tag"])
 deliveroo.*##div[class^="HomeFeedScrollTracker-"]:has(p[data-testid="sponsored-rating-distance"] > span[data-testid="label-prefix"])
-deliveroo.*##div[class^="HomeFeedScrollTracker-"]:has(span[class^="HomeFeedUILines-"]:contains(Sponsored))
 deliveroo.*##li[class^="Slide-"]:has(div[data-testid="sponsored-tag"] > p[data-testid="label"])
 deliveroo.*##li[class^="Slide-"]:has(div[data-testid="sponsored-tag"] > p[data-testid="sponsored-tag-label"])
 deliveroo.*#?#a[role="button"]:has(p:contains(Sponsored))
@@ -37921,6 +37920,7 @@ notebookcheck.com,notebookcheck.net,notebookcheck.org,notebookcheck.biz,notebook
 novel543.com,thisiscm.com##.gadBlock
 novelas360.com,hqq.tv##+js(set-constant, doSecondPop, noopFunc)
 novelas360.com,hqq.tv#%#//scriptlet('set-constant', 'doSecondPop', 'noopFunc')
+novelfire.net,novelphoenix.com##.nf-ads
 novinky.cz#@%#//scriptlet('ubo-acis.js', 'String.fromCharCode')
 novinky.cz,seznam.cz,seznamzpravy.cz#$#cookie-remover /adb$|adb\.key|^[a-z]{5,11}/; cookie-remover qusnyQusny;
 novinky.cz,seznamzpravy.cz##+js(remove-cookie, qusnyQusny)
@@ -38718,6 +38718,7 @@ pornhoarder.net,streamingnow.mov,mp4upload.com,x1337x.*,1stream.eu,sanet.st,stre
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com##+js(abort-on-stack-trace, document.createElement, loadNeverBlock)
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com##+js(no-setTimeout-if, chatina)
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com##aside[id]:has(> div > ins.adsbyexoclick):style(display: none !important;)
+pornhub-sexfilme.net,pornojenny.net,pornoleon.com##aside[id^="wa_"]:style(display: none !important;)
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com#$##tttt_wrapper { display: none !important; }
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com#$##wrapper_content { margin-left: 0 !important; }
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com#$#.grid_box:has(.special_preview) { display: none !important; }
@@ -43409,6 +43410,9 @@ zoohit.*,zooplus.*##div[data-zta="product-card"]:has(.z-sponsored-tag)
 zoom.porn,xepn.com,porntrex.*,eachporn.com##.link-sponsor
 zouaw.com##.cloudbox
 zpserver.com,devsoftwr.com,dredyson.com###bloghash-scroll-top + div[id][class*=" "]
+zrblog.net###top_nav
+zrblog.net##.ad_h
+zrblog.net##a[href^="http://u.zrblog.net"]
 zuanke8.com##.zuanpw
 zuhaowan.com##.zhw-bottom-ad
 zuowen.com##.cj
@@ -44462,7 +44466,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||aliyuncs.com^$domain=9xav.cc
 ||allegro.pl^$removeparam=reco_id
 ||allegro.pl^$removeparam=sid
-||alllget.com^$third-party
 ||allmediadesk.com^$3p
 ||allrecipes.com^$removeparam=clickId
 ||allrecipes.com^$removeparam=internalSource
@@ -44908,7 +44911,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||bbs.gmbbk.com^*.js
 ||bbs.voc.com.cn/s.js
 ||bc.geocities.
-||bcb5.com/gg/
 ||bccnsoft.com/aac/
 ||bdcpro*.techweb.com.cn^
 ||bdimg.com/brands/yxtg/source/juhe-v2.js
@@ -45037,7 +45039,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||bing.*^$removeparam=sk
 ||bing.*^$removeparam=sp
 ||bing.com^$cookie=ABDEF
-||binomo.com/promo^$3p
 ||bio-equip.com/dimg/
 ||bio-equip.com/dimgs/
 ||bio-equip.com/uploadimages/peiqing.gif
@@ -45668,7 +45669,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||douyin.com/aweme/v1/web/solution/resource/list/*_banner&
 ||douyu.com/japi/sign/web/getinfo
 ||douyu.com/member/gamegift/gameList/
-||down-id.img.susercontent.com/file/*.webp$domain=lk21.am.in
 ||downlinker.*/ad_dl.js
 ||downlinker.*/ads.js
 ||downxia.com/dgjs/download.js
@@ -45959,6 +45959,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||fls-cn.amazon.cn^$third-party
 ||flurry.agentportal-*.yahoodns.net^
 ||flurry.agentportal.*.yahoodns.net^
+||fluxtech.ai^$3p
 ||fm086.com/Plugins/search
 ||fmovies.*/*.hahaadblock
 ||fmovies.*/ajax/banner
@@ -48508,6 +48509,8 @@ zzztube.com,videoporn.tube##.b-random-column
 ||teletrader.com^$removeparam=internal
 ||tempest.services.disqus.com/ads-iframe^$important
 ||templates_pc/default/scripts/chapter_bottom.js
+||tencent-cloud.com/s9m1/12f70718c866ea3e5f22c68e6a34c54f.
+||tencent-cloud.com/s9m1/54cb71aff82cfd690619065f2e31c346.
 ||tencent.com/confighub/ads/
 ||tencent.com/developer/api/common/getAds
 ||tencent.com/developer/api/common/getOneAds
@@ -49287,6 +49290,9 @@ zzztube.com,videoporn.tube##.b-random-column
 ||zoossoft.cn^$third-party
 ||zoukankan.com^$csp=script-src 'self' * 'unsafe-eval'
 ||zp365.com/newhousered/hb-index-pop-
+||zrblog.net*/gg/
+||zrblog.net/gg/
+||zrblog.net/zanzhu/virpus.gif
 ||zuoyebang.cc/static/question/question/resource/QRCode_
 ||zuoyebang.cc/zyb_4953cbb8a9a2332469592196c056a906.jpg
 ||zupulu.com/scripts/app/app.js
