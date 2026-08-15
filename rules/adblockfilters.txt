@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260815161835
-! Last modified: 2026/08/15 16:18:35
-! Blocked Filters: 116772
+! Version: 20260816001506
+! Last modified: 2026/08/16 00:15:06
+! Blocked Filters: 116775
 !
 ###AC_ad
 ###AD_160
@@ -15873,7 +15873,7 @@ $script,3p,domain=faselhd.cafe|faselhd-watch.shop,badfilter
 $script,3p,domain=hitomi.la|rule34hentai.net,badfilter
 $script,3p,domain=torkitty.net|torkitty.com|torrentkitty.app|torrentkitty.asia|torrentkitty.cam|torrentkitty.ink|torrentkitty.io|torrentkitty.live|torrentkitty.lol|torrentkitty.net|torrentkitty.one|torrentkitty.tv|torrkitty.com
 $script,3p,domain=wecima.show,badfilter
-$script,3p,domain=xunleisou.life|xiaoyakankan.com|52movieba.com|audio699.com|kan-tv.com|m.supfree.net|movieffm.net|xiaoheimi.cc
+$script,3p,domain=xunleisou.info|xunleisou.life|xiaoyakankan.com|52movieba.com|audio699.com|kan-tv.com|m.supfree.net|movieffm.net|xiaoheimi.cc
 $script,3p,websocket,domain=52codes.net
 $script,redirect-rule=noop.js,domain=diudemy.com
 $script,redirect-rule=noop.js,domain=insurancegold.in
@@ -44594,6 +44594,8 @@ chatgpt.com##div[data-testid] div[class^="max-"] > div[data-ad-card-root]
 chatgpt.com##div[data-testid] div[class^="max-"] > div[data-testid="image-card-v2"]:has(button[aria-label="Sponsored options"])
 chatgpt.com##div[data-testid] div[class^="relative max-"]:has(> div[data-testid="image-card-v2"] + .pointer-events-none button[aria-label="Sponsored options"])
 chatgpt.com##section:has(> [aria-label="Sponsored"])
+chatgpt.com#%#(()=>{const e={apply:(e,r,s)=>{const t=Reflect.apply(e,r,s);try{return s[0]&&"string"==typeof s[0]&&s[0].includes("renderedAdsHtml")&&t.messages&&(t.hideAllAds=!0),t}catch(e){}return Reflect.apply(e,r,s)}};window.JSON.parse=new Proxy(window.JSON.parse,e)})();
+chatgpt.com#%#(()=>{const e={apply:(e,t,d)=>{try{const e=d[1];e?.ads&&e?.renderedAdsHtml&&(e.hidden=!0,delete e.ads,delete e.renderedAdsHtml)}catch(e){}return Reflect.apply(e,t,d)}};window.Map.prototype.set=new Proxy(window.Map.prototype.set,e)})();
 chatgpt.com#%#//scriptlet('json-prune', 'messages.*.ads messages.*.renderedAdsHtml')
 chatgpt.com#%#//scriptlet('trusted-json-set', 'WeakMap.prototype.set', '$[?(@.ads_response_id)].*', '$remove$', '', 'arg:1')
 chatgpt.com#%#//scriptlet('trusted-replace-outbound-text', 'TextDecoder.prototype.decode', '/^{"type":\s*"ads",\s*"content":\s*{"ads_request_id":.*?"ads_response_id":.*}$|^{"type":\s*"ads",.*"ads_response_id":.*"ads_request_id":.*}$/', '{}')
@@ -102321,6 +102323,7 @@ zzzyk.com###Tinfo
 ||cricxtasy.com/static/*/images/Blog-Banner
 ||cript.to/dlm.png
 ||cript.to/z-
+||crjugate.com^$popup
 ||crm-vwg.com/tracker/
 ||crmapt.livejasmin.com^$popup
 ||crmkt.livejasmin.com/s/pu/insljvime?$all
@@ -102957,6 +102960,7 @@ zzzyk.com###Tinfo
 ||docin.com/jsp_cn/ad/
 ||docomo.ne.jp/scripts/retargeting/retargeting.js
 ||docs.github.com/events
+||doct-umb.org^$popup
 ||doczj.com/js/common.js
 ||doda.jp/DodaCommon/Html/js/RtoasterTrack.js
 ||doda.jp/DodaFront/Html/js/dodaPrime_pc_aaTag.js
@@ -103164,6 +103168,10 @@ zzzyk.com###Tinfo
 ||dykshao.cn/image/$third-party
 ||dyktanda.pl/static/js/main.*.chunk.js$replace=/src:"https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js"/src:"\/"/
 ||dymmt.com/skin/mzitu/js/foot.
+||dynacrems.wp.pl/ad/
+||dynacrems.wp.pl/ad/$replace=/.+//,important
+||dynacrems.wp.pl/script/?id=*&placement_id=$replace=/.+//,important
+||dynacrems.wp.pl/staticad/$replace=/.+//,important
 ||dynamic-manifest.hulustream.com/hulu*playlist.m3u8$replace=/#EXT-X-DATERANGE:ID=".*?ad".*?\n[\s\S]*?(?=#EXT-X-DATERANGE:ID=)//,domain=hulu.com
 ||dynamo-kiev.com/jquerys.js
 ||dyo.gs/Webservices/jsParseLinks.aspx$script,third-party
@@ -103943,7 +103951,6 @@ zzzyk.com###Tinfo
 ||fetishshrine.com/plugin.js
 ||fetlife.com/ads/
 ||fewcents.co^$3p
-||fewcents.co^$third-party
 ||feyorra.top/next.js
 ||ffdm*.cc/dd.js
 ||ffdm2.cc/ht_cpc.js
@@ -109962,7 +109969,6 @@ zzzyk.com###Tinfo
 ||p2pup*.gamedl.qq.com^
 ||pac.talksport.com/track
 ||paddle.com^*/analytics.js
-||padstm.com^$third-party
 ||paella.adrise.tv/*.mp4$redirect=noopmp4-1s
 ||pagead*.googleadservices-cn.com^
 ||pagead*.googlesyndication-cn.com^
@@ -113426,10 +113432,8 @@ zzzyk.com###Tinfo
 ||t-mobile.com/self-service-commerce/v1/logging
 ||t-online.de/to/web/click?
 ||t-online.de/toi/html/de/img/transp.bmp?
-||t.7sur7.be^$image
 ||t.adddm.in/cl-partnter-videos?
 ||t.babelmedia.global^$3p
-||t.bd.nl^$image
 ||t.bndestem.nl^$image
 ||t.c-c.one/b/
 ||t.c-c.one/z/
@@ -114748,7 +114752,6 @@ zzzyk.com###Tinfo
 ||uploady.io/sw.js
 ||uplynk.com/*.m3u8$hls=/#UPLYNK-SEGMENT:.*\,ad/t,domain=foxsports.com
 ||uplynk.com/*.m3u8$replace=/#UPLYNK-SEGMENT: \S*\\,ad\s[\s\S]+?((#UPLYNK-SEGMENT: \S+\\,segment)|(#EXT-X-ENDLIST))/\$1/,domain=hgtv.com|diynetwork.com|abc11.com|abc7.com|abc7news.com|abc13.com|6abc.com|abc7chicago.com|discovery.com|fox.com|investigationdiscovery.com|sciencechannel.com|motortrend.com|tlc.com|abc7ny.com,important
-||uponomanytetor.com^$popup
 ||upornia.com/yxpffpuqtjc/
 ||upresim.tk/berat/js/entry$script,domain=fakirdebrid.net
 ||uprinting.com/muffins/UPTracker-
