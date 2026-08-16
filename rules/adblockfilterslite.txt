@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260816085133
-! Last modified: 2026/08/16 08:51:33
-! Blocked Filters: 49481
+! Version: 20260816161919
+! Last modified: 2026/08/16 16:19:19
+! Blocked Filters: 49483
 !
 ###AC_ad
 ###AD_160
@@ -17671,6 +17671,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https:\/\/zz\d{4}bb\d{4}\.com/$third-party,image
 /^https?:\/\/(([0-9a-z]{7,10}|www)\.)?.*\.com\/(([a-z0-9]{2}\/){2,3})?[0-9a-f]{32}\.js(on)?$/$match-case,script,3p,xhr
 /^https?:\/\/(.+?\.)?videogamesblogger\.com\/wp-content\/uploads\/.*[a-zA-Z0-9]{8,}\.*/$badfilter
+/^https?:\/\/(35|104)\.(\d){1,3}\.(\d){1,3}\.(\d){1,3}\//$popup,3p
 /^https?:\/\/(35|104)\.(\d){1,3}\.(\d){1,3}\.(\d){1,3}\//$popup,third-party
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[&?][0-9_a-z]=[0-9A-Za-z-]+)*$/$popup,third-party,match-case
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[&?][0-9_a-z]=[0-9A-Za-z-]+)*$/$subdocument,script,xhr,3p,match-case
@@ -40802,6 +40803,8 @@ t.17track.net##.up-deals
 t.17track.net##.up-deals-img
 t.cj.sina.com.cn###sina-cont000
 t.cj.sina.com.cn##.yyy-wrap-2021
+t.qq.com###homeBannerNew
+t.qq.com###talkList > li[ispopula="1"][tv="2"]
 t3.com,gamesradar.com##.sponsored-post
 t66y.com#$?#.sptable_do_not_remove { display: block !important; visibility: hidden !important; }
 taadd.com,ninemanga.com##body > div[style*="width:100%;height:768px;overflow:hidden;visibility:hidden;"]
@@ -41999,7 +42002,6 @@ vid2faf.*,vidplay.*,vidstream.*,vizcloud.*,mcloud.*,vizcloud2.*,vidstreamz.onlin
 vidara.*#$#abort-on-property-read popundersPerIP; abort-current-inline-script String.fromCharCode 2147483647
 vidbox.vc,vidbox.*##+js(no-setTimeout-if, getComputedStyle)
 vidbox.vc,vidbox.*##+js(prevent-fetch, method:HEAD)
-vidbox.vc,vidbox.*##div[aria-labelledby="adblock-title"]:style(display: none !important;)
 vidbox.vc,vidbox.*##html:style(overflow: auto !important;)
 vidbox.vc,vidbox.*##section[aria-label="Sponsored content"]
 vidbox.vc,vidbox.*#$#div[aria-labelledby="adblock-title"] { display: none !important; }
@@ -42167,6 +42169,7 @@ vmall.com#@#.iframeAd
 vmet.ro,wi-fi.ru###fullscreenBanner
 vmlib.com##.elementor-widget > .elementor-widget-container > a[href^="http"]:not([href*="vmlib."])
 vmlib.com##.wp-caption
+vod.pl,player.pl##body div[class][style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 0px; height: 0px;"]:style(display: block !important;)
 vod.pl,player.pl#$#body .adsbygoogle.adv_container.ads { display: block !important; }
 vod.pl,player.pl#$#body div[class][style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 0px; height: 0px;"] { display: block !important; }
 vod.pl,player.pl#@#.ad
@@ -48634,13 +48637,10 @@ zzztube.com,videoporn.tube##.b-random-column
 ||teletrader.com^$removeparam=internal
 ||tempest.services.disqus.com/ads-iframe^$important
 ||templates_pc/default/scripts/chapter_bottom.js
-||tencent-cloud.com/s9m1/12f70718c866ea3e5f22c68e6a34c54f.
-||tencent-cloud.com/s9m1/54cb71aff82cfd690619065f2e31c346.
 ||tencent.com/confighub/ads/
 ||tencent.com/developer/api/common/getAds
 ||tencent.com/developer/api/common/getOneAds
 ||tengfangyun.com/attachment/*/w_1200
-||tengfun.com/attachment/*/w_1200
 ||tengzhihh.com/image/*-950x277.
 ||tenmax.io^$3p
 ||terratraf.com^$3p
@@ -49229,6 +49229,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||xunlei.com/api/stat/rt/js?
 ||xuzhi.net/uploadfile/poster/960x50.jpg
 ||xwcm.net/caches/ahm.
+||xxxc2c.org^$3p
 ||xy-*pcdn.msstatic.com^
 ||xygwh.cc/js/p
 ||xygwh.cc/js/x
@@ -49329,6 +49330,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||yxgfcj.com^$3p
 ||yxzp.net/left.js
 ||yywz123.com/file/A*.js
+||yzs.com/d/file/2020/06/21/5358e14b4556663a91f145f0635f95de.jpg
 ||yzz.cn/global_gg/
 ||zabdybod*.club^
 ||zahrvfbd*.xyz^
