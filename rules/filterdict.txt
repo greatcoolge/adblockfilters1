@@ -1,6 +1,6 @@
 # FilterDict - 正则表达式和复杂过滤规则
-# 生成时间: 2026-09-05 02:44:38
-# 规则数量: 134238
+# 生成时间: 2026-09-05 10:17:19
+# 规则数量: 134248
 #
 ||direct-specific.com
 ||ad-host-backup-*.aliyuncs.com^
@@ -21737,6 +21737,7 @@ ikan6.vip,www.1111modruba.cc##IMG[src$='.gif']
 @@||t*.baidu.com^
 @@||t*img.yangkeduo.com^
 @@||vdownload-*.sb-cd.com^
+@@||r.*.awstrack.me^
 tieba.baidu.com###pagelet_entertainment-liveshow\/pagelet\/video_head
 500px.com###hellobar
 bing.com###banner
@@ -23170,7 +23171,6 @@ _box_ad_
 ||topqualitylink.com^$third-party
 ||yu0123456.com^$third-party
 ||agrantsem.com/js/ag.js
-@@||r.*.awstrack.me^
 ||waytogrow.com^$third-party
 ||brightline.tv^$third-party,xmlhttprequest,redirect-rule=noopjson
 ||greekexternal.com^$popup
@@ -106942,6 +106942,7 @@ $3p,xhr,domain=subhd.tv|subhdtw.com|zzzzz688.com
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vidoza.net
 $image,3p,denyallow=cdn77.org|globalcdn.co|others-cdn.com|rncdn7.com|sb-cd.com|stream.highwebmedia.com|thumb.live.mmcdn.com|upsiloncdn.net|xvideos-cdn.com|youjizz.com|ypncdn.com,domain=pussyspace.com|pussyspace.net
+$image,3p,denyallow=googleapis.com,domain=vipbox1.org
 $image,3p,domain=258zw.com
 $image,3p,domain=lady1.top
 $image,script,stylesheet,subdocument,3p,xhr,domain=animepahe.com,badfilter
@@ -108779,7 +108780,6 @@ $xhr,redirect-rule=noop.txt,domain=pahe.plus|intercelestial.com
 /firm_tracking.js
 /fkounter/counter.js
 /fkounter5/counter.js
-/flashad.js$script
 /flipptag.js
 /floatingcontent/*$3p
 /flowplayer.drive-analytics.min.js
@@ -112014,11 +112014,11 @@ $xhr,redirect-rule=noop.txt,domain=pahe.plus|intercelestial.com
 @@||curos.ca/res/*/resources/scripts/lib/fingerprint.js$~third-party
 @@||cvs.com/shop-assets/js/VisitorAPI.js$~third-party
 @@||cvs.com^$generichide
-@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|hochi.news|inquirer.com|mainichi.jp|marketwatch.com|nikkansports.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
-@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|gizmodo.jp|handelsblatt.com|hochi.news|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
+@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|mainichi.jp|marketwatch.com|nikkansports.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|gizmodo.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
 @@||cxense.com/document/search?
 @@||cxense.com/persisted/execute$domain=nippon.com
-@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|hochi.news|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cyberdean.fr/js/advertisement.js
 @@||cybozu.com/*/event.gif?$~third-party
 @@||cz.mrezadosa.com^$xhr,image,domain=playzone.cz
@@ -114458,8 +114458,12 @@ bowfile.com##+js(no-window-open-if, !bowfile.com)
 boxnews.com.ua##.bn-banner
 boxnews.com.ua##[style="padding-bottom: 20px;"]
 boyfriend.tv##.side-content-block > div:contains(Advertisment)
+boyfriendtv.com###b-page-frame > *:style(pointer-events:auto;)
+boyfriendtv.com###b-page-frame:style(padding-top:0;)
+boyfriendtv.com###b-page-frame:style(pointer-events:none;)
 boyfriendtv.com##+js(abort-on-property-read, backgroundBlack)
 boyfriendtv.com##+js(addEventListener-defuser, click, interstitial)
+boyfriendtv.com##body:style(cursor:default;)
 boyjackpot.com,letsjerk.tv#$#abort-current-inline-script asgPopScript
 boylov.xyz,boylove.cc,boyloves.fun##:has(>.adsbyexoclick)
 boylove.cc##.stui-pannel__bd > div[class]:has(> div[class] > div[class] > a[href][target="_blank"][rel="nofollow"] > img[src^="/bookimages/img/"][src$=".gif"])
@@ -115766,7 +115770,7 @@ fastconv.com##+js(no-window-open-if, adfpoint)
 fastconverter.net#$#abort-on-property-read afScript
 fastconverter.net#?#:xpath(//div[contains(@style,"fixed") and contains(@style,"z-index")]/ancestor-or-self::div[@style][1])
 fastp.org##+js(set-constant, adsbygoogle.loaded, true)
-fastpic.org,~new.fastpic.org#$#abort-on-property-read Element.prototype.attachShadow; prevent-listener click 0x; prevent-listener click preventDefault; prevent-listener click '(e)}'; prevent-listener DOMContentLoaded 0x
+fastpic.org,~new.fastpic.org#$#abort-on-property-read Element.prototype.attachShadow; abort-on-property-read Event.prototype.preventDefault; abort-on-property-read HTMLDivElement.prototype.getBoundingClientRect
 fastream.to##+js(abort-on-property-read, LieDetector)
 fastssh.com##+js(prevent-fetch, /pagead2\.googlesyndication\.com|www3\.doubleclick\.net/)
 faucet.shorterall.com##+js(remove-attr, onclick, .claim-button)
@@ -116485,7 +116489,9 @@ goldderby.com#$#prevent-element-src-loading script /loader\\.min\\.js/
 goldderby.com^$csp=script-src-attr 'none'
 goldtraders.or.th##header + div.flex > .px-4:contains(ADVERTISEMENT)
 golfgalaxy.com,dickssportinggoods.com##.google-ad-container
+golfmonthly.com##div[data-bordeaux-hook-loaded]
 golfmonthly.com##iframe[src^="data:text/html;base64,"][style*="z-index:2147483647"] {remove:true;}
+golfmonthly.com#$#abort-current-inline-script ffte bordeaux; override-property-read window.disableBordeaux true
 golfmonthly.com#$#abort-on-property-write window.alert
 golfmonthly.com#$#abort-on-property-write window.confirm
 golfmonthly.com#$#override-property-read window.navigator.connection.rtt 1001
@@ -116497,6 +116503,8 @@ goniec.pl##.col-span-3 > .justify-center:has(> .ad-placeholder:only-child)
 goodav17.com##+js(abort-on-property-read, popunder)
 goodcast.co.uk##[style="position: absolute; top: 100px; left: 160px; z-index: 1000;"]
 goodreturns.in#$#hide-if-matches-xpath './/div[@class="rightArtImg"]/img[contains(@src,"boldsky.com") or contains(@src,"gizbot.com") or contains(@src,"oneindia.com") or contains(@src,"nativeplanet.com")or contains(@src,"drivespark.com") or contains(@src,"careerindia.com") or contains(@src,"filmibeat.com") or contains(@src,"mykhel.com")]/ancestor::div[@class="rightArt"][@data-content_id]'; hide-if-matches-xpath './/fw-storyblock[@channel][@playlist][@autoplay]/parent::div[@id][@style][1]';
+goodto.com,homesandgardens.com##div[data-bordeaux-hook-loaded]
+goodto.com,homesandgardens.com#$#abort-current-inline-script ffte bordeaux; override-property-read window.disableBordeaux true
 goodtoknow.co.uk##+js(abort-current-script, IPCCoreQueue, bidWon)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.*,usersporn.com#$#abort-current-inline-script __require /clickunder/; override-property-read Object.prototype.ads/mobiads undefined
 googledrivelinks.com##+js(prevent-fetch, pagead2.googlesyndication.com)
@@ -119466,7 +119474,9 @@ pc-builds.com##+js(remove-node-text, script, freestar)
 pcbeta.com###toptb ~ #wp > *:not(div):not(style):not(ul):not(script) + div[class][id]:has(div[style="display:none"]):has(script:contains(window.slotbydup))
 pcbeta.com##+js(abort-on-stack-trace, document.createElement, make_rand_div)
 pcgamer.com##+js(set-constant, handleHeaderError, noopFunc)
+pcgamer.com##div[data-bordeaux-hook-loaded]
 pcgamer.com#$#abort-current-inline-script eval /x50p3331wdfu/
+pcgamer.com#$#abort-current-inline-script ffte bordeaux; override-property-read window.disableBordeaux true
 pcgamer.com#$#override-property-read as_1003867235 true; override-property-read as_-117070902 true; override-property-read as_-528137426 true; override-property-read as_retry true; override-property-read as_1177859557 true; override-property-read as_-1027524288 true; override-property-read as_2022485055 true; override-property-read as_0-1133223624 true; override-property-read as_9-1906210701 true; override-property-read as_1-961448718 true; override-property-read as_856308330 true; override-property-read as_-1349075515 true; override-property-read as_1700933828 true; override-property-read as_1212759660 true; override-property-read as_-992624185 true; override-property-read as_2057385158 true;
 pcgamer.com#$#override-property-read window.navigator.connection.rtt 1001
 pcgamer.com#$#override-property-read window.x9vhy6gdq24a true; override-property-read window.x6ze2g6tew62 true; override-property-read window.x50p3331wdfu true

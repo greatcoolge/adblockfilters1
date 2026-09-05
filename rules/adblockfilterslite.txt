@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260905024436
-! Last modified: 2026/09/05 02:44:36
-! Blocked Filters: 49679
+! Version: 20260905101718
+! Last modified: 2026/09/05 10:17:18
+! Blocked Filters: 49681
 !
 ###AC_ad
 ###AD_160
@@ -15579,6 +15579,7 @@ $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.inf
 $domain=adserver.juicyads.com
 $domain=googleads.g.doubleclick.net
 $image,3p,denyallow=cdn77.org|globalcdn.co|others-cdn.com|rncdn7.com|sb-cd.com|stream.highwebmedia.com|thumb.live.mmcdn.com|upsiloncdn.net|xvideos-cdn.com|youjizz.com|ypncdn.com,domain=pussyspace.com|pussyspace.net
+$image,3p,denyallow=googleapis.com,domain=vipbox1.org
 $image,3p,domain=258zw.com
 $image,3p,domain=lady1.top
 $image,redirect-rule=1x1-transparent.gif,domain=playpilot.com
@@ -19781,7 +19782,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /fl.js$domain=oralhoes.com|sexytrunk.com|xxxbanjo.com|beeg.com|croea.com|imagetwist.com|kporno.com|picshick.com|picturelol.com|porntube.com|24video.in|peretrah.com|imgtaxi.com|chaostube.net|imgadult.com|imgdrive.net
 /flashad.
 /flashad.asp$subdocument
-/flashad.js$script
 /flipptag.js
 /floa.js$domain=ah-me.com|beeg.com|croea.com|imagetwist.com|kporno.com|picshick.com|picturelol.com|porntube.com
 /float_ad.js$script
@@ -32675,7 +32675,7 @@ fastcoin.ga,swift4claim.com,appnee.com,msmxtended.org,reevown.com,cryptofun.spac
 fastcoin.ga,swift4claim.com,appnee.com,msmxtended.org,reevown.com,cryptofun.space,justlightnovels.com,tranimeizle.*#%#//scriptlet("prevent-setInterval", "/.\.display=='hidden'[\s\S]*?.\.visibility=='none'/")
 fastconv.com$$script[tag-content="afScript"][min-length="5000"][max-length="7000"]
 fastconv.com,easymp3converter.com##body > div[style^="position: fixed; display: block;"][style*="z-index:"]
-fastpic.org,~new.fastpic.org#$#abort-on-property-read Element.prototype.attachShadow; prevent-listener click 0x; prevent-listener click preventDefault; prevent-listener click '(e)}'; prevent-listener DOMContentLoaded 0x
+fastpic.org,~new.fastpic.org#$#abort-on-property-read Element.prototype.attachShadow; abort-on-property-read Event.prototype.preventDefault; abort-on-property-read HTMLDivElement.prototype.getBoundingClientRect
 fastseduction.com,fieggen.com,geekwire.com,landreport.com,semiengineering.com,vuejs.org,whenitdrops.com###sponsors
 fastseduction.com,independent.co.uk###partners
 fastshare.cloud/top*?utm_source=*&utm_medium=*&utm_campaign=$domain=warforum.xyz
@@ -33552,6 +33552,8 @@ goodcome.com.tw,sporttery.cn###mask
 goodfon.com,goodfon.ru##.center_banner__head
 goodindianporn.com,megayoungsex.com##.SHVidBlockR_Bn
 goodinfo.tw,myqqjd.com,cnprint.org,ez3c.tw,easylife.tw##.adsbygoogle
+goodto.com,homesandgardens.com##div[data-bordeaux-hook-loaded]
+goodto.com,homesandgardens.com#$#abort-current-inline-script ffte bordeaux; override-property-read window.disableBordeaux true
 goodtoknow.co.uk,nme.com,trustedreviews.com##.header-advert-wrapper
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.*,usersporn.com#$#abort-current-inline-script __require /clickunder/; override-property-read Object.prototype.ads/mobiads undefined
 google.*#?##bottom-pane .section-carousel-item-container > div[jstcache]:has(> div[class*="__body-content"] > div[class*="__text-content"] > span > span[class*="__ad-badge"])
