@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260907215117
-! Last modified: 2026/09/07 21:51:17
-! Blocked Filters: 117206
+! Version: 20260908033139
+! Last modified: 2026/09/08 03:31:39
+! Blocked Filters: 117209
 !
 ###AC_ad
 ###AD_160
@@ -28313,6 +28313,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||bgp.he.net/images/flags/*.gif?$image,~third-party
 @@||bgp.video-upload-v*.lf.bytelb.net^
 @@||bham.pl/templates/bham_res/js/adsbygoogle.js
+@@||bharat-connect.com^$extension='AdGuard Popup Blocker'
+@@||bharat-connect.com^$stealth=location
 @@||bhaskar.com/adblock/*.js^
 @@||bhavanijewellery.in/ads9.gif$domain=atozmath.com
 @@||bhc.co.kr^$stealth=dpi
@@ -29227,11 +29229,11 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||custommapposter.com^$generichide
 @@||cw-api.takeaway.com^$stealth=3p-auth
 @@||cwtv.com^$generichide
-@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|mainichi.jp|marketwatch.com|nikkansports.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
-@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|gizmodo.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
+@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|harpersbazaar.com|hochi.news|inquirer.com|j-cast.com|mainichi.jp|marketwatch.com|nikkansports.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|gizmodo.jp|handelsblatt.com|harpersbazaar.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
 @@||cxense.com/document/search?
 @@||cxense.com/persisted/execute$domain=nippon.com
-@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|harpersbazaar.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cy.com/hz/*/ad
 @@||cy.com^$generichide
 @@||cyberdean.fr/js/advertisement.js
@@ -52364,7 +52366,7 @@ fastpeoplesearch.com##.ad-widget-container
 fastpeoplesearch.com##.admap
 fastpeoplesearch.com##div[id]:has(> div[class^="ad-widget-"])
 fastpeoplesearch.com##div[style]:has(> div[class^="ad-widget-"])
-fastpic.org,~new.fastpic.org#$#abort-on-property-read Element.prototype.attachShadow; abort-on-property-read Event.prototype.preventDefault; abort-on-property-read HTMLDivElement.prototype.getBoundingClientRect
+fastpic.org,~new.fastpic.org#$#abort-current-inline-script document.getElementById maybeShow; abort-on-property-read Element.prototype.attachShadow; abort-on-property-read Event.prototype.preventDefault; abort-on-property-read HTMLDivElement.prototype.getBoundingClientRect
 fastream.to##+js(abort-on-property-read, LieDetector)
 fastream.to#%#//scriptlet('abort-on-property-read', 'LieDetector')
 fastseduction.com###splash
@@ -76210,6 +76212,9 @@ planetsuzy.org,motherless.com#%#//scriptlet('abort-current-inline-script', 'jQue
 planetware.com##.mediavine-sidebar-atf-target
 planningportal.co.uk##.HeaderAdArea__HeaderAdContainer-sc-1lqw6d0-0
 planyourroom.com,nelomanga.net,natomanga.com,coinadster.com,kissasian.*,israel21c.org,veck.io,filmelier.com,ncaa.com,short.croclix.me##.banner-container
+plataformamedia.com#%#//scriptlet('set-constant', 'advanced_ads_check_adblocker', 'noopFunc')
+plataformamedia.com#@#.ad-unit:not(.textads)
+plataformamedia.com#@#.ad_unit
 platinsport.com##.pum-container
 platinsport.com##a[href^="https://1xlite-23411.bar/"]
 platinsport.com#$##adblock-modal-overlay { display: none !important; }
@@ -80852,6 +80857,7 @@ samayam.com,navbharattimes.indiatimes.com##.hp-rhs-ads-container
 samayam.com,navbharattimes.indiatimes.com##.rhs-mrec-wrapper
 samayam.com,navbharattimes.indiatimes.com##.wdt_amz
 sameday.costco.*##div[id]:has(> div > a img[src*="display.instacart.com"]):has(> div > a h2):has(> section)
+sameday.costco.*##div[id]:has(> div[id$="-content"] > a img[src*="display.instacart.com"]):has(> div[id$="-content"] li img[src*="display.instacart.com"])
 sameday.costco.*##div[id]:has(div > a img[src*="display.instacart.com"]):has(div > a h2):has(> section)
 sameday.costco.*##li:has([aria-label="Product"]):has([data-fp-eligible]):not(:has(h2))
 sameday.costco.*#$#abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read ADBLOCK_DETECTED false
@@ -89349,7 +89355,6 @@ tresdaos.com,ragnarokscanlation.net##div[id^="ad-container"]
 tri247.com##.entry-content > div[id^="tri247-"][style^="margin-left:"]
 tri247.com##.show-ad
 triangletribune.com##.fba_links
-triathlete.com,open.spotify.com##div[aria-label="Advertisement"]
 triblive.com###storyContent > div[data-type="float"][data-stn-player]
 triblive.com##.mantine-Center-root:has(.ads-holder)
 triblive.com#?#.section.hex-sports + div:has(> div[data-type="float"])
@@ -94585,6 +94590,7 @@ www.jin10.com##.l-main_info > div[class]:not(.jin-declaration):not(.jin-qq-coope
 www.jjtyss.com##ins[class],.myui-player.clearfix p,.container p
 www.jmhongyan.com##ins[class],.container p
 www.kafan.cn##.comeing_show_box[style="padding:10px;"]
+www.kinopoisk.ru#$#hide-if-shadow-contains /./
 www.ksksy.com##[style$='vw;background:#000;opacity:0.01;']
 www.latimes.com##.google-dfp-ad-wrapper
 www.le.com###full_Column_big
@@ -97497,7 +97503,6 @@ zzzyk.com###Tinfo
 ||11livematches.com/images/footballtipster2.jpg
 ||11livematches.com/images/watch_football.jpg
 ||11livematches.com/rent_space/
-||11nux.com^$third-party
 ||11st.co.kr/st/
 ||120.132.57.41/pjk/pag/ys.php
 ||120askimages.com/ask/js/askfrom.js
@@ -97721,7 +97726,6 @@ zzzyk.com###Tinfo
 ||202.102.26.253:8182/files/7/lhzs1k.jpg
 ||203.195.121.$popup
 ||2048hd1.com/js/tc.js
-||204st.us^$third-party
 ||20mao.com/52
 ||20mao.com/js/sj.
 ||20min.ch/ana/
@@ -97875,7 +97879,6 @@ zzzyk.com###Tinfo
 ||360kan.com/v1/block?blockid=544&
 ||360playvid.info^$3p
 ||360switch.net/b.js
-||360tag.com^$third-party
 ||365xuet.com/assets/web/js/main.jsr_
 ||36img.com/ad/
 ||36kr.com/pp/api/ap/plan?
@@ -98491,7 +98494,6 @@ zzzyk.com###Tinfo
 ||accuradio.com/sweeper/json/fetch/?c=sweeper$replace=/\{[\s\S]*\}/{"status": "ok"}/,important
 ||accuterm.com/data/stat.js
 ||acdn.ashemale.one/ashm/frms/
-||acetrk.com^$third-party
 ||acfun.cn/appSpreadContents/danmuad/
 ||acg.youku.com/webfile/*.jpg
 ||acgbase.com^$3p
@@ -103262,7 +103264,6 @@ zzzyk.com###Tinfo
 ||dp.alma.iltalehti.fi/v1/cookie
 ||dp.ru/counter.gif?
 ||dpfantasy.org/k2s.gif
-||dpg.danawa.com/*/rest/*getStampEvent
 ||dporn.com/edraovnjqohv/
 ||dporn.com/tpnxa/
 ||dps-reach.com^$third-party
@@ -105533,6 +105534,7 @@ zzzyk.com###Tinfo
 ||hcmanager.swifteq.com/hc_events/
 ||hd-easyporn.com/static/exonb/backloderforload.php
 ||hd-world.org/layer18.js
+||hd.kinopoisk.ru^$addheader=response:set-cookie:kdetect=Q3Cu+4wJ/C; path=/; max-age=31536000
 ||hd21.*/templates/base_master/js/jquery.shows.min.js
 ||hd21.*/templates/base_master/js/jquery.shows2.min.js
 ||hdblog.it/new_files/ajax/prime_bf.php
@@ -111220,7 +111222,6 @@ zzzyk.com###Tinfo
 ||publish0x.com^$image,script,third-party
 ||publisher.freerider.ro/storage/images/_Freerider-Afisport
 ||publisher1st.com^$3p
-||publishflow.com^$third-party
 ||pubwise.io^$3p
 ||pudelek.pl^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/,xmlhttprequest,other,~script
 ||pudelek.pl^$replace=/(^(WP\.[\s\S]*?\.bodies)=WP\.[\s\S]*?\.bodies\|\|\{\};[\s\S]*)|((display:\\s\*)none(\\s\*!important)|((\.hostname;function .\(\)|\,.=function\(\))\{return) .===[\S]*?(\}))/\$4\$5\$6\$8/,script
@@ -112362,7 +112363,6 @@ zzzyk.com###Tinfo
 ||sellsy.com^$third-party,domain=~sellsy.fr
 ||sellthing.co/?advertiserId=&platform=$important,redirect=noopjs
 ||seloger.com/cdp-bff/analytics
-||semanticverses.com^$third-party
 ||sematext.com^$third-party
 ||semawur.com/download3.png
 ||sembox.it/js/sembox-tracking.js
@@ -114058,6 +114058,7 @@ zzzyk.com###Tinfo
 ||teletrader.com^$removeparam=internal
 ||televizeseznam.cz/*&source=*&videoFormats=*&zoneId$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/,xmlhttprequest
 ||tellerreport.com/react/pixel
+||tellows.jp/ping.php
 ||telsu.fi/js/t.js$replace=/bbd\(0x\d\)/(()=>{})()/
 ||teltarif.de/scripts/ttt.js
 ||teltarif.de/scripts/ttt.v2.js
@@ -116143,6 +116144,8 @@ zzzyk.com###Tinfo
 ||www.iqiyi.com/service-worker.js
 ||www.karaoketexty.cz/*/*.jpg$domain=karaoketexty.cz,rewrite=abp-resource:2x2-transparent-png
 ||www.karaoketexty.cz/*/*.png$domain=karaoketexty.cz,rewrite=abp-resource:2x2-transparent-png
+||www.kinopoisk.ru^$addheader=response:set-cookie:adblock-warning-toast-hide=1; path=/; max-age=31536000
+||www.kinopoisk.ru^$addheader=response:set-cookie:kdetect=Psz5Lg4f5l; path=/; max-age=31536000
 ||www.kupi.cz/*&*=$subdocument,domain=www.kupi.cz
 ||www.lezhutv.com/static/jquerys.js
 ||www.mouser.*/4UAZUiaI/init.js
