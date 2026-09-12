@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260912025452
-! Last modified: 2026/09/12 02:54:52
-! Blocked Filters: 117352
+! Version: 20260912102702
+! Last modified: 2026/09/12 10:27:02
+! Blocked Filters: 117349
 !
 ###AC_ad
 ###AD_160
@@ -72519,10 +72519,6 @@ nextdoor.com##+js(json-prune, data.me.personalizedFeed.feedItems.[-].promo.creat
 nextdoor.com##.nas-container
 nextdoor.com##div[data-testid="feed-item-card"]:has(span[class^="reset_"]:contains(А⁠d))
 nextdoor.com##div[data-v3-view-type="V3Wrapper"]:has(> span[data-testid="feed-item-visibility-tracker"] > div[id^="feedItem_"] span[class*="Item"]:contains(Sponsored))
-nextdoor.com#$#hide-if-contains-visible-text /S[^a-z0-9]*p[^a-z0-9]*[oο][^a-z0-9]*n[^a-z0-9]*s[^a-z0-9]*[oο][^a-z0-9]*r[^a-z0-9]*e[^a-z0-9]*d/i '[data-feed-item-type="PROMO"]'
-nextdoor.com#$#hide-if-contains-visible-text Ad 'div[data-testid] span>div[id]' 'div[id][style] ^^sh^^ * span'
-nextdoor.com#$#hide-if-matches-xpath '//div[a//span[contains(@class,"Badge")][text()="Ad"]]/parent::div/..'
-nextdoor.com#$#hide-if-matches-xpath '//span[@data-block][translate(normalize-space(.),"\u0410\u0430\u0391\u03B1\u2060\u200B\u200C\u200D\uFEFF","AaAa")="Ad"][not(ancestor::div[@data-testid="feed-item-card"])]/ancestor::div[@role][@data-block][1]/ancestor::div[3]'
 nextdoor.com#%#//scriptlet('json-prune', 'data.me.personalizedFeed.feedItems.[-].promo.creative.clickThroughUrl.adsTrackingMetadata.metadata.adRequestId')
 nextdoor.com#?#[data-testid*="searchFeedItem"]:contains(Sponsored by)
 nextdoor.com#?#[data-v3-view-type="V3Wrapper"]:has(> [data-testid="feed-item-visibility-tracker"]:contains(Sponsored))
@@ -110321,6 +110317,7 @@ zzzyk.com###Tinfo
 ||ossshucklean.com^$popup
 ||osswc.pplive.cn/cccms/$image
 ||ostjob.ch/public/statistic/teaser/hit/
+||osuper.com.br/beta/bundles/analytics/analytics-$script
 ||osuskinner.com/check|$xmlhttprequest
 ||otaserve.net^$3p
 ||otcash.com/images/
