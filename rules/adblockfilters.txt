@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260914223710
-! Last modified: 2026/09/14 22:37:10
-! Blocked Filters: 117736
+! Version: 20260915040630
+! Last modified: 2026/09/15 04:06:30
+! Blocked Filters: 117738
 !
 ###AC_ad
 ###AD_160
@@ -15684,7 +15684,7 @@
 ##ins.adsbygoogle[data-ad-client]
 ##ins.adsbygoogle[data-ad-slot]
 ##ins[class^="img_"][style^="display:inline-block;"]
-##ins[data-adsbygoogle-status]
+##ins[data-adsbygoogle-status]:not(.adsbygoogle)
 ##ins[id][data-anchor-status]
 ##link + div[class^="img_"][style="width: 300px; height: 250px;"]
 ##link + style + script + a[href*="html-load.com/"]
@@ -51169,7 +51169,6 @@ enikos.gr##.flex-col.h-full:has(> p.font-medium)
 enikos.gr##.sticky:has(> p.font-medium)
 enikos.gr#?#.content-wrap:has(> .googadd)
 enikos.gr#?#.footer-wrap:has(> div[id^="FootDesk_A_"])
-enikos.gr,real.gr##.advertisement
 enimerosi.com##.aritle-detail-description > div.row:has(> div > picture > img.banner_desktop)
 enimerosi.com##.detail-right-sd > div.d-sm-block:has(picture > img.banner_desktop)
 enimerosi.com##a[href="https://www.facebook.com/KazianisCashandCarry/"]
@@ -58225,6 +58224,7 @@ haydenjames.io##div[id^="hayden"]
 haysexvn.shop#$#abort-current-inline-script document.addEventListener adx
 hazipatika.com###box-humanmeteorologia
 hazipatika.com###panel > noindex
+hb-nippon.com,worldjournal.com,nikkansports.com,robbreport.com,rollingstone.com,gloria.hr,deadline.com,vibe.com,goldderby.com,artnews.com,gearjunkie.com,urldecoder.org,base64decode.org,index.hr,willyweather.com.au,fandom.com,euronews.com#%#//scriptlet('remove-attr', 'onerror', 'script[id][onerror]')
 hb.qq.com##div[style*="width:960px; height:90px;"]
 hb.qq.com##div[style=" width:300px; height:250px; overflow:hidden"]
 hb163.cn##.ad_panel_980
@@ -71751,6 +71751,7 @@ naifei.im##div[class^="wp-none"]
 naifei.im##div[style="position: fixed;bottom: -10px;right:0;z-index:999;width:250px"]
 naijanews.com###bl_banner
 naijaprey.tv##div.entry-content > div.naija-entity-placement > div[align="center"]
+naijaprey.tv,np-downloader.com##+js(no-window-open-if, _blank)
 naijaprey.tv,np-downloader.com#%#//scriptlet('prevent-window-open', '_blank')
 naijaray.com.ng##.code-block > a[onclick] > img
 nairaland.com##.vertipics
@@ -94748,7 +94749,6 @@ worldjournal.com##.banner-zone
 worldjournal.com#$#override-property-read Navigator.prototype.onLine false
 worldjournal.com#$#override-property-read as_1070684987 true; override-property-read as_1104579809 true; override-property-read as_1217148544 true; override-property-read as_-1112451150 emptyObj; override-property-read as_-1298431397 emptyObj; override-property-read as_380891903 true; override-property-read as_692612073 emptyObj; override-property-read as_-1176046332 emptyObj; override-property-read as_-1146751768 true
 worldjournal.com#$#override-property-read isAdShieldTurn false
-worldjournal.com,nikkansports.com,robbreport.com,rollingstone.com,gloria.hr,deadline.com,vibe.com,goldderby.com,artnews.com,gearjunkie.com,urldecoder.org,base64decode.org,index.hr,willyweather.com.au,fandom.com,euronews.com#%#//scriptlet('remove-attr', 'onerror', 'script[id][onerror]')
 worldledaily.com###worldledaily-com_300x1050
 worldlifestyle.com##.ams-ad-full-wrapper
 worldlifestyle.com##.ams_ad_title
@@ -95264,7 +95264,7 @@ www.wp.pl###wp-leaflets-section
 www.wp.pl##.grid > div:not([class]):has(> div[class*=" "]:only-child > div[class*=" "]:first-child + div[class*=" "]:last-child > div:empty:first-child + img[src*="://v.wpimg.pl/"][alt][role="presentation"]:last-child)
 www.wp.pl##.relative > :is(div[class^="sc"], .wp-bg-transparent) > div[class^="sc"]:has(> img[src^="https://v.wpimg.pl/"][alt]:first-child + img[src^="https://v.wpimg.pl/"][alt] + div[class^="sc-"]:last-child)
 www.wp.pl##.relative >.relative > .items-center[style]:has(> img[src^="https://v.wpimg.pl/"][alt]:first-child + img[src^="https://v.wpimg.pl/"][alt] + div[class]:last-child)
-www.wp.pl##.wp-live-main > .wp-inner-content > div[class*=" "]:has(> img[src^="https://v.wpimg.pl/"]:first-child + div + script:last-child)
+www.wp.pl##.wp-inner-content > div[class*=" "]:has(> img[src^="https://v.wpimg.pl/"]:first-child + div + script:last-child)
 www.wp.pl##.wp-placeholder
 www.wp.pl##.wp-section-placeholder-container
 www.wp.pl##a[href^="https://direct.money.pl/landing-page/callcenter/"]
@@ -102382,6 +102382,7 @@ zzzyk.com###Tinfo
 ||chatgpt.com/backend-api/bazaar/conversation/*/ads|$xhr
 ||chatgpt.com/backend-api/bazaar/conversation/*/ads|$xmlhttprequest
 ||chatgpt.com/backend-api/sentinel/ping
+||chatgpt.com/ces/v1/telemetry/
 ||chatroll.com/t.gif
 ||chaturbate.com*popunder$popup
 ||chaturbate.com/affiliates/
@@ -113438,6 +113439,7 @@ zzzyk.com###Tinfo
 ||smartapp-tvplayer*-prod.tvp.pl/releases/tvplayer*/default/player.js$replace=/(onerror=null\,e\()"[\s\S]*?"(\))/\$1undefined\$2/
 ||smartasset.com^$third-party
 ||smartblocker.org^$popup
+||smartbrokerplus.de/_ingenious-script.js
 ||smartcastaddon.com^$subdocument,third-party
 ||smartclick.net^$3p
 ||smartclip.net^$3p,domain=~toggo.de

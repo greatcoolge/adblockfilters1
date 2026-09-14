@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260914223710
-! Last modified: 2026/09/14 22:37:10
+! Version: 20260915040630
+! Last modified: 2026/09/15 04:06:30
 ! Blocked Filters: 49752
 !
 ###AC_ad
@@ -15502,7 +15502,7 @@
 ##ins.adsbygoogle[data-ad-client]
 ##ins.adsbygoogle[data-ad-slot]
 ##ins[class^="img_"][style^="display:inline-block;"]
-##ins[data-adsbygoogle-status]
+##ins[data-adsbygoogle-status]:not(.adsbygoogle)
 ##ins[id][data-anchor-status]
 ##link + div[class^="img_"][style="width: 300px; height: 250px;"]
 ##link + style + script + a[href*="html-load.com/"]
@@ -32390,7 +32390,6 @@ eneuro.org,jneurosci.org#@#.region-ad-top
 engadget.com,yahoo.com##div[id^="sda-WFPAD"]
 engine.presearch.org#$?#template[x-if="state.ads"] { remove: true; }
 engvideo.net,hianime.*,hollymoviehd.cc,mangago.*,ling-online.net,ups2up.*#$#abort-current-inline-script document.documentElement /break|case/
-enikos.gr,real.gr##.advertisement
 enjoy4k.*##+js(no-window-open-if)
 enjoy4k.*#%#//scriptlet("prevent-window-open")
 enjoyfuck.com,fuckgonzo.com,pornokeep.com##.advmnt
@@ -33964,6 +33963,7 @@ haxmac.cc,haxnode.net##[onclick^="window.open"]
 haxnode.net,netfuck.net,majorscans.com,xerifetech.com,gokushiteki.com,warungkomik.com,tarotscans.com,ayatoon.com##body > #footer + div[id][class*=" "]
 haxnode.net,tatbiqat.store,nxbrew.net,nsw2u.*,tresdaos.com,galinhasamurai.com,tv.latinlucha.es,4horlover.com,richitt.com,mylivewallpapers.com,rockmods.net##+js(abort-on-stack-trace, document.createElement, adsBlocked)
 haxnode.net,tatbiqat.store,nxbrew.net,nsw2u.*,tresdaos.com,galinhasamurai.com,tv.latinlucha.es,4horlover.com,richitt.com,mylivewallpapers.com,rockmods.net#%#//scriptlet('abort-on-stack-trace', 'document.createElement', 'adsBlocked')
+hb-nippon.com,worldjournal.com,nikkansports.com,robbreport.com,rollingstone.com,gloria.hr,deadline.com,vibe.com,goldderby.com,artnews.com,gearjunkie.com,urldecoder.org,base64decode.org,index.hr,willyweather.com.au,fandom.com,euronews.com#%#//scriptlet('remove-attr', 'onerror', 'script[id][onerror]')
 hb.qq.com##div[style*="width:960px; height:90px;"]
 hb.qq.com##div[style=" width:300px; height:250px; overflow:hidden"]
 hb163.cn##.ad_panel_980
@@ -37773,6 +37773,7 @@ n4g.com,techspy.com##.top-ads-container-outer
 na-2.gunwars.io,na.gunwars.io,na.throwz.io##div[style^="width:300;"][style*="height: 250;"]
 na-2.gunwars.io,na.gunwars.io,na.throwz.io##div[style^="width:336;"][style*="height: 280;"]
 naekranie.pl#$?#.wtg-placeholder { remove: true; }
+naijaprey.tv,np-downloader.com##+js(no-window-open-if, _blank)
 naijaprey.tv,np-downloader.com#%#//scriptlet('prevent-window-open', '_blank')
 nakastream.*#$#replace-fetch-response /("adsterraSmartLink[0-9]?":")[^"]+/ '$1' 'adsterraSmartLink'
 nakedbabes.club,hotbabeswanted.com##.deskbanner
@@ -42856,7 +42857,6 @@ world68.com##.head_m
 world68.com##.zzs_ad
 worldcam.*##.header-box-container
 worldcuplive.stream,strikeout.nu##.embed-responsive > .position-absolute > div
-worldjournal.com,nikkansports.com,robbreport.com,rollingstone.com,gloria.hr,deadline.com,vibe.com,goldderby.com,artnews.com,gearjunkie.com,urldecoder.org,base64decode.org,index.hr,willyweather.com.au,fandom.com,euronews.com#%#//scriptlet('remove-attr', 'onerror', 'script[id][onerror]')
 worldofaviation.com,defenceconnect.com.au,australianaviation.com.au,cyberdaily.au,cybersecurityconnect.com.au,ifa.com.au##.b-topLeaderboard
 worldsports.st,olympicstreams.*,crackstreams.*,soccerworldcup.me,720pstream.me,buffstreams.*,vipboxtv.*,cricstreams.re,viprow.*,socceronline.me,vipleague.*,vipbox.*,strikeout.*#$#.position-absolute { position: absolute !important; left: -3000px !important; }
 worldstarhiphop.com,worldstar.com#%#(()=>{let e,n=!1;const o=function(){};Object.defineProperty(window,"videojs",{get:function(){return e},set:function(t){e=t,!n&&e&&"function"==typeof e.registerPlugin&&(n=!0,e.registerPlugin("skipIma3Unskippable",o))}}),window.SlotTypeEnum={},window.ANAWeb=function(){},window.ANAWeb.prototype.createVideoSlot=function(){return Promise.resolve()},window.ANAWeb.prototype.createSlot=function(){},window.ANAWeb.VideoPlayerType={},window.ANAWeb.VideoPlacementType={InStream:1},window.ANAWeb.AdPosition={AboveTheFold:1},window.ANAWeb.PlaybackMethod={ClickSoundOn:1},window.addEventListener("load",(function(){document.dispatchEvent(new CustomEvent("ANAReady"))}))})();
