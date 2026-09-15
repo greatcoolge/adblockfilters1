@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260915210201
-! Last modified: 2026/09/15 21:02:01
-! Blocked Filters: 49759
+! Version: 20260916032500
+! Last modified: 2026/09/16 03:25:00
+! Blocked Filters: 49764
 !
 ###AC_ad
 ###AD_160
@@ -17794,7 +17794,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https?:\/\/imageboom\.net\/[a-z\d]+\.js$/$domain=imageboom.net
 /^https?:\/\/kan\.znds\.com\/public\/home\/images\/[0-9]+-[0-9]+\.gif\?v=/$domain=kan.znds.com
 /^https?:\/\/picturelol\.com\/[a-z\d]+\.(js)$/$domain=picturelol.com
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[A-Za-z0-9_%.-]+\?[A-Za-z0-9]+=[0-9a-f]{23,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru
 /^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
 /^https?:\/\/s3\.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
 /^https?:\/\/s3\.us-east-1\.amazonaws\.com\/[0-9a-f]{50,}\/[0-9a-f]{10}$/$xhr,3p
@@ -24830,7 +24830,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://email.*/o/$image
 ://emailtracking.$image
 ://fallback.*/collector
-://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.news|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.news|~fathom.org|~fathom.services|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://gom.ge/cookie.js
 ://gtm.*.js?st=
 ://gtrack.*/dye
@@ -25286,23 +25286,24 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/\/\d{5,7}$/$domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
 @@/\/cdn\/(files|zone)\d?\//$media,third-party,match-case,stealth=referrer,domain=kimoitv.com
 @@/^https:\/\/127\.0\.0\.1:10039\/\?callback=jQuery[0-9]{20,}_[0-9]{13}&HW&[A-z0-9]{22}==&&0&0&/$stealth=referrer
+@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/20\d{4}\/\d{2}\/\d{9}\/(?:original|thumbs_\d{2})\/\d{0,2}(?:\(m=e[0-9A-Za-z]{5,7}(?:aaaa)?\)\(mh=[-_0-9A-Za-z]{16}\))?\d{0,2}\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/20\d{4}\/\d{2}\/\d{9}\/(?:original|thumbs_\d{2})\/\d{0,2}(?:\(m=e[0-9A-Za-z]{5,7}(?:aaaa)?\)\(mh=[-_0-9A-Za-z]{16}\))?\d{0,2}\.jpg$/$image,~3p,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/20\d{4}\/\d{2}\/\d{9}\/(?:original|thumbs_\d{2})\/\d{0,2}(?:\(m=e[0-9A-Za-z]{5,7}(?:aaaa)?\)\(mh=[-_0-9A-Za-z]{16}\))?\d{0,2}\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/thumbs169l\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}(?:-\d)?\/[0-9a-f]{32}\.\d{1,2}\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/thumbs169l\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}(?:-\d)?\/[0-9a-f]{32}\.\d{1,2}\.jpg$/$image,~3p,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/thumbs169l\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}(?:-\d)?\/[0-9a-f]{32}\.\d{1,2}\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/thumbs_5\/\d{1,2}(?:\(m=e[0-9A-Za-z]{5,7}aaaa\)\(mh=[-_0-9A-Za-z]{16}\))?\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/thumbs_5\/\d{1,2}(?:\(m=e[0-9A-Za-z]{5,7}aaaa\)\(mh=[-_0-9A-Za-z]{16}\))?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/[a-z]?jz\/(?:[0-9a-f]\/){3,5}[0-9a-f]{42}-?(?:\d{2,3}|(?:(?:\d{3,4}-){3}h264)?\.(?:mp4-\d{1,2}|flv-\d))\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/[a-z]?jz\/(?:[0-9a-f]\/){3,5}[0-9a-f]{42}-?(?:\d{2,3}|(?:(?:\d{3,4}-){3}h264)?\.(?:mp4-\d{1,2}|flv-\d))\.jpg$/$image,~3p,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/[a-z]?jz\/(?:[0-9a-f]\/){3,5}[0-9a-f]{42}-?(?:\d{2,3}|(?:(?:\d{3,4}-){3}h264)?\.(?:mp4-\d{1,2}|flv-\d))\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/(?:\d|[0-9a-f]{2})\/(?:\d|[0-9a-f]{2})\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,~3p,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/xv7\/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}\/\d\/xv_\d{1,2}_t\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/imgbb.zip\/ib\/[a-z0-9]{15}_[0-9]{10}\.jpg$/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|new2.vegamovies.futbol|rogmovies.cv|xprimehub.bond
 @@/^https:\/\/mshale\.com\/[a-f0-9]{8}\/[a-zA-Z0-9]+$/$match-case,stealth=referrer|searchqueries
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,~3p,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,~3p,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/www\.[a-z]{7,14}\.com\/[a-z]{1,4}\.js/$script,3p,domain=shinden.pl,badfilter
 @@/^https:\/\/www\.[a-z]{7,14}\.com\/[a-z]{1,4}\.js/$script,third-party,domain=shinden.pl,badfilter
+@@/^https:\/\/www\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/www\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https?.*\..*\.ch\/.*\/(ad|adtech|pubblicita|adverts|ad-random|adSponsors|banner-ad|banman|native-ad|advertise|advert1|bg_ads|adengine|adspot|baseAd|coread)\/.*\/.*=.*&/$xmlhttprequest,other,script,domain=tio.ch
 @@/^https?:\/\/([a-z0-9-\.])*(chat|drive)\.google\.com\/videoplayback/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?(cloudflare\.com|prismic\.io|tangerine\.ca|gitlab\.com)/$removeparam
@@ -37936,6 +37937,7 @@ news.mydrivers.com##div[style="margin: auto;width: 580px;padding: 10px 0;"]
 news.mydrivers.com##div[style="width:1000px;padding-top:16px;padding-bottom:12px;"]
 news.mydrivers.com#?#.news_info > p:has(> a[href^="https://dt.mydrivers.com/"])
 news.mydrivers.com#?#.news_info > p:has(> strong:contains(双11红包活动推荐))
+news.qq.com###article-promotion
 news.qq.com###content-right div[class]:has(> h1:contains(热门应用))
 news.qq.com###content-right div[class][style*='background-image: url("https://inews.gtimg.com/newsapp_bt/']:has(img[alt^="QQ"])
 news.qq.com###focus-bar
@@ -37946,6 +37948,7 @@ news.qq.com##.godown.qqcom_fb-item
 news.qq.com##.qqcom-modal-mask
 news.qq.com##.slider-list.swiper-horizontal.swiper-initialized.swiper
 news.qq.com##.time > a[style="position: absolute;top: -8px;left: 296px;"]
+news.qq.com##div[dt-params="e_type=download_banner"]
 news.qq.com##div[id="download-btn-wrapid"]
 news.qq.com#?##content-right div[class]:has(> h1:contains(热门应用))
 news.qq.com#?#.item-back:has(.ruyi-icon-phone-regular):upward(div)
@@ -39251,6 +39254,7 @@ pussyspace.com,pussyspace.net##+js(no-requestAnimationFrame-if, exoframe)
 pussyspace.com,pussyspace.net##.mainBox div[id] img:not(a img)
 pussyspace.com,pussyspace.net##a:matches-attr(/^on/=/event/)
 pussyspace.com,pussyspace.net##a[href$="/live/meet-and-fuck/"]
+pussyspace.com,pussyspace.net##a[href$="/watch/tiktok/"]
 pussyspace.com,pussyspace.net##img[src^="data:image"]:not(a.cam_img > [id]):not(a.cat_img > span > [data-src*="/upload/"]):not(a.video_img > span > [id])
 pussyspace.com,pussyspace.net#$#prevent-listener loadex; prevent-listener exoJsPop101;
 pussyspace.com,pussyspace.net#%#//scriptlet('prevent-addEventListener', '', '=loader')
@@ -48133,6 +48137,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||pussyspace.$image
 ||pussyspace.*/js/all.js?v=gitcache_gulp_
 ||pussyspace.*/lazyload.im
+||pussyspace.*/lazyload.io?ads=
 ||pussyspace.*/live/meet-and-fuck/$all
 ||putlocker.*/banner/static/
 ||putlocker.*/img/watch
