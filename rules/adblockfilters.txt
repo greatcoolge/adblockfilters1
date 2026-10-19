@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard_DNS_filter、EasyList China、CJX's Annoyance List、xinggsf mv、halflife、NoAppDownload、DD-AD、banad、Ad Filter J、Fuck Fuckadblock、AdRules DNS List、abp_small、AWAvenue Ads Rule、BlueSkyXN skyrules、xiaobeita、URLhaus、pro.mini、cpbl-abp-list、qy-Ads-Rule、adblock、final-rules。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20261019022407
-! Last modified: 2026/10/19 02:24:07
-! Blocked Filters: 118341
+! Version: 20261019103852
+! Last modified: 2026/10/19 10:38:52
+! Blocked Filters: 118356
 !
 ###AC_ad
 ###AD_160
@@ -17928,8 +17928,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[&?][0-9_a-z]=[0-9A-Za-z-]+)*$/$popup,third-party,match-case
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,}\.[a-z]{3,7}\/[a-z](?:[a-z]{2,}[0-9A-Z]|[a-z][0-9A-Z][0-9a-zA-Z]|[0-9A-Z][0-9a-zA-Z]{2})[0-9a-zA-Z]*\/\d{3,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$script,third-party,match-case
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,}\.[a-z]{3,7}\/[a-z](?:[a-z]{2,}[0-9A-Z]|[a-z][0-9A-Z][0-9a-zA-Z]|[0-9A-Z][0-9a-zA-Z]{2})[0-9a-zA-Z]*\/\d{4,6}(?:\?[_a-z]=[0-9a-z-]+)?$/$subdocument,script,xmlhttprequest,third-party,match-case
+/^https?:\/\/(?:[a-z]{2}|[a-z]{5,7})?\.?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[&?][0-9_a-z]+=[0-9A-Za-z-]+)*$/$subdocument,script,xhr,3p,match-case
 /^https?:\/\/(?:[a-z]{2}|[a-z]{5,7})?\.?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[&?][0-9_a-z]+=[0-9A-Za-z-]+)*$/$subdocument,script,xmlhttprequest,third-party,match-case
-/^https?:\/\/(?:[a-z]{2}|[a-z]{6,7})?\.?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[&?][0-9_a-z]+=[0-9A-Za-z-]+)*$/$subdocument,script,xhr,3p,match-case
 /^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|org)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$script,3p,redirect=noop.js
 /^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|org)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$script,third-party,redirect=noopjs
 /^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|org)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$script,xhr,3p
@@ -36954,6 +36954,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||zoover.adtrackers.net/shared/bannerpages/darttagsbanner.aspx
 @@||zorroplay.xyz/*.php$stealth=referrer
 @@||zpmobi.cn^*/ad.css?$stylesheet
+@@||zs.com/scripts/analytics/pageview.js$~third-party
 @@||zstatic.net^$script,domain=niuyankan.top
 @@||zxc.nyaa-tan.my.id/js/-ads-banner.js$domain=kusonime.com
 @@||zxzja.com:*/Cloud/Down/$subdocument,stealth=referrer
@@ -99123,6 +99124,7 @@ zzzyk.com###Tinfo
 ||26img.com/nnn2/accd.js
 ||277txt.com/da/*.js
 ||279nn.com/okle/js1/
+||27gh.cc^$popup,third-party
 ||28.com/count.js
 ||28.com/countnew.js
 ||28.com/public/js/w3c_float.js
@@ -99300,6 +99302,7 @@ zzzyk.com###Tinfo
 ||445nan.com/ad/
 ||44pd.com^*xds/
 ||44x.io^$script
+||4567.org^$third-party
 ||47.100.0.249/js/thea
 ||470kk.com/js/config.js
 ||470kk.com/js/indextop.js
@@ -99467,6 +99470,7 @@ zzzyk.com###Tinfo
 ||5ilog.com/qq/js/jsgg.js
 ||5imx.com/image/image/
 ||5ips.net/love/
+||5lu8.com^$popup,third-party
 ||5mno3.com^$popup
 ||5movierulzfree.me/watchnow.php$popup
 ||5nj.com/js/cnzz22.js
@@ -104577,6 +104581,7 @@ zzzyk.com###Tinfo
 ||dormtherapy.com/jAYekY18/init.js
 ||doseofporn.com/img/jerk.gif
 ||doseofporn.com/t63fd79f7055.js
+||dota2.uuu9.com^$subdocument
 ||dota2protracker.com/sget/ads/
 ||dotesports.com/sp.js
 ||dotomi.com^$3p
@@ -104776,6 +104781,7 @@ zzzyk.com###Tinfo
 ||e3c7.com/dh/
 ||e3c7.com/love/
 ||e3ol.com/inc/
+||e5yx.com^$popup
 ||e9377f.com^$redirect=noop-0.1s.mp3,domain=eastday.com,media
 ||e9377f.com^$redirect=noopmp3-0.1s,domain=eastday.com
 ||e9377f.com^$rewrite=abp-resource:blank-mp3,domain=eastday.com
@@ -106656,6 +106662,7 @@ zzzyk.com###Tinfo
 ||h2porn.com/new-hit/?
 ||h3v9p8x2q1r7-agckaeh6g2ehcaes.*.azurewebsites.net^
 ||h5speed.m.jd.com/event/log
+||h6295.com^$popup
 ||haaretz.co.il/_next/static/chunks/*.js$replace=/return n&&"paying"/return; n&&"paying"/
 ||habd.as/js/modules/toxic-swamp/webminer.min.js
 ||haberler.com/dinamik/
@@ -108135,6 +108142,7 @@ zzzyk.com###Tinfo
 ||ixigua.com/at/log/
 ||ixkw3.cc/wp-content/themes/wpMyTube/assets/js/mobile.
 ||ixspublic.com^$3p
+||iy.com.cn^$third-party
 ||iyf.tv/a/$xhr
 ||iyf.tv/a/$xmlhttprequest
 ||iyf.tv/app/*.js$replace=/this\.shouldSkipAds\|\|/!0||/
@@ -108896,6 +108904,7 @@ zzzyk.com###Tinfo
 ||lacoccinelle.net/tools.js
 ||lactasetooth.shop^$popup
 ||ladepeche.fr/taffrail^
+||lady177.com^$popup
 ||ladybanana.co.uk/js/enhance.js
 ||ladyboygoo.com/lbg/banners/
 ||lagacetanewspaper.com/wp-content/uploads/banners/
@@ -110171,6 +110180,7 @@ zzzyk.com###Tinfo
 ||ml.com/enterprisetagging/
 ||mlno6.com^$third-party
 ||mm387.com/images/*.gif
+||mm786.com^$popup,third-party
 ||mma-core.com/vidjs*.js
 ||mmaaxx.com^$3p
 ||mmarocks.pl/sbt/720x180.png
@@ -113278,6 +113288,7 @@ zzzyk.com###Tinfo
 ||s8.pw^$3p
 ||s8bbs.com/ad/
 ||s8bbs.com/g.php?
+||sa669.com^$popup
 ||saabsunited.com/wp-content/uploads/*banner
 ||saasexch.com/bapi/fe/usd/report/
 ||sabavision.com^$3p
@@ -114577,6 +114588,9 @@ zzzyk.com###Tinfo
 ||static.xvideos.com/js/jquery.popunder.js
 ||static.youku.com/*/index/js/iresearch.js
 ||static.youku.com/*/js/cps.js
+||static.zongheng.com^*/adClickStat.js
+||static.zongheng.com^*/ad_click.js
+||static.zongheng.com^*/logger.min.js
 ||static0.wi-fi.ru/static/000/ios/index.html
 ||staticasset.amarujala.com/handler/recomUserEvent.js
 ||staticfile.qq.com/datong/$script
@@ -116392,6 +116406,7 @@ zzzyk.com###Tinfo
 ||utt.pm/utm/
 ||uugtv.com/x/app/videoSpread?
 ||uuoozz.com/L7QQ.js
+||uuu9.tieba.com^$subdocument
 ||uuxs.net^$subdocument
 ||uviu.com/_xd/
 ||uviu.com/activity/
